@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'BrownLL';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 100 400;
+  src: url("../fonts/BrownLLTT-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'BrownLL Black';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 100 900;
+  src: url("../fonts/BrownLLTT-Black.ttf") format("truetype"); }

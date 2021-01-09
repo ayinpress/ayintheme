@@ -1,0 +1,16 @@
+node_modules
+vendor/
+*.DS_Store
+*.zip
+*.rej
+**/*.map
+.ignore
+.svnignore
+.svn
+.sandbox-config
+.vscode
+
+#Ignoring headstart and language files
+*/languages/*
+!*/languages/*.pot
+*/inc/headstart/*
