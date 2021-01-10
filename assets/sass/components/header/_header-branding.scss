@@ -1,7 +1,11 @@
 // Site branding
 
 .site-branding {
+	background-color: var(--global--color-background);
+	border-bottom: 1px solid var(--global--color-border);
 	color: var(--branding--color-text);
+	margin-bottom: 0;
+	padding: var(--global--spacing-vertical) 0;
 	text-align: center;
 }
 
@@ -94,7 +98,7 @@ nav a {
 // Site logo
 
 .site-logo {
-	margin: calc( var(--global--spacing-vertical) / 2 ) var(--global--spacing-horizontal);
+	// margin: calc( var(--global--spacing-vertical) / 2 ) var(--global--spacing-horizontal);
 	text-align: center;
 
 	.custom-logo {

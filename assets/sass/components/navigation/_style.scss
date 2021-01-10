@@ -202,7 +202,7 @@
 		position: relative;
 		display: flex;
 		justify-content: var(--primary-nav--justify-content);
-		margin-top: calc( var(--global--spacing-vertical) * 1.5 );
+		// margin-top: calc( var(--global--spacing-vertical) * 1.5 );
 
 		// Mobile menu on desktop
 		& > div {
@@ -317,7 +317,7 @@
 		@include media( $navigation-min-break-point ) {
 			display: flex;
 			align-items: center;
-			padding: var(--primary-nav--padding);
+			padding: var(--primary-nav--padding) calc(var(--primary-nav--padding) * 2);
 		}
 	}
 
@@ -438,5 +438,24 @@
 		max-width: 100%;
 		position: fixed;
 		right: 0;
+	}
+}
+
+/* 
+Ayin Styles 
+*/
+.primary-navigation {
+
+	@include media( $navigation-min-break-point ) {
+		background: var(--global--color-background);
+		border-bottom: 1px solid var(--global--color-border);
+		transition: 0.25s all;
+
+		.scroll-up & {
+			border-top: none;
+			transform: translateY(-62px);
+			opacity: 0;
+			z-index: -1;
+		}
 	}
 }

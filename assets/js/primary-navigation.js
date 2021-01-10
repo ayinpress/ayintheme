@@ -3,7 +3,7 @@
  *
  * Required to open and close the mobile navigation.
  */
-( function() {
+( function($) {
 
 	/**
 	 * Menu Toggle Behaviors
@@ -79,5 +79,21 @@
 	window.addEventListener( 'load', function() {
 		new navMenu( 'primary' );
 		new navMenu( 'woo' );
+	});
+
+	let lastScrollY, currentScrollY = 0;
+	const minScrollDiff = 62;
+	const header = document.getElementById('masthead');
+
+	document.addEventListener('scroll', function(){
+		currentScrollY = window.scrollY;
+		
+		if ( currentScrollY > lastScrollY  && currentScrollY - lastScrollY > minScrollDiff ){
+			header.classList.add( 'scroll-up' );
+		} else if ( lastScrollY - currentScrollY > minScrollDiff ) {
+			header.classList.remove( 'scroll-up' );
+		}
+
+		lastScrollY = currentScrollY;
 	});
 } )();

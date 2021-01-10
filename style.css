@@ -92,9 +92,9 @@ Included in theme screenshot and in block patterns.
 :root {
 	/* Font Family */
 	--global--font-primary: var(--font-headings, 'BrownLL', Georgia, Times, serif);
-	--global--font-secondary: var(--font-base, Helvetica, Arial, sans-serif);
+	--global--font-secondary: var(--font-base, Georgia, Arial, sans-serif);
 	--global--font-code: monospace, monospace;
-	--global--font-ui: var(--font-base, var(--global--font-secondary));
+	--global--font-ui: var(--font-base, var(--global--font-primary));
 	/* Font Size */
 	--global--font-size-root: 18px;
 	--global--font-size-ratio: 1.2;
@@ -103,9 +103,9 @@ Included in theme screenshot and in block patterns.
 	--global--font-size-sm: 16px;
 	--global--font-size-md: 18px;
 	--global--font-size-lg: 24px;
-	--global--font-size-xl: 28px;
-	--global--font-size-xxl: 32px;
-	--global--font-size-xxxl: 48px;
+	--global--font-size-xl: 36px;
+	--global--font-size-xxl: 48px;
+	--global--font-size-xxxl: 72px;
 	--global--letter-spacing: normal;
 	/* Font Weight */
 	--global--font-weight: normal;
@@ -115,15 +115,15 @@ Included in theme screenshot and in block patterns.
 	--global--line-height-heading: 1.3;
 	/* Colors */
 	--global--color-primary: #000000;
-	--global--color-secondary: #3C8067;
+	--global--color-secondary: #5aa88f;
 	--global--color-primary-hover: var( --global--color-secondary );
-	--global--color-secondary-hover: #336D58;
+	--global--color-secondary-hover: #5aa88f;
 	--global--color-black: black;
 	--global--color-white: white;
 	--global--color-foreground: #333333;
 	--global--color-foreground-low-contrast: #444444;
 	--global--color-foreground-high-contrast: #000000;
-	--global--color-background: #FFFFFF;
+	--global--color-background: #fefcfc;
 	--global--color-tertiary: #FAFBF6;
 	--global--color-background-dark: #DDDDDD;
 	--global--color-border: #EFEFEF;
@@ -172,7 +172,7 @@ Included in theme screenshot and in block patterns.
 	--cover--height: calc( 15 * var(--global--spacing-vertical) );
 	--cover--color-foreground: var(--global--color-foreground-high-contrast);
 	--cover--color-background: var(--global--color-tertiary);
-	--heading--font-family: var(--global--font-primary);
+	--heading--font-family: 'BrownLL Black';
 	--heading--line-height: 1.3;
 	--heading--font-size-h6: var(--global--font-size-base);
 	--heading--font-size-h5: var(--global--font-size-md);
@@ -248,9 +248,9 @@ Included in theme screenshot and in block patterns.
 	--branding--logo--max-height: 120px;
 	--branding--logo--max-width-mobile: 96px;
 	--branding--logo--max-height-mobile: 96px;
-	--primary-nav--font-family: var(--global--font-secondary);
+	--primary-nav--font-family: var(--global--font-primary);
 	--primary-nav--font-family-mobile: var(--global--font-primary);
-	--primary-nav--font-size: var(--global--font-size-sm);
+	--primary-nav--font-size: var(--global--font-size-md);
 	--primary-nav--font-size-mobile: var(--global--font-size-xxl);
 	--primary-nav--font-size-sub-menu-mobile: var(--global--font-size-lg);
 	--primary-nav--font-style: normal;
@@ -397,7 +397,6 @@ Included in theme screenshot and in block patterns.
  * Top Level Wrappers (header, main, footer)
  * - Set vertical padding and horizontal margins
  */
-.site-header,
 .site-main,
 .site-footer {
 	padding-top: var(--global--spacing-vertical);
@@ -407,22 +406,11 @@ Included in theme screenshot and in block patterns.
 }
 
 .site-header {
-	padding-top: calc(3 * var(--global--spacing-vertical));
-	padding-bottom: calc(3 * var(--global--spacing-vertical));
-}
-
-.has-main-navigation .site-header {
-	padding-top: calc(4 * var(--global--spacing-vertical));
-}
-
-@media only screen and (min-width: 482px) {
-	.site-header {
-		padding-top: calc(3 * var(--global--spacing-vertical));
-		padding-bottom: calc(3 * var(--global--spacing-vertical));
-	}
-	.has-main-navigation .site-header {
-		padding-top: calc(3 * var(--global--spacing-vertical));
-	}
+	margin: auto;
+	position: sticky;
+	padding: 0;
+	top: 0;
+	z-index: 9999;
 }
 
 /**
@@ -2935,7 +2923,11 @@ pre.wp-block-verse {
  * - Similar to Blocks but exist outside of the "current" editor context
  */
 .site-branding {
+	background-color: var(--global--color-background);
+	border-bottom: 1px solid var(--global--color-border);
 	color: var(--branding--color-text);
+	margin-bottom: 0;
+	padding: var(--global--spacing-vertical) 0;
 	text-align: center;
 }
 
@@ -3000,7 +2992,6 @@ nav a {
 }
 
 .site-logo {
-	margin: calc( var(--global--spacing-vertical) / 2) var(--global--spacing-horizontal);
 	text-align: center;
 }
 

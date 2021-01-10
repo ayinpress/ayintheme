@@ -89,7 +89,7 @@ if ( ! function_exists( 'ayin_setup' ) ) :
 			array(
 				'height'      => 240,
 				'width'       => 240,
-				'flex-width'  => false,
+				'flex-width'  => true,
 				'flex-height' => false,
 			)
 		);
@@ -364,7 +364,7 @@ function ayin_fonts_url( ){
 /**
  * Enqueue theme styles for the block editor.
  */
-function seedlet_editor_styles() {
+function ayin_editor_styles() {
 	wp_enqueue_style( 'ayin-editor-fonts', ayin_fonts_url(), array(), null );
 }
 add_action( 'enqueue_block_editor_assets', 'ayin_editor_styles' );

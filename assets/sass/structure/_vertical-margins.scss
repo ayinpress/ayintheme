@@ -11,7 +11,6 @@
  * Top Level Wrappers (header, main, footer)
  * - Set vertical padding and horizontal margins
  */
-.site-header,
 .site-main,
 .site-footer {
 	padding-top: var(--global--spacing-vertical);
@@ -21,20 +20,23 @@
 }
 
 .site-header {
-	padding-top: calc(3 * var(--global--spacing-vertical));
-	padding-bottom: calc(3 * var(--global--spacing-vertical));
+	margin: auto;
+	position: sticky;
+	padding: 0;
+	top: 0;
+	z-index: 9999;
 
 	.has-main-navigation & {
-		padding-top: calc(4 * var(--global--spacing-vertical));
+		// padding-top: calc(4 * var(--global--spacing-vertical));
 	}
 
 	@include media(mobile) {
-		padding-top: calc(3 * var(--global--spacing-vertical));
-		padding-bottom: calc(3 * var(--global--spacing-vertical));
+		// padding-top: calc(3 * var(--global--spacing-vertical));
+		// padding-bottom: calc(3 * var(--global--spacing-vertical));
 
-		.has-main-navigation & {
-			padding-top: calc(3 * var(--global--spacing-vertical));
-		}
+		// .has-main-navigation & {
+		// 	padding-top: calc(3 * var(--global--spacing-vertical));
+		// }
 	}
 }
 
