@@ -9,7 +9,7 @@ $typescale-ratio: 1.2; // Run ratio math on 1em == $typescale-base * $typescale-
 @mixin global-variables() {
 	/* Font Family */
 	--global--font-primary: var(--font-headings, 'BrownLL', Georgia, Times, serif);
-	--global--font-secondary: var(--font-base, Georgia, Arial, sans-serif);
+	--global--font-secondary: var(--font-base, 'adobe-caslon-pro', Georgia, serif);
 	--global--font-code: monospace, monospace;
 	--global--font-ui: var(--font-base, var(--global--font-primary));
 

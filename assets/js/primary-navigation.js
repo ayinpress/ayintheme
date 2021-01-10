@@ -82,7 +82,7 @@
 	});
 
 	let lastScrollY, currentScrollY = 0;
-	const minScrollDiff = 62;
+	const minScrollDiff = 12;
 	const header = document.getElementById('masthead');
 
 	document.addEventListener('scroll', function(){

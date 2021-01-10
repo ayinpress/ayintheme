@@ -26,6 +26,10 @@
 	top: 0;
 	z-index: 9999;
 
+	.admin-bar & {
+		top: 32px;
+	}
+
 	.has-main-navigation & {
 		// padding-top: calc(4 * var(--global--spacing-vertical));
 	}
