@@ -1,7 +1,7 @@
 /**
  * Button
  */
-button,
+button:not(#toggle-toc),
 .button,
 input[type="submit"],
 .wp-block-button__link {

@@ -79,10 +79,3 @@ body {
 }
 
 @import '../base/base';
-
-// Focus styles
-.site *:focus {
-	outline-width: 1px;
-	outline-style: dotted;
-	outline-color: var(--global--color-secondary);
-}

@@ -1,6 +1,5 @@
 // Links styles
 a {
-	border-bottom: 1px solid var(--global--color-secondary);
 	color: var( --wp--style--color--link, var(--global--color-primary) );
 	text-decoration: none;
 	transition: border-color 0.1s ease-out;
@@ -33,6 +32,7 @@ a {
 		}
 	}
 }
+
 // Enforce the custom link color even if a custom background color has been set.
 // The extra specificity here is required to override the background color styles.
 .has-background:not(.has-background-background-color) {

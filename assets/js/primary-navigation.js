@@ -96,4 +96,17 @@
 
 		lastScrollY = currentScrollY;
 	});
+
+	const journalToggle = document.getElementById('toggle-toc');
+	if (journalToggle){
+		journalToggle.addEventListener('click', function(){
+			const journalToc = document.getElementById('journal-toc');
+			if ( journalToc.classList.contains('open')){
+				journalToc.classList.remove('open');
+			} else {
+				journalToc.classList.add('open');
+			}
+		});
+	}
+
 } )();

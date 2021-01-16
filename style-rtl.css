@@ -635,7 +635,7 @@ body {
  * Base
  * - Reset the browser
  */
-button,
+button:not(#toggle-toc),
 .button,
 input[type="submit"],
 .wp-block-button__link, .a8c-posts-list__view-all, button[data-load-more-btn] {
@@ -652,10 +652,10 @@ input[type="submit"],
 	padding: var(--button--padding-vertical) var(--button--padding-horizontal);
 }
 
-button:before,
+button:not(#toggle-toc):before,
 .button:before,
 input[type="submit"]:before,
-.wp-block-button__link:before, .a8c-posts-list__view-all:before, button[data-load-more-btn]:before, button:after,
+.wp-block-button__link:before, .a8c-posts-list__view-all:before, button[data-load-more-btn]:before, button:not(#toggle-toc):after,
 .button:after,
 input[type="submit"]:after,
 .wp-block-button__link:after, .a8c-posts-list__view-all:after, button[data-load-more-btn]:after {
@@ -665,38 +665,38 @@ input[type="submit"]:after,
 	width: 0;
 }
 
-button:before,
+button:not(#toggle-toc):before,
 .button:before,
 input[type="submit"]:before,
 .wp-block-button__link:before, .a8c-posts-list__view-all:before, button[data-load-more-btn]:before {
 	margin-bottom: -calc(.5em * var(--button--line-height) + -.38);
 }
 
-button:after,
+button:not(#toggle-toc):after,
 .button:after,
 input[type="submit"]:after,
 .wp-block-button__link:after, .a8c-posts-list__view-all:after, button[data-load-more-btn]:after {
 	margin-top: -calc(.5em * var(--button--line-height) + -.39);
 }
 
-button:active,
+button:active:not(#toggle-toc),
 .button:active,
 input:active[type="submit"],
-.wp-block-button__link:active, .a8c-posts-list__view-all:active {
+.wp-block-button__link:active, .a8c-posts-list__view-all:active, button:active[data-load-more-btn] {
 	color: var(--button--color-text-active);
 	background-color: var(--button--color-background-active);
 }
 
-button:hover,
+button:hover:not(#toggle-toc),
 .button:hover,
 input:hover[type="submit"],
-.wp-block-button__link:hover, .a8c-posts-list__view-all:hover, button:focus,
+.wp-block-button__link:hover, .a8c-posts-list__view-all:hover, button:hover[data-load-more-btn], button:focus:not(#toggle-toc),
 .button:focus,
 input:focus[type="submit"],
-.wp-block-button__link:focus, .a8c-posts-list__view-all:focus, button.has-focus,
+.wp-block-button__link:focus, .a8c-posts-list__view-all:focus, button:focus[data-load-more-btn], button.has-focus:not(#toggle-toc),
 .has-focus.button,
 input.has-focus[type="submit"],
-.has-focus.wp-block-button__link, .has-focus.a8c-posts-list__view-all {
+.has-focus.wp-block-button__link, .has-focus.a8c-posts-list__view-all, button.has-focus[data-load-more-btn] {
 	color: var(--button--color-text-hover);
 	background-color: var(--button--color-background-hover);
 }
@@ -988,7 +988,6 @@ body {
 }
 
 a {
-	border-bottom: 1px solid var(--global--color-secondary);
 	color: var(--wp--style--color--link, var(--global--color-primary));
 	text-decoration: none;
 	transition: border-color 0.1s ease-out;
@@ -1026,12 +1025,6 @@ a:active {
 button,
 a {
 	cursor: pointer;
-}
-
-.site *:focus {
-	outline-width: 1px;
-	outline-style: dotted;
-	outline-color: var(--global--color-secondary);
 }
 
 .screen-reader-text {
@@ -3840,6 +3833,38 @@ img#wpstats {
  * Site Pages
  * - Page specific styles
  */
+#journal-toc {
+	background: var(--global--color-background);
+	border-right: 1px solid var(--global--color-border);
+	height: 100vh;
+	padding: calc(2 * var(--global--spacing-horizontal));
+	padding-top: calc(3 * var(--global--spacing-vertical));
+	position: fixed;
+	right: 100vw;
+	top: 162px;
+	transition: .25s all;
+	transform: translateX(66px);
+	z-index: 99;
+}
+
+#journal-toc.open {
+	transform: translateX(240px);
+}
+
+#journal-toc #toggle-toc {
+	right: -60px;
+	top: 120px;
+	position: absolute;
+	top: 120px;
+	transform: rotateZ(90deg);
+}
+
+#journal-toc ul {
+	font-family: var(--global--font-primary);
+	list-style-type: none;
+	padding-right: 0;
+}
+
 .sticky-post {
 	color: var(--global--color-background);
 	background-color: var(--global--color-secondary);
@@ -4158,7 +4183,7 @@ img#wpstats {
 	}
 }
 
-button,
+button:not(#toggle-toc),
 .button,
 input[type="submit"],
 .wp-block-button__link, .a8c-posts-list__view-all, button[data-load-more-btn] {
@@ -4175,10 +4200,10 @@ input[type="submit"],
 	padding: var(--button--padding-vertical) var(--button--padding-horizontal);
 }
 
-button:before,
+button:not(#toggle-toc):before,
 .button:before,
 input[type="submit"]:before,
-.wp-block-button__link:before, .a8c-posts-list__view-all:before, button[data-load-more-btn]:before, button:after,
+.wp-block-button__link:before, .a8c-posts-list__view-all:before, button[data-load-more-btn]:before, button:not(#toggle-toc):after,
 .button:after,
 input[type="submit"]:after,
 .wp-block-button__link:after, .a8c-posts-list__view-all:after, button[data-load-more-btn]:after {
@@ -4188,38 +4213,38 @@ input[type="submit"]:after,
 	width: 0;
 }
 
-button:before,
+button:not(#toggle-toc):before,
 .button:before,
 input[type="submit"]:before,
 .wp-block-button__link:before, .a8c-posts-list__view-all:before, button[data-load-more-btn]:before {
 	margin-bottom: -calc(.5em * var(--button--line-height) + -.38);
 }
 
-button:after,
+button:not(#toggle-toc):after,
 .button:after,
 input[type="submit"]:after,
 .wp-block-button__link:after, .a8c-posts-list__view-all:after, button[data-load-more-btn]:after {
 	margin-top: -calc(.5em * var(--button--line-height) + -.39);
 }
 
-button:active,
+button:active:not(#toggle-toc),
 .button:active,
 input:active[type="submit"],
-.wp-block-button__link:active, .a8c-posts-list__view-all:active {
+.wp-block-button__link:active, .a8c-posts-list__view-all:active, button:active[data-load-more-btn] {
 	color: var(--button--color-text-active);
 	background-color: var(--button--color-background-active);
 }
 
-button:hover,
+button:hover:not(#toggle-toc),
 .button:hover,
 input:hover[type="submit"],
-.wp-block-button__link:hover, .a8c-posts-list__view-all:hover, button:focus,
+.wp-block-button__link:hover, .a8c-posts-list__view-all:hover, button:hover[data-load-more-btn], button:focus:not(#toggle-toc),
 .button:focus,
 input:focus[type="submit"],
-.wp-block-button__link:focus, .a8c-posts-list__view-all:focus, button.has-focus,
+.wp-block-button__link:focus, .a8c-posts-list__view-all:focus, button:focus[data-load-more-btn], button.has-focus:not(#toggle-toc),
 .has-focus.button,
 input.has-focus[type="submit"],
-.has-focus.wp-block-button__link, .has-focus.a8c-posts-list__view-all {
+.has-focus.wp-block-button__link, .has-focus.a8c-posts-list__view-all, button.has-focus[data-load-more-btn] {
 	color: var(--button--color-text-hover);
 	background-color: var(--button--color-background-hover);
 }

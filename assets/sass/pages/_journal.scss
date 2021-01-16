@@ -1,0 +1,35 @@
+$nav_height: 162px;
+$button_width: -66px;
+$toc_width: -240px;
+
+#journal-toc {
+	background: var(--global--color-background);
+	border-left: 1px solid var(--global--color-border);
+	height: 100vh;
+	padding: calc(2 * var(--global--spacing-horizontal));
+	padding-top: calc(3 * var(--global--spacing-vertical));
+	position: fixed;
+	left: 100vw;
+	top: $nav_height;
+	transition: .25s all;
+	transform: translateX( $button_width );
+	z-index: 99;
+
+	&.open {
+		transform: translateX( $toc_width );
+	}
+
+	#toggle-toc {
+		left: -60px;
+		top: 120px;
+		position: absolute;
+		top: 120px;
+		transform: rotateZ(-90deg);
+	}
+
+	ul {
+		font-family: var(--global--font-primary);
+		list-style-type: none;
+		padding-left: 0;
+	}
+}
