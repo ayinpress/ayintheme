@@ -1193,6 +1193,7 @@ textarea {
 	border: var(--form--border-width) solid var(--form--border-color);
 	border-radius: var(--form--border-radius);
 	color: var(--form--color-text);
+	font-family: var(--global--font-primary);
 	line-height: var(--global--line-height-body);
 	padding: var(--form--spacing-unit);
 	background: var(--form--background-color);
@@ -1221,6 +1222,7 @@ textarea:focus {
 
 select {
 	border: var(--form--border-width) solid var(--form--border-color);
+	font-family: var(--global--font-primary);
 }
 
 textarea {

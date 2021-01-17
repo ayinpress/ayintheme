@@ -23,7 +23,7 @@ function ayin_woocommerce_setup() {
 			'default_columns' => 3,
 			'default_rows'    => 6,
 			'min_columns'     => 1,
-			'max_columns'     => 6,
+			'max_columns'     => 3,
 			'min_rows'        => 1
 		)
 	) ) );
@@ -209,3 +209,12 @@ if ( defined( 'WC_VERSION' ) && version_compare( WC_VERSION, '2.3', '>=' ) ) {
 	add_filter( 'add_to_cart_fragments', 'ayin_cart_subtotal_fragment' );
 	add_filter( 'add_to_cart_fragments', 'ayin_cart_count_fragment' );
 }
+
+// Get rid of stuff you don't want to show
+remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
+remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_price', 10 );
+remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
+add_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_single_excerpt', 10 );
+remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10 );
