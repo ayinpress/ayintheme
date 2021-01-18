@@ -4,8 +4,22 @@
   font-family: 'BrownLL';
   font-display: swap;
   font-style: normal;
-  font-weight: 100 400;
+  font-weight: 100 300;
+  src: url("../fonts/BrownLLTT-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'BrownLL';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400 600;
   src: url("../fonts/BrownLLTT-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'BrownLL';
+  font-display: swap;
+  font-style: bold;
+  font-weight: 700 900;
+  src: url("../fonts/BrownLLTT-Bold.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'BrownLL Black';

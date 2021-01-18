@@ -312,22 +312,24 @@
 
 	// Top-level Menu Item
 	.primary-menu-container > ul > .menu-item {
-		padding: calc(0.5 * var(--primary-nav--padding)) 0;
-
 		@include media( $navigation-min-break-point ) {
 			display: flex;
 			align-items: center;
-			padding: var(--primary-nav--padding) calc(var(--primary-nav--padding) * 2);
+			> a {
+				// place the padding on the link to increase the hit area
+				padding: var(--primary-nav--padding) calc(var(--primary-nav--padding) * 2);
+			}
 		}
 	}
 
 	// Menu Item Link Colors
 	.menu-item > a {
 		color: var(--primary-nav--color-link);
+		font-weight: 100;
 
 		&:hover {
 			color: var(--primary-nav--color-link-hover);
-			border-color: var(--primary-nav--color-border);
+			background-color: var(--global--color-border);
 		}
 
 		&:focus {
