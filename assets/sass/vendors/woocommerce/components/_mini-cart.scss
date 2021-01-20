@@ -52,6 +52,7 @@ body[class*="woocommerce"] #page { // adding #page here to override default wc s
 				.sub-menu {
 					margin-left: 0;
 				}
+
 			}
 		}
 
@@ -62,6 +63,26 @@ body[class*="woocommerce"] #page { // adding #page here to override default wc s
 			#toggle-cart {
 				display: none;
 			}
+		}
+
+		.woocommerce-mini-cart.cart_list {
+			justify-content: flex-start;
+
+			.woocommerce-mini-cart-item {
+				width: 100%;
+
+				&::after, &::before {
+					display: none;
+				}
+
+				.quantity {
+					margin-left: auto;
+				}
+			}
+		}
+
+		.woocommerce-menu-item:hover {
+			cursor: inherit !important;
 		}
 
 		.woocommerce-cart-link {
@@ -104,6 +125,7 @@ body[class*="woocommerce"] #page { // adding #page here to override default wc s
 
 			background-color: var(--wc--mini-cart--color-background);
 			color: var(--wc--mini-cart--color-text);
+			cursor: normal;
 			max-width: 100%;
 			padding: var(--primary-nav--padding) 0;
 
@@ -112,11 +134,20 @@ body[class*="woocommerce"] #page { // adding #page here to override default wc s
 				padding: var(--primary-nav--padding);
 			}
 
+			.woocommerce-Price-amount {
+				font-family: var(--global--font-secondary);
+			}
+
 			.woocommerce.widget_shopping_cart .cart_list {
 				border-bottom: 1px solid var(--wc--mini-cart--color-border);
 
+				.size-woocommerce_thumbnail {
+					display: none; // hide the mini cart thumbnail without filtering the whole fucking mini-cart
+				}
+
 				li {
 					border-top: 1px solid var(--wc--mini-cart--color-border);
+					display: flex !important; // no idea but hovering for some reason causes this element to go from flex to block, so i need the !important :/
 					padding-left: var(--global--spacing-horizontal);
 				}
 
