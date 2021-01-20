@@ -68,7 +68,6 @@ body[class*="woocommerce"] #page { // adding #page here to override default wc s
 
 			display: none;
 			text-decoration: none;
-			line-height: 1;
 
 			& > *:not(:last-child) {
 				margin-right: calc(0.25 * var(--global--spacing-horizontal));
@@ -97,6 +96,7 @@ body[class*="woocommerce"] #page { // adding #page here to override default wc s
 				align-items: center;
 				display: flex;
 				flex-wrap: nowrap;
+				padding: var(--primary-nav--padding) calc(var(--primary-nav--padding) * 2);
 			}
 		}
 

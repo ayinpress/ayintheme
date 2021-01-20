@@ -1,6 +1,7 @@
 // Links styles
 a {
 	color: var( --wp--style--color--link, var(--global--color-primary) );
+	font-family: var(--global--font-ui);
 	text-decoration: none;
 	transition: border-color 0.1s ease-out;
 

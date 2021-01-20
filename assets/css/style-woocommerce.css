@@ -705,7 +705,6 @@ body[class*="woocommerce"].woo-navigation-open #page .woo-navigation #woo-open-m
 body[class*="woocommerce"] #page .woo-navigation .woocommerce-cart-link {
 	display: none;
 	text-decoration: none;
-	line-height: 1;
 }
 
 body[class*="woocommerce"] #page .woo-navigation .woocommerce-cart-link > *:not(:last-child) {
@@ -736,6 +735,7 @@ body[class*="woocommerce"] #page .woo-navigation .woocommerce-cart-link .svg-ico
 		align-items: center;
 		display: flex;
 		flex-wrap: nowrap;
+		padding: var(--primary-nav--padding) calc(var(--primary-nav--padding) * 2);
 	}
 }
 
