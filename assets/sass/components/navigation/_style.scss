@@ -206,12 +206,14 @@
 		// Mobile menu on desktop
 		& > div {
 			visibility: visible;
+			margin: auto;
 			opacity: 1;
 			position: relative;
 			padding: 0;
 			background-color: transparent;
 			overflow: initial;
 			transform: none;
+			width: calc( 2 * var(--global--spacing-horizontal) + var(--responsive--aligndefault-width));
 		}
 
 		// Hide mobile menu toggle

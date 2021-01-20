@@ -1,18 +1,19 @@
 $nav_height: 162px;
 $button_width: -66px;
-$toc_width: -240px;
+$toc_width: -260px;
 
 #journal-toc {
 	background: var(--global--color-background);
 	border-left: 1px solid var(--global--color-border);
-	height: 100vh;
-	padding: calc(2 * var(--global--spacing-horizontal));
-	padding-top: calc(3 * var(--global--spacing-vertical));
+	display: grid;
+	grid-template-columns: 36px 1fr;
+	height: calc(100vh - #{$nav_height});
 	position: fixed;
 	left: 100vw;
 	top: $nav_height;
 	transition: .25s all;
 	transform: translateX( $button_width );
+	width: fit-content;
 	z-index: 99;
 
 	&.open {
@@ -20,16 +21,24 @@ $toc_width: -240px;
 	}
 
 	#toggle-toc {
-		left: -60px;
-		top: 120px;
-		position: absolute;
-		top: 120px;
-		transform: rotateZ(-90deg);
+		border: none;
+		border-right: 1px solid var(--global--border-color);
+		background: transparent;
+		padding: 24px;
+
+		span {
+			transform: rotateZ(-90deg);
+			display: block;
+			width: 190px;
+			margin-left: -90px;
+		}
+
 	}
 
 	ul {
 		font-family: var(--global--font-primary);
 		list-style-type: none;
-		padding-left: 0;
+		padding: calc(var(--global--spacing-horizontal));
+		padding-top: calc(3 * var(--global--spacing-vertical));
 	}
 }

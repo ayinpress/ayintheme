@@ -29,7 +29,7 @@ get_header();
 				if ( $journal_number !== false ){
 					$toc = new WP_Query( array( 'category_slug' => $journal_number )  );
 					if ( $toc->posts ){
-						echo( '<section id="journal-toc"><button id="toggle-toc">Table of Contents</button><ul>');
+						echo( '<section id="journal-toc"><button id="toggle-toc"><span>Table of Contents</span></button><ul>');
 						foreach ($toc->posts as $work){
 							echo(sprintf( '<li><a href="%1$s">%2$s</a></li>', $work->post_guid, $work->post_title ) );
 						}

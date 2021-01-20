@@ -332,7 +332,7 @@ Included in theme screenshot and in block patterns.
 	--primary-nav--color-link-hover: var(--global--color-primary-hover);
 	--primary-nav--color-text: var(--global--color-foreground);
 	--primary-nav--padding: calc(0.66 * var(--global--spacing-unit) );
-	--primary-nav--justify-content: center;
+	--primary-nav--justify-content: space-between;
 	--social-nav--color-link: var(--global--color-foreground);
 	--social-nav--color-link-hover: var(--global--color-primary-hover);
 	--social-nav--padding: calc( 0.5 * var(--primary-nav--padding) );
@@ -3877,33 +3877,41 @@ img#wpstats {
 #journal-toc {
 	background: var(--global--color-background);
 	border-left: 1px solid var(--global--color-border);
-	height: 100vh;
-	padding: calc(2 * var(--global--spacing-horizontal));
-	padding-top: calc(3 * var(--global--spacing-vertical));
+	display: grid;
+	grid-template-columns: 36px 1fr;
+	height: calc(100vh - 162px);
 	position: fixed;
 	left: 100vw;
 	top: 162px;
 	transition: .25s all;
 	transform: translateX(-66px);
+	width: fit-content;
 	z-index: 99;
 }
 
 #journal-toc.open {
-	transform: translateX(-240px);
+	transform: translateX(-260px);
 }
 
 #journal-toc #toggle-toc {
-	left: -60px;
-	top: 120px;
-	position: absolute;
-	top: 120px;
+	border: none;
+	border-right: 1px solid var(--global--border-color);
+	background: transparent;
+	padding: 24px;
+}
+
+#journal-toc #toggle-toc span {
 	transform: rotateZ(-90deg);
+	display: block;
+	width: 190px;
+	margin-left: -90px;
 }
 
 #journal-toc ul {
 	font-family: var(--global--font-primary);
 	list-style-type: none;
-	padding-left: 0;
+	padding: calc(var(--global--spacing-horizontal));
+	padding-top: calc(3 * var(--global--spacing-vertical));
 }
 
 .sticky-post {
