@@ -53,6 +53,4 @@
 		<?php ayin_entry_meta_footer(); ?>
 	</footer><!-- .entry-footer -->
 
-	<?php ayin_author_bio(); ?>
-
 </article><!-- #post-${ID} -->

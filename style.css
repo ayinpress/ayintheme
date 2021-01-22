@@ -3882,6 +3882,7 @@ img#wpstats {
 	height: calc(100vh - 162px);
 	position: fixed;
 	left: 100vw;
+	min-width: 400px;
 	top: 162px;
 	transition: .25s all;
 	transform: translateX(-66px);
@@ -3909,7 +3910,7 @@ img#wpstats {
 }
 
 #journal-toc > div {
-	padding: calc(var(--global--spacing-horizontal));
+	padding: calc( 1.5 * var(--global--spacing-horizontal));
 	padding-top: calc(3 * var(--global--spacing-vertical));
 	font-size: var(--global--font-size-lg);
 }

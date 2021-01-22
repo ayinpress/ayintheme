@@ -9,6 +9,7 @@ $toc_width: -400px;
 	height: calc(100vh - #{$nav_height});
 	position: fixed;
 	left: 100vw;
+	min-width: 400px;
 	top: $nav_height;
 	transition: .25s all;
 	transform: translateX( $button_width );
@@ -36,7 +37,7 @@ $toc_width: -400px;
 	}
 
 	> div {
-		padding: calc(var(--global--spacing-horizontal));
+		padding: calc( 1.5 * var(--global--spacing-horizontal));
 		padding-top: calc(3 * var(--global--spacing-vertical));
 		font-size: var(--global--font-size-lg);
 		ul {
