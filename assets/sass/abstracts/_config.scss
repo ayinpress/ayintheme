@@ -35,17 +35,18 @@ $typescale-ratio: 1.2; // Run ratio math on 1em == $typescale-base * $typescale-
 	--global--line-height-heading: 1.3;
 
 	/* Colors */
-	--global--color-primary: #000000;
-	--global--color-secondary: #20a181;
+	--global--color-primary: #20a181;
+	--global--color-secondary: #efa182;
 	--global--color-primary-hover: var( --global--color-secondary );
-	--global--color-secondary-hover: #20a181;
+	--global--color-secondary: #efa182;
 	--global--color-black: black;
 	--global--color-white: white;
 	--global--color-foreground: #333333;
 	--global--color-foreground-low-contrast: #444444;
 	--global--color-foreground-high-contrast: #000000;
 	--global--color-background: #fefcfc;
-	--global--color-tertiary: #efa182;
+	--global--color-tertiary: ;
+	--global--color-tertiary: #fff3e4;
 	--global--color-background-dark: #DDDDDD;
 	--global--color-border: #EFEFEF;
 	--global--color-text-selection: #EBF2F0;

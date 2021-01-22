@@ -23,17 +23,31 @@ get_header();
 				$journal_number = false;
 
 				foreach ($categories as $cat) {
-					if ( strpos( $cat->slug, 'journal') !== false ) $journal_number = $cat->slug;
+					if ( strpos( $cat->slug, 'journal') !== false ) {
+						$journal_number = $cat->slug;
+						$journal_name = $cat->name;
+					}
 				}
 
 				if ( $journal_number !== false ){
 					$toc = new WP_Query( array( 'category_slug' => $journal_number )  );
 					if ( $toc->posts ){
-						echo( '<section id="journal-toc"><button id="toggle-toc"><span>Table of Contents</span></button><ul>');
+
+						echo( 
+							sprintf('<section id="journal-toc"><button id="toggle-toc"><span>Table of Contents</span></button><div><p>%1$s</p><ul>', 
+								$journal_name ) 
+						);
 						foreach ($toc->posts as $work){
-							echo(sprintf( '<li><a href="%1$s">%2$s</a></li>', $work->post_guid, $work->post_title ) );
+							$artist_name = 'Anonymous Artist';
+							// This is an ACF function so would error if not installed
+							if ( function_exists( 'get_field' ) ) {
+								$artist_name = get_field( 'artist_name' , $work->ID );
+							}
+							$work_permalink = get_permalink( $work->ID );
+							echo(sprintf( '<li><a href="%1$s">%2$s</a></li>', $work_permalink, $artist_name ) );
 						}
-						echo( '</ul></section>');
+
+						echo( '</ul></div></section>');
 					}
 			?>
 

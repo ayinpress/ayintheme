@@ -1,6 +1,6 @@
 // Links styles
 a {
-	color: var( --wp--style--color--link, var(--global--color-primary) );
+	color: var( --wp--style--color--link, var(--global--color-black) );
 	font-family: var(--global--font-ui);
 	text-decoration: none;
 	transition: border-color 0.1s ease-out;
@@ -11,11 +11,11 @@ a {
 	}
 
 	&:hover {
-		color: var(--global--color-primary-hover);
+		color: var(--global--color-primary);
 	}
 
 	&:focus {
-		color: var(--global--color-secondary);
+		color: var(--global--color-primary);
 	}
 
 	&:active {

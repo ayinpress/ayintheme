@@ -1,12 +1,11 @@
 $nav_height: 162px;
 $button_width: -66px;
-$toc_width: -260px;
+$toc_width: -400px;
 
 #journal-toc {
 	background: var(--global--color-background);
-	border-left: 1px solid var(--global--color-border);
 	display: grid;
-	grid-template-columns: 36px 1fr;
+	grid-template-columns: 48px 1fr;
 	height: calc(100vh - #{$nav_height});
 	position: fixed;
 	left: 100vw;
@@ -23,7 +22,8 @@ $toc_width: -260px;
 	#toggle-toc {
 		border: none;
 		border-right: 1px solid var(--global--border-color);
-		background: transparent;
+		background: var(--global--color-tertiary);
+		width: 54px;
 		padding: 24px;
 
 		span {
@@ -35,10 +35,17 @@ $toc_width: -260px;
 
 	}
 
-	ul {
-		font-family: var(--global--font-primary);
-		list-style-type: none;
+	> div {
 		padding: calc(var(--global--spacing-horizontal));
 		padding-top: calc(3 * var(--global--spacing-vertical));
+		font-size: var(--global--font-size-lg);
+		ul {
+			font-family: var(--global--font-primary);
+			font-weight: 100;
+			font-size: var(--global--font-size-md);
+			list-style-type: none;
+			padding: 0;
+		}
 	}
+
 }
