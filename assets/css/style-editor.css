@@ -36,11 +36,10 @@
 	--global--color-secondary: #efa182;
 	--global--color-black: black;
 	--global--color-white: white;
-	--global--color-foregrkjound: #333333;
+	--global--color-foreground: #333333;
 	--global--color-foreground-low-contrast: #868686;
 	--global--color-foreground-high-contrast: #000000;
 	--global--color-background: #fefcfc;
-	--global--color-tertiary: ;
 	--global--color-tertiary: #fff3e4;
 	--global--color-background-dark: #DDDDDD;
 	--global--color-border: #EFEFEF;
@@ -112,7 +111,7 @@
 	--heading--line-height-h2: var(--heading--line-height);
 	--heading--line-height-h1: var(--heading--line-height);
 	--heading--font-weight: normal;
-	--heading--font-weight-strong: 600;
+	--heading--font-weight-strong: 900;
 	--latest-posts--title-font-family: var(--heading--font-family);
 	--latest-posts--title-font-size: var(--heading--font-size-h3);
 	--latest-posts--description-font-family: var(--global--font-secondary);
@@ -126,7 +125,7 @@
 	--list--font-family: var(--global--font-secondary);
 	--definition-term--font-family: var(--global--font-primary);
 	--pullquote--font-family: var(--global--font-primary);
-	--pullquote--font-size: var(--heading--font-size-h2);
+	--pullquote--font-size: var(--global--font-size-xl);
 	--pullquote--font-style: italic;
 	--pullquote--letter-spacing: var(--heading--letter-spacing-h4);
 	--pullquote--line-height: var(--global--line-height-heading);
@@ -134,7 +133,7 @@
 	--pullquote--border-color: transparent;
 	--pullquote--color-foreground: var(--global--color-foreground);
 	--pullquote--color-background: var(--global--color-background);
-	--quote--border-color: var(--global--color-secondary);
+	--quote--border-color: var(--global--color-foreground);
 	--quote--border-width: 1px;
 	--quote--font-family: var(--global--font-secondary);
 	--quote--font-size: var(--global--font-size-md);
