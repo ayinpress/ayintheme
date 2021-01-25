@@ -2,12 +2,13 @@
 figcaption,
 .wp-caption,
 .wp-caption-text {
+	font-family: var(--global--font-primary);
 	color: var(--global--color-foreground-low-contrast);
-	font-size: var(--global--font-size-xs);
+	font-size: var(--global--font-size-sm);
 	line-height: var(--global--line-height-body);
 	margin-top: calc(0.5 * var(--global--spacing-unit));
 	margin-bottom: var(--global--spacing-unit);
-	text-align: center;
+	text-align: left;
 
 	.alignleft &,
 	.alignright & {

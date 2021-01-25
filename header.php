@@ -95,9 +95,6 @@ $header_classes .= $has_primary_nav ? ' has-menu' : '';
 				<?php endif; ?>
 			</div>
 
-			<?php if ( class_exists( 'WooCommerce' ) ) : ?>
-			<?php endif; ?>
-
 			<div class="menu-button-container">
 				<?php if ( class_exists( 'WooCommerce' ) ) : ?>
 					<button id="woo-open-menu" class="button open">

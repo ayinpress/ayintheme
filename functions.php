@@ -147,19 +147,25 @@ if ( ! function_exists( 'ayin_setup' ) ) :
 				array(
 					'name'      => __( 'Huge', 'ayin' ),
 					'shortName' => __( 'XL', 'ayin' ),
-					'size'      => 28,
+					'size'      => 50,
 					'slug'      => 'huge',
+				),
+				array(
+					'name'      => __( 'XXL', 'ayin' ),
+					'shortName' => __( 'XXL', 'ayin' ),
+					'size'      => 71,
+					'slug'      => 'xxl',
 				),
 			)
 		);
 
 		// Editor color palette.
 		$colors_theme_mod = get_theme_mod( 'custom_colors_active' );
-		$primary          = ( ! empty( $colors_theme_mod ) && 'default' === $colors_theme_mod || empty( get_theme_mod( 'ayin_--global--color-primary' ) ) ) ? '#000000' : get_theme_mod( 'ayin_--global--color-primary' );
-		$secondary        = ( ! empty( $colors_theme_mod ) && 'default' === $colors_theme_mod || empty( get_theme_mod( 'ayin_--global--color-secondary' ) ) ) ? '#3C8067' : get_theme_mod( 'ayin_--global--color-secondary' );
+		$primary          = ( ! empty( $colors_theme_mod ) && 'default' === $colors_theme_mod || empty( get_theme_mod( 'ayin_--global--color-primary' ) ) ) ? '#20a181' : get_theme_mod( 'ayin_--global--color-primary' );
+		$secondary        = ( ! empty( $colors_theme_mod ) && 'default' === $colors_theme_mod || empty( get_theme_mod( 'ayin_--global--color-secondary' ) ) ) ? '#efa182' : get_theme_mod( 'ayin_--global--color-secondary' );
 		$foreground       = ( ! empty( $colors_theme_mod ) && 'default' === $colors_theme_mod || empty( get_theme_mod( 'ayin_--global--color-foreground' ) ) ) ? '#333333' : get_theme_mod( 'ayin_--global--color-foreground' );
-		$tertiary         = ( ! empty( $colors_theme_mod ) && 'default' === $colors_theme_mod || empty( get_theme_mod( 'ayin_--global--color-tertiary' ) ) ) ? '#FAFBF6' : get_theme_mod( 'ayin_--global--color-tertiary' );
-		$background       = ( ! empty( $colors_theme_mod ) && 'default' === $colors_theme_mod || empty( get_theme_mod( 'ayin_--global--color-background' ) ) ) ? '#FFFFFF' : get_theme_mod( 'ayin_--global--color-background' );
+		$tertiary         = ( ! empty( $colors_theme_mod ) && 'default' === $colors_theme_mod || empty( get_theme_mod( 'ayin_--global--color-tertiary' ) ) ) ? '#fff3e4' : get_theme_mod( 'ayin_--global--color-tertiary' );
+		$background       = ( ! empty( $colors_theme_mod ) && 'default' === $colors_theme_mod || empty( get_theme_mod( 'ayin_--global--color-background' ) ) ) ? '#fefcfc' : get_theme_mod( 'ayin_--global--color-background' );
 
 		add_theme_support(
 			'editor-color-palette',

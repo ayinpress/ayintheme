@@ -172,9 +172,9 @@ Included in theme screenshot and in block patterns.
 	--global--font-size-sm: 16px;
 	--global--font-size-md: 18px;
 	--global--font-size-lg: 24px;
-	--global--font-size-xl: 36px;
-	--global--font-size-xxl: 48px;
-	--global--font-size-xxxl: 72px;
+	--global--font-size-xl: 40px;
+	--global--font-size-xxl: 50px;
+	--global--font-size-xxxl: 71px;
 	--global--letter-spacing: normal;
 	/* Font Weight */
 	--global--font-weight: normal;
@@ -189,8 +189,8 @@ Included in theme screenshot and in block patterns.
 	--global--color-secondary: #efa182;
 	--global--color-black: black;
 	--global--color-white: white;
-	--global--color-foreground: #333333;
-	--global--color-foreground-low-contrast: #444444;
+	--global--color-foregrkjound: #333333;
+	--global--color-foreground-low-contrast: #868686;
 	--global--color-foreground-high-contrast: #000000;
 	--global--color-background: #fefcfc;
 	--global--color-tertiary: ;
@@ -228,15 +228,15 @@ Included in theme screenshot and in block patterns.
 	--button--color-text: var(--global--color-background);
 	--button--color-text-hover: var(--button--color-text);
 	--button--color-text-active: var(--button--color-text);
-	--button--color-background: var(--global--color-primary);
-	--button--color-background-hover: var(--global--color-primary-hover);
+	--button--color-background: var(--global--color-secondary);
+	--button--color-background-hover: var(--global--color-primary);
 	--button--color-background-active: var(--global--color-black);
 	--button--font-family: var(--global--font-ui);
 	--button--font-size: var(--global--font-size-base);
 	--button--font-weight: normal;
 	--button--line-height: 1;
 	--button--border-width: 2px;
-	--button--border-radius: 4px;
+	--button--border-radius: 0;
 	--button--padding-vertical: calc(var(--global--spacing-horizontal) - var(--button--border-width));
 	--button--padding-horizontal: var(--global--spacing-horizontal);
 	--cover--height: calc( 15 * var(--global--spacing-vertical) );
@@ -403,7 +403,6 @@ Included in theme screenshot and in block patterns.
 	--responsive--aligndefault-width: calc(100vw - var(--responsive--spacing-horizontal));
 	--responsive--alignwide-width: calc(100vw - var(--responsive--spacing-horizontal));
 	--responsive--alignfull-width: 100%;
-	--responsive--alignwide-width-multiplier: calc(16 * var(--global--spacing-horizontal));
 	--responsive--alignrightleft-width: var(--global--spacing-horizontal);
 }
 
@@ -415,8 +414,8 @@ Included in theme screenshot and in block patterns.
 
 @media only screen and (min-width: 652px) {
 	:root {
-		--responsive--aligndefault-width: min(calc(100vw - 2 * var(--global--spacing-horizontal)), 620px);
-		--responsive--alignwide-width: min(calc(100vw - 2 * var(--global--spacing-horizontal)), 790px);
+		--responsive--aligndefault-width: min(calc(100vw - 2 * var(--global--spacing-horizontal)), 720px);
+		--responsive--alignwide-width: min(calc(100vw - 2 * var(--global--spacing-horizontal)), 1080px);
 	}
 }
 
@@ -1258,12 +1257,13 @@ input[type=checkbox] + label {
 figcaption,
 .wp-caption,
 .wp-caption-text {
+	font-family: var(--global--font-primary);
 	color: var(--global--color-foreground-low-contrast);
-	font-size: var(--global--font-size-xs);
+	font-size: var(--global--font-size-sm);
 	line-height: var(--global--line-height-body);
 	margin-top: calc(0.5 * var(--global--spacing-unit));
 	margin-bottom: var(--global--spacing-unit);
-	text-align: center;
+	text-align: left;
 }
 
 .alignleft figcaption,
@@ -1704,15 +1704,6 @@ h6, .h6 {
 }
 
 .wp-block-image {
-	text-align: center;
-}
-
-.wp-block-image figcaption {
-	color: var(--global--color-foreground-low-contrast);
-	font-size: var(--global--font-size-xs);
-	line-height: var(--global--line-height-body);
-	margin-top: calc(0.5 * var(--global--spacing-unit));
-	margin-bottom: var(--global--spacing-unit);
 	text-align: center;
 }
 
@@ -2549,6 +2540,11 @@ pre.wp-block-verse {
 /**
  * These selectors set the default max width for content appearing inside a post or page.
  */
+.entry-content > .alignwide *[class*="inner-container"] > *,
+.entry-content > .alignfull *[class*="inner-container"] > * {
+	max-width: none !important;
+}
+
 /**
  * .alignleft
  */

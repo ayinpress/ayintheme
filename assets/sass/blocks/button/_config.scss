@@ -3,8 +3,8 @@
 	--button--color-text: var(--global--color-background);
 	--button--color-text-hover: var(--button--color-text);
 	--button--color-text-active: var(--button--color-text);
-	--button--color-background: var(--global--color-primary);
-	--button--color-background-hover: var(--global--color-primary-hover);
+	--button--color-background: var(--global--color-secondary);
+	--button--color-background-hover: var(--global--color-primary);
 	--button--color-background-active: var(--global--color-black);
 
 	// Fonts
@@ -15,7 +15,7 @@
 
 	// Borders
 	--button--border-width: 2px;
-	--button--border-radius: 4px;
+	--button--border-radius: 0;
 
 	// Spacing
 	--button--padding-vertical: calc(var(--global--spacing-horizontal) - var(--button--border-width));

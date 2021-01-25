@@ -9,6 +9,13 @@
 	@extend %responsive-aligndefault-width;
 }
 
+.entry-content > .alignwide,
+.entry-content > .alignfull {
+	*[class*="inner-container"] > * {
+		max-width: none !important;
+	}
+}
+
 /**
  * .alignleft
  */
