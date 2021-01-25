@@ -21,6 +21,14 @@ if ( function_exists( 'register_block_style' ) ) {
 			)
 		);
 		register_block_style(
+			'core/group',
+			array(
+				'name'         => 'ayin-poetry',
+				'label'        => __( 'Poetry', 'ayin' ),
+				'style_handle' => 'ayin-poetry',
+			)
+		);
+		register_block_style(
 			'a8c/blog-posts',
 			array(
 				'name'         => 'ayin-alternating-grid',

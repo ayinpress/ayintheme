@@ -30,4 +30,11 @@
 			padding: var(--global--spacing-vertical);
 		}
 	}
+
+	&.is-style-ayin-poetry {
+		p {
+			max-width: 570px !important;
+			margin-left: 0 !important;
+		}
+	}
 }

@@ -666,6 +666,11 @@ div[data-type="core/button"] {
 	padding: var(--global--spacing-vertical);
 }
 
+.wp-block-group.is-style-ayin-poetry p {
+	max-width: 570px !important;
+	margin-left: 0 !important;
+}
+
 .wp-block-group .wp-block-group.has-background > .block-editor-block-list__layout > [data-align="full"] {
 	margin: 0;
 	width: 100%;
