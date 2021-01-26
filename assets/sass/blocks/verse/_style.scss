@@ -2,4 +2,9 @@ pre.wp-block-verse {
 	color: var(--global--color-foreground);
 	font-family: var(--entry-content--font-family);
 	padding: 0;
+	padding-right: 24px;
+	white-space: pre-wrap;       /* Since CSS 2.1 */
+	@include media( mobile ){
+		padding-right: 130px;
+	}
 }
