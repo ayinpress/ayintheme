@@ -1719,17 +1719,6 @@ h6, .h6 {
 	margin-right: var(--global--spacing-horizontal);
 }
 
-.entry-content > *[class="wp-block-image"],
-.entry-content [class*="inner-container"] > *[class="wp-block-image"] {
-	margin-top: 0;
-	margin-bottom: 0;
-}
-
-.entry-content > *[class="wp-block-image"] + *,
-.entry-content [class*="inner-container"] > *[class="wp-block-image"] + * {
-	margin-top: 0;
-}
-
 img {
 	height: auto;
 	max-width: 100%;
