@@ -4521,6 +4521,11 @@ button[data-load-more-btn],
 	padding-left: calc(var(--layout-grid--gutter-huge) + var(--layout-grid--background-offset)) !important;
 }
 
+.wp-embed-responsive .wp-has-aspect-ratio iframe {
+	width: 100% !important;
+	height: 100% !important;
+}
+
 .edit-post-layout__metaboxes {
 	margin-bottom: 24px;
 }
