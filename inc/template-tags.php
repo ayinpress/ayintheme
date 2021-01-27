@@ -102,62 +102,6 @@ if ( ! function_exists( 'ayin_entry_meta_footer' ) ) :
 	 */
 	function ayin_entry_meta_footer() {
 
-		// Hide author, post date, category and tag text for pages.
-		if ( 'post' === get_post_type() ) {
-
-			// Posted by
-			// ayin_posted_by();
-
-			// Posted on
-			ayin_posted_on();
-
-			/* translators: used between list items, there is a space after the comma. */
-			$categories_list = get_the_category_list( __( ', ', 'ayin' ) );
-			if ( $categories_list ) {
-				printf(
-					/* translators: 1: SVG icon. 2: posted in label, only visible to screen readers. 3: list of categories. */
-					'<span class="cat-links">%1$s<span class="screen-reader-text">%2$s</span>%3$s</span>',
-					ayin_get_icon_svg( 'category', 16 ),
-					__( 'Posted in', 'ayin' ),
-					$categories_list
-				); // WPCS: XSS OK.
-			}
-
-			/* translators: used between list items, there is a space after the comma. */
-			$tags_list = get_the_tag_list( '', __( ', ', 'ayin' ) );
-			if ( $tags_list ) {
-				printf(
-					/* translators: 1: SVG icon. 2: posted in label, only visible to screen readers. 3: list of tags. */
-					'<span class="tags-links">%1$s<span class="screen-reader-text">%2$s</span>%3$s</span>',
-					ayin_get_icon_svg( 'tag', 16 ),
-					__( 'Tags:', 'ayin' ),
-					$tags_list
-				); // WPCS: XSS OK.
-			}
-		}
-
-		// Comment count.
-		if ( ! is_singular() ) {
-			ayin_comment_count();
-		}
-
-		// Edit post link.
-		edit_post_link(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers. */
-					__( 'Edit <span class="screen-reader-text">%s</span>', 'ayin' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				get_the_title()
-			),
-			'<span class="edit-link">' . ayin_get_icon_svg( 'edit', 16 ),
-			'</span>'
-		);
 	}
 endif;
 
