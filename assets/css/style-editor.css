@@ -1604,8 +1604,8 @@ pre.wp-block-verse {
 .editor-post-title__block .editor-post-title__input {
 	color: var(--entry-header--color);
 	font-family: var(--heading--font-family);
-	font-size: var(--entry-header--font-size);
-	font-weight: var(--heading--font-weight);
+	font-size: var(--global--font-size-xl);
+	font-weight: 100;
 	letter-spacing: var(--heading--letter-spacing-h2);
 	line-height: var(--heading--line-height);
 	overflow-wrap: break-word;
@@ -1630,6 +1630,21 @@ pre.wp-block-verse {
 .entry-title a:active,
 .editor-post-title__block .editor-post-title__input a:active {
 	color: var(--entry-header--color-link);
+}
+
+.entry-header .artist-credit {
+	width: fit-content;
+	font-family: var(--global--font-primary);
+}
+
+.entry-header .artist-credit:after {
+	content: "";
+	display: inline-block;
+	height: 6px;
+	width: 100%;
+	background-image: url(/wp-content/themes/ayintheme/assets/img/diamond-border.svg);
+	bottom: 0;
+	left: 0;
 }
 
 /**
@@ -1757,13 +1772,12 @@ pre.wp-block-verse {
 
 .entry-header .entry-meta {
 	margin-bottom: 0;
-	padding-left: 5px;
 }
 
 .entry-header .entry-meta a {
 	color: var(--global--color-secondary);
 	font-family: var(--global--font-secondary);
-	font-size: var(--global--font-size-md);
+	font-size: var(--global--font-size-sm);
 }
 
 .entry-header .entry-meta a:hover, .entry-header .entry-meta a:focus {

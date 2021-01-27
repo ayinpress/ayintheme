@@ -19,6 +19,14 @@
 		</div><!-- .meta-info -->
 		<?php endif; ?>
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php 
+			if ( function_exists( 'get_field' ) ) {
+				$artist_name = get_field( 'artist_name' );
+				if ( $artist_name ){
+					printf( '<p class="artist-credit">By %s</p>', $artist_name );
+				}
+			}
+		?>
 	</header>
 
 	<div class="entry-content">

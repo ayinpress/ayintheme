@@ -3,8 +3,8 @@
 .editor-post-title__block .editor-post-title__input { // To target the editor
 	color: var(--entry-header--color);
 	font-family: var(--heading--font-family);
-	font-size: var(--entry-header--font-size);
-	font-weight: var(--heading--font-weight);
+	font-size: var(--global--font-size-xl);
+	font-weight: 100;
 	letter-spacing: var(--heading--letter-spacing-h2);
 	line-height: var(--heading--line-height);
 	overflow-wrap: break-word;
@@ -24,5 +24,22 @@
 		&:active {
 			color: var(--entry-header--color-link);
 		}
+	}
+}
+
+
+.entry-header {
+	.artist-credit {
+		width: fit-content;
+		font-family: var(--global--font-primary);
+	}
+	.artist-credit:after {
+		content: "";
+		display: inline-block;
+		height: 6px;
+		width: 100%;
+		background-image:url(/wp-content/themes/ayintheme/assets/img/diamond-border.svg);
+		bottom: 0;
+		left: 0;  
 	}
 }
