@@ -88,8 +88,7 @@ if ( ! function_exists( 'ayin_entry_meta_header' ) ) :
 		if ( $tags_list ) {
 			printf(
 				/* translators: 1: SVG icon. 2: posted in label, only visible to screen readers. 3: list of tags. */
-				'<span class="tags-links">%1$s<span class="screen-reader-text">%2$s</span>%3$s</span>',
-				ayin_get_icon_svg( 'tag', 16 ),
+				'<span class="tags-links"><span class="screen-reader-text">%1$s</span>%2$s</span>',
 				__( 'Tags:', 'ayin' ),
 				$tags_list
 			); // WPCS: XSS OK.

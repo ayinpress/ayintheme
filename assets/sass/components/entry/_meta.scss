@@ -63,3 +63,28 @@
 	padding-top: var(--global--spacing-unit);
 	border-top: var(--separator--height) solid var(--separator--border-color);
 }
+
+// Override styles for the header
+.entry-header .entry-meta {
+	margin-bottom: 0;
+	padding-left: 5px;
+
+	a {
+		color: var(--global--color-secondary);
+		font-family: var(--global--font-secondary);
+		font-size: var(--global--font-size-md);
+
+		&:hover,
+		&:focus {
+			color: var(--global--color-primary);
+		}
+
+		&:focus {
+			color: var(--global--color-primary);
+		}
+
+		&:active {
+			color: var(--global--color-primary);
+		}
+	}
+}
