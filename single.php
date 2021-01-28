@@ -34,7 +34,7 @@ get_header();
 					if ( $toc->posts ){
 
 						echo( 
-							sprintf('<section id="journal-toc"><button id="toggle-toc"><span>Table of Contents</span></button><div><p>%1$s</p><ul>', 
+							sprintf('<section id="journal-toc"><button id="toggle-toc"><span>Table of Contents</span></button><div><p class="journal-title">%1$s</p><ul>', 
 								$journal_name ) 
 						);
 						foreach ($toc->posts as $work){

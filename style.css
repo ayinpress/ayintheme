@@ -3927,7 +3927,7 @@ img#wpstats {
  * - Page specific styles
  */
 #journal-toc {
-	background: var(--global--color-background);
+	background: var(--global--color-white);
 	display: grid;
 	grid-template-columns: 48px 1fr;
 	height: calc(100vh - 162px);
@@ -3947,23 +3947,45 @@ img#wpstats {
 
 #journal-toc #toggle-toc {
 	border: none;
-	border-right: 1px solid var(--global--border-color);
-	background: var(--global--color-tertiary);
+	border-left: 1px solid var(--global--color-border);
+	background: var(--global--color-white);
 	width: 54px;
 	padding: 24px;
+}
+
+.open #journal-toc #toggle-toc {
+	background: var(--global--color-tertiary);
 }
 
 #journal-toc #toggle-toc span {
 	transform: rotateZ(-90deg);
 	display: block;
+	font-family: var(--global--font-primary);
+	font-weight: 100;
+	font-size: var(--global--font-size-md);
+	letter-spacing: .25px;
 	width: 190px;
 	margin-left: -90px;
 }
 
 #journal-toc > div {
+	font-size: var(--global--font-size-lg);
 	padding: calc( 1.5 * var(--global--spacing-horizontal));
 	padding-top: calc(3 * var(--global--spacing-vertical));
-	font-size: var(--global--font-size-lg);
+}
+
+#journal-toc > div p.journal-title {
+	margin-bottom: 12px;
+}
+
+#journal-toc > div p.journal-title:after {
+	content: "";
+	display: block;
+	height: 6px;
+	width: 96px;
+	background-image: url(/wp-content/themes/ayintheme/assets/img/diamond-border.svg);
+	bottom: 0;
+	left: 0;
 }
 
 #journal-toc > div ul {
