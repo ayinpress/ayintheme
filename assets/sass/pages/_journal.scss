@@ -1,24 +1,27 @@
-$nav_height: 162px;
+$desktop_nav_height: 162px;
+$mobile_nav_height: 122px;
+$button_width_mobile: -48px;
 $button_width: -66px;
 $toc_width: -400px;
+$toc_width_mobile: -100vw;
 
 #journal-toc {
 	background: var(--global--color-white);
 	display: grid;
 	grid-template-columns: 48px 1fr;
-	height: calc(100vh - #{$nav_height});
+	height: calc(100vh - #{$mobile_nav_height});
 	position: fixed;
 	left: 100vw;
-	min-width: 400px;
-	top: $nav_height;
+	top: $mobile_nav_height;
+	transform: translateX( $button_width_mobile );
 	transition: .25s all;
-	transform: translateX( $button_width );
+	min-width: 100vw;
 	width: fit-content;
 	z-index: 99;
 
 	&.open {
 		background: var(--global--color-tertiary);
-		transform: translateX( $toc_width );
+		transform: translateX( $toc_width_mobile );
 		#toggle-toc {
 			background: var(--global--color-secondary);
 			color: white;
@@ -26,13 +29,27 @@ $toc_width: -400px;
 		}
 	}
 
+	@include media ( laptop ){
+		top: $desktop_nav_height;
+		height: calc(100vh - #{$desktop_nav_height});
+		transform: translateX( $button_width );
+		min-width: 400px;
+		&.open {
+			transform: translateX( $toc_width );
+		}
+	}
+
 	#toggle-toc {
 		border: none;
 		border-left: 1px solid var(--global--color-border);
 		background: var(--global--color-white);
-		width: 64px;
 		padding: 24px;
 		transition: .25s all;
+		width: 44px;			
+
+		@include media( laptop ){
+			width: 64px;			
+		}
 
 		span {
 			transform: rotateZ(-90deg);
@@ -42,14 +59,20 @@ $toc_width: -400px;
 			font-size: var(--global--font-size-md);
 			letter-spacing: .25px;
 			width: 190px;
-			margin-left: -90px;
+			margin-left: -96px;
+			@include media(laptop){
+				margin-left: -90px;
+			}
 		}
 	}
 
 	> div {
 		font-size: var(--global--font-size-lg);
 		padding: calc( 2 * var(--global--spacing-horizontal));
-		padding-top: calc(3 * var(--global--spacing-vertical));
+		padding-top: calc(5 * var(--global--spacing-vertical));
+		@include media( laptop ){
+			padding-top: calc(3 * var(--global--spacing-vertical));
+		}
 
 		p.journal-title{
 			margin-bottom: 12px;
@@ -79,5 +102,20 @@ $toc_width: -400px;
 			}
 		}
 	}
+}
 
+.entry[class*='category-ayin-'] {
+	.entry-header, 
+	.entry-footer, 
+	.entry-content > * {
+		padding-right: 48px; // mobile TOC button
+		@include media( wide ){
+			padding-right: 0; // desktop TOC button
+		}
+	}
+	.entry-content .alignfull {
+		@include media( laptop ){
+			padding-right: 66px; // desktop TOC button
+		}
+	}
 }
