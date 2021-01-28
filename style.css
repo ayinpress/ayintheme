@@ -4011,6 +4011,19 @@ img#wpstats {
 	padding: calc(0.25 * var(--global--spacing-unit)) calc(0.33 * var(--global--spacing-unit));
 }
 
+.entry {
+	animation: .5s ease-out 0s 1 fadeIn;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 .page-title {
 	font-size: var(--heading--font-size-h4);
 }
