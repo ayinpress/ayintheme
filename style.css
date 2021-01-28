@@ -193,7 +193,7 @@ Included in theme screenshot and in block patterns.
 	--global--color-foreground-low-contrast: #868686;
 	--global--color-foreground-high-contrast: #000000;
 	--global--color-background: #fefcfc;
-	--global--color-tertiary: #fff3e4;
+	--global--color-tertiary: #fdf5eb;
 	--global--color-background-dark: #DDDDDD;
 	--global--color-border: #A8A8A8;
 	--global--color-text-selection: #EBF2F0;
@@ -3942,19 +3942,23 @@ img#wpstats {
 }
 
 #journal-toc.open {
+	background: var(--global--color-tertiary);
 	transform: translateX(-400px);
+}
+
+#journal-toc.open #toggle-toc {
+	background: var(--global--color-secondary);
+	color: white;
+	transition: .25s all;
 }
 
 #journal-toc #toggle-toc {
 	border: none;
 	border-left: 1px solid var(--global--color-border);
 	background: var(--global--color-white);
-	width: 54px;
+	width: 64px;
 	padding: 24px;
-}
-
-.open #journal-toc #toggle-toc {
-	background: var(--global--color-tertiary);
+	transition: .25s all;
 }
 
 #journal-toc #toggle-toc span {
@@ -3970,7 +3974,7 @@ img#wpstats {
 
 #journal-toc > div {
 	font-size: var(--global--font-size-lg);
-	padding: calc( 1.5 * var(--global--spacing-horizontal));
+	padding: calc( 2 * var(--global--spacing-horizontal));
 	padding-top: calc(3 * var(--global--spacing-vertical));
 }
 
