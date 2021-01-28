@@ -42,7 +42,7 @@
 	--global--color-background: #fefcfc;
 	--global--color-tertiary: #fff3e4;
 	--global--color-background-dark: #DDDDDD;
-	--global--color-border: #EFEFEF;
+	--global--color-border: #A8A8A8;
 	--global--color-text-selection: #EBF2F0;
 	--global--color-alert-success: yellowgreen;
 	--global--color-alert-info: skyblue;
@@ -1632,7 +1632,16 @@ pre.wp-block-verse {
 	color: var(--entry-header--color-link);
 }
 
+.entry-header .artwork-subheader {
+	color: var(--global--color-foreground-low-contrast);
+	font-family: var(--global--font-primary);
+	margin-top: 0;
+	margin-bottom: 8px;
+}
+
 .entry-header .artist-credit {
+	font-size: var(--global--font-size-lg);
+	margin-top: 0;
 	width: fit-content;
 	font-family: var(--global--font-primary);
 }
@@ -1645,6 +1654,11 @@ pre.wp-block-verse {
 	background-image: url(/wp-content/themes/ayintheme/assets/img/diamond-border.svg);
 	bottom: 0;
 	left: 0;
+}
+
+.entry-header .entry-title {
+	font-size: var(--heading--font-size-h2);
+	margin-bottom: 0;
 }
 
 /**
@@ -1777,7 +1791,7 @@ pre.wp-block-verse {
 .entry-header .entry-meta a {
 	color: var(--global--color-secondary);
 	font-family: var(--global--font-secondary);
-	font-size: var(--global--font-size-sm);
+	font-size: var(--global--font-size-md);
 }
 
 .entry-header .entry-meta a:hover, .entry-header .entry-meta a:focus {

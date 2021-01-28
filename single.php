@@ -23,7 +23,7 @@ get_header();
 				$journal_number = false;
 
 				foreach ($categories as $cat) {
-					if ( strpos( $cat->slug, 'journal') !== false ) {
+					if ( strpos( $cat->slug, 'ayin-') !== false ) {
 						$journal_number = $cat->slug;
 						$journal_name = $cat->name;
 					}
@@ -38,7 +38,7 @@ get_header();
 								$journal_name ) 
 						);
 						foreach ($toc->posts as $work){
-							$artist_name = 'Anonymous Artist';
+							$artist_name = 'Anonymous';
 							// This is an ACF function so would error if not installed
 							if ( function_exists( 'get_field' ) ) {
 								$artist_name = get_field( 'artist_name' , $work->ID );

@@ -29,10 +29,20 @@
 
 
 .entry-header {
+	.artwork-subheader {
+		color: var(--global--color-foreground-low-contrast);
+		font-family: var(--global--font-primary);
+		margin-top: 0;
+		margin-bottom: 8px;
+	}
+
 	.artist-credit {
+		font-size: var(--global--font-size-lg);
+		margin-top: 0;
 		width: fit-content;
 		font-family: var(--global--font-primary);
 	}
+
 	.artist-credit:after {
 		content: "";
 		display: inline-block;
@@ -41,5 +51,10 @@
 		background-image:url(/wp-content/themes/ayintheme/assets/img/diamond-border.svg);
 		bottom: 0;
 		left: 0;  
+	}
+
+	.entry-title {
+		font-size: var(--heading--font-size-h2);
+		margin-bottom: 0;
 	}
 }
