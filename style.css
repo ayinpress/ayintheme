@@ -3930,10 +3930,10 @@ img#wpstats {
 	background: var(--global--color-white);
 	display: grid;
 	grid-template-columns: 48px 1fr;
-	height: calc(100vh - 122px);
+	height: calc(100vh - 112px);
 	position: fixed;
 	left: 100vw;
-	top: 122px;
+	top: 112px;
 	transform: translateX(-48px);
 	transition: .25s all;
 	min-width: 100vw;
@@ -3954,8 +3954,8 @@ img#wpstats {
 
 @media only screen and (min-width: 652px) {
 	#journal-toc {
-		top: 162px;
-		height: calc(100vh - 162px);
+		top: 130px;
+		height: calc(100vh - 130px);
 		transform: translateX(-66px);
 		min-width: 400px;
 	}
