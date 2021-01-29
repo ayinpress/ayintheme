@@ -1768,6 +1768,10 @@ img {
 	margin-bottom: 0;
 }
 
+.wp-block-latest-posts .more-link {
+	margin-top: 0 !important;
+}
+
 .wp-block-latest-posts.is-grid > li {
 	margin-bottom: var(--global--spacing-vertical);
 }
