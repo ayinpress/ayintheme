@@ -651,10 +651,9 @@ body {
  * Base
  * - Reset the browser
  */
-button:not(#toggle-toc),
-.button,
 input[type="submit"],
-.wp-block-button__link, .a8c-posts-list__view-all, button[data-load-more-btn] {
+.wp-block-button__link, .a8c-posts-list__view-all, button[data-load-more-btn],
+.button {
 	line-height: var(--button--line-height);
 	color: var(--button--color-text);
 	cursor: pointer;
@@ -668,51 +667,43 @@ input[type="submit"],
 	padding: var(--button--padding-vertical) var(--button--padding-horizontal);
 }
 
-button:not(#toggle-toc):before,
-.button:before,
 input[type="submit"]:before,
-.wp-block-button__link:before, .a8c-posts-list__view-all:before, button[data-load-more-btn]:before, button:not(#toggle-toc):after,
-.button:after,
-input[type="submit"]:after,
-.wp-block-button__link:after, .a8c-posts-list__view-all:after, button[data-load-more-btn]:after {
+.wp-block-button__link:before, .a8c-posts-list__view-all:before, button[data-load-more-btn]:before,
+.button:before, input[type="submit"]:after,
+.wp-block-button__link:after, .a8c-posts-list__view-all:after, button[data-load-more-btn]:after,
+.button:after {
 	content: '';
 	display: block;
 	height: 0;
 	width: 0;
 }
 
-button:not(#toggle-toc):before,
-.button:before,
 input[type="submit"]:before,
-.wp-block-button__link:before, .a8c-posts-list__view-all:before, button[data-load-more-btn]:before {
+.wp-block-button__link:before, .a8c-posts-list__view-all:before, button[data-load-more-btn]:before,
+.button:before {
 	margin-bottom: -calc(.5em * var(--button--line-height) + -.38);
 }
 
-button:not(#toggle-toc):after,
-.button:after,
 input[type="submit"]:after,
-.wp-block-button__link:after, .a8c-posts-list__view-all:after, button[data-load-more-btn]:after {
+.wp-block-button__link:after, .a8c-posts-list__view-all:after, button[data-load-more-btn]:after,
+.button:after {
 	margin-top: -calc(.5em * var(--button--line-height) + -.39);
 }
 
-button:active:not(#toggle-toc),
-.button:active,
 input:active[type="submit"],
-.wp-block-button__link:active, .a8c-posts-list__view-all:active, button:active[data-load-more-btn] {
+.wp-block-button__link:active, .a8c-posts-list__view-all:active, button:active[data-load-more-btn],
+.button:active {
 	color: var(--button--color-text-active);
 	background-color: var(--button--color-background-active);
 }
 
-button:hover:not(#toggle-toc),
-.button:hover,
 input:hover[type="submit"],
-.wp-block-button__link:hover, .a8c-posts-list__view-all:hover, button:hover[data-load-more-btn], button:focus:not(#toggle-toc),
-.button:focus,
-input:focus[type="submit"],
-.wp-block-button__link:focus, .a8c-posts-list__view-all:focus, button:focus[data-load-more-btn], button.has-focus:not(#toggle-toc),
-.has-focus.button,
-input.has-focus[type="submit"],
-.has-focus.wp-block-button__link, .has-focus.a8c-posts-list__view-all, button.has-focus[data-load-more-btn] {
+.wp-block-button__link:hover, .a8c-posts-list__view-all:hover, button:hover[data-load-more-btn],
+.button:hover, input:focus[type="submit"],
+.wp-block-button__link:focus, .a8c-posts-list__view-all:focus, button:focus[data-load-more-btn],
+.button:focus, input.has-focus[type="submit"],
+.has-focus.wp-block-button__link, .has-focus.a8c-posts-list__view-all, button.has-focus[data-load-more-btn],
+.has-focus.button {
 	color: var(--button--color-text-hover);
 	background-color: var(--button--color-background-hover);
 }
@@ -4087,6 +4078,14 @@ img#wpstats {
 	margin-top: calc(0.5 * var(--global--spacing-vertical));
 }
 
+.home .entry-header {
+	display: none;
+}
+
+.home .site-main {
+	padding-top: 0;
+}
+
 /**
  * Jetpack styles
  */
@@ -4387,10 +4386,9 @@ img#wpstats {
 	}
 }
 
-button:not(#toggle-toc),
-.button,
 input[type="submit"],
-.wp-block-button__link, .a8c-posts-list__view-all, button[data-load-more-btn] {
+.wp-block-button__link, .a8c-posts-list__view-all, button[data-load-more-btn],
+.button {
 	line-height: var(--button--line-height);
 	color: var(--button--color-text);
 	cursor: pointer;
@@ -4404,51 +4402,43 @@ input[type="submit"],
 	padding: var(--button--padding-vertical) var(--button--padding-horizontal);
 }
 
-button:not(#toggle-toc):before,
-.button:before,
 input[type="submit"]:before,
-.wp-block-button__link:before, .a8c-posts-list__view-all:before, button[data-load-more-btn]:before, button:not(#toggle-toc):after,
-.button:after,
-input[type="submit"]:after,
-.wp-block-button__link:after, .a8c-posts-list__view-all:after, button[data-load-more-btn]:after {
+.wp-block-button__link:before, .a8c-posts-list__view-all:before, button[data-load-more-btn]:before,
+.button:before, input[type="submit"]:after,
+.wp-block-button__link:after, .a8c-posts-list__view-all:after, button[data-load-more-btn]:after,
+.button:after {
 	content: '';
 	display: block;
 	height: 0;
 	width: 0;
 }
 
-button:not(#toggle-toc):before,
-.button:before,
 input[type="submit"]:before,
-.wp-block-button__link:before, .a8c-posts-list__view-all:before, button[data-load-more-btn]:before {
+.wp-block-button__link:before, .a8c-posts-list__view-all:before, button[data-load-more-btn]:before,
+.button:before {
 	margin-bottom: -calc(.5em * var(--button--line-height) + -.38);
 }
 
-button:not(#toggle-toc):after,
-.button:after,
 input[type="submit"]:after,
-.wp-block-button__link:after, .a8c-posts-list__view-all:after, button[data-load-more-btn]:after {
+.wp-block-button__link:after, .a8c-posts-list__view-all:after, button[data-load-more-btn]:after,
+.button:after {
 	margin-top: -calc(.5em * var(--button--line-height) + -.39);
 }
 
-button:active:not(#toggle-toc),
-.button:active,
 input:active[type="submit"],
-.wp-block-button__link:active, .a8c-posts-list__view-all:active, button:active[data-load-more-btn] {
+.wp-block-button__link:active, .a8c-posts-list__view-all:active, button:active[data-load-more-btn],
+.button:active {
 	color: var(--button--color-text-active);
 	background-color: var(--button--color-background-active);
 }
 
-button:hover:not(#toggle-toc),
-.button:hover,
 input:hover[type="submit"],
-.wp-block-button__link:hover, .a8c-posts-list__view-all:hover, button:hover[data-load-more-btn], button:focus:not(#toggle-toc),
-.button:focus,
-input:focus[type="submit"],
-.wp-block-button__link:focus, .a8c-posts-list__view-all:focus, button:focus[data-load-more-btn], button.has-focus:not(#toggle-toc),
-.has-focus.button,
-input.has-focus[type="submit"],
-.has-focus.wp-block-button__link, .has-focus.a8c-posts-list__view-all, button.has-focus[data-load-more-btn] {
+.wp-block-button__link:hover, .a8c-posts-list__view-all:hover, button:hover[data-load-more-btn],
+.button:hover, input:focus[type="submit"],
+.wp-block-button__link:focus, .a8c-posts-list__view-all:focus, button:focus[data-load-more-btn],
+.button:focus, input.has-focus[type="submit"],
+.has-focus.wp-block-button__link, .has-focus.a8c-posts-list__view-all, button.has-focus[data-load-more-btn],
+.has-focus.button {
 	color: var(--button--color-text-hover);
 	background-color: var(--button--color-background-hover);
 }
