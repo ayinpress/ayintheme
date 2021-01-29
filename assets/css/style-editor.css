@@ -112,8 +112,8 @@
 	--heading--line-height-h1: var(--heading--line-height);
 	--heading--font-weight: normal;
 	--heading--font-weight-strong: 900;
-	--latest-posts--title-font-family: var(--heading--font-family);
-	--latest-posts--title-font-size: var(--heading--font-size-h3);
+	--latest-posts--title-font-family: var(--global--font-primary);
+	--latest-posts--title-font-size: var(--heading--font-size-h4);
 	--latest-posts--description-font-family: var(--global--font-secondary);
 	--latest-posts--description-font-size: var(--global--font-size-sm);
 	--layout-grid--gutter-none: 0px;
