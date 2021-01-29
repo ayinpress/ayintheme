@@ -4086,6 +4086,10 @@ img#wpstats {
 	padding-top: 0;
 }
 
+.home .site-main .entry-content {
+	margin-top: 0;
+}
+
 /**
  * Jetpack styles
  */
