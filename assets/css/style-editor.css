@@ -1186,7 +1186,16 @@ p.has-background {
 .wp-block-separator,
 hr {
 	border-bottom: var(--separator--height) solid var(--separator--border-color);
-	clear: both;
+}
+
+.wp-block-separator:after,
+hr:after {
+	content: "";
+	display: block;
+	height: 8px;
+	background-image: url(/wp-content/themes/ayintheme/assets/img/diamond-border.svg);
+	bottom: 0;
+	left: 0;
 }
 
 .wp-block-separator[style*="text-align:right"], .wp-block-separator[style*="text-align: right"],

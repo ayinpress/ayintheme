@@ -30,7 +30,7 @@ get_header();
 				}
 
 				if ( $journal_number !== false ){
-					$toc = new WP_Query( array( 'category_slug' => $journal_number )  );
+					$toc = new WP_Query( array( 'category_slug' => $journal_number, 'nopaging' => true )  );
 					if ( $toc->posts ){
 
 						echo( 
