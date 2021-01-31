@@ -2435,10 +2435,19 @@ hr {
 }
 
 hr.wp-block-separator {
-	border-bottom: var(--separator--height) solid var(--separator--border-color);
+	border-bottom: none;
 	/**
 		 * Block Options
 		 */
+}
+
+hr.wp-block-separator:after {
+	content: "";
+	display: block;
+	height: 8px;
+	background-image: url(/wp-content/themes/ayintheme/assets/img/diamond-border.svg);
+	bottom: 0;
+	left: 0;
 }
 
 hr.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
