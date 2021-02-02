@@ -12,10 +12,6 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<header class="entry-header default-max-width">
-		<?php get_template_part( 'template-parts/header/entry-header' ); ?>
-	</header>
-
 	<div class="entry-content">
 		<?php
 		the_content();
