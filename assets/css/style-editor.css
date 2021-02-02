@@ -250,7 +250,7 @@
  */
 :root {
 	--responsive--spacing-horizontal: calc(2 * var(--global--spacing-horizontal));
-	--responsive--aligndefault-width: calc(100vw - var(--responsive--spacing-horizontal));
+	--responsive--aligndefault-width: calc(100vw - 16px);
 	--responsive--alignwide-width: calc(100vw - var(--responsive--spacing-horizontal));
 	--responsive--alignfull-width: 100%;
 	--responsive--alignrightleft-width: var(--global--spacing-horizontal);

@@ -26,9 +26,9 @@
 	top: 0;
 	z-index: 9999;
 
-	.admin-bar & {
-		top: 32px;
-	}
+	// .admin-bar & {
+	// 	top: 32px;
+	// }
 
 	.has-main-navigation & {
 		// padding-top: calc(4 * var(--global--spacing-vertical));
@@ -49,8 +49,10 @@
  * - Add double vertical margins here for clearer heirarchy
  */
 .site-main > * {
-	margin-top: calc(2 * var(--global--spacing-vertical));
-	margin-bottom: calc(3 * var(--global--spacing-vertical));
+	@include media(desktop){
+		margin-top: calc(2 * var(--global--spacing-vertical));
+		margin-bottom: calc(3 * var(--global--spacing-vertical));
+	}
 
 	&:first-child {
 		margin-top: 0;

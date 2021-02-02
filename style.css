@@ -412,7 +412,7 @@ Included in theme screenshot and in block patterns.
  */
 :root {
 	--responsive--spacing-horizontal: calc(2 * var(--global--spacing-horizontal));
-	--responsive--aligndefault-width: calc(100vw - var(--responsive--spacing-horizontal));
+	--responsive--aligndefault-width: calc(100vw - 16px);
 	--responsive--alignwide-width: calc(100vw - var(--responsive--spacing-horizontal));
 	--responsive--alignfull-width: 100%;
 	--responsive--alignrightleft-width: var(--global--spacing-horizontal);
@@ -495,17 +495,15 @@ Included in theme screenshot and in block patterns.
 	z-index: 9999;
 }
 
-.admin-bar .site-header {
-	top: 32px;
-}
-
 /**
  * Site-main children wrappers
  * - Add double vertical margins here for clearer heirarchy
  */
-.site-main > * {
-	margin-top: calc(2 * var(--global--spacing-vertical));
-	margin-bottom: calc(3 * var(--global--spacing-vertical));
+@media only screen and (min-width: 822px) {
+	.site-main > * {
+		margin-top: calc(2 * var(--global--spacing-vertical));
+		margin-bottom: calc(3 * var(--global--spacing-vertical));
+	}
 }
 
 .site-main > *:first-child {
