@@ -170,10 +170,10 @@ if ( ! function_exists( 'ayin_the_post_navigation' ) ) :
 			// Previous/next post navigation.
 			the_post_navigation(
 				array(
-					'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next Post', 'ayin' ) . '</span> ' .
+					'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next Work', 'ayin' ) . '</span> ' .
 						'<span class="screen-reader-text">' . __( 'Next post:', 'ayin' ) . '</span> <br/>' .
 						'<span class="post-title">%title</span>',
-					'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous Post', 'ayin' ) . '</span> ' .
+					'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous Work', 'ayin' ) . '</span> ' .
 						'<span class="screen-reader-text">' . __( 'Previous post:', 'ayin' ) . '</span> <br/>' .
 						'<span class="post-title">%title</span>',
 				)
