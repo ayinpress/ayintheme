@@ -4005,7 +4005,7 @@ img#wpstats {
 #journal-toc #toggle-toc {
 	border: none;
 	border-left: 1px solid var(--global--color-border);
-	background: var(--global--color-white);
+	background: var(--global--color-background);
 	padding: 24px;
 	transition: .25s all;
 	width: 44px;
