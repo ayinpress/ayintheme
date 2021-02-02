@@ -1,5 +1,5 @@
-$desktop_nav_height: 130px;
-$mobile_nav_height: 112px;
+$desktop_nav_height: 88px;
+$mobile_nav_height: 88px;
 $button_width_mobile: -48px;
 $button_width: -66px;
 $toc_width: -400px;
@@ -10,6 +10,7 @@ $toc_width_mobile: -100vw;
 	display: grid;
 	grid-template-columns: 48px 1fr;
 	height: calc(100vh - #{$mobile_nav_height});
+	overflow: scroll;
 	position: fixed;
 	left: 100vw;
 	top: $mobile_nav_height;
@@ -66,11 +67,13 @@ $toc_width_mobile: -100vw;
 		}
 	}
 
+	// TOC artists container
 	> div {
 		font-size: var(--global--font-size-lg);
-		padding: calc( 2 * var(--global--spacing-horizontal));
-		padding-top: calc(5 * var(--global--spacing-vertical));
+		padding: var(--global--spacing-horizontal);
+		padding-top: calc(2 * var(--global--spacing-vertical));
 		@include media( laptop ){
+			padding-left: calc( 2 * var(--global--spacing-horizontal) );
 			padding-top: calc(4 * var(--global--spacing-vertical));
 		}
 

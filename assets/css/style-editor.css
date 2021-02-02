@@ -14,14 +14,14 @@
 	/* Font Size */
 	--global--font-size-root: 18px;
 	--global--font-size-ratio: 1.2;
-	--global--font-size-base: 1em;
-	--global--font-size-xs: 14px;
-	--global--font-size-sm: 16px;
-	--global--font-size-md: 18px;
-	--global--font-size-lg: 24px;
-	--global--font-size-xl: 40px;
-	--global--font-size-xxl: 50px;
-	--global--font-size-xxxl: 71px;
+	--global--font-size-base: 1rem;
+	--global--font-size-xs: .8rem;
+	--global--font-size-sm: .9rem;
+	--global--font-size-md: 1rem;
+	--global--font-size-lg: 1.125rem;
+	--global--font-size-xl: 32px;
+	--global--font-size-xxl: 38px;
+	--global--font-size-xxxl: 42px;
 	--global--letter-spacing: normal;
 	/* Font Weight */
 	--global--font-weight: normal;
@@ -221,6 +221,19 @@
 	--wc--mini-cart--button-background-color: var(--button--color-background);
 	--wc--mini-cart--width: calc(25 * var(--global--spacing-unit));
 	--wc--star-rating--color: var(--global--color-alert-warning);
+}
+
+@media only screen and (min-width: 652px) {
+	:root, body {
+		--global--font-size-base: 1.1rem;
+		--global--font-size-xs: .9rem;
+		--global--font-size-sm: 1rem;
+		--global--font-size-md: 1.1rem;
+		--global--font-size-lg: 1.25rem;
+		--global--font-size-xl: 40px;
+		--global--font-size-xxl: 50px;
+		--global--font-size-xxxl: 71px;
+	}
 }
 
 /**
@@ -1260,6 +1273,7 @@ table th,
 pre.wp-block-verse {
 	color: var(--global--color-foreground);
 	font-family: var(--entry-content--font-family);
+	font-size: var(--global--font-size-sm);
 	padding: 0;
 	padding-right: 24px;
 	white-space: pre-wrap;
@@ -1658,7 +1672,7 @@ pre.wp-block-verse {
 .entry-header .artist-credit:after {
 	content: "";
 	display: inline-block;
-	height: 6px;
+	height: 8px;
 	width: 100%;
 	background-image: url(/wp-content/themes/ayintheme/assets/img/diamond-border.svg);
 	bottom: 0;
@@ -1668,6 +1682,12 @@ pre.wp-block-verse {
 .entry-header .entry-title {
 	font-size: var(--heading--font-size-h2);
 	margin-bottom: 0;
+}
+
+@media only screen and (min-width: 652px) {
+	.entry-header .entry-title {
+		white-space: nowrap;
+	}
 }
 
 /**

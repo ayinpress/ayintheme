@@ -103,8 +103,10 @@
 			const journalToc = document.getElementById('journal-toc');
 			if ( journalToc.classList.contains('open')){
 				journalToc.classList.remove('open');
+				document.body.classList.remove( 'lock-scrolling' );
 			} else {
 				journalToc.classList.add('open');
+				document.body.classList.add( 'lock-scrolling' );
 			}
 		});
 	}

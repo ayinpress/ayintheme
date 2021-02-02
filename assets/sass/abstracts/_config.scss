@@ -16,15 +16,25 @@ $typescale-ratio: 1.2; // Run ratio math on 1em == $typescale-base * $typescale-
 	/* Font Size */
 	--global--font-size-root: #{$typescale-root};
 	--global--font-size-ratio: #{$typescale-ratio};
-	--global--font-size-base: #{$typescale-base};
-	--global--font-size-xs: 14px;
-	--global--font-size-sm: 16px;
-	--global--font-size-md: 18px;
-	--global--font-size-lg: 24px;
-	--global--font-size-xl: 40px;
-	--global--font-size-xxl: 50px;
-	--global--font-size-xxxl: 71px;
+	--global--font-size-base: 1rem;
+	--global--font-size-xs: .8rem;
+	--global--font-size-sm: .9rem;
+	--global--font-size-md: 1rem;
+	--global--font-size-lg: 1.125rem;
+	--global--font-size-xl: 32px;
+	--global--font-size-xxl: 38px;
+	--global--font-size-xxxl: 42px;
 	--global--letter-spacing: normal;
+	@include media( laptop ){
+		--global--font-size-base: 1.1rem;
+		--global--font-size-xs: .9rem;
+		--global--font-size-sm: 1rem;
+		--global--font-size-md: 1.1rem;
+		--global--font-size-lg: 1.25rem;
+		--global--font-size-xl: 40px;
+		--global--font-size-xxl: 50px;
+		--global--font-size-xxxl: 71px;
+	}
 
 	/* Font Weight */
 	--global--font-weight: normal;
