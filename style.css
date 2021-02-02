@@ -1266,7 +1266,7 @@ figcaption,
 	line-height: var(--global--line-height-body);
 	margin-top: calc(0.5 * var(--global--spacing-unit));
 	margin-bottom: var(--global--spacing-unit);
-	text-align: left;
+	text-align: center;
 }
 
 .alignleft figcaption,
