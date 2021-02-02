@@ -33,18 +33,30 @@ get_header();
 					$toc = new WP_Query( array( 'category_slug' => $journal_number, 'nopaging' => true )  );
 					if ( $toc->posts ){
 
+						$artists = array();
+
+						foreach ($toc->posts as $work){
+							$artist = new stdClass();
+							$artist->name = 'Anonymous';
+
+							// This is an ACF function so would error if not installed
+							if ( function_exists( 'get_field' ) ) {
+								$artist->name = get_field( 'artist_name' , $work->ID );
+								$artist->permalink = get_permalink( $work->ID );
+							}
+
+							$artists[] = $artist;
+						}
+
+						usort($artists, function($a, $b){ return strcmp($a->name, $b->name); });
+
 						echo( 
 							sprintf('<section id="journal-toc"><button id="toggle-toc"><span>Table of Contents</span></button><div><p class="journal-title">%1$s</p><ul>', 
 								$journal_name ) 
 						);
-						foreach ($toc->posts as $work){
-							$artist_name = 'Anonymous';
-							// This is an ACF function so would error if not installed
-							if ( function_exists( 'get_field' ) ) {
-								$artist_name = get_field( 'artist_name' , $work->ID );
-							}
-							$work_permalink = get_permalink( $work->ID );
-							echo(sprintf( '<li><a href="%1$s">%2$s</a></li>', $work_permalink, $artist_name ) );
+
+						foreach ($artists as $artist){
+							echo(sprintf( '<li><a href="%1$s">%2$s</a></li>', $artist->permalink, $artist->name ) );
 						}
 
 						echo( '</ul></div></section>');
