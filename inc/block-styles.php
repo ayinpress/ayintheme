@@ -21,6 +21,14 @@ if ( function_exists( 'register_block_style' ) ) {
 			)
 		);
 		register_block_style(
+			'core/paragraph',
+			array(
+				'name'         => 'ayin-caption',
+				'label'        => __( 'Caption', 'ayin' ),
+				'style_handle' => 'ayin-caption',
+			)
+		);
+		register_block_style(
 			'core/group',
 			array(
 				'name'         => 'ayin-poetry',

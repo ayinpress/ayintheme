@@ -1,4 +1,5 @@
 /* Media captions */
+p.is-style-ayin-caption,
 figcaption,
 .wp-caption,
 .wp-caption-text {
@@ -13,6 +14,10 @@ figcaption,
 	.alignleft &,
 	.alignright & {
 		margin-bottom: 0;
+	}
+
+	&.has-text-align-left {
+		text-align: left;
 	}
 }
 
