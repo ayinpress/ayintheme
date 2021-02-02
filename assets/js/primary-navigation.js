@@ -88,7 +88,7 @@
 	document.addEventListener('scroll', function(){
 		currentScrollY = window.scrollY;
 		
-		if ( currentScrollY > lastScrollY  && currentScrollY - lastScrollY > minScrollDiff ){
+		if ( currentScrollY > lastScrollY && currentScrollY - lastScrollY > minScrollDiff ){
 			header.classList.add( 'scroll-up' );
 		} else if ( lastScrollY - currentScrollY > minScrollDiff ) {
 			header.classList.remove( 'scroll-up' );

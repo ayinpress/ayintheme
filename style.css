@@ -3000,9 +3000,12 @@ pre.wp-block-verse {
 	background-color: var(--global--color-background);
 	border-bottom: 1px solid var(--global--color-border);
 	color: var(--branding--color-text);
+	height: 130px;
 	margin-bottom: 0;
 	padding: var(--global--spacing-vertical) 0;
 	text-align: center;
+	transition: all .25s ease-in-out;
+	transition-delay: .25s;
 }
 
 .site-title {
@@ -3070,9 +3073,10 @@ nav a {
 }
 
 .site-logo .custom-logo {
-	max-width: var(--branding--logo--max-width);
-	max-height: var(--branding--logo--max-height);
 	height: auto;
+	width: 120px;
+	transition: .25s all ease-in-out;
+	transition-delay: .25s;
 }
 
 @media only screen and (max-width: 481px) {
@@ -3080,6 +3084,15 @@ nav a {
 		--branding--logo--max-width: var(--branding--logo--max-width-mobile);
 		--branding--logo--max-height: var(--branding--logo--max-height-mobile);
 	}
+}
+
+.scroll-up .site-branding {
+	height: 88px;
+	padding-top: 20px;
+}
+
+.scroll-up .site-branding .custom-logo {
+	width: 88px;
 }
 
 .social-navigation > div > ul {
