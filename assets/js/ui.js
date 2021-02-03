@@ -111,4 +111,14 @@
 		});
 	}
 
+	if ( bodymovin ){
+		var animation = bodymovin.loadAnimation({
+			container: document.getElementsByClassName('custom-logo-link')[0],// Required
+			path: '/wp-content/themes/ayintheme/assets/img/ayin-logo-animation.json', // Required
+			renderer: 'svg', // Required
+			loop: false, // Optional
+			autoplay: true, // Optional
+		});
+	}
+
 } )();

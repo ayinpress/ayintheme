@@ -285,8 +285,9 @@ function ayin_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-	// Main navigation scripts
-	wp_enqueue_script( 'ayin-ui-js', get_template_directory_uri() . '/assets/js/ui.js', array(), wp_get_theme()->get( 'Version' ), true );
+	// UI scripts
+	wp_enqueue_script( 'ayin-lottie', 'https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie_svg.min.js', array(), wp_get_theme()->get( 'Version' ), true );
+	wp_enqueue_script( 'ayin-ui-js', get_template_directory_uri() . '/assets/js/ui.js', array( 'ayin-lottie' ), wp_get_theme()->get( 'Version' ), true );
 }
 add_action( 'wp_enqueue_scripts', 'ayin_scripts' );
 

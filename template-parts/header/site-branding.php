@@ -18,7 +18,7 @@ $header_class = $show_title ? 'site-title' : 'screen-reader-text';
 
 <div class="site-branding">
 	<?php if ( has_custom_logo() && ! $show_title ) : ?>
-		<div class="site-logo"><?php the_custom_logo(); ?></div>
+		<div class="site-logo" id="site-logo-container"><?php the_custom_logo(); ?></div>
 	<?php endif; ?>
 	<?php if ( ! empty( $blog_info ) && $show_title ) : ?>
 		<?php if ( is_front_page() && is_home() ) : ?>
