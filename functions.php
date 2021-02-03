@@ -198,60 +198,6 @@ if ( ! function_exists( 'ayin_setup' ) ) :
 			)
 		);
 
-		$gradient_color_a = $secondary;
-		$gradient_color_b = $tertiary;
-
-		add_theme_support(
-			'editor-gradient-presets',
-			array(
-				array(
-					'name'     => __( 'Diagonal', 'ayin' ),
-					'gradient' => 'linear-gradient(to bottom right, ' . $gradient_color_a . ' 49.9%, ' . $gradient_color_b . ' 50%)',
-					'slug'     => 'hard-diagonal',
-				),
-				array(
-					'name'     => __( 'Diagonal inverted', 'ayin' ),
-					'gradient' => 'linear-gradient(to top left, ' . $gradient_color_a . ' 49.9%, ' . $gradient_color_b . ' 50%)',
-					'slug'     => 'hard-diagonal-inverted',
-				),
-				array(
-					'name'     => __( 'Horizontal', 'ayin' ),
-					'gradient' => 'linear-gradient(to bottom, ' . $gradient_color_a . ' 50%, ' . $gradient_color_b . ' 50%)',
-					'slug'     => 'hard-horizontal',
-				),
-				array(
-					'name'     => __( 'Horizontal inverted', 'ayin' ),
-					'gradient' => 'linear-gradient(to top, ' . $gradient_color_a . ' 50%, ' . $gradient_color_b . ' 50%)',
-					'slug'     => 'hard-horizontal-inverted',
-				),
-				array(
-					'name'     => __( 'Diagonal gradient', 'ayin' ),
-					'gradient' => 'linear-gradient(to bottom right, ' . $gradient_color_a . ', ' . $gradient_color_b . ')',
-					'slug'     => 'diagonal',
-				),
-				array(
-					'name'     => __( 'Diagonal inverted gradient', 'ayin' ),
-					'gradient' => 'linear-gradient(to top left, ' . $gradient_color_a . ', ' . $gradient_color_b . ')',
-					'slug'     => 'diagonal-inverted',
-				),
-				array(
-					'name'     => __( 'Horizontal gradient', 'ayin' ),
-					'gradient' => 'linear-gradient(to bottom, ' . $gradient_color_a . ', ' . $gradient_color_b . ')',
-					'slug'     => 'horizontal',
-				),
-				array(
-					'name'     => __( 'Horizontal inverted gradient', 'ayin' ),
-					'gradient' => 'linear-gradient(to top, ' . $gradient_color_a . ', ' . $gradient_color_b . ')',
-					'slug'     => 'horizontal-inverted',
-				),
-				array(
-					'name'     => __( 'Stripe', 'ayin' ),
-					'gradient' => 'linear-gradient(to bottom, transparent 20%, ' . $gradient_color_a . ' 20%, ' . $gradient_color_a . ' 80%, transparent 80%)',
-					'slug'     => 'stripe',
-				),
-			)
-		);
-
 		// Add support for responsive embedded content.
 		add_theme_support( 'responsive-embeds' );
 
@@ -340,22 +286,7 @@ function ayin_scripts() {
 	}
 
 	// Main navigation scripts
-	wp_enqueue_script( 'ayin-primary-navigation-script', get_template_directory_uri() . '/assets/js/primary-navigation.js', array(), wp_get_theme()->get( 'Version' ), true );
-
-	// Note, the is_IE global variable is defined by WordPress and is used
-	// to detect if the current browser is internet explorer.
-	global $is_IE;
-	if ( $is_IE ) {
-		// If IE 11 or below, use a ponyfill to add CSS Variable support
-		wp_register_script( 'css-vars-ponyfill', get_stylesheet_directory_uri() . '/assets/js/css-vars-ponyfill2.js' );
-		wp_enqueue_script(
-			'ie11-fix',
-			get_stylesheet_directory_uri() . '/assets/js/ie11-fix.js',
-			array( 'css-vars-ponyfill' ),
-			'1.0'
-		);
-	}
-
+	wp_enqueue_script( 'ayin-ui-js', get_template_directory_uri() . '/assets/js/ui.js', array(), wp_get_theme()->get( 'Version' ), true );
 }
 add_action( 'wp_enqueue_scripts', 'ayin_scripts' );
 
@@ -413,13 +344,6 @@ if ( ! function_exists( 'ayin_author_bio' ) ) {
  * SVG Icons class.
  */
 require get_template_directory() . '/classes/class-ayin-svg-icons.php';
-
-/**
- * Custom colors class.
- */
-if ( ! class_exists( 'Colors_Manager' ) ) { // Check for presence of wpcom color manager to avoid duplicate color customization functionality.
-	require get_template_directory() . '/classes/class-ayin-custom-colors.php';
-}
 
 /**
  * Enhance the theme by hooking into WordPress.
