@@ -120,5 +120,18 @@
 			autoplay: true, // Optional
 		});
 	}
+	
+	if (baguetteBox){
+		var options = {
+			captions: function (t) {
+				var e = t.parentElement.getElementsByTagName("figcaption")[0];
+				return !!e && e.innerHTML;
+			},
+			filter: /.+\.(gif|jpe?g|png|webp|svg)/i,
+		};
+		baguetteBox.run(".wp-block-gallery", options);
+		baguetteBox.run(".gallery", options);
+		baguetteBox.run(".wp-block-image", options);
+	}
 
 } )();
