@@ -1695,12 +1695,6 @@ pre.wp-block-verse {
 	margin-bottom: 0;
 }
 
-@media only screen and (min-width: 652px) {
-	.entry-header .entry-title {
-		white-space: nowrap;
-	}
-}
-
 /**
  * Entry Content
  */

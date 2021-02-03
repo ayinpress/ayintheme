@@ -56,8 +56,8 @@
 	.entry-title {
 		font-size: var(--heading--font-size-h2);
 		margin-bottom: 0;
-		@include media( laptop ){
-			white-space: nowrap;
-		}
+		// @include media( laptop ){
+		// 	white-space: nowrap;
+		// }
 	}
 }

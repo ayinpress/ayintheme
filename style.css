@@ -3329,12 +3329,6 @@ nav a {
 	margin-bottom: 0;
 }
 
-@media only screen and (min-width: 652px) {
-	.entry-header .entry-title {
-		white-space: nowrap;
-	}
-}
-
 /**
  * Entry Content
  */
