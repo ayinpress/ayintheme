@@ -4111,6 +4111,49 @@ img#wpstats {
 	}
 }
 
+.journal-page-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: var(--global--spacing-vertical);
+}
+
+@media only screen and (min-width: 652px) {
+	.journal-page-container {
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: calc(2 * var(--global--spacing-horizontal));
+	}
+}
+
+.journal-page-container hr {
+	margin: 24px 0 32px;
+}
+
+.journal-page-container .journal-column ul {
+	columns: 2;
+	-webkit-columns: 2;
+	-moz-columns: 2;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.journal-page-container .journal-column ul > li {
+	line-height: 1.3;
+	margin-bottom: 16px;
+}
+
+.journal-page-container .journal-column ul > li > img {
+	display: none;
+}
+
+.journal-page-container .journal-column #journal-work-preview {
+	background-color: grey;
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+	min-height: 300px;
+	width: 100%;
+}
+
 .sticky-post {
 	color: var(--global--color-background);
 	background-color: var(--global--color-secondary);

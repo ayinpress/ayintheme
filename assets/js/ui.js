@@ -82,7 +82,7 @@
 	});
 
 	let lastScrollY, currentScrollY = 0;
-	const minScrollDiff = 12;
+	const minScrollDiff = 8;
 	const header = document.getElementById('masthead');
 
 	document.addEventListener('scroll', function(){
@@ -133,6 +133,22 @@
 		baguetteBox.run(".wp-block-gallery", options);
 		baguetteBox.run(".gallery", options);
 		baguetteBox.run(".wp-block-image", options);
+	}
+
+	const journalPreview = document.getElementById('journal-work-preview');
+
+	if (journalPreview){
+		journalPreview.style.backgroundImage = "url(/wp-content/uploads/2021/01/JillHammer_FeaturedImage_R1.jpg)";
+
+		var journalArtists = document.getElementsByClassName('journal-artist-preview');
+		for ( var i in journalArtists ){
+			if (typeof(journalArtists[i]) === 'object'){
+				const thumbnail = journalArtists[i].dataset.thumbnail;
+				journalArtists[i].addEventListener('mouseover', function(){
+					document.getElementById('journal-work-preview').style.backgroundImage = `url(${thumbnail}`;
+				});
+			}
+		}
 	}
 
 } )();
