@@ -1,175 +1,75 @@
 /**
  * Single Product Page
  */
-.single-product #page #woocommerce-wrapper { // adding #content here to override default wc styles without !important
+.single-product #page #woocommerce-wrapper {
+	.product_title {
+		display: inline-block;
+		margin-bottom: 0;
+		width: 85%;
+	}
 
-	div.product {
+	.price {
+		width: 15%;
+		display: inline-block;
+		color: black;
+		text-align: right;
+		margin-bottom: 0;
+		white-space: nowrap;
+	}
 
-		div.images {
-			margin-bottom: var(--global--spacing-vertical);
+	.label {
+		font-family: var(--global--font-primary);
+	}
 
-			div.thumbnails {
-				padding-top: var(--global--spacing-unit);
-			}
+	.woocommerce-product-details__short-description {
+		margin-top: 0;
+		p {
+			margin-top: 0;
+		}
+	}
 
-			.woocommerce-product-gallery__wrapper .zoomImg {
-				background-color: var(--global--color-background);
-			}
+	.woocommerce-loop-product__title {
+		font-size: var(--global--font-size-lg);
+	}
 
-			.woocommerce-product-gallery__image--placeholder {
-				border-color: var(--global--color-border);
-			}
+	.variations select {
+		padding: 8px;
+	}
 
-			.woocommerce-product-gallery__trigger {
-				font-size: var(--global--font-size-md);
-				background: var(--global--color-background);
+	h2 {
+		font-size: var(--global--font-size-xl);
+	}
 
-				&::before {
-					border-color: var(--global--color-border);
-				}
+	p {
+		max-width: var(--responsive--aligndefault-width);
+		margin: var(--global--spacing-vertical) 0;
+	}
 
-				&::after {
-					background-color: var(--global--color-border);
-				}
-			}
+	td.value {
+		padding: 0;
+		text-align: right;
+
+		select {
+			margin-right: 0;
 		}
 
-		div.summary {
-
-			margin-bottom: var(--global--spacing-vertical);
-
-			span.price,
-			p.price {
-				color: var(--global--color-foreground-high-contrast);
-				font-size: var(--global--font-size-xl);
-				line-height: var(--global--line-height-heading);
-
-				del {
-					color: currentColor;
-					opacity: 0.5;
-					display: inline-block;
-				}
-
-				ins {
-					background: none;
-					font-weight: 700;
-					display: inline-block;
-				}
-
-				.from {
-					font-size: var(--global--font-size-xs);
-					color: var(--global--color-alert-warning);
-				}
-			}
-
-			p.stock {
-				font-size: var(--global--font-size-base);
-			}
-
-			.stock {
-				color: var(--global--color-primary);
-			}
-
-			.out-of-stock {
-				color: red;
-			}
-
-			.entry-title + .woocommerce-product-rating {
-				margin-top: calc(-1 * var(--global--spacing-vertical));
-			}
-
+		.reset_variations {
+			display: none !important;
 		}
+	}
 
-		.product_meta > * {
-			display: block;
+	.cart:not(.variations_form),
+	.woocommerce-variation-add-to-cart {
+		display: flex;
+		justify-content: flex-start;
+
+		button {
+			margin-left: var(--global--spacing-horizontal);
+			padding: 0 var(--global--spacing-horizontal);
 		}
+	}
 
-		// Sale
-		& > .onsale {
-			right: auto;
-			left: -0.5em;
-		}
-
-		&.sale div.summary .span.price,
-		&.sale div.summary p.price {
-			ins {
-				color: var(--global--color-alert-success);
-			}
-		}
-
-		// Social
-		div.social {
-			margin-bottom: var(--global--spacing-vertical);
-		}
-
-		.up-sells {
-			& > h2 {
-				font-size: var(--global--font-size-lg);
-			}
-		}
-
-		// Add to cart form
-		p.cart {
-			margin-bottom: var(--global--spacing-vertical);
-		}
-
-		form.cart {
-
-			.variations {
-				margin-bottom: var(--global--spacing-unit);
-
-				td,
-				th {
-					line-height: var(--global--line-height-body);
-				}
-
-				select {
-					margin-right: var(--global--spacing-unit);
-				}
-
-				td.label {
-					padding-right: var(--global--spacing-unit);
-				}
-			}
-
-			.woocommerce-variation-description p {
-				margin-bottom: var(--global--spacing-unit);
-			}
-
-			.reset_variations {
-				font-size: var(--global--font-size-sm);
-			}
-
-			.group_table {
-
-				td.woocommerce-grouped-product-list-item__label {
-					padding-right: var(--global--spacing-unit);
-					padding-left: var(--global--spacing-unit);
-				}
-
-				td {
-					padding-bottom: var(--global--spacing-unit);
-				}
-			}
-
-			div.quantity,
-			button {
-
-				float: inherit;
-				display: inline-block;
-				vertical-align: middle;
-
-				&.hidden {
-					display: none;
-				}
-			}
-		}
-
-		.woo_pp_cart_buttons_div {
-			text-align: left;
-			.wcppec-checkout-buttons__button {
-				padding-top: 0;
-			}
-		}
+	.woocommerce-variation-add-to-cart {
+		justify-content: space-between;
 	}
 }

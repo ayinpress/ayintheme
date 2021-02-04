@@ -29,9 +29,17 @@ body[class*="woocommerce"] #page .cart-collaterals .cross-sells {
 		}
 
 		h3,
-		.woocommerce-loop-product__title,
 		.woocommerce-loop-category__title {
 			padding: inherit;
+			font-size: var(--global--font-size-base);
+		}
+
+		.woocommerce-loop-product__title {
+			font-size: var(--global--font-size-lg);
+		}
+
+		.woocommerce-product-details__short-description {
+			font-family: var(--global--font-primary);
 			font-size: var(--global--font-size-base);
 		}
 

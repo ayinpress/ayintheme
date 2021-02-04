@@ -4133,15 +4133,6 @@ img#wpstats {
 	}
 }
 
-.page-title {
-	font-size: var(--heading--font-size-h4);
-}
-
-.archive-description p {
-	font-size: var(--global--font-size-sm);
-	margin-top: calc(0.5 * var(--global--spacing-vertical));
-}
-
 .home .entry-header {
 	display: none;
 }
