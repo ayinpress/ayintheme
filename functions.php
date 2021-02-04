@@ -288,7 +288,7 @@ function ayin_scripts() {
 
 	// UI scripts
 	wp_enqueue_script( 'ayin-lottie', 'https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie_svg.min.js', array(), wp_get_theme()->get( 'Version' ), true );
-	wp_enqueue_script( 'baguettebox', get_template_directory_uri() . '/assets/vendor/baguetteBox.min.js', wp_get_theme()->get( 'Version' ), true );
+	wp_enqueue_script( 'baguettebox', get_template_directory_uri() . '/assets/vendor/baguetteBox.min.js', array(), false );
 	wp_enqueue_script( 'ayin-ui-js', get_template_directory_uri() . '/assets/js/ui.js', array( 'ayin-lottie', 'baguettebox' ), wp_get_theme()->get( 'Version' ), true );
 }
 add_action( 'wp_enqueue_scripts', 'ayin_scripts' );

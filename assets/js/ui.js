@@ -122,7 +122,7 @@
 		});
 	}
 	
-	if (baguetteBox){
+	if ( typeof(baguetteBox) !== 'undefined' && baguetteBox.run ){
 		var options = {
 			captions: function (t) {
 				var e = t.parentElement.getElementsByTagName("figcaption")[0];
