@@ -9,15 +9,10 @@
 	padding: var(--global--spacing-vertical) 0;
 	text-align: center;
 	transition: all .25s ease-in-out;
-	transition-delay: .25s;
+	// transition-delay: .25s;
 	.site-logo {
 		transition: all .25s ease-in-out;
 	}
-
-	// // Lottie
-	// svg {
-	// 	transition: all .25s ease-in-out;
-	// }
 }
 
 // Site title

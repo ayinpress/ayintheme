@@ -3034,7 +3034,6 @@ pre.wp-block-verse {
 	padding: var(--global--spacing-vertical) 0;
 	text-align: center;
 	transition: all .25s ease-in-out;
-	transition-delay: .25s;
 }
 
 .site-branding .site-logo {
@@ -4060,7 +4059,7 @@ img#wpstats {
 @media only screen and (min-width: 652px) {
 	#journal-toc > div {
 		padding-left: calc( 2 * var(--global--spacing-horizontal));
-		padding-top: calc(4 * var(--global--spacing-vertical));
+		padding-top: calc(5 * var(--global--spacing-vertical));
 	}
 }
 

@@ -74,7 +74,7 @@ $toc_width_mobile: -100vw;
 		padding-top: calc(2 * var(--global--spacing-vertical));
 		@include media( laptop ){
 			padding-left: calc( 2 * var(--global--spacing-horizontal) );
-			padding-top: calc(4 * var(--global--spacing-vertical));
+			padding-top: calc(5 * var(--global--spacing-vertical));
 		}
 
 		p.journal-title{

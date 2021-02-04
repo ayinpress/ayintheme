@@ -106,6 +106,7 @@
 				document.body.classList.remove( 'lock-scrolling' );
 			} else {
 				journalToc.classList.add('open');
+				header.classList.add( 'scroll-up' ); 
 				document.body.classList.add( 'lock-scrolling' );
 			}
 		});
