@@ -112,7 +112,7 @@
 		});
 	}
 
-	if ( bodymovin ){
+	if ( typeof( bodymovin ) !== 'undefined' && bodymovin.loadAnimation ){
 		var animation = bodymovin.loadAnimation({
 			container: document.getElementsByClassName('custom-logo-link')[0],// Required
 			path: '/wp-content/themes/ayintheme/assets/img/ayin-logo-animation.json', // Required

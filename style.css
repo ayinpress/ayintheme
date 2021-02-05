@@ -3127,7 +3127,7 @@ nav a {
 
 .site-logo {
 	text-align: center;
-	width: 120px;
+	width: 140px;
 	height: 70px;
 	display: inline-block;
 }
@@ -3135,7 +3135,7 @@ nav a {
 .site-logo .custom-logo {
 	display: none;
 	height: auto;
-	width: 120px;
+	width: 140px;
 	transition: .25s all ease-in-out;
 	transition-delay: .25s;
 }
