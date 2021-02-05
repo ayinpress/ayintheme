@@ -1,0 +1,35 @@
+.wp-block-newspack-blocks-homepage-articles {
+	
+	article {
+		.entry-wrapper {
+			p {
+				font-size: var(--global--font-size-sm);;
+			}
+		}
+		.entry-meta {
+			margin-top: 0;
+		}
+		.entry-title {
+			font-weight: normal;
+			margin-top: 16px;
+
+			a {
+				color: var(--global--color-black);
+				&:hover, &:focus, &:active {
+					color: var(--global--color-primary);
+				}
+			}
+		}
+		.byline {
+			font-size: 0;
+			.author {
+				font-size: var(--global--font-size-sm);
+			}
+		}
+		.post-thumbnail {
+			max-height: 380px;
+			overflow: hidden;
+		}
+
+	}
+}

@@ -176,13 +176,7 @@ add_filter( 'nav_menu_link_attributes', 'ayin_nav_menu_link_attributes', 10, 4 )
 function ayin_continue_reading_link() {
 
 	if ( ! is_admin() ) {
-		$continue_reading = sprintf(
-			/* translators: %s: Name of current post. */
-			wp_kses( __( 'Continue reading %s', 'ayin' ), array( 'span' => array( 'class' => array() ) ) ),
-			the_title( '<span class="screen-reader-text">"', '"</span>', false )
-		);
-
-		return '<a class="more-link" href="' . esc_url( get_permalink() ) . '">' . $continue_reading . '</a>';
+		return ' ...';
 	}
 }
 
