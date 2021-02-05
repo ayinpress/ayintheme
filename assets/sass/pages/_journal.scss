@@ -1,4 +1,4 @@
-$desktop_nav_height: 88px;
+$desktop_nav_height: 72px;
 $mobile_nav_height: 88px;
 $button_width_mobile: -48px;
 $button_width: -66px;
@@ -96,6 +96,7 @@ $toc_width_mobile: -100vw;
 			font-weight: 100;
 			font-size: var(--global--font-size-md);
 			list-style-type: none;
+			margin-top: var(--global--spacing-vertical);
 			max-width: 270px;
 			padding: 0;
 

@@ -4033,8 +4033,8 @@ img#wpstats {
 
 @media only screen and (min-width: 652px) {
 	#journal-toc {
-		top: 88px;
-		height: calc(100vh - 88px);
+		top: 72px;
+		height: calc(100vh - 72px);
 		transform: translateX(-66px);
 		min-width: 400px;
 	}
@@ -4107,6 +4107,7 @@ img#wpstats {
 	font-weight: 100;
 	font-size: var(--global--font-size-md);
 	list-style-type: none;
+	margin-top: var(--global--spacing-vertical);
 	max-width: 270px;
 	padding: 0;
 }
