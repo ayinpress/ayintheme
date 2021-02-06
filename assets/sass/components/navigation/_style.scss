@@ -6,11 +6,12 @@
 	margin: 0;
 	left: 0;
 	position: absolute;
-	top: 0;
+	top: 10px;
 	width: 100%;
 
 	@include media( $navigation-max-break-point ){
-		display: block;
+		display: flex;
+		flex-direction: row-reverse;
 		margin: 0;
 	}
 
@@ -22,24 +23,8 @@
 	}
 
 	#primary-open-menu {
-		margin-left: auto;
 		padding: calc(var(--button--padding-vertical) - (0.25 * var(--global--spacing-unit))) calc(var(--button--padding-horizontal) - (0.25 * var(--global--spacing-unit)));
-		margin-top: calc(0.25 * var(--global--spacing-unit));
-		margin-right: calc(0.25 * var(--global--spacing-unit));
-	}
-
-	.admin-bar.lock-scrolling & > .button,
-	.admin-bar:not(.primary-navigation-open) & {
-		top: var(--wpadmin-bar--height);
-	}
-
-	.has-marketing-bar.lock-scrolling & > .button,
-	.has-marketing-bar:not(.primary-navigation-open) & {
-		top: var(--wpcom-marketing-bar--height);
-	}
-	.admin-bar.has-marketing-bar.lock-scrolling & > .button,
-	.admin-bar.has-marketing-bar:not(.primary-navigation-open) & {
-		top: calc(var(--wpadmin-bar--height) + var(--wpcom-marketing-bar--height));
+		margin-right: calc(0.5 * var(--global--spacing-unit));
 	}
 }
 
@@ -49,7 +34,8 @@
 	.button {
 		font-size: var(--primary-nav--font-size);
 		background-color: transparent;
-		color: var(--primary-nav--color-link);
+		border: none;
+		color: var(--global--color-foreground);
 		z-index: 500;
 
 		&.open {
@@ -60,21 +46,15 @@
 			position: absolute;
 			right: 0;
 			z-index: 501;
-			.has-marketing-bar & {
-				top: calc(-1 * var(--wpcom-marketing-bar--height));
-			}
-			.admin-bar & {
-				top: calc(-1 * var(--wpadmin-bar--height));
-			}
-			.admin-bar.has-marketing-bar & {
-				top: calc(-1 * (var(--wpadmin-bar--height) + var(--wpcom-marketing-bar--height)));
-			}
+		}
+
+		&:active, &:focus {
+			color: var(--global--color-black);
 		}
 
 		&#woo-open-menu {
 			padding: calc(var(--button--padding-vertical) - (0.25 * var(--global--spacing-unit))) calc(var(--button--padding-horizontal) - (0.25 * var(--global--spacing-unit)));
-			margin-top: calc(0.25 * var(--global--spacing-unit));
-			margin-left: calc(0.25 * var(--global--spacing-unit));
+			margin-left: calc( .5 * var(--global--spacing-unit));
 
 			.svg-icon {
 				margin-left: 0;
@@ -88,14 +68,8 @@
 			align-items: center;
 
 			.svg-icon {
-				margin-left: calc(0.25 * var(--global--spacing-unit));
-			}
-
-
-			// Menu icon is off-center vertically to prevent blurry pixels.
-			&.open .svg-icon {
-				position: relative;
-				top: -1px;
+				width: 32px;
+				height: 32px;
 			}
 		}
 
@@ -117,19 +91,19 @@
 		#primary-close-menu {
 			display: flex;
 			padding: calc(var(--button--padding-vertical) - (0.25 * var(--global--spacing-unit))) calc(var(--button--padding-horizontal) - (0.25 * var(--global--spacing-unit)));
-			margin-top: calc(0.25 * var(--global--spacing-unit));
-			margin-right: calc(0.25 * var(--global--spacing-unit));
+			margin-top: calc(0.5 * var(--global--spacing-unit));
+			margin-right: calc(0.5 * var(--global--spacing-unit));
 		}
-	}
-	.woo-navigation-open & {
 		#woo-open-menu {
 			display: none;
 		}
+	}
+	.woo-navigation-open & {
 		#woo-close-menu {
 			display: flex;
 			padding: calc(var(--button--padding-vertical) - (0.25 * var(--global--spacing-unit))) calc(var(--button--padding-horizontal) - (0.25 * var(--global--spacing-unit)));
-			margin-top: calc(0.25 * var(--global--spacing-unit));
-			margin-right: calc(0.25 * var(--global--spacing-unit));
+			margin-top: calc(0.5 * var(--global--spacing-unit));
+			margin-right: calc(0.5 * var(--global--spacing-unit));
 		}
 	}
 }
@@ -182,20 +156,20 @@
 	}
 
 	// Adjust positions when logged-in
-	.has-marketing-bar &,
-	.has-marketing-bar & > div {
-		top: var(--wpcom-marketing-bar--height);
-	}
+	// .has-marketing-bar &,
+	// .has-marketing-bar & > div {
+	// 	top: var(--wpcom-marketing-bar--height);
+	// }
 
-	.admin-bar &,
-	.admin-bar & > div {
-		top: var(--wpadmin-bar--height);
-	}
+	// .admin-bar &,
+	// .admin-bar & > div {
+	// 	top: var(--wpadmin-bar--height);
+	// }
 
-	.admin-bar.has-marketing-bar &,
-	.admin-bar.has-marketing-bar & > div {
-		top: calc(var(--wpadmin-bar--height) + var(--wpcom-marketing-bar--height));
-	}
+	// .admin-bar.has-marketing-bar &,
+	// .admin-bar.has-marketing-bar & > div {
+	// 	top: calc(var(--wpadmin-bar--height) + var(--wpcom-marketing-bar--height));
+	// }
 
 	@include media( $navigation-min-break-point ) {
 		position: relative;
@@ -250,6 +224,9 @@
 		max-width: none;
 		padding-left: 0;
 		position: relative;
+		@include media($navigation-min-break-point){
+			flex-wrap: nowrap;
+		}
 
 		ul {
 			padding-left: 0;

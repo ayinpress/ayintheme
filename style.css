@@ -411,8 +411,8 @@ Included in theme screenshot and in block patterns.
  * Root Media Query Variables
  */
 :root {
-	--responsive--spacing-horizontal: calc(2 * var(--global--spacing-horizontal));
-	--responsive--aligndefault-width: calc(100vw - 16px);
+	--responsive--spacing-horizontal: 16px;
+	--responsive--aligndefault-width: calc(100vw - var(--responsive--spacing-horizontal));
 	--responsive--alignwide-width: calc(100vw - var(--responsive--spacing-horizontal));
 	--responsive--alignfull-width: 100%;
 	--responsive--alignrightleft-width: var(--global--spacing-horizontal);
@@ -3148,12 +3148,12 @@ nav a {
 }
 
 .scroll-up .site-branding {
-	height: 88px;
-	padding-top: 12px;
+	height: 82px;
+	padding-top: 8px;
 }
 
 .scroll-up .site-branding .site-logo {
-	transform: scale(0.5);
+	transform: scale(0.6);
 }
 
 .social-navigation > div > ul {
@@ -4008,11 +4008,11 @@ img#wpstats {
 	background: var(--global--color-white);
 	display: grid;
 	grid-template-columns: 48px 1fr;
-	height: calc(100vh - 88px);
+	height: calc(100vh - 82px);
 	overflow: scroll;
 	position: fixed;
 	left: 100vw;
-	top: 88px;
+	top: 82px;
 	transform: translateX(-48px);
 	transition: .25s all;
 	min-width: 100vw;

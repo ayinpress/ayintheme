@@ -34,7 +34,7 @@ $header_classes .= $has_primary_nav ? ' has-menu' : '';
 			<?php if ( $has_primary_nav ) : ?>
 				<nav id="site-navigation" class="primary-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Main', 'ayin' ); ?>">
 					<button id="primary-close-menu" class="button close">
-						<span class="dropdown-icon close"><?php _e( 'Close', 'ayin' ); ?> <?php echo ayin_get_icon_svg( 'close' ); ?></span>
+						<span class="dropdown-icon close"><?php echo ayin_get_icon_svg( 'close' ); ?></span>
 						<span class="hide-visually collapsed-text"><?php _e( 'collapsed', 'ayin' ); ?></span>
 					</button>
 					<?php
@@ -58,7 +58,7 @@ $header_classes .= $has_primary_nav ? ' has-menu' : '';
 						<?php
 						echo( sprintf(
 							'<button id="woo-close-menu" class="button close">
-								<span class="dropdown-icon close">%1$s %2$s</span>
+								<span class="dropdown-icon close">%2$s</span>
 								<span class="hide-visually collapsed-text">%3$s</span>
 							</button>
 							<div class="woocommerce-menu-container">
@@ -89,19 +89,19 @@ $header_classes .= $has_primary_nav ? ' has-menu' : '';
 			<div class="menu-button-container">
 				<?php if ( $has_primary_nav ) : ?>
 					<button id="primary-open-menu" class="button open">
-						<span class="dropdown-icon open"><?php _e( 'Menu', 'ayin' ); ?> <?php echo ayin_get_icon_svg( 'menu' ); ?></span>
+						<span class="dropdown-icon open"><?php echo ayin_get_icon_svg( 'menu' ); ?></span>
 						<span class="hide-visually expanded-text"><?php _e( 'expanded', 'ayin' ); ?></span>
+					</button>
+				<?php endif; ?>
+				<?php if ( class_exists( 'WooCommerce' ) ) : ?>
+					<button id="woo-open-menu" class="button open">
+						<span class="dropdown-icon open"><?php echo ayin_get_icon_svg( 'shopping_cart' ); ?></span>
+						<span class="hide-visually expanded-text"><?php esc_html__( 'expanded', 'ayin' ); ?></span>
 					</button>
 				<?php endif; ?>
 			</div>
 
 			<div class="menu-button-container">
-				<?php if ( class_exists( 'WooCommerce' ) ) : ?>
-					<button id="woo-open-menu" class="button open">
-						<span class="dropdown-icon open"><?php echo ayin_get_icon_svg( 'shopping_cart' ); ?> <?php _e( 'Cart', 'ayin' ); ?></span>
-						<span class="hide-visually expanded-text"><?php esc_html__( 'expanded', 'ayin' ); ?></span>
-					</button>
-				<?php endif; ?>
 			</div>
 
 			<?php if ( has_nav_menu( 'social' ) ) : ?>
