@@ -1311,17 +1311,31 @@ object {
 	min-width: 300px;
 }
 
-.wp-block-newspack-blocks-homepage-articles article .entry-wrapper p {
-	font-size: var(--global--font-size-sm);
+@media only screen and (min-width: 652px) {
+	.wp-block-newspack-blocks-homepage-articles article {
+		margin-bottom: calc(2 * var(--global--spacing-vertical));
+	}
 }
 
-.wp-block-newspack-blocks-homepage-articles article .entry-meta {
-	margin-top: 0;
+.wp-block-newspack-blocks-homepage-articles article .entry-wrapper p {
+	font-size: var(--global--font-size-sm);
+	margin-bottom: 0;
+}
+
+.wp-block-newspack-blocks-homepage-articles article .cat-links {
+	margin-bottom: 0;
+}
+
+.wp-block-newspack-blocks-homepage-articles article .cat-links a {
+	color: var(--global--color-secondary);
+	font-family: var(--global--font-secondary);
+	font-size: var(--global--font-size-sm);
+	font-weight: normal;
 }
 
 .wp-block-newspack-blocks-homepage-articles article .entry-title {
 	font-weight: normal;
-	margin-top: 16px;
+	margin-top: 0;
 }
 
 .wp-block-newspack-blocks-homepage-articles article .entry-title a {
@@ -1330,6 +1344,11 @@ object {
 
 .wp-block-newspack-blocks-homepage-articles article .entry-title a:hover, .wp-block-newspack-blocks-homepage-articles article .entry-title a:focus, .wp-block-newspack-blocks-homepage-articles article .entry-title a:active {
 	color: var(--global--color-primary);
+}
+
+.wp-block-newspack-blocks-homepage-articles article .entry-meta {
+	font-family: var(--global--font-primary);
+	margin-top: 0;
 }
 
 .wp-block-newspack-blocks-homepage-articles article .byline {
@@ -1342,6 +1361,7 @@ object {
 
 .wp-block-newspack-blocks-homepage-articles article .post-thumbnail {
 	max-height: 380px;
+	margin-bottom: var(--global--spacing-unit);
 	overflow: hidden;
 }
 
@@ -3054,15 +3074,26 @@ pre.wp-block-verse {
 	background-color: var(--global--color-background);
 	border-bottom: 1px solid var(--global--color-border);
 	color: var(--branding--color-text);
-	height: 130px;
+	height: 82px;
 	margin-bottom: 0;
-	padding: var(--global--spacing-vertical) 0;
+	padding-top: 8px;
 	text-align: center;
 	transition: all .25s ease-in-out;
 }
 
 .site-branding .site-logo {
 	transition: all .25s ease-in-out;
+	transform: scale(0.6);
+}
+
+@media only screen and (min-width: 652px) {
+	.site-branding {
+		height: 130px;
+		padding: var(--global--spacing-vertical) 0;
+	}
+	.site-branding .site-logo {
+		transform: scale(1);
+	}
 }
 
 .site-title {

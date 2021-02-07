@@ -1,17 +1,32 @@
 .wp-block-newspack-blocks-homepage-articles {
 	
 	article {
+
+		@include media(laptop){
+			margin-bottom: calc(2 * var(--global--spacing-vertical));
+		}
+
 		.entry-wrapper {
 			p {
 				font-size: var(--global--font-size-sm);;
+				margin-bottom: 0;
 			}
 		}
-		.entry-meta {
-			margin-top: 0;
+
+		.cat-links {
+			margin-bottom: 0;
+
+			a {
+				color: var(--global--color-secondary);
+				font-family: var(--global--font-secondary);
+				font-size: var(--global--font-size-sm);
+				font-weight: normal;
+			}
 		}
+
 		.entry-title {
 			font-weight: normal;
-			margin-top: 16px;
+			margin-top: 0;
 
 			a {
 				color: var(--global--color-black);
@@ -20,14 +35,22 @@
 				}
 			}
 		}
+
+		.entry-meta {
+			font-family: var(--global--font-primary);
+			margin-top: 0;
+		}
+
 		.byline {
 			font-size: 0;
 			.author {
 				font-size: var(--global--font-size-sm);
 			}
 		}
+
 		.post-thumbnail {
 			max-height: 380px;
+			margin-bottom: var(--global--spacing-unit);
 			overflow: hidden;
 		}
 

@@ -4,14 +4,23 @@
 	background-color: var(--global--color-background);
 	border-bottom: 1px solid var(--global--color-border);
 	color: var(--branding--color-text);
-	height: 130px;
+	height: 82px;
 	margin-bottom: 0;
-	padding: var(--global--spacing-vertical) 0;
+	padding-top: 8px;
 	text-align: center;
 	transition: all .25s ease-in-out;
 	// transition-delay: .25s;
 	.site-logo {
 		transition: all .25s ease-in-out;
+		transform: scale(.6);
+	}
+
+	@include media(laptop){
+		height: 130px;
+		padding: var(--global--spacing-vertical) 0;
+		.site-logo {
+			transform: scale(1);
+		}
 	}
 }
 
