@@ -3444,7 +3444,7 @@ nav a {
 .entry-meta > span,
 .entry-footer > span {
 	display: inline-block;
-	margin-right: var(--global--spacing-unit);
+	margin-right: calc(0.5 * var(--global--spacing-unit));
 }
 
 .entry-meta > span > *,
@@ -3509,6 +3509,14 @@ nav a {
 
 .entry-header .entry-meta {
 	margin-bottom: 0;
+}
+
+.entry-header .entry-meta .cat-links::after {
+	content: "|";
+	width: 10px;
+	height: 10px;
+	color: var(--global--color-secondary);
+	padding-left: calc( 0.5 * var(--global--spacing-unit));
 }
 
 .entry-header .entry-meta a {

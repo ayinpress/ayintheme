@@ -9,7 +9,7 @@
 
 	> span {
 		display: inline-block;
-		margin-right: var(--global--spacing-unit);
+		margin-right: calc(0.5 * var(--global--spacing-unit));
 
 		& > *,
 		span .fn {
@@ -68,6 +68,16 @@
 .entry-header .entry-meta {
 	margin-bottom: 0;
 	// padding-left: 5px;
+
+	.cat-links {
+		&::after{
+			content: "|";
+			width: 10px;
+			height:10px;
+			color: var(--global--color-secondary);
+			padding-left: calc( 0.5 * var(--global--spacing-unit));
+		}			
+	}
 
 	a {
 		color: var(--global--color-secondary);

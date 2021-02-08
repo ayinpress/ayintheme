@@ -214,3 +214,16 @@ function ayin_add_dropdown_icons( $output, $item, $depth, $args ) {
 	return $output;
 }
 // add_filter( 'walker_nav_menu_start_el', 'ayin_add_dropdown_icons', 10, 4 );
+
+
+/**
+ * Add a function that filters the Ayin One (the name of the first journal) category links
+ * to its landing page
+ */
+function ayin_alter_cat_links( $termlink, $term, $taxonomy ){
+    if( 'category' == $taxonomy && $term->name == 'Ayin One' ){
+        return str_replace( '/category', '', $termlink );
+    }
+    return $termlink;
+}
+add_filter( 'term_link', 'ayin_alter_cat_links', 10, 3 );
