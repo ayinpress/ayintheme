@@ -1361,16 +1361,6 @@ object {
 	margin-top: 0;
 }
 
-.wp-block-newspack-blocks-homepage-articles article .byline,
-.wp-block-newspack-blocks-homepage-articles.wpnbha.is-grid article .byline {
-	font-size: 0;
-}
-
-.wp-block-newspack-blocks-homepage-articles article .byline .author,
-.wp-block-newspack-blocks-homepage-articles.wpnbha.is-grid article .byline .author {
-	font-size: var(--global--font-size-sm);
-}
-
 .wp-block-newspack-blocks-homepage-articles article .post-thumbnail,
 .wp-block-newspack-blocks-homepage-articles.wpnbha.is-grid article .post-thumbnail {
 	max-height: 380px;
@@ -3493,7 +3483,6 @@ nav a {
 .entry-footer > span > *,
 .entry-footer > span span .fn {
 	display: inline-block;
-	vertical-align: middle;
 }
 
 .entry-meta > span:last-child,

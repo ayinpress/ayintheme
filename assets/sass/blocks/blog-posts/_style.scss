@@ -41,13 +41,6 @@
 			margin-top: 0;
 		}
 
-		.byline {
-			font-size: 0;
-			.author {
-				font-size: var(--global--font-size-sm);
-			}
-		}
-
 		.post-thumbnail {
 			max-height: 380px;
 			margin-bottom: var(--global--spacing-unit);

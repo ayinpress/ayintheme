@@ -1763,7 +1763,6 @@ pre.wp-block-verse {
 .entry-footer > span > *,
 .entry-footer > span span .fn {
 	display: inline-block;
-	vertical-align: middle;
 }
 
 .entry-meta > span:last-child,
