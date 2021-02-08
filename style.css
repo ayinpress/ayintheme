@@ -4066,6 +4066,7 @@ img#wpstats {
 
 #journal-toc.open #toggle-toc {
 	background: var(--global--color-secondary);
+	border-left: none;
 	color: white;
 	transition: .25s all;
 }
@@ -4135,10 +4136,11 @@ img#wpstats {
 	content: "";
 	display: block;
 	height: 6px;
-	width: 96px;
+	width: 1;
 	background-image: url(/wp-content/themes/ayintheme/assets/img/diamond-border.svg);
 	bottom: 0;
 	left: 0;
+	margin-top: 20px;
 }
 
 #journal-toc > div ul {

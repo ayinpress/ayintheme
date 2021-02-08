@@ -53,7 +53,7 @@ get_header();
 						$journal_subhead = '';
 
 						if ($journal_name == 'Ayin One'){
-							$journal_subhead = '<p>Tardema</p>';
+							$journal_name = 'Ayin One | Tardema';
 						}
 						echo( 
 							sprintf('<section id="journal-toc"><button id="toggle-toc"><span>Table of Contents</span></button><div><p class="journal-title">%1$s</p>%2$s<ul>', 
