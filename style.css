@@ -1312,57 +1312,90 @@ object {
 }
 
 @media only screen and (min-width: 652px) {
-	.wp-block-newspack-blocks-homepage-articles article {
-		margin-bottom: calc(2 * var(--global--spacing-vertical));
+	.wp-block-newspack-blocks-homepage-articles article,
+	.wp-block-newspack-blocks-homepage-articles.wpnbha.is-grid article {
+		margin-bottom: calc(1.5 * var(--global--spacing-vertical));
 	}
 }
 
-.wp-block-newspack-blocks-homepage-articles article .entry-wrapper p {
+.wp-block-newspack-blocks-homepage-articles article .entry-wrapper p,
+.wp-block-newspack-blocks-homepage-articles.wpnbha.is-grid article .entry-wrapper p {
 	font-size: var(--global--font-size-sm);
 	margin-bottom: 0;
 }
 
-.wp-block-newspack-blocks-homepage-articles article .cat-links {
+.wp-block-newspack-blocks-homepage-articles article .cat-links,
+.wp-block-newspack-blocks-homepage-articles.wpnbha.is-grid article .cat-links {
 	margin-bottom: 0;
 }
 
-.wp-block-newspack-blocks-homepage-articles article .cat-links a {
+.wp-block-newspack-blocks-homepage-articles article .cat-links a,
+.wp-block-newspack-blocks-homepage-articles.wpnbha.is-grid article .cat-links a {
 	color: var(--global--color-secondary);
 	font-family: var(--global--font-secondary);
 	font-size: var(--global--font-size-sm);
 	font-weight: normal;
 }
 
-.wp-block-newspack-blocks-homepage-articles article .entry-title {
+.wp-block-newspack-blocks-homepage-articles article .entry-title,
+.wp-block-newspack-blocks-homepage-articles.wpnbha.is-grid article .entry-title {
 	font-weight: normal;
 	margin-top: 0;
 }
 
-.wp-block-newspack-blocks-homepage-articles article .entry-title a {
+.wp-block-newspack-blocks-homepage-articles article .entry-title a,
+.wp-block-newspack-blocks-homepage-articles.wpnbha.is-grid article .entry-title a {
 	color: var(--global--color-black);
 }
 
-.wp-block-newspack-blocks-homepage-articles article .entry-title a:hover, .wp-block-newspack-blocks-homepage-articles article .entry-title a:focus, .wp-block-newspack-blocks-homepage-articles article .entry-title a:active {
+.wp-block-newspack-blocks-homepage-articles article .entry-title a:hover, .wp-block-newspack-blocks-homepage-articles article .entry-title a:focus, .wp-block-newspack-blocks-homepage-articles article .entry-title a:active,
+.wp-block-newspack-blocks-homepage-articles.wpnbha.is-grid article .entry-title a:hover,
+.wp-block-newspack-blocks-homepage-articles.wpnbha.is-grid article .entry-title a:focus,
+.wp-block-newspack-blocks-homepage-articles.wpnbha.is-grid article .entry-title a:active {
 	color: var(--global--color-primary);
 }
 
-.wp-block-newspack-blocks-homepage-articles article .entry-meta {
+.wp-block-newspack-blocks-homepage-articles article .entry-meta,
+.wp-block-newspack-blocks-homepage-articles.wpnbha.is-grid article .entry-meta {
 	font-family: var(--global--font-primary);
 	margin-top: 0;
 }
 
-.wp-block-newspack-blocks-homepage-articles article .byline {
+.wp-block-newspack-blocks-homepage-articles article .byline,
+.wp-block-newspack-blocks-homepage-articles.wpnbha.is-grid article .byline {
 	font-size: 0;
 }
 
-.wp-block-newspack-blocks-homepage-articles article .byline .author {
+.wp-block-newspack-blocks-homepage-articles article .byline .author,
+.wp-block-newspack-blocks-homepage-articles.wpnbha.is-grid article .byline .author {
 	font-size: var(--global--font-size-sm);
 }
 
-.wp-block-newspack-blocks-homepage-articles article .post-thumbnail {
+.wp-block-newspack-blocks-homepage-articles article .post-thumbnail,
+.wp-block-newspack-blocks-homepage-articles.wpnbha.is-grid article .post-thumbnail {
 	max-height: 380px;
 	margin-bottom: var(--global--spacing-unit);
 	overflow: hidden;
+}
+
+.wpnbha.has-more-button button {
+	border: none;
+	background: var(--global--color-background);
+	font-family: var(--global--font-primary);
+	position: relative;
+}
+
+.wpnbha.has-more-button button::after {
+	background-image: url(/wp-content/themes/ayintheme/assets/img/dot-arrow.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	content: "";
+	display: inline-block;
+	margin-left: var(--global--spacing-unit);
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: -38px;
 }
 
 /**
@@ -1713,6 +1746,14 @@ object {
 .wp-block-group.is-style-ayin-poetry p {
 	max-width: 570px !important;
 	margin-left: 0 !important;
+}
+
+.wp-block-eedee-block-gutenslider .slick-slide img {
+	object-fit: contain !important;
+}
+
+.wp-block-eedee-block-gutenslider .slick-track {
+	background-color: black;
 }
 
 h1, .h1,

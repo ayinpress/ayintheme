@@ -1,0 +1,9 @@
+.wp-block-eedee-block-gutenslider {
+	.slick-slide img {
+		object-fit: contain !important; // Do not crop the art
+	}
+
+	.slick-track {
+		background-color: black;
+	}
+}
