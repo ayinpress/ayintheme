@@ -16,19 +16,19 @@ $typescale-ratio: 1.2; // Run ratio math on 1em == $typescale-base * $typescale-
 	/* Font Size */
 	--global--font-size-root: #{$typescale-root};
 	--global--font-size-ratio: #{$typescale-ratio};
-	--global--font-size-base: 1rem;
 	--global--font-size-xs: .8rem;
 	--global--font-size-sm: .9rem;
-	--global--font-size-md: 1rem;
+	--global--font-size-base: 1.1rem;
+	--global--font-size-md: 1.1rem;
 	--global--font-size-lg: 1.125rem;
 	--global--font-size-xl: 32px;
 	--global--font-size-xxl: 38px;
 	--global--font-size-xxxl: 42px;
 	--global--letter-spacing: normal;
 	@include media( laptop ){
-		--global--font-size-base: 1.1rem;
 		--global--font-size-xs: .9rem;
 		--global--font-size-sm: 1rem;
+		--global--font-size-base: 1.1rem;
 		--global--font-size-md: 1.1rem;
 		--global--font-size-lg: 1.25rem;
 		--global--font-size-xl: 40px;
@@ -46,6 +46,7 @@ $typescale-ratio: 1.2; // Run ratio math on 1em == $typescale-base * $typescale-
 
 	/* Colors */
 	--global--color-primary: #20a181;
+	--global--color-footer: rgb(70,122,126);
 	--global--color-secondary: #efa182;
 	--global--color-primary-hover: var( --global--color-secondary );
 	--global--color-secondary: #efa182;

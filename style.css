@@ -167,10 +167,10 @@ Included in theme screenshot and in block patterns.
 	/* Font Size */
 	--global--font-size-root: 18px;
 	--global--font-size-ratio: 1.2;
-	--global--font-size-base: 1rem;
 	--global--font-size-xs: .8rem;
 	--global--font-size-sm: .9rem;
-	--global--font-size-md: 1rem;
+	--global--font-size-base: 1.1rem;
+	--global--font-size-md: 1.1rem;
 	--global--font-size-lg: 1.125rem;
 	--global--font-size-xl: 32px;
 	--global--font-size-xxl: 38px;
@@ -184,6 +184,7 @@ Included in theme screenshot and in block patterns.
 	--global--line-height-heading: 1.3;
 	/* Colors */
 	--global--color-primary: #20a181;
+	--global--color-footer: rgb(70,122,126);
 	--global--color-secondary: #efa182;
 	--global--color-primary-hover: var( --global--color-secondary );
 	--global--color-secondary: #efa182;
@@ -243,8 +244,8 @@ Included in theme screenshot and in block patterns.
 	--cover--color-background: var(--global--color-tertiary);
 	--heading--font-family: 'BrownLL Black';
 	--heading--line-height: 1.3;
-	--heading--font-size-h6: var(--global--font-size-base);
-	--heading--font-size-h5: var(--global--font-size-md);
+	--heading--font-size-h6: var(--global--font-size-xs);
+	--heading--font-size-h5: var(--global--font-size-sm);
 	--heading--font-size-h4: var(--global--font-size-lg);
 	--heading--font-size-h3: var(--global--font-size-xl);
 	--heading--font-size-h2: var(--global--font-size-xxl);
@@ -386,9 +387,9 @@ Included in theme screenshot and in block patterns.
 
 @media only screen and (min-width: 652px) {
 	:root {
-		--global--font-size-base: 1.1rem;
 		--global--font-size-xs: .9rem;
 		--global--font-size-sm: 1rem;
+		--global--font-size-base: 1.1rem;
 		--global--font-size-md: 1.1rem;
 		--global--font-size-lg: 1.25rem;
 		--global--font-size-xl: 40px;
@@ -554,9 +555,7 @@ Included in theme screenshot and in block patterns.
 .site-main > .not-found > *,
 .entry-content > *,
 [class*="inner-container"] > *,
-.wp-block-template-part > *,
-.widget-area > *,
-.widget-column > * {
+.wp-block-template-part > * {
 	margin-top: calc( 0.666 * var(--global--spacing-vertical));
 	margin-bottom: calc( 0.666 * var(--global--spacing-vertical));
 }
@@ -567,9 +566,7 @@ Included in theme screenshot and in block patterns.
 	.site-main > .not-found > *,
 	.entry-content > *,
 	[class*="inner-container"] > *,
-	.wp-block-template-part > *,
-	.widget-area > *,
-	.widget-column > * {
+	.wp-block-template-part > * {
 		margin-top: var(--global--spacing-vertical);
 		margin-bottom: var(--global--spacing-vertical);
 	}
@@ -580,9 +577,7 @@ Included in theme screenshot and in block patterns.
 .site-main > .not-found > *:first-child,
 .entry-content > *:first-child,
 [class*="inner-container"] > *:first-child,
-.wp-block-template-part > *:first-child,
-.widget-area > *:first-child,
-.widget-column > *:first-child {
+.wp-block-template-part > *:first-child {
 	margin-top: 0;
 }
 
@@ -591,9 +586,7 @@ Included in theme screenshot and in block patterns.
 .site-main > .not-found > *:last-child,
 .entry-content > *:last-child,
 [class*="inner-container"] > *:last-child,
-.wp-block-template-part > *:last-child,
-.widget-area > *:last-child,
-.widget-column > *:last-child {
+.wp-block-template-part > *:last-child {
 	margin-bottom: 0;
 }
 
@@ -3293,61 +3286,61 @@ nav a {
 	color: var(--footer--color-link);
 }
 
-.site-footer > .footer-navigation {
+.site-footer .footer-navigation {
 	display: inline;
 }
 
 @media only screen and (min-width: 822px) {
-	.site-footer > .footer-navigation {
+	.site-footer .footer-navigation {
 		margin-top: var(--global--spacing-unit);
 		margin-bottom: var(--global--spacing-unit);
 		text-align: left;
 	}
 }
 
-.site-footer > .footer-navigation > div {
+.site-footer .footer-navigation > div {
 	display: inline;
 }
 
-.site-footer > .footer-navigation .footer-menu {
-	color: var(--footer--color-text);
+.site-footer .footer-navigation .footer-menu {
+	color: var(--global--color-white);
 	margin: 0;
 	padding-left: 0;
 }
 
-.site-footer > .footer-navigation .footer-menu > li {
+.site-footer .footer-navigation .footer-menu > li {
 	display: inline-block;
 }
 
-.site-footer > .footer-navigation .footer-menu > li:first-of-type > a {
+.site-footer .footer-navigation .footer-menu > li:first-of-type > a {
 	padding-left: 0;
 }
 
-.site-footer > .footer-navigation .footer-menu > li:last-of-type {
+.site-footer .footer-navigation .footer-menu > li:last-of-type {
 	padding-right: 0;
 }
 
-.site-footer > .footer-navigation .footer-menu .menu-item {
+.site-footer .footer-navigation .footer-menu .menu-item {
 	padding: var(--primary-nav--padding) var(--primary-nav--padding) var(--primary-nav--padding) 0;
 }
 
-.site-footer > .footer-navigation .footer-menu .menu-item a {
+.site-footer .footer-navigation .footer-menu .menu-item a {
 	font-family: var(--primary-nav--font-family);
 	font-size: var(--footer--font-size);
 	font-weight: var(--primary-nav--font-weight);
 	color: currentColor;
 }
 
-.site-footer > .footer-navigation .footer-menu .menu-item a:link, .site-footer > .footer-navigation .footer-menu .menu-item a:visited, .site-footer > .footer-navigation .footer-menu .menu-item a:active {
+.site-footer .footer-navigation .footer-menu .menu-item a:link, .site-footer .footer-navigation .footer-menu .menu-item a:visited, .site-footer .footer-navigation .footer-menu .menu-item a:active {
 	color: currentColor;
 }
 
-.site-footer > .footer-navigation .footer-menu .menu-item a:hover {
+.site-footer .footer-navigation .footer-menu .menu-item a:hover {
 	color: var(--footer--color-link-hover);
 	border-color: var(--global--color-secondary);
 }
 
-.site-footer > .footer-navigation .footer-menu .menu-item a:focus {
+.site-footer .footer-navigation .footer-menu .menu-item a:focus {
 	color: var(--global--color-secondary);
 }
 
@@ -4038,8 +4031,19 @@ nav a {
 	font-weight: 600;
 }
 
-.widget-area {
-	flex: 0 0 100%;
+.site-footer {
+	background-color: var(--global--color-footer);
+	color: white;
+}
+
+.site-footer .widget-area > .widget-column {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: var(--global--spacing-horizontal);
+}
+
+.site-footer .widget-area > .widget-column h2 {
+	font-size: var(--global--font-size-lg);
 }
 
 .search-form {

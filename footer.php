@@ -14,8 +14,9 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer default-max-width" role="contentinfo" aria-label="<?php esc_attr_e( 'Footer', 'ayin' ); ?>">
+	<footer id="colophon" class="site-footer" role="contentinfo" aria-label="<?php esc_attr_e( 'Footer', 'ayin' ); ?>">
 
+		<div class="alignwide">
 		<?php get_template_part( 'template-parts/footer/footer-widgets' ); ?>
 
 		<?php if ( has_nav_menu( 'footer' ) ) : ?>
@@ -39,6 +40,7 @@
 			}
 			?>
 		</div><!-- .site-info -->
+		</div>
 	</footer><!-- #colophon -->
 
 </div><!-- #page -->

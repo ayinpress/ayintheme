@@ -1,6 +1,16 @@
-.widget-area {
-	// Ignore flexbox
-	flex: 0 0 100%;
+.site-footer {
+	background-color: var(--global--color-footer);
+	color: white;
+	.widget-area {
+		> .widget-column {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: var(--global--spacing-horizontal);
+			h2 {
+				font-size: var(--global--font-size-lg);
+			}
+		}
+	}
 }
 
 // Search widget styles
