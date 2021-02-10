@@ -1,4 +1,4 @@
-$desktop_nav_height: 72px;
+$desktop_nav_height: 130px;
 $mobile_nav_height: 82px;
 $button_width_mobile: -48px;
 $button_width: -66px;
@@ -7,9 +7,9 @@ $toc_width_mobile: -100vw;
 
 #journal-toc {
 	background: var(--global--color-white);
+	bottom: 0;
 	display: grid;
 	grid-template-columns: 48px 1fr;
-	height: calc(100vh - #{$mobile_nav_height});
 	overflow: scroll;
 	position: fixed;
 	left: 100vw;
@@ -32,10 +32,10 @@ $toc_width_mobile: -100vw;
 	}
 
 	@include media ( laptop ){
-		top: $desktop_nav_height;
-		height: calc(100vh - #{$desktop_nav_height});
+		top: 82px;
+		height: 100vh;
 		transform: translateX( $button_width );
-		min-width: 400px;
+		min-width: 416px;
 		&.open {
 			transform: translateX( $toc_width );
 		}
@@ -72,10 +72,10 @@ $toc_width_mobile: -100vw;
 	> div {
 		font-size: var(--global--font-size-lg);
 		padding: var(--global--spacing-horizontal);
-		padding-top: calc(2 * var(--global--spacing-vertical));
+		padding-top: calc(var(--global--spacing-vertical) + #{$mobile_nav_height});
 		@include media( laptop ){
 			padding-left: calc( 2 * var(--global--spacing-horizontal) );
-			padding-top: calc(5 * var(--global--spacing-vertical));
+			padding-top: calc(2 * var(--global--spacing-vertical) + #{$desktop_nav_height});
 		}
 
 		p.journal-title{

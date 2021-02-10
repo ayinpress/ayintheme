@@ -995,6 +995,10 @@ body {
 	background-color: var(--global--color-background);
 }
 
+body::-webkit-scrollbar {
+	display: none;
+}
+
 a {
 	color: var(--wp--style--color--link, var(--global--color-black));
 	font-family: var(--global--font-ui);
@@ -2615,6 +2619,7 @@ pre.wp-block-verse {
 	color: var(--global--color-foreground);
 	font-family: var(--entry-content--font-family);
 	font-size: var(--global--font-size-sm);
+	overflow: hidden;
 	padding: 0;
 	padding-right: 24px;
 	white-space: pre-wrap;
@@ -4079,9 +4084,9 @@ img#wpstats {
  */
 #journal-toc {
 	background: var(--global--color-white);
+	bottom: 0;
 	display: grid;
 	grid-template-columns: 48px 1fr;
-	height: calc(100vh - 82px);
 	overflow: scroll;
 	position: fixed;
 	left: 100vw;
@@ -4107,10 +4112,10 @@ img#wpstats {
 
 @media only screen and (min-width: 652px) {
 	#journal-toc {
-		top: 72px;
-		height: calc(100vh - 72px);
+		top: 82px;
+		height: 100vh;
 		transform: translateX(-66px);
-		min-width: 400px;
+		min-width: 416px;
 	}
 	#journal-toc.open {
 		transform: translateX(-400px);
@@ -4152,13 +4157,13 @@ img#wpstats {
 #journal-toc > div {
 	font-size: var(--global--font-size-lg);
 	padding: var(--global--spacing-horizontal);
-	padding-top: calc(2 * var(--global--spacing-vertical));
+	padding-top: calc(var(--global--spacing-vertical) + 82px);
 }
 
 @media only screen and (min-width: 652px) {
 	#journal-toc > div {
 		padding-left: calc( 2 * var(--global--spacing-horizontal));
-		padding-top: calc(5 * var(--global--spacing-vertical));
+		padding-top: calc(2 * var(--global--spacing-vertical) + 130px);
 	}
 }
 
