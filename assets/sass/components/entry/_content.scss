@@ -52,6 +52,16 @@
 
 	}
 
+	/**
+	 * Internal anchor links menu header fix
+	 * 
+	 * header must be hard coded <h3><a class="anchor" id="name"></a>Header</h3>
+	*/
+	a.anchor {
+		position: relative;
+		top: -240px;
+	}
+
 	// Classic editor audio embeds.
 	.wp-audio-shortcode {
 		@extend %responsive-aligndefault-width;
