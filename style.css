@@ -3484,6 +3484,7 @@ nav a {
 .entry-content a.anchor {
 	position: relative;
 	top: -154px;
+	display: inline-block;
 }
 
 .entry-attachment {
