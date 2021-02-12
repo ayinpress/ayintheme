@@ -3437,6 +3437,14 @@ nav a {
 	font-family: var(--entry-content--font-family);
 }
 
+.entry-content {
+	/**
+	 * Internal anchor links menu header fix
+	 * 
+	 * header must be hard coded <h3><a class="anchor" id="name"></a>Header</h3>
+	*/
+}
+
 .entry-content p {
 	word-wrap: break-word;
 }
@@ -3471,6 +3479,11 @@ nav a {
 	.entry-content > iframe[style] {
 		max-width: var(--global--spacing-vertical) !important;
 	}
+}
+
+.entry-content a.anchor {
+	position: relative;
+	top: -154px;
 }
 
 .entry-attachment {
