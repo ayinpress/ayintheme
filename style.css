@@ -4496,6 +4496,10 @@ img#wpstats {
 	height: 100% !important;
 }
 
+.jp-carousel-info {
+	display: none;
+}
+
 .edit-post-layout__metaboxes {
 	margin-bottom: 24px;
 }
