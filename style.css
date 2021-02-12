@@ -92,8 +92,16 @@ Included in theme screenshot and in block patterns.
 	font-family: 'BrownLL';
 	font-display: swap;
 	font-style: italic;
-	font-weight: 100 900;
+	font-weight: 400 900;
 	src: url("../fonts/BrownLLTT-Italic.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: 'BrownLL';
+	font-display: swap;
+	font-style: italic;
+	font-weight: 100 300;
+	src: url("../fonts/BrownLLTT-LightItalic.ttf") format("truetype");
 }
 
 @font-face {
@@ -4163,7 +4171,7 @@ img#wpstats {
 }
 
 #journal-toc > div {
-	font-size: var(--global--font-size-lg);
+	font-size: 22px;
 	padding: var(--global--spacing-horizontal);
 	padding-top: calc(var(--global--spacing-vertical) + 82px);
 	transition: all .25s ease-in-out;
@@ -4179,19 +4187,24 @@ img#wpstats {
 	}
 }
 
-#journal-toc > div p.journal-title {
+#journal-toc > div p.journal-title, #journal-toc > div .editors-note {
 	margin-bottom: 12px;
 }
 
-#journal-toc > div p.journal-title:after {
+#journal-toc > div p.journal-title:after, #journal-toc > div .editors-note:after {
 	content: "";
 	display: block;
 	height: 6px;
-	width: 80px;
+	width: 75%;
 	background-image: url(/wp-content/themes/ayintheme/assets/img/diamond-border.svg);
 	bottom: 0;
 	left: 0;
-	margin-top: 20px;
+	margin-top: 12px;
+}
+
+#journal-toc > div .editors-note {
+	font-weight: 300;
+	font-style: italic;
 }
 
 #journal-toc > div ul {

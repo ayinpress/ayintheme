@@ -50,13 +50,14 @@ get_header();
 
 						usort($artists, function($a, $b){ return strcmp($a->name, $b->name); });
 
-						$journal_subhead = '<a href="/editors-note">Editors\' Note</a>';
+						$journal_subhead = '<a class="editors-note" href="/editors-note">Editors\' Note</a>';
 
 						if ($journal_name == 'Ayin One'){
 							$journal_name = 'Ayin One | Tardema';
 						}
 						echo( 
-							sprintf('<section id="journal-toc"><button id="toggle-toc"><span>Table of Contents</span></button><div><p class="journal-title">%1$s</p>%2$s<ul>', 
+							sprintf('<section id="journal-toc"><button id="toggle-toc"><span>Table of Contents</span></button><div>
+							<p class="journal-title">%1$s</p><p>%2$s<ul>', 
 								$journal_name,
 								$journal_subhead ) 
 						);

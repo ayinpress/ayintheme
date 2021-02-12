@@ -70,7 +70,7 @@ $toc_width_mobile: -100vw;
 
 	// TOC artists container
 	> div {
-		font-size: var(--global--font-size-lg);
+		font-size: 22px;
 		padding: var(--global--spacing-horizontal);
 		padding-top: calc(var(--global--spacing-vertical) + #{$mobile_nav_height});
 		transition: all .25s ease-in-out;
@@ -82,19 +82,24 @@ $toc_width_mobile: -100vw;
 			}
 		}
 
-		p.journal-title{
+		p.journal-title, .editors-note{
 			margin-bottom: 12px;
 
 			&:after {
 				content: "";
 				display: block;
 				height: 6px;
-				width: 80px;
+				width: 75%;
 				background-image:url(/wp-content/themes/ayintheme/assets/img/diamond-border.svg);
 				bottom: 0;
 				left: 0;  
-				margin-top: 20px;
+				margin-top: 12px;
 			}
+		}
+
+		.editors-note {
+			font-weight: 300;
+			font-style: italic;
 		}
 
 		ul {
