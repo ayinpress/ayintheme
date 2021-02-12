@@ -88,13 +88,12 @@
 	document.addEventListener('scroll', function(){
 		currentScrollY = window.scrollY;
 		
-		if ( currentScrollY > lastScrollY && currentScrollY - lastScrollY > minScrollDiff ){
-			header.classList.add( 'scroll-up' );
-		} else if ( lastScrollY - currentScrollY > minScrollDiff ) {
-			header.classList.remove( 'scroll-up' );
+		// if ( currentScrollY > lastScrollY && currentScrollY - lastScrollY > minScrollDiff ){
+		if ( currentScrollY > 70 ){
+			header.classList.add( 'hide-menu' );
+		} else {
+			header.classList.remove( 'hide-menu' );
 		}
-
-		lastScrollY = currentScrollY;
 	});
 
 	const journalToggle = document.getElementById('toggle-toc');

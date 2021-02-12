@@ -460,7 +460,7 @@ Ayin Styles
 		border-bottom: 1px solid var(--global--color-border);
 		transition: 0.25s all;
 	}
-	.scroll-up .primary-navigation {
+	.hide-menu .primary-navigation {
 		border-top: none;
 		transform: translateY(-62px);
 		opacity: 0;

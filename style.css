@@ -3207,12 +3207,12 @@ nav a {
 	}
 }
 
-.scroll-up .site-branding {
+.hide-menu .site-branding {
 	height: 82px;
 	padding-top: 8px;
 }
 
-.scroll-up .site-branding .site-logo {
+.hide-menu .site-branding .site-logo {
 	transform: scale(0.6);
 }
 
