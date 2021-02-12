@@ -91,6 +91,14 @@ Included in theme screenshot and in block patterns.
 @font-face {
 	font-family: 'BrownLL';
 	font-display: swap;
+	font-style: italic;
+	font-weight: 100 900;
+	src: url("../fonts/BrownLLTT-Italic.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: 'BrownLL';
+	font-display: swap;
 	font-style: bold;
 	font-weight: 700 900;
 	src: url("../fonts/BrownLLTT-Bold.ttf") format("truetype");
@@ -4179,7 +4187,7 @@ img#wpstats {
 	content: "";
 	display: block;
 	height: 6px;
-	width: 1;
+	width: 80px;
 	background-image: url(/wp-content/themes/ayintheme/assets/img/diamond-border.svg);
 	bottom: 0;
 	left: 0;
@@ -4236,7 +4244,13 @@ img#wpstats {
 }
 
 .journal-page-container hr {
-	margin: 24px 0 32px;
+	border-bottom: 1px solid var(--separator--border-color);
+	margin: var(--global--spacing-unit) 0;
+	width: 80%;
+}
+
+.journal-page-container .editors-note {
+	font-style: italic;
 }
 
 .journal-page-container .journal-column ul {

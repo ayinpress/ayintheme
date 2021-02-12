@@ -17,6 +17,13 @@
 @font-face {
   font-family: 'BrownLL';
   font-display: swap;
+  font-style: italic;
+  font-weight: 100 900;
+  src: url("../fonts/BrownLLTT-Italic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'BrownLL';
+  font-display: swap;
   font-style: bold;
   font-weight: 700 900;
   src: url("../fonts/BrownLLTT-Bold.ttf") format("truetype"); }

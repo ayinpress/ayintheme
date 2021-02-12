@@ -27,6 +27,8 @@ get_header();
 							<div class="journal-column">
 								<h1>Ayin One Tardema</h1>
 								<hr></hr>
+								<h4 class="editors-note"><a href="/editors-note">Editors\' Note</a></h4>
+								<hr></hr>
 								<ul>'
 					);
 					foreach($toc->posts as $post){
@@ -35,7 +37,7 @@ get_header();
 						$work->permalink = get_permalink( $work->ID );
 						$work->thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0];;
 						if ( ! $work->thumbnail ) $work->thumbnail = '/wp-content/uploads/2021/01/JillHammer_FeaturedImage_R1.jpg';
-						$works[] = $work;
+						if ( $post->post_name !== 'editors-note' ) $works[] = $work;
 					}
 
 					usort($works, function($a, $b){ return strcmp($a->name, $b->name); });

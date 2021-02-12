@@ -45,12 +45,12 @@ get_header();
 								$artist->permalink = get_permalink( $work->ID );
 							}
 
-							$artists[] = $artist;
+							if ( $work->post_name !== 'editors-note' ) $artists[] = $artist;
 						}
 
 						usort($artists, function($a, $b){ return strcmp($a->name, $b->name); });
 
-						$journal_subhead = '';
+						$journal_subhead = '<a href="/editors-note">Editors\' Note</a>';
 
 						if ($journal_name == 'Ayin One'){
 							$journal_name = 'Ayin One | Tardema';

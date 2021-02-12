@@ -89,7 +89,7 @@ $toc_width_mobile: -100vw;
 				content: "";
 				display: block;
 				height: 6px;
-				width: 1;
+				width: 80px;
 				background-image:url(/wp-content/themes/ayintheme/assets/img/diamond-border.svg);
 				bottom: 0;
 				left: 0;  
@@ -139,8 +139,15 @@ $toc_width_mobile: -100vw;
 		grid-template-columns: 1fr 1fr;
 		grid-column-gap: calc(2 * var(--global--spacing-horizontal));
 	}
+
 	hr {
-		margin: 24px 0 32px;
+		border-bottom: 1px solid var(--separator--border-color);
+		margin: var(--global--spacing-unit) 0;
+		width: 80%;
+	}
+
+	.editors-note {
+		font-style: italic;
 	}
 
 	.journal-column {
