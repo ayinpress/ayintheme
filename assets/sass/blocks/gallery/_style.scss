@@ -1,7 +1,6 @@
 .wp-block-gallery {
 
 	margin: 0 auto;
-
 	.blocks-gallery-image,
 	.blocks-gallery-item {
 
@@ -13,7 +12,7 @@
 		}
 	}
 
-	&.alignfull {
+	&.alignfull, &.alignfull {
 		.blocks-gallery-grid {
 			width: 100%;
 		}

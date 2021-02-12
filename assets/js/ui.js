@@ -89,11 +89,16 @@
 		currentScrollY = window.scrollY;
 		
 		// if ( currentScrollY > lastScrollY && currentScrollY - lastScrollY > minScrollDiff ){
-		if ( currentScrollY > 70 ){
-			header.classList.add( 'hide-menu' );
-		} else {
-			header.classList.remove( 'hide-menu' );
+		if ( Math.abs(currentScrollY - lastScrollY) > minScrollDiff || currentScrollY > 150) {
+			if ( currentScrollY > 70 ){
+				document.body.classList.add( 'hide-menu' );
+			} else {
+				document.body.classList.remove( 'hide-menu' );
+			}
 		}
+
+		lastScrollY = currentScrollY;
+
 	});
 
 	const journalToggle = document.getElementById('toggle-toc');

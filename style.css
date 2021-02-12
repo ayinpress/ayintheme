@@ -1691,7 +1691,7 @@ object {
 	font: var(--global--font-size-sm);
 }
 
-.wp-block-gallery.alignfull .blocks-gallery-grid {
+.wp-block-gallery.alignfull .blocks-gallery-grid, .wp-block-gallery.alignfull .blocks-gallery-grid {
 	width: 100%;
 }
 
@@ -4158,12 +4158,16 @@ img#wpstats {
 	font-size: var(--global--font-size-lg);
 	padding: var(--global--spacing-horizontal);
 	padding-top: calc(var(--global--spacing-vertical) + 82px);
+	transition: all .25s ease-in-out;
 }
 
 @media only screen and (min-width: 652px) {
 	#journal-toc > div {
 		padding-left: calc( 2 * var(--global--spacing-horizontal));
 		padding-top: calc(2 * var(--global--spacing-vertical) + 130px);
+	}
+	.hide-menu #journal-toc > div {
+		padding-top: calc(var(--global--spacing-vertical) + 82px);
 	}
 }
 
@@ -4190,6 +4194,7 @@ img#wpstats {
 	margin-top: var(--global--spacing-vertical);
 	max-width: 270px;
 	padding: 0;
+	padding-bottom: calc( 2 * var(--global--spacing-vertical));
 }
 
 #journal-toc > div ul li {
