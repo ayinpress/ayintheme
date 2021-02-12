@@ -37,6 +37,14 @@ if ( function_exists( 'register_block_style' ) ) {
 			)
 		);
 		register_block_style(
+			'core/group',
+			array(
+				'name'         => 'ayin-footnotes',
+				'label'        => __( 'Footnotes', 'ayin' ),
+				'style_handle' => 'footnotes-poetry',
+			)
+		);
+		register_block_style(
 			'a8c/blog-posts',
 			array(
 				'name'         => 'ayin-alternating-grid',

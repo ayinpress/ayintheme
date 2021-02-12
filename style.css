@@ -1751,6 +1751,11 @@ object {
 	margin-left: 0 !important;
 }
 
+.wp-block-group.is-style-ayin-footnotes > .wp-block-group__inner-container {
+	height: 200px;
+	overflow-y: scroll;
+}
+
 .wp-block-eedee-block-gutenslider .slick-slide img {
 	object-fit: contain !important;
 }

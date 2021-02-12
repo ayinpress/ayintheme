@@ -37,4 +37,11 @@
 			margin-left: 0 !important;
 		}
 	}
+
+	&.is-style-ayin-footnotes {
+		> .wp-block-group__inner-container {
+			height: 200px;
+			overflow-y: scroll;
+		}
+	}
 }
