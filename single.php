@@ -30,7 +30,7 @@ get_header();
 				}
 
 				if ( $journal_number !== false ){
-					$toc = new WP_Query( array( 'category_slug' => $journal_number, 'nopaging' => true )  );
+					$toc = new WP_Query( array( 'category_name' => $journal_number, 'nopaging' => true )  );
 					if ( $toc->posts ){
 
 						$artists = array();

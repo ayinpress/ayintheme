@@ -21,7 +21,7 @@ get_header();
 			<div class="entry-content">
 				<?php
 					$works = array(); // in case you need it later
-					$toc = new WP_Query( array( 'category_slug' => 'ayin-one', 'nopaging' => true )  );
+					$toc = new WP_Query( array( 'category_name' => 'ayin-one', 'nopaging' => true )  );
 					echo(
 						'<div class="journal-page-container alignwide">
 							<h1 class="alignwide">Ayin One | Tardema</h1>
@@ -39,7 +39,6 @@ get_header();
 						$work->thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0];
 						$work->title = $post->post_title;
 						// TODO: pull out artist name and work title
-						if ( ! $work->thumbnail ) $work->thumbnail = '/wp-content/uploads/2021/01/JillHammer_FeaturedImage_R1.jpg';
 						if ( $post->post_name !== 'editors-note' ) $works[] = $work;
 					}
 
