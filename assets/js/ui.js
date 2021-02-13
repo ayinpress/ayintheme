@@ -147,9 +147,10 @@
 		var journalArtists = document.getElementsByClassName('journal-artist-preview');
 		for ( var i in journalArtists ){
 			if (typeof(journalArtists[i]) === 'object'){
-				const thumbnail = journalArtists[i].dataset.thumbnail;
+				const { thumbnail, title }  = journalArtists[i].dataset;
 				journalArtists[i].addEventListener('mouseover', function(){
 					document.getElementById('journal-work-preview').style.backgroundImage = `url(${thumbnail}`;
+					document.getElementById('journal-work-title').innerHTML = `${title}`;
 				});
 			}
 		}

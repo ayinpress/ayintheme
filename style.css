@@ -4117,7 +4117,6 @@ img#wpstats {
 	position: fixed;
 	left: 100vw;
 	top: 82px;
-	transform: translateX(-48px);
 	transition: .25s all;
 	min-width: 100vw;
 	width: fit-content;
@@ -4141,7 +4140,7 @@ img#wpstats {
 		display: grid;
 		top: 82px;
 		height: 100vh;
-		transform: translateX(-66px);
+		transform: translateX(-83px);
 		min-width: 416px;
 	}
 	#journal-toc.open {
@@ -4160,7 +4159,7 @@ img#wpstats {
 
 @media only screen and (min-width: 652px) {
 	#journal-toc #toggle-toc {
-		width: 64px;
+		width: 66px;
 	}
 }
 
@@ -4206,7 +4205,7 @@ img#wpstats {
 	content: "";
 	display: block;
 	height: 6px;
-	width: 75%;
+	width: 184px;
 	background-image: url(/wp-content/themes/ayintheme/assets/img/diamond-border.svg);
 	bottom: 0;
 	left: 0;
@@ -4256,23 +4255,14 @@ img#wpstats {
 	}
 }
 
-.journal-page-container {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-row-gap: var(--global--spacing-vertical);
-}
-
-@media only screen and (min-width: 652px) {
-	.journal-page-container {
-		grid-template-columns: 1fr 1fr;
-		grid-column-gap: calc(2 * var(--global--spacing-horizontal));
-	}
+.journal-page-container h1 {
+	margin-top: var(--global--spacing-vertical);
 }
 
 .journal-page-container hr {
 	border-bottom: 1px solid var(--separator--border-color);
 	margin: var(--global--spacing-unit) 0;
-	width: 80%;
+	width: 40%;
 }
 
 .journal-page-container .editors-note {
@@ -4280,7 +4270,21 @@ img#wpstats {
 	font-weight: lighter;
 }
 
-.journal-page-container .journal-column ul {
+.journal-page-container .journal-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: var(--global--spacing-vertical);
+}
+
+@media only screen and (min-width: 652px) {
+	.journal-page-container .journal-grid {
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: calc(2 * var(--global--spacing-horizontal));
+		margin-top: calc(2 * var(--global--spacing-unit));
+	}
+}
+
+.journal-page-container .journal-grid .journal-column ul {
 	columns: 2;
 	-webkit-columns: 2;
 	-moz-columns: 2;
@@ -4288,31 +4292,37 @@ img#wpstats {
 	padding-left: 0;
 }
 
-.journal-page-container .journal-column ul > li {
+.journal-page-container .journal-grid .journal-column ul > li {
 	line-height: 1.3;
 	margin-bottom: 16px;
 	max-width: 200px;
 }
 
-.journal-page-container .journal-column ul > li > img {
+.journal-page-container .journal-grid .journal-column ul > li > img {
 	display: none;
 }
 
-.journal-page-container .journal-column #journal-work-preview {
+.journal-page-container .journal-grid .journal-column #journal-work-preview {
 	display: none;
 	background-color: var(--global--color-background);
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
-	height: 100%;
 	min-height: 300px;
+	object-fit: fit-content;
 	width: 100%;
 }
 
 @media only screen and (min-width: 652px) {
-	.journal-page-container .journal-column #journal-work-preview {
+	.journal-page-container .journal-grid .journal-column #journal-work-preview {
 		display: block;
 	}
+}
+
+.journal-page-container .journal-grid .journal-column #journal-work-title {
+	font-family: var(--global--font-primary);
+	font-size: var(--global--font-size-sm);
+	font-style: italic;
 }
 
 .sticky-post {

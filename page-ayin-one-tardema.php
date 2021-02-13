@@ -24,18 +24,20 @@ get_header();
 					$toc = new WP_Query( array( 'category_slug' => 'ayin-one', 'nopaging' => true )  );
 					echo(
 						'<div class="journal-page-container alignwide">
-							<div class="journal-column">
-								<h1>Ayin One Tardema</h1>
-								<hr></hr>
-								<h4 class="editors-note"><a href="/editors-note">Editors\' Note</a></h4>
-								<hr></hr>
+							<h1 class="alignwide">Ayin One | Tardema</h1>
+							<hr></hr>
+							<h4 class="editors-note"><a href="/editors-note">Editors\' Note</a></h4>
+							<hr></hr>
+							<div class="journal-grid">
+								<div class="journal-column">
 								<ul>'
 					);
 					foreach($toc->posts as $post){
 						$work = new stdClass();
 						$work->name = get_field( 'artist_name' , $post->ID );
 						$work->permalink = get_permalink( $work->ID );
-						$work->thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0];;
+						$work->thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0];
+						$work->title = $post->post_title;
 						// TODO: pull out artist name and work title
 						if ( ! $work->thumbnail ) $work->thumbnail = '/wp-content/uploads/2021/01/JillHammer_FeaturedImage_R1.jpg';
 						if ( $post->post_name !== 'editors-note' ) $works[] = $work;
@@ -44,16 +46,25 @@ get_header();
 					usort($works, function($a, $b){ return strcmp($a->name, $b->name); });
 
 					foreach($works as $work){
-						echo(sprintf( '<li class="journal-artist-preview" data-thumbnail="%2$s"><a href="%3$s">%1$s</a><img src="%2$s"></li>', $work->name, $work->thumbnail, $work->permalink));
+						echo(
+							sprintf( '<li class="journal-artist-preview" data-thumbnail="%2$s" data-title="%4$s"><a href="%3$s">%1$s</a><img src="%2$s"></li>', 
+								$work->name, 
+								$work->thumbnail, 
+								$work->permalink,
+								$work->title
+							)
+						);
 					}
 
-					echo(
-								'</ul>
+					echo( 
+							'</ul>
 							</div>
 							<div class="journal-column">
 								<div id="journal-work-preview"></div>
+								<p id="journal-work-title"></p>
 							</div>
-						</div>'
+							</div>
+						</div'
 					);
 					wp_reset_postdata();
 
