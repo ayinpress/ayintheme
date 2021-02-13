@@ -52,20 +52,19 @@
 }
 
 .wpnbha.has-more-button button {
-	border: none;
-	background: var(--global--color-background);
-	font-family: var(--global--font-primary);
-	position: relative;
+	@extend %button-style;
+	padding-right: 80px;
+
 	&::after {
 		background-image: url(/wp-content/themes/ayintheme/assets/img/dot-arrow.png);
 		background-size: contain;
 		background-repeat: no-repeat;
 		content: "";
 		display: inline-block;
-		margin-left: var(--global--spacing-unit);
 		position: absolute;
-		width: 100px;
-		height: 100px;
-		top: -38px;
+		margin-left: var(--global--spacing-unit);
+		width: 40px;
+		height: 40px;
+		transform: rotate(90deg);
 	}
 }

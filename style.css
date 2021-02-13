@@ -677,7 +677,7 @@ body {
  * Base
  * - Reset the browser
  */
-input[type="submit"],
+.wpnbha.has-more-button button, input[type="submit"],
 .wp-block-button__link, .a8c-posts-list__view-all {
 	line-height: var(--button--line-height);
 	color: var(--button--color-text);
@@ -692,8 +692,8 @@ input[type="submit"],
 	padding: var(--button--padding-vertical) var(--button--padding-horizontal);
 }
 
-input[type="submit"]:before,
-.wp-block-button__link:before, .a8c-posts-list__view-all:before, input[type="submit"]:after,
+.wpnbha.has-more-button button:before, input[type="submit"]:before,
+.wp-block-button__link:before, .a8c-posts-list__view-all:before, .wpnbha.has-more-button button:after, input[type="submit"]:after,
 .wp-block-button__link:after, .a8c-posts-list__view-all:after {
 	content: '';
 	display: block;
@@ -701,25 +701,25 @@ input[type="submit"]:before,
 	width: 0;
 }
 
-input[type="submit"]:before,
+.wpnbha.has-more-button button:before, input[type="submit"]:before,
 .wp-block-button__link:before, .a8c-posts-list__view-all:before {
 	margin-bottom: -calc(.5em * var(--button--line-height) + -.38);
 }
 
-input[type="submit"]:after,
+.wpnbha.has-more-button button:after, input[type="submit"]:after,
 .wp-block-button__link:after, .a8c-posts-list__view-all:after {
 	margin-top: -calc(.5em * var(--button--line-height) + -.39);
 }
 
-input:active[type="submit"],
+.wpnbha.has-more-button button:active, input:active[type="submit"],
 .wp-block-button__link:active, .a8c-posts-list__view-all:active {
 	color: var(--button--color-text-active);
 	background-color: var(--button--color-background-active);
 }
 
-input:hover[type="submit"],
-.wp-block-button__link:hover, .a8c-posts-list__view-all:hover, input:focus[type="submit"],
-.wp-block-button__link:focus, .a8c-posts-list__view-all:focus, input.has-focus[type="submit"],
+.wpnbha.has-more-button button:hover, input:hover[type="submit"],
+.wp-block-button__link:hover, .a8c-posts-list__view-all:hover, .wpnbha.has-more-button button:focus, input:focus[type="submit"],
+.wp-block-button__link:focus, .a8c-posts-list__view-all:focus, .wpnbha.has-more-button button.has-focus, input.has-focus[type="submit"],
 .has-focus.wp-block-button__link, .has-focus.a8c-posts-list__view-all {
 	color: var(--button--color-text-hover);
 	background-color: var(--button--color-background-hover);
@@ -1378,10 +1378,7 @@ object {
 }
 
 .wpnbha.has-more-button button {
-	border: none;
-	background: var(--global--color-background);
-	font-family: var(--global--font-primary);
-	position: relative;
+	padding-right: 80px;
 }
 
 .wpnbha.has-more-button button::after {
@@ -1390,11 +1387,11 @@ object {
 	background-repeat: no-repeat;
 	content: "";
 	display: inline-block;
-	margin-left: var(--global--spacing-unit);
 	position: absolute;
-	width: 100px;
-	height: 100px;
-	top: -38px;
+	margin-left: var(--global--spacing-unit);
+	width: 40px;
+	height: 40px;
+	transform: rotate(90deg);
 }
 
 /**
