@@ -36,6 +36,7 @@ get_header();
 						$work->name = get_field( 'artist_name' , $post->ID );
 						$work->permalink = get_permalink( $work->ID );
 						$work->thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0];;
+						// TODO: pull out artist name and work title
 						if ( ! $work->thumbnail ) $work->thumbnail = '/wp-content/uploads/2021/01/JillHammer_FeaturedImage_R1.jpg';
 						if ( $post->post_name !== 'editors-note' ) $works[] = $work;
 					}

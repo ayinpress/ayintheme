@@ -8,7 +8,7 @@
  * Root Media Query Variables
  */
 :root {
-	--responsive--spacing-horizontal: 16px;
+	--responsive--spacing-horizontal: 32px;
 	--responsive--aligndefault-width: calc(100vw - var(--responsive--spacing-horizontal));
 	--responsive--alignwide-width: calc(100vw - var(--responsive--spacing-horizontal));
 	--responsive--alignfull-width: 100%;

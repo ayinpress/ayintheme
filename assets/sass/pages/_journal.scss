@@ -8,7 +8,7 @@ $toc_width_mobile: -100vw;
 #journal-toc {
 	background: var(--global--color-white);
 	bottom: 0;
-	display: grid;
+	display: none; // hide on mobile
 	grid-template-columns: 48px 1fr;
 	overflow: scroll;
 	position: fixed;
@@ -32,6 +32,7 @@ $toc_width_mobile: -100vw;
 	}
 
 	@include media ( laptop ){
+		display: grid;
 		top: 82px;
 		height: 100vh;
 		transform: translateX( $button_width );
@@ -121,16 +122,16 @@ $toc_width_mobile: -100vw;
 }
 
 .entry[class*='category-ayin-'] {
-	.entry-header, 
-	.entry-footer, 
-	.entry-content > * {
-		padding-right: 48px; // mobile TOC button
-		@include media( wide ){
-			padding-right: 0; // desktop TOC button
+	@include media( laptop ){
+		.entry-header, 
+		.entry-footer, 
+		.entry-content > * {
+			padding-right: 48px; // mobile TOC button
+			@include media( wide ){
+				padding-right: 0; // desktop TOC button
+			}
 		}
-	}
-	.entry-content .alignfull {
-		@include media( laptop ){
+		.entry-content .alignfull {
 			padding-right: 66px; // desktop TOC button
 		}
 	}
@@ -153,6 +154,7 @@ $toc_width_mobile: -100vw;
 
 	.editors-note {
 		font-style: italic;
+		font-weight: lighter;
 	}
 
 	.journal-column {
@@ -165,6 +167,7 @@ $toc_width_mobile: -100vw;
 			> li {
 				line-height: 1.3;
 				margin-bottom: 16px;
+				max-width: 200px;
 				> img {
 					display: none;
 				}
@@ -172,9 +175,14 @@ $toc_width_mobile: -100vw;
 		}
 
 		#journal-work-preview {
-			background-color: grey;
+			display: none;
+			@include media( laptop){
+				display: block;
+			}
+			background-color: var(--global--color-background);
 			background-position: center;
-			background-size: cover;
+			background-size: contain;
+			background-repeat: no-repeat;
 			height: 100%;
 			min-height: 300px;
 			width: 100%;
