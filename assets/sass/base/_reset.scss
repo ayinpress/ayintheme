@@ -77,9 +77,9 @@ body {
 	text-align: left;
 	background-color: var(--global--color-background);
 
-	&::-webkit-scrollbar {
-		display: none;
-	}
+	// &::-webkit-scrollbar {
+	// 	display: none;
+	// }
 }
 
 @import '../base/base';

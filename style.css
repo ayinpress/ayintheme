@@ -1011,10 +1011,6 @@ body {
 	background-color: var(--global--color-background);
 }
 
-body::-webkit-scrollbar {
-	display: none;
-}
-
 a {
 	color: var(--wp--style--color--link, var(--global--color-black));
 	font-family: var(--global--font-ui);
