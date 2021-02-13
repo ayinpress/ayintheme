@@ -32,8 +32,8 @@
     "extends @wordpress/browserslist-config"
   ],
   "scripts": {
-	"start": "chokidar \"**/*.scss\" -c \"npm run build\" --initial",
-	"build:fonts": "node-sass assets/sass/fonts.scss -o assets/css",
+    "start": "chokidar \"**/*.scss\" -c \"npm run build\" --initial",
+    "build:fonts": "node-sass assets/sass/fonts.scss -o assets/css",
     "build:style": "node-sass assets/sass/style.scss style.css --output-style expanded --indent-type tab --indent-width 1 --source-map true",
     "build:style-editor": "node-sass assets/sass/style-editor.scss assets/css/style-editor.css --output-style expanded --indent-type tab --indent-width 1 --source-map true",
     "build:style-navigation": "node-sass assets/sass/style-navigation.scss assets/css/style-navigation.css --output-style expanded --indent-type tab --indent-width 1 --source-map true",
