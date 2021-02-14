@@ -13,6 +13,7 @@
 
 	.wc-block-grid__product,
 	.wc-block-grid__product-link {
+		text-align: left;
 
 		& > *:not(:first-child) {
 			margin-top: var(--global--spacing-unit);
@@ -42,6 +43,7 @@
 	.wc-block-grid__product-title {
 		font-family: var(--global--font-primary);
 		font-size: var(--global--font-size-base);
+		text-align: left;
 	}
 
 	.wc-block-grid__product-rating .star-rating span:before {
@@ -52,6 +54,7 @@
 		color: var(--global--color-foreground-high-contrast);
 		font-size: var(--global--font-size-md);
 		line-height: var(--global--line-height-heading);
+		text-align: left;
 
 		ins {
 			color: var(--global--color-alert-success);
