@@ -4084,6 +4084,10 @@ nav a {
 	font-size: var(--global--font-size-lg);
 }
 
+.site-footer .widget-area .mc4wp-form-fields input {
+	color: white;
+}
+
 .search-form {
 	display: flex;
 	margin: auto;
