@@ -190,14 +190,15 @@ $toc_width_mobile: -100vw;
 				@include media( laptop){
 					display: block;
 				}
-				min-width: 380px;
+				margin: auto;
+				max-height: 600px;
 				width: 100%;
-				height: auto;
 			}
 			#journal-work-title {
 				font-family: var(--global--font-primary);
-				font-size: var(--global--font-size-sm);
+				font-size: var(--global--font-size-xs);
 				font-style: italic;
+				text-align: center;
 				margin-top: 4px;
 			}
 		}
