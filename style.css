@@ -4302,10 +4302,10 @@ img#wpstats {
 .journal-page-container .journal-grid .journal-column #journal-work-preview {
 	display: none;
 	background-color: var(--global--color-background);
-	background-position: center;
+	background-position: top;
 	background-size: contain;
 	background-repeat: no-repeat;
-	min-height: 300px;
+	min-height: 400px;
 	object-fit: fit-content;
 	width: 100%;
 }

@@ -142,7 +142,7 @@
 	const journalPreview = document.getElementById('journal-work-preview');
 
 	if (journalPreview){
-		journalPreview.style.backgroundImage = "url(/uploads/2021/02/5Aa.031.jpg)";
+		journalPreview.style.backgroundImage = "url(/wp-content/uploads/2021/02/5Aa.031-1.jpg";
 
 		var journalArtists = document.getElementsByClassName('journal-artist-preview');
 		for ( var i in journalArtists ){
