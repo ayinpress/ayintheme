@@ -4258,13 +4258,15 @@ img#wpstats {
 
 .journal-page-container hr {
 	border-bottom: 1px solid var(--separator--border-color);
-	margin: var(--global--spacing-unit) 0;
-	width: 40%;
+	margin-bottom: var(--global--spacing-unit);
+	margin-left: 0;
+	width: 75%;
 }
 
 .journal-page-container .editors-note {
 	font-style: italic;
 	font-weight: lighter;
+	margin-bottom: var(--global--spacing-unit);
 }
 
 .journal-page-container .journal-grid {
@@ -4299,15 +4301,17 @@ img#wpstats {
 	display: none;
 }
 
+.journal-page-container .journal-grid .journal-column .journal-preview {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
 .journal-page-container .journal-grid .journal-column #journal-work-preview {
 	display: none;
-	background-color: var(--global--color-background);
-	background-position: top;
-	background-size: contain;
-	background-repeat: no-repeat;
-	min-height: 400px;
-	object-fit: fit-content;
+	min-width: 380px;
 	width: 100%;
+	height: auto;
 }
 
 @media only screen and (min-width: 652px) {
@@ -4320,6 +4324,7 @@ img#wpstats {
 	font-family: var(--global--font-primary);
 	font-size: var(--global--font-size-sm);
 	font-style: italic;
+	margin-top: 4px;
 }
 
 .sticky-post {

@@ -139,18 +139,20 @@
 		baguetteBox.run(".wp-block-image", options);
 	}
 
-	const journalPreview = document.getElementById('journal-work-preview');
+	var journalPreview = document.getElementById('journal-work-preview');
+	var journalPreviewTitle = document.getElementById('journal-work-title');
 
-	if (journalPreview){
-		journalPreview.style.backgroundImage = "url(/wp-content/uploads/2021/02/5Aa.031-1.jpg";
+	if (journalPreview && journalPreviewTitle){
+		journalPreview.src = "/wp-content/uploads/2021/02/5Aa.031-1.jpg"
+		journalPreviewTitle.innerHTML = `Ayin One | Tardema`;
 
 		var journalArtists = document.getElementsByClassName('journal-artist-preview');
 		for ( var i in journalArtists ){
 			if (typeof(journalArtists[i]) === 'object'){
 				const { thumbnail, title }  = journalArtists[i].dataset;
 				journalArtists[i].addEventListener('mouseover', function(){
-					document.getElementById('journal-work-preview').style.backgroundImage = `url(${thumbnail}`;
-					document.getElementById('journal-work-title').innerHTML = `${title}`;
+					journalPreview.src = `${thumbnail}`;
+					journalPreviewTitle.innerHTML = `${title}`;
 				});
 			}
 		}

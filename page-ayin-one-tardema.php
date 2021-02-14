@@ -25,11 +25,11 @@ get_header();
 					echo(
 						'<div class="journal-page-container alignwide">
 							<h1 class="alignwide">Ayin One | Tardema</h1>
-							<hr></hr>
-							<h4 class="editors-note"><a href="/editors-note">Editors\' Note</a></h4>
-							<hr></hr>
 							<div class="journal-grid">
 								<div class="journal-column">
+								<hr></hr>
+								<h4 class="editors-note"><a href="/editors-note">Editors\' Note</a></h4>
+								<hr></hr>
 								<ul>'
 					);
 					foreach($toc->posts as $post){
@@ -58,8 +58,8 @@ get_header();
 					echo( 
 							'</ul>
 							</div>
-							<div class="journal-column">
-								<div id="journal-work-preview"></div>
+							<div class="journal-column journal-preview">
+								<img id="journal-work-preview"/>
 								<p id="journal-work-title"></p>
 							</div>
 							</div>
