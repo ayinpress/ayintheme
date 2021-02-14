@@ -2,10 +2,16 @@
 	background-color: var(--global--color-footer);
 	color: white;
 	.widget-area {
+		section {
+			margin-bottom: var(--global--spacing-vertical);
+		}
 		> .widget-column {
 			display: grid;
-			grid-template-columns: 1fr 1fr;
-			grid-gap: var(--global--spacing-horizontal);
+			grid-template-columns: 1fr;
+			@include media( laptop ){
+				grid-template-columns: 1fr 1fr;
+				grid-gap: var(--global--spacing-horizontal);
+			}
 			h2 {
 				font-size: var(--global--font-size-lg);
 			}
@@ -25,6 +31,23 @@
 		width: 100%;
 		.search-field {
 			width: 100%;
+		}
+	}
+}
+
+// Mailchimp forms
+.mc4wp-form-fields {
+	p {
+		> label {
+			display: block;
+			font-size: var(--global--font-size-xs);
+			font-family: var(--global--font-primary);
+		}
+		> input { 
+			width: 100%;
+			&[type="submit"]{
+				margin-top: 12px;
+			}
 		}
 	}
 }

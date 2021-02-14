@@ -86,24 +86,6 @@ $header_classes .= $has_primary_nav ? ' has-menu' : '';
 				</nav><!-- #site-navigation -->
 			<?php endif; ?>
 
-			<div class="menu-button-container">
-				<?php if ( $has_primary_nav ) : ?>
-					<button id="primary-open-menu" class="button open">
-						<span class="dropdown-icon open"><?php echo ayin_get_icon_svg( 'menu' ); ?></span>
-						<span class="hide-visually expanded-text"><?php _e( 'expanded', 'ayin' ); ?></span>
-					</button>
-				<?php endif; ?>
-				<?php if ( class_exists( 'WooCommerce' ) ) : ?>
-					<button id="woo-open-menu" class="button open">
-						<span class="dropdown-icon open"><?php echo ayin_get_icon_svg( 'shopping_cart' ); ?></span>
-						<span class="hide-visually expanded-text"><?php esc_html__( 'expanded', 'ayin' ); ?></span>
-					</button>
-				<?php endif; ?>
-			</div>
-
-			<div class="menu-button-container">
-			</div>
-
 			<?php if ( has_nav_menu( 'social' ) ) : ?>
 				<nav class="social-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Social Links Menu', 'ayin' ); ?>">
 					<?php

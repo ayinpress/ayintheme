@@ -17,6 +17,8 @@ $header_class = $show_title ? 'site-title' : 'screen-reader-text';
 <?php endif; ?>
 
 <div class="site-branding">
+	<?php get_template_part( 'template-parts/header/mobile-menu' ); ?>
+
 	<?php if ( has_custom_logo() && ! $show_title ) : ?>
 		<div class="site-logo" id="site-logo-container"><?php the_custom_logo(); ?></div>
 	<?php endif; ?>
