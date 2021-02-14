@@ -12,7 +12,7 @@
 		<span class="dropdown-icon open"><?php echo ayin_get_icon_svg( 'menu' ); ?></span>
 		<span class="hide-visually expanded-text"><?php _e( 'expanded', 'ayin' ); ?></span>
 	</button>
-	<?php if ( class_exists( 'WooCommerce' ) ) : ?>
+	<?php if ( class_exists( 'WooCommerce' ) && ! WC()->cart->is_empty() ) : ?>
 		<button id="woo-open-menu" class="button open">
 			<span class="dropdown-icon open"><?php echo ayin_get_icon_svg( 'shopping_cart' ); ?></span>
 			<span class="hide-visually expanded-text"><?php esc_html__( 'expanded', 'ayin' ); ?></span>
