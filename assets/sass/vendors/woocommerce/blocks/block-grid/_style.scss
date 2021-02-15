@@ -11,6 +11,10 @@
 
 #content .wc-block-grid {
 
+	.wc-block-grid__product {
+		margin-bottom: var(--global--spacing-vertical);
+	}
+
 	.wc-block-grid__product,
 	.wc-block-grid__product-link {
 		text-align: left;

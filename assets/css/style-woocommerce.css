@@ -515,6 +515,10 @@ body[class*="woocommerce"] #page .site-content .woocommerce input.button:disable
  *   .wp-block-product-categroy
  *   .wp-block-products-by-attribute
  */
+#content .wc-block-grid .wc-block-grid__product {
+	margin-bottom: var(--global--spacing-vertical);
+}
+
 #content .wc-block-grid .wc-block-grid__product,
 #content .wc-block-grid .wc-block-grid__product-link {
 	text-align: left;
