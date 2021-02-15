@@ -337,6 +337,7 @@
 .primary-navigation .menu-item > a,
 .woo-navigation .menu-item > a {
 	color: var(--primary-nav--color-link);
+	display: flex;
 	font-weight: 100;
 }
 

@@ -49,6 +49,8 @@ $header_classes .= $has_primary_nav ? ' has-menu' : '';
 							'theme_location'  => 'primary',
 							'menu_class'      => 'menu-wrapper',
 							'container_class' => 'primary-menu-container',
+							'link_before'    => '<span>',
+							'link_after'     => '</span>',
 							'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 						)
 					);

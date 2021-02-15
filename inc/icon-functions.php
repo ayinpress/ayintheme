@@ -37,13 +37,16 @@ function ayin_get_social_link_svg( $uri, $size = 24 ) {
  * @return string  $item_output The menu item output with social icon.
  */
 function ayin_nav_menu_social_icons( $item_output, $item, $depth, $args ) {
-	// Change SVG icon inside social links menu if there is supported URL.
-	if ( 'social' === $args->theme_location ) {
+	// Change SVG icon inside all menus if there is supported URL.
+	if ( 'primary' === $args->theme_location ) {
+		// die('is primary');
 		$svg = ayin_get_social_link_svg( $item->url, 26 );
 		if ( empty( $svg ) ) {
-			$svg = ayin_get_icon_svg( 'link' );
+			return $item_output;
+		} else {
+			$item_output = str_replace( $args->link_before, '<span class="screen-reader-text">', $item_output );
+			$item_output = str_replace( $args->link_after, '</span>' . $svg , $item_output );
 		}
-		$item_output = str_replace( $args->link_after, '</span>' . $svg, $item_output );
 	}
 
 	return $item_output;

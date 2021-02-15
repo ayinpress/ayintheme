@@ -306,6 +306,7 @@
 	// Menu Item Link Colors
 	.menu-item > a {
 		color: var(--primary-nav--color-link);
+		display: flex; // align social icons center
 		font-weight: 100;
 
 		&:hover {
