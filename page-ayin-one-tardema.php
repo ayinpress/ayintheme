@@ -28,7 +28,7 @@ get_header();
 								<div class="journal-column">
 									<h1>Ayin One Tardema</h1>
 									<hr></hr>
-									<h4 class="editors-note"><a href="/editors-note">Editors\' Note</a></h4>
+									<h4 class="editors-note"><a href="/editors-note">Editor\'s Note</a></h4>
 									<ul>'
 					);
 					foreach($toc->posts as $post){
