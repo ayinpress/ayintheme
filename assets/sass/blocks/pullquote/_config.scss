@@ -1,7 +1,7 @@
 @mixin pullquote-variables() {
 	--pullquote--font-family: var(--global--font-primary);
 	--pullquote--font-size: var(--global--font-size-xl);
-	--pullquote--font-style: italic;
+	--pullquote--font-style: normal;
 	--pullquote--letter-spacing: var(--heading--letter-spacing-h4);
 	--pullquote--line-height: var(--global--line-height-heading);
 	--pullquote--border-width: 0;

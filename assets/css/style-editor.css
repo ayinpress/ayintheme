@@ -127,7 +127,7 @@
 	--definition-term--font-family: var(--global--font-primary);
 	--pullquote--font-family: var(--global--font-primary);
 	--pullquote--font-size: var(--global--font-size-xl);
-	--pullquote--font-style: italic;
+	--pullquote--font-style: normal;
 	--pullquote--letter-spacing: var(--heading--letter-spacing-h4);
 	--pullquote--line-height: var(--global--line-height-heading);
 	--pullquote--border-width: 0;
@@ -998,9 +998,11 @@ p.has-background {
 }
 
 .wp-block-pullquote p {
+	color: var(--global--color-primary);
 	font-family: var(--pullquote--font-family);
 	font-size: var(--pullquote--font-size);
 	font-style: var(--pullquote--font-style);
+	font-weight: bold;
 	letter-spacing: var(--pullquote--letter-spacing);
 	line-height: var(--pullquote--line-height);
 	margin: 0;
