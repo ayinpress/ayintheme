@@ -29,7 +29,6 @@ get_header();
 									<h1>Ayin One Tardema</h1>
 									<hr></hr>
 									<h4 class="editors-note"><a href="/editors-note">Editors\' Note</a></h4>
-									<hr></hr>
 									<ul>'
 					);
 					foreach($toc->posts as $post){

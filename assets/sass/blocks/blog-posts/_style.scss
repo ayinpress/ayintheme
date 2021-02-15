@@ -53,18 +53,18 @@
 
 .wpnbha.has-more-button button {
 	@extend %button-style;
-	padding-right: 80px;
+	// padding-right: 80px;
 
-	&::after {
-		background-image: url(/wp-content/themes/ayintheme/assets/img/dot-arrow.png);
-		background-size: contain;
-		background-repeat: no-repeat;
-		content: "";
-		display: inline-block;
-		position: absolute;
-		margin-left: var(--global--spacing-unit);
-		width: 40px;
-		height: 40px;
-		transform: rotate(90deg);
-	}
+	// &::after {
+	// 	background-image: url(/wp-content/themes/ayintheme/assets/img/dot-arrow.png);
+	// 	background-size: contain;
+	// 	background-repeat: no-repeat;
+	// 	content: "";
+	// 	display: inline-block;
+	// 	position: absolute;
+	// 	margin-left: var(--global--spacing-unit);
+	// 	width: 40px;
+	// 	height: 40px;
+	// 	transform: rotate(90deg);
+	// }
 }

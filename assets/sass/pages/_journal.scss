@@ -143,7 +143,8 @@ $toc_width_mobile: -100vw;
 		border-bottom: 1px solid var(--separator--border-color);
 		margin-bottom: var(--global--spacing-unit);
 		margin-left: 0;
-		width: 75%;
+		max-width: 308px;
+		width: 100%;
 	}
 
 	.editors-note {
@@ -191,7 +192,7 @@ $toc_width_mobile: -100vw;
 					display: block;
 				}
 				margin: 0 auto;
-				max-height: 600px;
+				// max-height: 600px;
 				width: 100%;
 			}
 			#journal-work-title {
