@@ -5,3 +5,8 @@
 @import "button/style";
 @import "block-grid/style";
 @import "featured-product/style";
+
+// Product lightbox
+.pswp {
+	z-index: 99999;
+}

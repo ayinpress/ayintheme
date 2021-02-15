@@ -221,3 +221,7 @@ add_action( 'woocommerce_after_single_product_summary', 'woocommerce_product_des
 remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10 );
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
+
+add_action( 'after_setup_theme', 'wc_remove_magnifier', 100 ); 
+function wc_remove_magnifier() { remove_theme_support( 'wc-product-gallery-zoom' ); }
+

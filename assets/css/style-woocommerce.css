@@ -592,6 +592,10 @@ body[class*="woocommerce"] #page .site-content .woocommerce input.button:disable
 	text-decoration: none;
 }
 
+.pswp {
+	z-index: 99999;
+}
+
 /**
  * Components Imports
  */
