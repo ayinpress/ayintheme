@@ -24,13 +24,13 @@ get_header();
 					$toc = new WP_Query( array( 'category_name' => 'ayin-one', 'nopaging' => true )  );
 					echo(
 						'<div class="journal-page-container alignwide">
-							<h1 class="alignwide">Ayin One | Tardema</h1>
 							<div class="journal-grid">
 								<div class="journal-column">
-								<hr></hr>
-								<h4 class="editors-note"><a href="/editors-note">Editors\' Note</a></h4>
-								<hr></hr>
-								<ul>'
+									<h1>Ayin One Tardema</h1>
+									<hr></hr>
+									<h4 class="editors-note"><a href="/editors-note">Editors\' Note</a></h4>
+									<hr></hr>
+									<ul>'
 					);
 					foreach($toc->posts as $post){
 						$work = new stdClass();
