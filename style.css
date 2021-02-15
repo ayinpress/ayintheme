@@ -1746,12 +1746,17 @@ h6, .h6 {
 	font-weight: var(--heading--font-weight);
 }
 
-h1 strong, .h1 strong,
-h2 strong, .h2 strong,
-h3 strong, .h3 strong,
-h4 strong, .h4 strong,
-h5 strong, .h5 strong,
-h6 strong, .h6 strong {
+h1 a, h1 strong, .h1 a, .h1 strong,
+h2 a,
+h2 strong, .h2 a, .h2 strong,
+h3 a,
+h3 strong, .h3 a, .h3 strong,
+h4 a,
+h4 strong, .h4 a, .h4 strong,
+h5 a,
+h5 strong, .h5 a, .h5 strong,
+h6 a,
+h6 strong, .h6 a, .h6 strong {
 	font-weight: var(--heading--font-weight-strong);
 }
 
