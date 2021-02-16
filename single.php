@@ -48,7 +48,8 @@ get_header();
 							if ( $work->post_name !== 'editors-note' ) $artists[] = $artist;
 						}
 
-						usort($artists, function($a, $b){ return strcmp($a->name, $b->name); });
+						// The following line would sort the TOC alphabetically:
+						// usort($artists, function($a, $b){ return strcmp($a->name, $b->name); });
 
 						$journal_subhead = '<a class="editors-note" href="/editors-note">Editors\' Note</a>';
 
