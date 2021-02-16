@@ -41,7 +41,7 @@ get_header();
 						if ( $post->post_name !== 'editors-note' ) $works[] = $work;
 					}
 
-					usort($works, function($a, $b){ return strcmp($a->name, $b->name); });
+					// usort($works, function($a, $b){ return strcmp($a->name, $b->name); });
 
 					foreach($works as $work){
 						echo(
