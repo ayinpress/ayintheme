@@ -25,21 +25,17 @@
 	}
 
 	.nav-links {
-		@include media(mobile) {
-			display: flex;
-			justify-content: space-between;
+		display: flex;
+		justify-content: flex-end;
+		text-align: right;
 
-			.nav-next,
-			.nav-previous {
-				flex: 0 1 auto;
-				margin-bottom: inherit;
-				margin-top: inherit;
-				max-width: calc(50% - (0.5 * var(--global--spacing-unit)));
-			}
-
-			.nav-next {
-				text-align: right;
-			}
+		// .nav-next,
+		.nav-previous {
+			flex: 0 1 auto;
+			margin-bottom: inherit;
+			margin-top: inherit;
+			max-width: calc(50% - (0.5 * var(--global--spacing-unit)));
+			text-align: right;
 		}
 	}
 
@@ -63,12 +59,6 @@
 		font-family: var(--global--font-primary);
 		font-size: var(--global--font-size-lg);
 		line-height: var(--heading--line-height);
-	}
-
-	.nav-links {
-		@include media(mobile) {
-			justify-content: space-between;
-		}
 	}
 
 	.nav-next,
