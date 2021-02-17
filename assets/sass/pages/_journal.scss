@@ -9,7 +9,6 @@ $toc_width_mobile: -100vw;
 	bottom: 0;
 	display: none; // hide on mobile
 	grid-template-columns: 48px 1fr;
-	overflow: scroll;
 	position: fixed;
 	left: 100vw;
 	top: $mobile_nav_height;
@@ -74,6 +73,7 @@ $toc_width_mobile: -100vw;
 		padding: var(--global--spacing-horizontal);
 		padding-top: calc(var(--global--spacing-vertical) + #{$mobile_nav_height});
 		transition: all .25s ease-in-out;
+		overflow: scroll;
 		@include media( laptop ){
 			padding-left: calc( 2 * var(--global--spacing-horizontal) );
 			padding-top: calc(2 * var(--global--spacing-vertical) + #{$desktop_nav_height});

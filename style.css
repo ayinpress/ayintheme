@@ -4127,7 +4127,6 @@ img#wpstats {
 	bottom: 0;
 	display: none;
 	grid-template-columns: 48px 1fr;
-	overflow: scroll;
 	position: fixed;
 	left: 100vw;
 	top: 82px;
@@ -4200,6 +4199,7 @@ img#wpstats {
 	padding: var(--global--spacing-horizontal);
 	padding-top: calc(var(--global--spacing-vertical) + 82px);
 	transition: all .25s ease-in-out;
+	overflow: scroll;
 }
 
 @media only screen and (min-width: 652px) {
