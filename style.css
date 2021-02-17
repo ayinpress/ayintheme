@@ -522,19 +522,15 @@ Included in theme screenshot and in block patterns.
  * Site-main children wrappers
  * - Add double vertical margins here for clearer heirarchy
  */
-@media only screen and (min-width: 822px) {
+@media only screen and (min-width: 652px) {
 	.site-main > * {
 		margin-top: calc(2 * var(--global--spacing-vertical));
-		margin-bottom: calc(3 * var(--global--spacing-vertical));
+		margin-bottom: calc(2 * var(--global--spacing-vertical));
 	}
 }
 
 .site-main > *:first-child {
 	margin-top: 0;
-}
-
-.site-main > *:last-child {
-	margin-bottom: 0;
 }
 
 /**

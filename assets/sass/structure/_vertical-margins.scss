@@ -38,17 +38,13 @@
  * - Add double vertical margins here for clearer heirarchy
  */
 .site-main > * {
-	@include media(desktop){
+	@include media(laptop){
 		margin-top: calc(2 * var(--global--spacing-vertical));
-		margin-bottom: calc(3 * var(--global--spacing-vertical));
+		margin-bottom: calc(2 * var(--global--spacing-vertical));
 	}
 
 	&:first-child {
 		margin-top: 0;
-	}
-
-	&:last-child {
-		margin-bottom: 0;
 	}
 }
 
