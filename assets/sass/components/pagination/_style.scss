@@ -26,16 +26,21 @@
 
 	.nav-links {
 		display: flex;
-		justify-content: flex-end;
-		text-align: right;
+		flex-direction: row-reverse;
+		justify-content: space-between;
 
-		// .nav-next,
+		// .nav-next {
+		// 	text-align: left;
+		// }
+		.nav-previous {
+			text-align: right;
+		}
+		.nav-next,
 		.nav-previous {
 			flex: 0 1 auto;
 			margin-bottom: inherit;
 			margin-top: inherit;
 			max-width: calc(50% - (0.5 * var(--global--spacing-unit)));
-			text-align: right;
 		}
 	}
 

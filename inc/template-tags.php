@@ -171,9 +171,11 @@ if ( ! function_exists( 'ayin_the_post_navigation' ) ) :
 			the_post_navigation(
 				array(
 					// 'taxonomy'                   => __( 'post_category' ),
-					'next_text' => '',
 					'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next Work', 'ayin' ) . '</span> ' .
-						'<span class="screen-reader-text">' . __( 'Next Work:', 'ayin' ) . '</span> <br/>' .
+						'<span class="screen-reader-text">' . __( 'Next post:', 'ayin' ) . '</span> <br/>' .
+						'<span class="post-title">%title</span>',
+					'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous Work', 'ayin' ) . '</span> ' .
+						'<span class="screen-reader-text">' . __( 'Previous post:', 'ayin' ) . '</span> <br/>' .
 						'<span class="post-title">%title</span>',
 					'in_same_term' => true
 				)

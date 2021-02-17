@@ -3646,16 +3646,20 @@ nav a {
 
 .navigation .nav-links {
 	display: flex;
-	justify-content: flex-end;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}
+
+.navigation .nav-links .nav-previous {
 	text-align: right;
 }
 
+.navigation .nav-links .nav-next,
 .navigation .nav-links .nav-previous {
 	flex: 0 1 auto;
 	margin-bottom: inherit;
 	margin-top: inherit;
 	max-width: calc(50% - (0.5 * var(--global--spacing-unit)));
-	text-align: right;
 }
 
 .navigation .svg-icon {
