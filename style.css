@@ -2612,7 +2612,7 @@ table th,
 pre.wp-block-verse {
 	color: var(--global--color-foreground);
 	font-family: var(--entry-content--font-family);
-	font-size: var(--global--font-size-sm);
+	font-size: var(--global--font-size-md);
 	overflow: hidden;
 	padding: 0;
 	padding-right: 24px;
