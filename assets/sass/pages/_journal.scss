@@ -141,17 +141,21 @@ $toc_width_mobile: -100vw;
 		margin-bottom: var(--global--spacing-vertical);
 	}
 	hr {
+		display: none;
 		border-bottom: 1px solid var(--separator--border-color);
-		margin-bottom: var(--global--spacing-unit);
+		margin-bottom: var(--global--spacing-vertical);
 		margin-left: 0;
 		max-width: 308px;
 		width: 100%;
 	}
 
 	.editors-note {
-		font-style: italic;
-		font-weight: lighter;
-		margin-bottom: var(--global--spacing-unit);
+		margin-bottom: var(--global--spacing-vertical);
+		> a {
+			font-style: italic;
+			font-family: var(--global--font-secondary);
+			font-weight: 100;
+		}
 	}
 
 	.journal-grid {

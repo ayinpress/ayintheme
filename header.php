@@ -20,6 +20,7 @@ $header_classes .= $has_primary_nav ? ' has-menu' : '';
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="profile" href="https://gmpg.org/xfn/11" />
+	<link rel="preload" as="font" href="https://p.typekit.net/p.css?s=1&k=gsf4ocl&ht=tk&f=8482.8483.8484.8485&a=26349979&app=typekit&e=css" type="font/ttf" crossorigin="anonymous">
 	<?php wp_head(); ?>
 </head>
 

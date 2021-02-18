@@ -4266,17 +4266,22 @@ img#wpstats {
 }
 
 .journal-page-container hr {
+	display: none;
 	border-bottom: 1px solid var(--separator--border-color);
-	margin-bottom: var(--global--spacing-unit);
+	margin-bottom: var(--global--spacing-vertical);
 	margin-left: 0;
 	max-width: 308px;
 	width: 100%;
 }
 
 .journal-page-container .editors-note {
+	margin-bottom: var(--global--spacing-vertical);
+}
+
+.journal-page-container .editors-note > a {
 	font-style: italic;
-	font-weight: lighter;
-	margin-bottom: var(--global--spacing-unit);
+	font-family: var(--global--font-secondary);
+	font-weight: 100;
 }
 
 .journal-page-container .journal-grid {
