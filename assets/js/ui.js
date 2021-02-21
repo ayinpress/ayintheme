@@ -134,8 +134,8 @@
 			},
 			filter: /.+\.(gif|jpe?g|png|webp|svg)/i,
 		};
-		baguetteBox.run(".wp-block-gallery", options);
-		baguetteBox.run(".gallery", options);
+		// baguetteBox.run(".wp-block-gallery", options); // do not run on galleries, jetpack handles this
+		// baguetteBox.run(".gallery", options);
 		baguetteBox.run(".wp-block-image", options);
 	}
 
