@@ -4321,6 +4321,7 @@ img#wpstats {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	max-height: 800px;
 }
 
 .journal-page-container .journal-grid .journal-column #journal-work-preview {
