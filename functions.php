@@ -1,6 +1,6 @@
 <?php
 /**
- * Ayin functions and definitions
+ * Ayin functions and definitions!
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
