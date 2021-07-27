@@ -585,6 +585,7 @@ body {
 	border-width: 0;
 	text-decoration: none;
 	padding: var(--button--padding-vertical) var(--button--padding-horizontal);
+	margin: 0 auto;
 }
 
 .wpnbha.has-more-button button:before, input[type="submit"]:before,
@@ -1630,6 +1631,11 @@ object {
 	background-color: black;
 }
 
+.wp-block-eedee-block-gutenslider .eedee-background-div img {
+	object-fit: contain !important;
+	background: #000;
+}
+
 h1, .h1,
 h2, .h2,
 h3, .h3,
@@ -2429,6 +2435,7 @@ hr {
 }
 
 hr.wp-block-separator {
+	border-top: none;
 	border-bottom: none;
 	/**
 		 * Block Options

@@ -10,6 +10,7 @@
 	border-width: 0;
 	text-decoration: none;
 	padding: var(--button--padding-vertical) var(--button--padding-horizontal);
+	margin: 0 auto;
 
 	&:active {
 		color: var(--button--color-text-active);

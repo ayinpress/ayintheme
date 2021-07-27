@@ -7,3 +7,10 @@
 		background-color: black;
 	}
 }
+
+.wp-block-eedee-block-gutenslider {
+	.eedee-background-div img {
+		object-fit: contain !important; // Do not crop the art
+		background: #000;
+	}
+}

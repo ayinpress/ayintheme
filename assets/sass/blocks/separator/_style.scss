@@ -6,6 +6,7 @@ hr {
 	margin-right: auto;
 
 	&.wp-block-separator {
+		border-top: none;
 		border-bottom: none;
 
 		&:after {
