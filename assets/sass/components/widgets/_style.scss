@@ -4,6 +4,9 @@
 	.widget-area {
 		section {
 			margin-bottom: var(--global--spacing-vertical);
+			&.widget_text {
+				padding-right: 25px;
+			}
 		}
 		> .widget-column {
 			display: grid;

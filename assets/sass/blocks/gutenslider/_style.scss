@@ -13,4 +13,13 @@
 		object-fit: contain !important; // Do not crop the art
 		background: #000;
 	}
+
+.wp-block-eedee-block-gutenslider .wp-block-eedee-block-gutenslide .slide-content p.SlideQuote {
+	color: var(--global--color-primary);
+	font-family: var(--pullquote--font-family);
+	font-size: var(--pullquote--font-size);
+	font-style: var(--pullquote--font-style);
+	font-weight: bold;
+	letter-spacing: var(--pullquote--letter-spacing);
+	line-height: var(--pullquote--line-height);
 }
