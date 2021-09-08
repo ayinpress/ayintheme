@@ -422,6 +422,14 @@
 Ayin Styles 
 */
 .primary-navigation {
+	.menu-item > a {
+		justify-content: center;
+	}
+
+	div > ul li.MenuSocial {
+		display: inline-block;
+		width: 50px;
+	}
 
 	@include media( $navigation-min-break-point ) {
 		background: var(--global--color-background);
@@ -433,6 +441,11 @@ Ayin Styles
 			transform: translateY(-62px);
 			opacity: 0;
 			z-index: -1;
+		}
+
+		div > ul li.MenuSocial {
+			display: inherit;
+			width: inherit;
 		}
 	}
 }

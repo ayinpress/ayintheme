@@ -18,7 +18,13 @@
 			<?php ayin_entry_meta_header(); ?>
 		</div><!-- .meta-info -->
 		<?php endif; ?>
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); 
+			$folioArtist = get_field('folio_artist_name');
+
+			if (!empty($folioArtist)) {
+				echo( '<p class="artist-credit">By ' . $folioArtist . '</p>' );
+			}
+		?>
 		<?php 
 			if ( function_exists( 'get_field' ) ) {
 				$artwork_subheader = get_field( 'artwork_subheader' );
@@ -37,6 +43,20 @@
 
 	<div class="entry-content">
 		<?php
+			// get thumbnail for this page
+			if (has_post_thumbnail(get_queried_object_id())) {
+				$thumb = get_the_post_thumbnail(get_queried_object_id());
+			} else {
+				$thumb = '';
+			}
+			if (!empty ($thumb) && (in_category('82'))) {
+				echo '<div class="FolioFeaturedImg">';
+				echo $thumb;
+				echo '</div>';
+			};
+		?>
+		<?php
+
 		the_content(
 			sprintf(
 				wp_kses(

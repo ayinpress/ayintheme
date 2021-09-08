@@ -3964,6 +3964,10 @@ nav a {
 	margin-bottom: var(--global--spacing-vertical);
 }
 
+.site-footer .widget-area section.widget_text {
+	padding-right: 25px;
+}
+
 .site-footer .widget-area > .widget-column {
 	display: grid;
 	grid-template-columns: 1fr;

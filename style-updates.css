@@ -1,0 +1,156 @@
+/* 
+ * Style updates NOT using SASS, starting 8/2021 - Interlock Solutions
+ */
+
+/* navigation padding fix between 900 and 651px */
+
+@media screen and (max-width: 900px) and (min-width: 651px) {
+	.primary-navigation .primary-menu-container > ul > .menu-item > a {
+		padding-left: 12px !important;
+		padding-right: 12px !important;
+	}
+}
+
+/* print button icon on journal and news posts */
+
+.entry-header .entry-meta .tags-links::after {
+  content: "|";
+  width: 10px;
+  height: 10px;
+  color: var(--global--color-secondary);
+  padding-left: calc( 0.5 * var(--global--spacing-unit));
+}
+
+.PrintIcon .svg-icon {
+	margin: 4px 0 0 !important;
+}
+
+
+/**************************************/
+/*** Folios section 				***/
+/**************************************/
+
+
+
+@media only screen and (min-width: 652px) {
+	.parent-folios .site-main > *:first-child {
+		margin-top: calc(2 * var(--global--spacing-vertical));
+	}
+}
+
+.folios-page-container {
+	min-height: 600px;
+}
+
+.folios-page-container .folios-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: var(--global--spacing-vertical);
+}
+
+@media only screen and (min-width: 652px) {
+	.folios-page-container .folios-grid {
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: calc(2 * var(--global--spacing-horizontal));
+		margin-top: calc(2 * var(--global--spacing-unit));
+	}
+}
+
+.folios-page-container .folios-grid .folios-column ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.folios-page-container .folios-grid .folios-column ul > li {
+	line-height: 1.3;
+	margin-bottom: 16px;
+}
+
+.folios-page-container .folios-grid .folios-column ul > li > img {
+	display: none;
+}
+
+li.FolioParentTitle>a {
+	font-family: var(--heading--font-family);
+	font-size: 24px;
+	line-height: 28px;
+}
+
+/*li.FolioParentTitle>a:hover,*/
+li.FolioParentTitle>a:focus,
+li.FolioParentTitle>a:active {
+	color: #000;
+}
+
+ul.FolioArticleTitles {
+	margin-left: 25px;
+	padding-top: 10px;
+}
+
+li.folio-article-preview a {
+	font-family: var(--entry-content--font-family);
+}
+
+/*li.folio-article-preview a:before {
+	content: "•";
+	color: #fff;
+	font-size: 120%; 
+	padding-right: 5px;
+	vertical-align: middle;
+}*/
+
+/*li.folio-article-preview a:hover,
+li.folio-article-preview a:active {
+	color: #000;
+}*/
+
+/*li.folio-article-preview a:hover:before,
+li.folio-article-preview a:active:before {
+	color: #000;
+}*/
+
+.folios-page-container .folios-grid .folios-column.folio-preview {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-height: 800px;
+}
+
+.folios-page-container .folios-grid .folios-column #folio-work-preview {
+	display: none;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.folios-page-container .ArrowRight {
+	padding: 0 0 0 20px;
+	background: url('/wp-content/themes/ayintheme/assets/img/arrow-right.png') 0 11px no-repeat;
+}
+
+.folios-page-container .ArrowDown {
+	padding: 0 0 0 20px;
+	background: url('/wp-content/themes/ayintheme/assets/img/arrow-down.png') 0 11px no-repeat;
+}
+
+span.FolioDate {
+	font-family: var(--global--font-primary);
+    color: var(--global--color-foreground-low-contrast);
+    font-size: var(--global--font-size-sm);
+    line-height: var(--global--line-height-body);
+}
+
+@media only screen and (min-width: 652px) {
+	.folios-page-container .folios-grid .folios-column #folio-work-preview {
+		display: block;
+	}
+}
+
+.folios-page-container .folios-grid .folios-column #folio-work-title {
+	font-family: var(--global--font-primary);
+	font-style: italic;
+	text-align: center;
+	margin-top: 4px;
+}
+
+
+

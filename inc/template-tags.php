@@ -93,6 +93,8 @@ if ( ! function_exists( 'ayin_entry_meta_header' ) ) :
 				$tags_list
 			); // WPCS: XSS OK.
 		}
+
+		echo do_shortcode("[ayin_print_button]");
 	}
 endif;
 
