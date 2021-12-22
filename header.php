@@ -56,54 +56,9 @@ $header_classes .= $has_primary_nav ? ' has-menu' : '';
 						)
 					);
 					?>
-					<?php if ( ! WC()->cart->is_empty() ) : ?>
-					<nav class="woo-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Woo Minicart', 'ayin' ); ?>">
-						<?php
-						echo( sprintf(
-							'<button id="woo-close-menu" class="button close">
-								<span class="dropdown-icon close">%2$s</span>
-								<span class="hide-visually collapsed-text">%3$s</span>
-							</button>
-							<div class="woocommerce-menu-container">
-								<ul id="woocommerce-menu" class="menu-wrapper"">
-								<li class="menu-item woocommerce-menu-item %4$s" title="%5$s">
-									%6$s
-									<ul class="sub-menu">
-										<li class="woocommerce-cart-widget" title="%7$s">
-											%8$s
-										</li>
-									</ul>
-								</li>',
-							esc_html__( 'Close', 'ayin' ),
-							ayin_get_icon_svg( 'close' ),
-							esc_html__( 'collapsed', 'ayin' ),
-							is_cart() ? 'current-menu-item' : '',
-							esc_attr__( 'View your shopping cart', 'ayin' ),
-							ayin_cart_link(),
-							esc_attr__( 'View your shopping list', 'ayin' ),
-							ayin_cart_widget()
-						) );
-						?>
-					</nav><!-- .woo-navigation -->
-					<?php endif; ?>
 				</nav><!-- #site-navigation -->
 			<?php endif; ?>
-
-			<?php if ( has_nav_menu( 'social' ) ) : ?>
-				<nav class="social-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Social Links Menu', 'ayin' ); ?>">
-					<?php
-					wp_nav_menu(
-						array(
-							'theme_location' => 'social',
-							'link_before'    => '<span class="screen-reader-text">',
-							'link_after'     => '</span>' . ayin_get_icon_svg( 'link' ),
-							'depth'          => 1,
-						)
-					);
-					?>
-				</nav><!-- .social-navigation -->
-			<?php endif; ?>
-
+			<!-- 10-11-21 -- moved Social Media icons code to /templates/header/site-branding.php --> 
 		</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

@@ -8,6 +8,7 @@ node_modules
 .svn
 .sandbox-config
 .vscode
+desktop.ini
 
 #Ignoring headstart and language files
 */languages/*

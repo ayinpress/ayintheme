@@ -77,23 +77,22 @@ add_filter( 'comment_form_defaults', 'ayin_comment_form_defaults' );
  */
 function ayin_get_the_archive_title( $title, $original_title, $prefix ) {
 	if ( is_category() ) {
-		$prefix = '<span class="archive-prefix">' . __( '', 'ayin' ) . '</span>';
+		$prefix = '<span class="archive-prefix">' . __( 'Category Archives: ', 'ayin' ) . '</span>';
 		$title  = '<span class="page-description">' . single_term_title( '', false ) . '</span>';
-		$catDescription = '<div class="category-description">' . category_description( $catID[0] ) . '</div>'; 
 	} elseif ( is_tag() ) {
-		$prefix = '<span class="archive-prefix">' . __( 'Tag: ', 'ayin' ) . ' </span>';
+		$prefix = '<span class="archive-prefix">' . __( 'Tag Archives: ', 'ayin' ) . ' </span>';
 		$title  = '<span class="page-description">' . single_term_title( '', false ) . '</span>';
 	} elseif ( is_author() ) {
-		$prefix = '<span class="archive-prefix">' . __( 'Author: ', 'ayin' ) . ' </span>';
+		$prefix = '<span class="archive-prefix">' . __( 'Author Archives: ', 'ayin' ) . ' </span>';
 		$title  = '<span class="page-description">' . get_the_author_meta( 'display_name' ) . '</span>';
 	} elseif ( is_year() ) {
-		$prefix = '<span class="archive-prefix">' . __( 'Year: ', 'ayin' ) . ' </span>';
+		$prefix = '<span class="archive-prefix">' . __( 'Yearly Archives: ', 'ayin' ) . ' </span>';
 		$title  = '<span class="page-description">' . get_the_date( _x( 'Y', 'yearly archives date format', 'ayin' ) ) . '</span>';
 	} elseif ( is_month() ) {
-		$prefix = '<span class="archive-prefix">' . __( 'Month: ', 'ayin' ) . ' </span>';
+		$prefix = '<span class="archive-prefix">' . __( 'Monthly Archives: ', 'ayin' ) . ' </span>';
 		$title  = '<span class="page-description">' . get_the_date( _x( 'F Y', 'monthly archives date format', 'ayin' ) ) . '</span>';
 	} elseif ( is_day() ) {
-		$prefix = '<span class="archive-prefix">' . __( 'Day: ', 'ayin' ) . ' </span>';
+		$prefix = '<span class="archive-prefix">' . __( 'Daily Archives: ', 'ayin' ) . ' </span>';
 		$title  = '<span class="page-description">' . get_the_date() . '</span>';
 	} elseif ( is_post_type_archive() ) {
 		$prefix = '';

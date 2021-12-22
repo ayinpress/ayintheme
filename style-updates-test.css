@@ -5,9 +5,9 @@
 /* added social media icons to the right side of the header area on desktop */
 .social-navigation {
 	width: 150px;
-    position: absolute;
-    right: 0;
-    top: 30px;
+	position: absolute;
+	right: 0;
+	top: 30px;
 }
 
 li.MenuSocial {
@@ -170,9 +170,9 @@ li.folio-article-preview a:active:before {
 
 span.FolioDate {
 	font-family: var(--global--font-primary);
-    color: var(--global--color-foreground-low-contrast);
-    font-size: var(--global--font-size-sm);
-    line-height: var(--global--line-height-body);
+	color: var(--global--color-foreground-low-contrast);
+	font-size: var(--global--font-size-sm);
+	line-height: var(--global--line-height-body);
 }
 
 .folios-page-container .folios-grid .folios-column #folio-work-title {
@@ -229,52 +229,10 @@ h2.FooterDonate a:hover {
 }
 
 h2.ColumnTitle {
-	font-size: var(--heading--font-size-h2);
-	letter-spacing: var(--heading--letter-spacing-h2);
-	line-height: var(--heading--line-height-h2);
-	margin-top: calc( 0.666 * var(--global--spacing-vertical));
-	margin-bottom: calc( 0.666 * var(--global--spacing-vertical));
-}
-
-h2.ArticleTitle {
 	font-size: 1.2em;
 	margin: 0 0 0.25em;
-}
-
-button.PostGrid {
-	display: flex;
-	line-height: var(--button--line-height);
-	color: var(--button--color-text);
-	cursor: pointer;
-	font-weight: var(--button--font-weight);
-	font-family: var(--button--font-family);
-	font-size: var(--button--font-size);
-	background-color: var(--button--color-background);
-	border-radius: var(--button--border-radius);
-	border-width: 0;
-	text-decoration: none;
-	padding: var(--button--padding-vertical) var(--button--padding-horizontal);
-	margin: 0 auto;
-}
-
-button.PostGrid:hover {
-	color: var(--button--color-text-hover);
-    background-color: var(--button--color-background-hover);
-}
-
-.PostGridSpacer {
-	max-width: 720px;
-	margin: 40px auto;
-}
-
-.PostGridSpacer:after {
-    content: "";
-    display: inline-block;
-    height: 8px;
-    width: 100%;
-    background-image: url(/wp-content/themes/ayintheme/assets/img/diamond-border.svg);
-    bottom: 0;
-    left: 0;
+	margin-top: calc( 0.666 * var(--global--spacing-vertical));
+	margin-bottom: calc( 0.666 * var(--global--spacing-vertical));
 }
 
 @media only screen and (min-width: 482px) {
@@ -285,16 +243,11 @@ button.PostGrid:hover {
 }
 
 @media only screen and (min-width: 782px) {
-	h2.ArticleTitle {
+	h2.ColumnTitle {
 		font-size: 1.6em;
 	}
 }
 
-@media screen and (max-width: 651px) {
-	.ColumnChild {
-		padding-bottom: 20px;
-	}
-}
 
 @media screen and (max-width: 599px) {
 	.ColumnChild {
@@ -346,8 +299,8 @@ button.PostGrid:hover {
 	margin-top: 0;
 }
 
-.ColumnChildren article .post-thumbnail {
+/*.ColumnChildren article .post-thumbnail {
 	max-height: 380px;
 	margin-bottom: var(--global--spacing-unit);
 	overflow: hidden;
-}
+}*/

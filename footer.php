@@ -34,6 +34,7 @@
 		<?php endif; ?>
 
 		<div class="site-info">
+			&copy; <script>document.write(new Date().getFullYear());</script> Ayin Press | All Rights Reserved
 			<?php
 			if ( function_exists( 'the_privacy_policy_link' ) ) {
 				the_privacy_policy_link( '', '<span role="separator" aria-hidden="true"></span>' );

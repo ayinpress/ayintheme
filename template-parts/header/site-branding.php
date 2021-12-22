@@ -30,6 +30,22 @@ $header_class = $show_title ? 'site-title' : 'screen-reader-text';
 		<?php endif; ?>
 	<?php endif; ?>
 
+	<!-- 10-1-21 --  moved Social Icons from header.php file -->
+	<?php if ( has_nav_menu( 'social' ) ) : ?>
+		<nav class="social-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Social Links Menu', 'ayin' ); ?>">
+			<?php
+			wp_nav_menu(
+				array(
+					'theme_location' => 'social',
+					'link_before'    => '<span class="screen-reader-text">',
+					'link_after'     => '</span>' . ayin_get_icon_svg( 'link' ),
+					'depth'          => 1,
+				)
+			);
+			?>
+		</nav><!-- .social-navigation -->
+	<?php endif; ?>
+	
 	<?php if ( ( $description || is_customize_preview() ) && $show_title ) : ?>
 		<p class="site-description">
 			<?php echo $description; ?>

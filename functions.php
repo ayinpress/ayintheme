@@ -482,3 +482,8 @@ function parent_category_body_class( $class ) {
 	return $class;
 }
 add_filter( 'body_class', 'parent_category_body_class' );
+
+function ayin_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'ayin_custom_excerpt_length', 999 );

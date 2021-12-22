@@ -19,13 +19,10 @@
 		</div><!-- .meta-info -->
 		<?php endif; ?>
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); 
-			$folioArtist 	= get_field('folio_artist_name');
-			$columnAuthor 	= get_field('column_author_name');
+			$folioArtist = get_field('folio_artist_name');
 
 			if (!empty($folioArtist)) {
 				echo( '<p class="artist-credit">By ' . $folioArtist . '</p>' );
-			} elseif (!empty($columnAuthor)) {
-				echo( '<p class="artist-credit">By ' . $columnAuthor . '</p>' );
 			}
 		?>
 		<?php 
@@ -49,16 +46,16 @@
 			'parent' => '0' //get top level categories only
 		));
 
-		// look for the category id for the "folios" and "columns" categories only
+		// look for the category id for the "folios" category only
 		$folioCatId = 0;
 		$child_cats = null;
 		foreach( $all_categories as $single_category ){
-			if ($single_category->slug == 'folios' || $single_category->slug == 'columns') {
+			if ($single_category->slug == 'folios') {
 				$folioCatId = $single_category->cat_ID;
 			}
 		}
 
-		// get children of "folios" or "columns" category only
+		// get children of "folios" category only
 		if ($folioCatId > 0) {
 			$child_cats = get_categories( array(
 				'child_of' => $folioCatId

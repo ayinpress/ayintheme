@@ -38,7 +38,7 @@ function ayin_get_social_link_svg( $uri, $size = 24 ) {
  */
 function ayin_nav_menu_social_icons( $item_output, $item, $depth, $args ) {
 	// Change SVG icon inside all menus if there is supported URL.
-	if ( 'primary' === $args->theme_location ) {
+	if ( ('primary' === $args->theme_location) || ('social' === $args->theme_location) || ('footer' === $args->theme_location) ) {
 		// die('is primary');
 		$svg = ayin_get_social_link_svg( $item->url, 26 );
 		if ( empty( $svg ) ) {
