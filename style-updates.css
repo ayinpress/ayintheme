@@ -5,9 +5,9 @@
 /* added social media icons to the right side of the header area on desktop */
 .social-navigation {
 	width: 150px;
-    position: absolute;
-    right: 0;
-    top: 30px;
+	position: absolute;
+	right: 0;
+	top: 30px;
 }
 
 li.MenuSocial {
@@ -170,9 +170,9 @@ li.folio-article-preview a:active:before {
 
 span.FolioDate {
 	font-family: var(--global--font-primary);
-    color: var(--global--color-foreground-low-contrast);
-    font-size: var(--global--font-size-sm);
-    line-height: var(--global--line-height-body);
+	color: var(--global--color-foreground-low-contrast);
+	font-size: var(--global--font-size-sm);
+	line-height: var(--global--line-height-body);
 }
 
 .folios-page-container .folios-grid .folios-column #folio-work-title {
@@ -188,9 +188,9 @@ span.FolioDate {
 	}
 }
 
-/**************************************/
-/*** New Homepage layout  			***/
-/**************************************/
+/**********************************************/
+/*** New Homepage layout - Book Launch			***/
+/**********************************************/
 
 .home.ColumnChildren.alignfull {
 	max-width: 95% !important;
@@ -241,8 +241,9 @@ h2.ArticleTitle {
 	margin: 0 0 0.25em;
 }
 
-button.PostGrid {
-	display: flex;
+a.PostGrid {
+	display: block;
+	max-width: 170px;
 	line-height: var(--button--line-height);
 	color: var(--button--color-text);
 	cursor: pointer;
@@ -255,11 +256,12 @@ button.PostGrid {
 	text-decoration: none;
 	padding: var(--button--padding-vertical) var(--button--padding-horizontal);
 	margin: 0 auto;
+	text-align: center;
 }
 
-button.PostGrid:hover {
+a.PostGrid:hover {
 	color: var(--button--color-text-hover);
-    background-color: var(--button--color-background-hover);
+	background-color: var(--button--color-background-hover);
 }
 
 .PostGridSpacer {
@@ -268,13 +270,13 @@ button.PostGrid:hover {
 }
 
 .PostGridSpacer:after {
-    content: "";
-    display: inline-block;
-    height: 8px;
-    width: 100%;
-    background-image: url(/wp-content/themes/ayintheme/assets/img/diamond-border.svg);
-    bottom: 0;
-    left: 0;
+	content: "";
+	display: inline-block;
+	height: 8px;
+	width: 100%;
+	background-image: url(/wp-content/themes/ayintheme/assets/img/diamond-border.svg);
+	bottom: 0;
+	left: 0;
 }
 
 @media only screen and (min-width: 482px) {
@@ -350,4 +352,36 @@ button.PostGrid:hover {
 	max-height: 380px;
 	margin-bottom: var(--global--spacing-unit);
 	overflow: hidden;
+}
+
+
+/**********************************************/
+/*** New Homepage layout - 5 featured areas	***/
+/**********************************************/
+
+.HomeFlex1b .wp-block-column {
+	display: grid;
+	grid-template-columns: 66.66% 33.33%;
+	grid-column-gap: 2em;
+}
+
+.HomeFlex1b .wp-block-column img {
+	width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+.HomeFlex1b .wp-block-column {
+	display: flex;
+}
+
+.HomeFlex1b .wp-block-column .wp-block-image {
+	margin:  0 !important;
+}
+
+.Image1 { 
+	flex: 1.8947; 
+}
+.Image2 { 
+	flex: .9485; 
 }

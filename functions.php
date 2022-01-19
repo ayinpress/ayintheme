@@ -487,3 +487,37 @@ function ayin_custom_excerpt_length( $length ) {
     return 20;
 }
 add_filter( 'excerpt_length', 'ayin_custom_excerpt_length', 999 );
+
+
+/**
+ * Remove dashboard widgets
+ */
+function wpdocs_remove_dashboard_widgets(){
+	remove_meta_box( 'dashboard_recent_comments', 'dashboard', 'normal' ); // Recent Comments
+	remove_meta_box( 'dashboard_incoming_links', 'dashboard', 'normal' );  // Incoming Links
+	remove_meta_box( 'dashboard_plugins', 'dashboard', 'normal' );   // Plugins
+	remove_meta_box( 'dashboard_quick_press', 'dashboard', 'side' );  // Quick Press
+	remove_meta_box( 'dashboard_recent_drafts', 'dashboard', 'side' );  // Recent Drafts
+	remove_meta_box( 'dashboard_primary', 'dashboard', 'side' );   // WordPress blog
+	remove_meta_box( 'dashboard_secondary', 'dashboard', 'side' );   // Other WordPress News
+	remove_meta_box( 'dashboard_activity', 'dashboard', 'side' ); // Activity
+	remove_meta_box( 'mc_mm_dashboard_widget', 'dashboard', 'normal' ); // MailMunch
+}
+add_action( 'admin_init', 'wpdocs_remove_dashboard_widgets' );
+
+/**
+ * Add Training module to WP Dashboard
+ */
+add_action('wp_dashboard_setup', 'ayin_custom_dashboard_widgets');
+  
+function ayin_custom_dashboard_widgets() {
+	global $wp_meta_boxes;
+	 
+	wp_add_dashboard_widget('custom_training_widget', 'Ayin website training', 'custom_dashboard_training');
+}
+ 
+function custom_dashboard_training() {
+	echo '<p>We have recorded training videos here for your reference:<br><br>';
+	echo '<a href="/wp-content/themes/ayintheme/videos/ayin-folio-posts.mp4" target="_blank" rel="noopener noreferrer">Adding New Folios</a><br><br>';
+	echo '</p>';
+}
