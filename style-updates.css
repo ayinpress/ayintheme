@@ -29,24 +29,67 @@ li.MenuSocial {
 
 @media screen and (max-width: 900px) and (min-width: 651px) {
 	.primary-navigation .primary-menu-container > ul > .menu-item > a {
-		padding-left: 12px !important;
-		padding-right: 12px !important;
+		padding-left: 8px !important;
+		padding-right: 8px !important;
 	}
 }
 
 /* print button icon on journal and news posts */
 
+.entry-header .entry-meta .cat-links::after,
 .entry-header .entry-meta .tags-links::after {
-  content: "|";
-  width: 10px;
-  height: 10px;
-  color: var(--global--color-secondary);
-  padding-left: calc( 0.5 * var(--global--spacing-unit));
+	content: "|";
+	width: 10px;
+	height: 10px;
+	color: var(--global--color-secondary);
+	padding-left: 0;
 }
 
 .PrintIcon .svg-icon {
 	margin: 4px 0 0 !important;
 }
+
+/* change category divider to pipe not comma */
+
+.entry-meta > span {
+	margin-right: 0;
+}
+
+.cat-links,
+.tags-links {
+	color: var(--global--color-secondary);
+	font-family: var(--global--font-secondary);
+	font-size: var(--global--font-size-md);
+	font-weight: var(--global--font-weight);
+}
+
+.cat-links a,
+.tags-links a {
+	padding-left: calc( 0.5 * var(--global--spacing-unit));
+	padding-right: calc( 0.5 * var(--global--spacing-unit));
+}
+
+.cat-links a:first-of-type {
+	padding-left: 0;
+}
+
+.print-button a {
+	padding-left: calc( 0.5 * var(--global--spacing-unit));
+}
+
+/*.cat-links a:after {
+	content: '|';
+	width: 10px;
+	height: 10px;
+	color: var(--global--color-secondary);
+	padding-left: calc( 0.5 * var(--global--spacing-unit));
+}
+
+.cat-links a:last-of-type:after {
+	content: '';
+	width: 0;
+	height: 0;
+}*/
 
 
 /**************************************/
@@ -182,6 +225,16 @@ span.FolioDate {
 	margin-top: 4px;
 }
 
+.FolioFeaturedImg .image-caption {
+	font-family: var(--global--font-primary);
+	color: var(--global--color-foreground-low-contrast);
+	font-size: var(--global--font-size-sm);
+	line-height: var(--global--line-height-body);
+	margin-top: calc(0.5 * var(--global--spacing-unit));
+	margin-bottom: var(--global--spacing-unit);
+	text-align: center;
+}
+
 @media only screen and (min-width: 652px) {
 	.folios-page-container .folios-grid .folios-column.folio-preview {
 		display: block;
@@ -196,7 +249,7 @@ span.FolioDate {
 	max-width: 95% !important;
 }
 
-.HomeSecondCol {
+.HomeShopCol {
 	padding: 25px;
 	border: var(--form--border-width) solid var(--form--border-color);
 }
@@ -217,10 +270,22 @@ h2.FooterDonate a:hover {
 
 
 /**************************************/
-/*** New Columns articles  			***/
+/*** New Columns articles & 				***/
+/*** New Blog post grid - 1/17/22 	***/
 /**************************************/
 
 /*** custom styles based on our new code ***/
+
+.PostsGridWrapper {
+	margin-bottom: 50px !important;
+}
+
+.BlogGrid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	gap: 16px;
+}
 
 .ColumnChild {
 	display: grid;
@@ -228,12 +293,40 @@ h2.FooterDonate a:hover {
 	column-gap: 32px;
 }
 
+.BlogGrid article {
+	flex-basis: 100%;
+	margin-bottom: calc(.5 * var(--global--spacing-vertical));
+}
+
+.ColumnChildren article {
+	margin-bottom: calc(1 * var(--global--spacing-vertical));
+}
+
+.BlogGrid .entry-wrapper {
+	margin-top: var(--global--spacing-unit);
+}
+
+.PostsGridTitle h2,
 h2.ColumnTitle {
 	font-size: var(--heading--font-size-h2);
 	letter-spacing: var(--heading--letter-spacing-h2);
 	line-height: var(--heading--line-height-h2);
 	margin-top: calc( 0.666 * var(--global--spacing-vertical));
 	margin-bottom: calc( 0.666 * var(--global--spacing-vertical));
+}
+
+a.GridThumb {
+	display: block;
+	width: 100%;
+	height: 300px;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.BlogGridPost .entry-meta .cat-links a {
+	font-family: var(--global--font-secondary);
+		font-size: var(--global--font-size-sm);
 }
 
 h2.ArticleTitle {
@@ -279,26 +372,83 @@ a.PostGrid:hover {
 	left: 0;
 }
 
+p.ColumnDescription,
+p.ColumnDescription img {
+	margin-bottom: 25px;
+}
+
+.AyinGridLoading {
+	display: none;
+	width: 100%;
+	min-height: 300px;
+	background: url('/wp-content/themes/ayintheme/assets/img/loading.gif') 50% 50% no-repeat;
+}
+
+.AyinMorePosts {
+	flex-basis: 100%;
+	clear: both;
+	margin: 0;
+	text-align: center;
+}
+
+button.AyinMorePostsButton {
+	background: #efa182;
+	font-family: BrownLL, Georgia, Times, serif;
+	font-size: 20px;
+	color: #fff;
+	border: none;
+	padding: 23px 25px;
+}
+
+button.AyinMorePostsButton:hover {
+	background: #20a181;
+}
+
 @media only screen and (min-width: 482px) {
+	.PostsGridTitle h2,
 	h2.ColumnTitle {
 		margin-top: var(--global--spacing-vertical);
 		margin-bottom: var(--global--spacing-vertical);
 	}
 }
 
-@media only screen and (min-width: 782px) {
+@media only screen and (min-width: 600px) {
+	.BlogGrid article {
+		flex-basis: calc(50% - 16px);
+	}
+}
+
+@media only screen and (min-width: 769px) {
+	.BlogGrid article {
+		flex-basis: calc(33.3336% - 16px);
+	}
+}
+
+@media only screen and (min-width: 900px) {
+	.BlogGrid article {
+		flex-basis: calc(25% - 16px);
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.BlogGrid article {
+		flex-basis: calc(20% - 16px);
+	}
+
 	h2.ArticleTitle {
 		font-size: 1.6em;
 	}
 }
 
 @media screen and (max-width: 651px) {
+	.BlogGrid,
 	.ColumnChild {
 		padding-bottom: 20px;
 	}
 }
 
 @media screen and (max-width: 599px) {
+	.BlogGrid,
 	.ColumnChild {
 		grid-template-columns: repeat(1, 1fr);
 		column-gap: 25px;
@@ -307,16 +457,19 @@ a.PostGrid:hover {
 
 /*** copied and modified from main css file ***/
 @media only screen and (min-width: 652px) {
+	.BlogGrid article,
 	.ColumnChildren article {
 		margin-bottom: calc(1.5 * var(--global--spacing-vertical));
 	}
 }
 
+.BlogGrid article .entry-wrapper p,
 .ColumnChildren article .entry-wrapper p {
 	font-size: var(--global--font-size-sm);
 	margin-bottom: 0;
 }
 
+.BlogGrid article .cat-links,
 .ColumnChildren article .cat-links {
 	margin-bottom: 0;
 }
@@ -328,21 +481,27 @@ a.PostGrid:hover {
 	font-weight: normal;
 }
 
+.BlogGrid article .entry-title,
 .ColumnChildren article .entry-title {
 	font-weight: normal;
 	margin-top: 0;
 }
 
+.BlogGrid article .entry-title a,
 .ColumnChildren article .entry-title a {
 	color: var(--global--color-black);
 }
 
+.BlogGrid article .entry-title a:hover, 
+.BlogGrid article .entry-title a:focus, 
+.BlogGrid article .entry-title a:active,
 .ColumnChildren article .entry-title a:hover, 
 .ColumnChildren article .entry-title a:focus, 
 .ColumnChildren article .entry-title a:active {
 	color: var(--global--color-primary);
 }
 
+.BlogGrid article .entry-meta,
 .ColumnChildren article .entry-meta {
 	font-family: var(--global--font-primary);
 	margin-top: 0;
@@ -358,6 +517,10 @@ a.PostGrid:hover {
 /**********************************************/
 /*** New Homepage layout - 5 featured areas	***/
 /**********************************************/
+
+/*.TempHide {
+	display: none !important;
+}
 
 .HomeFlex1b .wp-block-column {
 	display: grid;
@@ -377,11 +540,107 @@ a.PostGrid:hover {
 
 .HomeFlex1b .wp-block-column .wp-block-image {
 	margin:  0 !important;
-}
+}*/
 
 .Image1 { 
 	flex: 1.8947; 
 }
+
 .Image2 { 
 	flex: .9485; 
+}
+
+.ShopSliderHome.wp-block-eedee-block-gutenslider.content-change{
+	height: auto !important;
+}
+
+@media (max-width: 1023px) {
+	.HomeFlex1.wp-block-columns {
+		flex-direction: column !important;
+	}
+
+	.HomeFlex1.wp-block-columns .wp-block-column:not(:first-child) {
+		margin-left: 0 !important;
+	}
+
+	.HomeFlex1.wp-block-columns .wp-block-column {
+		flex-basis: 100% !important;
+	}
+
+	.HomeFlex1.wp-block-columns .Flex1Col1.wp-block-column,
+	.HomeFlex2.wp-block-columns .Flex2Col1.wp-block-column,
+	.HomeFlex2.wp-block-columns .Flex2Col2.wp-block-column {
+		margin-bottom: 40px !important;
+	}
+
+	.Flex1BottomSep.wp-block-spacer {
+		height: 20px !important;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+	.HomeFlex2 {
+		flex-wrap: wrap !important;
+		justify-content: space-between !important;
+	}
+
+	.HomeFlex2.wp-block-columns .wp-block-column:not(:first-child) {
+		margin-left: 0 !important;
+	}
+
+	/*.HomeFlex2 .wp-block-column.Flex2Col1,
+	.HomeFlex2 .wp-block-column.Flex2Col2 {
+		flex: 1 0 50% !important;
+		column-gap: 20px !important;
+	}*/
+
+	.HomeFlex2 .wp-block-column {
+		flex: 1 0 100% !important;
+	}
+}
+
+
+
+/**********************************************************/
+/***  Gutenberg Grid, attempt to re-size - 				***/
+/***  not using at this time 							***/
+/**********************************************************/
+
+.wpnbha .post-thumbnail img {
+	height: auto;
+	width: 100%;
+	max-height: 12em;
+	object-fit: cover;
+}
+
+@media (max-width: 1540px) {
+	.wpnbha .post-thumbnail img {
+		max-height: 10em;
+	}
+}
+
+@media (max-width: 1150px) {
+	.wpnbha .post-thumbnail img {
+		max-height: 6em;
+	}
+}
+
+/**********************************************************/
+/***  ShopWP plugin 									***/
+/**********************************************************/
+h2.wps-products-title {
+	font-size: 22px !important;
+}
+
+button.wps-add-to-cart {
+	border-radius: 0 !important;
+}
+
+button.wps-add-to-cart:hover {
+	background-color: #20a181;
+	color: #fff;
+}
+
+.wpshopify-has-rendered {
+	max-width: var(--responsive--alignwide-width) !important;
 }

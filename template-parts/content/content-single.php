@@ -49,20 +49,27 @@
 			'parent' => '0' //get top level categories only
 		));
 
-		// look for the category id for the "folios" and "columns" categories only
+		// look for the category id for the "Folio" and "Column" categories only
 		$folioCatId = 0;
-		$child_cats = null;
+		$folioChildCats = null;
+		$columnChildCats = null;
 		foreach( $all_categories as $single_category ){
-			if ($single_category->slug == 'folios' || $single_category->slug == 'columns') {
+			if ($single_category->slug == 'folio') {
 				$folioCatId = $single_category->cat_ID;
+			} elseif ($single_category->slug == 'column') {
+				$columnCatId = $single_category->cat_ID;
 			}
 		}
 
-		// get children of "folios" or "columns" category only
+		// get children of "Folio" or "Column" category only
 		if ($folioCatId > 0) {
-			$child_cats = get_categories( array(
+			$folioChildCats = get_categories( array(
 				'child_of' => $folioCatId
-				//category_display_order
+			));
+		}
+		if ($columnCatId > 0) {
+			$columnChildCats = get_categories( array(
+				'child_of' => $columnCatId
 			));
 		}
 
@@ -77,8 +84,8 @@
 
 		// loop through both arrays to see if there is a match
 		$isFolioPost = false;
-		if ($child_cats && $parent_cats) {
-			foreach ($child_cats as $child) {
+		if ($folioChildCats && $parent_cats) {
+			foreach ($folioChildCats as $child) {
 				foreach ($parent_cats as $cat) {
 					if ($cat->term_id == $child->term_id) {
 						$isFolioPost = true;
@@ -88,18 +95,39 @@
 				if ($isFolioPost) break;
 			}
 		}
-
-		// get thumbnail for posts only in child of folios
-		if ($isFolioPost && (has_post_thumbnail(get_queried_object_id()))) {
-			$thumb = get_the_post_thumbnail(get_queried_object_id());
-		} else {
-			$thumb = '';
+		$isColumnPost = false;
+		if ($columnChildCats && $parent_cats) {
+			foreach ($columnChildCats as $child) {
+				foreach ($parent_cats as $cat) {
+					if ($cat->term_id == $child->term_id) {
+						$isColumnPost = true;
+						break;
+					}
+				}
+				if ($isColumnPost) break;
+			}
 		}
-		if (!empty ($thumb)) {
-			echo '<div class="FolioFeaturedImg">';
-			echo $thumb;
-			echo '</div>';
-		};
+
+
+		// get thumbnail for posts only in child of "Folio" or "Column" category
+		if ($isFolioPost || $isColumnPost) {
+			if (has_post_thumbnail(get_queried_object_id())) {
+				$thumb = get_the_post_thumbnail(get_queried_object_id());
+			} else {
+				$thumb = '';
+			}
+			if (get_post(get_post_thumbnail_id(get_queried_object_id()))->post_excerpt) {
+				$caption = get_post(get_post_thumbnail_id(get_queried_object_id()) )->post_excerpt;
+			} else {
+				$caption = '';
+			}
+			if (!empty ($thumb)) {
+				echo '<div class="FolioFeaturedImg">';
+				echo $thumb;
+				if (!empty($caption)) echo '<div class="image-caption">' . $caption . '</div>';
+				echo '</div>';
+			};
+		}
 
 		the_content(
 			sprintf(

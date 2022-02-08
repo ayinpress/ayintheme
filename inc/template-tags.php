@@ -73,7 +73,7 @@ if ( ! function_exists( 'ayin_entry_meta_header' ) ) :
 	 */
 	function ayin_entry_meta_header() {
 		/* translators: used between list items, there is a space after the comma. */
-		$categories_list = get_the_category_list( __( ', ', 'ayin' ) );
+		$categories_list = get_the_category_list( __( '|', 'ayin' ) );
 		if ( $categories_list ) {
 			printf(
 				/* translators: 1: SVG icon. 2: posted in label, only visible to screen readers. 3: list of categories. */
@@ -84,7 +84,7 @@ if ( ! function_exists( 'ayin_entry_meta_header' ) ) :
 		}
 
 		/* translators: used between list items, there is a space after the comma. */
-		$tags_list = get_the_tag_list( '', __( ', ', 'ayin' ) );
+		$tags_list = get_the_tag_list( '', __( '|', 'ayin' ) );
 		if ( $tags_list ) {
 			printf(
 				/* translators: 1: SVG icon. 2: posted in label, only visible to screen readers. 3: list of tags. */

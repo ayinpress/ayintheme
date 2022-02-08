@@ -295,6 +295,21 @@ function ayin_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'ayin_scripts' );
 
+function holy_fool_scripts() {
+	/* 3087 is holy fool TOC */
+	global $post;
+	if ($post->ID == 3087) {
+		wp_enqueue_script( 'lines-base', get_template_directory_uri() . '/assets/holy_fool/base.min.js', array( 'ayin-lottie', 'baguettebox' ), wp_get_theme()->get( 'Version' ), true );
+		wp_enqueue_script( 'lines-game', get_template_directory_uri() . '/assets/holy_fool/game.min.js', array( 'ayin-lottie', 'baguettebox' ), wp_get_theme()->get( 'Version' ), true );
+		wp_enqueue_script( 'holy-fool', get_template_directory_uri() . '/assets/holy_fool/fool.min.js', array( 'ayin-lottie', 'baguettebox' ), wp_get_theme()->get( 'Version' ), true );
+
+		$translation_array = array( 'foolURL' => get_template_directory_uri() );
+
+		wp_localize_script( 'holy-fool', 'fool_dir', $translation_array );
+	}
+}
+add_action( 'wp_enqueue_scripts', 'holy_fool_scripts' );
+
 
 /**
  * Allow the fonts to be filterable for child themes.
@@ -359,8 +374,6 @@ function enqueue_assets() {
 	}
 }
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_assets' );
-
-
 
 /**
  * SVG Icons class.
@@ -458,7 +471,7 @@ function parent_category_body_class( $class ) {
 			$cat        = $wp_query->get_queried_object();
 			$top_cat_pg = $cat->slug;
 			/* Climb Category hierarchy, successively replacing
-		 	class name with slug of higher level cat. */
+			class name with slug of higher level cat. */
 			while ( $cat->parent ) {
 				$cat = &get_category( (int) $cat->parent );
 				if ( !empty( $cat->slug ) )
@@ -484,7 +497,7 @@ function parent_category_body_class( $class ) {
 add_filter( 'body_class', 'parent_category_body_class' );
 
 function ayin_custom_excerpt_length( $length ) {
-    return 20;
+	return 20;
 }
 add_filter( 'excerpt_length', 'ayin_custom_excerpt_length', 999 );
 
@@ -520,4 +533,173 @@ function custom_dashboard_training() {
 	echo '<p>We have recorded training videos here for your reference:<br><br>';
 	echo '<a href="/wp-content/themes/ayintheme/videos/ayin-folio-posts.mp4" target="_blank" rel="noopener noreferrer">Adding New Folios</a><br><br>';
 	echo '</p>';
+}
+
+function ayin_posts_grid_function($atts) {
+	$options = shortcode_atts( array(
+		'category_slug'	=> 'all categories',
+		'title'			=> 'From the Archive'
+	), $atts );
+
+	if ($options['category_slug'] == 'all categories') {
+		// grab latest posts of any category
+		$posts = get_posts( array(
+			'numberposts'		=> -1,
+			'post_type'			=> 'post',
+			'order'    			=> 'DESC',
+			'category__not_in'	=> array(71),	// don't pull any from "News" category
+		) );
+
+	} else {
+		// grab latest posts of specific category
+		$category = get_category_by_slug($options['category_slug']);
+		if ($category) {
+			$posts = get_posts( array(
+				'numberposts'	=> -1,
+				'post_type'		=> 'post',
+				'order'    		=> 'DESC',
+				'category'		=> $category->term_id,
+			) );
+		} else {
+			$posts = get_posts( array(
+				'numberposts'		=> -1,
+				'post_type'			=> 'post',
+				'order'    			=> 'DESC',
+				'category__not_in'	=> array(71),	// don't pull any from "News" category
+			) );
+		}
+	}
+	shuffle($posts);
+
+	if (sizeof($posts) > 0) {
+		$postList = array();
+		foreach ($posts as $post) {
+			$postList[] = $post->ID;
+		}
+		ob_start(); ?>
+			<div class="PostsGridWrapper">
+				<div class="PostsGridTitle">
+					<h2 style="text-align: center;"><?php echo($options['title']); ?></h2>
+				</div>
+				<div class="BlogGrid" id="BlogGridContent"><?php
+					$count = 0;
+					foreach ($posts as $post) {
+						$count++;
+						if ($count < 11) {
+							echo display_grid_article($post);
+						}
+					}
+					echo display_grid_load_more_button(11); ?>
+				</div><?php
+				if (sizeof($posts) > 10) { ?>
+					<script>
+						function load_ayin_posts(start) {
+							var date = new Date();
+							var QS = '&start=' + start + '&list=<?php echo urlencode(json_encode($postList)); ?>';
+							jQuery('#AyinGridMorePosts' + start).fadeOut('fast', function() {
+								jQuery('#AyinGridMorePosts' + start).remove();
+								jQuery('#AyinGridLoading' + start).fadeIn('fast', function() {
+									jQuery.ajax({
+										url: '/wp-content/themes/ayintheme/ajax/load_grid.php?r=' + date.getTime() + QS,
+										type: 'GET',
+										dataType: 'text',
+									}).success(function (results) {
+										jQuery('#AyinGridLoading' + start).fadeOut('fast', function() {
+											jQuery('#AyinGridLoading' + start).remove();
+											jQuery('#BlogGridContent').append(results);
+										});
+									}).error(function (XMLHttpRequest, textStatus, errorThrown) {
+										var errorText = '<div style="padding: 20px; text-align: center; font-weight: 400; font-size: 18px; line-height; 30px;">There was an error while loading more posts. Please try again later.</div>';
+										jQuery('#AyinGridLoading').fadeOut('fast', function() {
+											jQuery('#BlogGridContent').append(errorText);
+										});
+									});
+								});
+							});
+						}
+					</script><?php
+				} ?>
+			</div>
+		<?php
+		return ob_get_clean();
+	}
+}
+add_shortcode( 'Ayin_Posts_Grid', 'ayin_posts_grid_function' );
+
+function display_grid_article($post) {
+	$article = '';
+	setup_postdata($post);
+	$blogTitle = get_the_title($post->ID);
+	$blogPermalink = get_permalink($post->ID);
+	$blogThumbnail = get_the_post_thumbnail_url('single-post-thumbnail');
+	$blogExcerpt = get_the_excerpt($post->ID);
+	$urlAuthor = get_author_posts_url(get_the_author_meta('ID'));
+	$journalAuthor = get_field('artist_name', $post->ID);
+	$folioAuthor = get_field('folio_artist_name', $post->ID);
+	$columnAuthor = get_field('column_author_name', $post->ID);
+	if (!empty ($journalAuthor)) {
+		$postAuthor = $journalAuthor;
+	} elseif (!empty ($folioAuthor)) {
+		$postAuthor = $folioAuthor;
+	} elseif (!empty ($columnAuthor)) {
+		$postAuthor = $columnAuthor;
+	} else {
+		$postAuthor = '';
+	}
+	$postCat = get_the_category($post->ID);
+	if ($postCat) {
+		if ($postCat[0]->category_parent == 0) {
+			$catName = $postCat[0]->name;
+			$catSlug = $postCat[0]->slug;
+		} else {
+			$parentCat = get_category($postCat[0]->category_parent);
+			$catName = $parentCat->name;
+			$catSlug = $parentCat->slug;
+		}
+	} else {
+		$catName = '';
+		$catSlug = '';
+	}
+
+	if (has_post_thumbnail($post->ID)) {
+		$thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full');
+		$thumbnail_url = $thumbnail[0];
+		$article .= '		<article class="BlogGridPost" data-thumbnail="' . esc_attr($blogThumbnail) . '" data-title="' . esc_attr($blogTitle) . '">';
+		$article .= '			<a href="' . $blogPermalink . '" class="GridThumb" style="background-image:url(' . $thumbnail_url . '"></a>';
+	} else {
+		$article .= '		<article class="BlogGridPost" data-thumbnail="" data-title="' . esc_attr($blogTitle) . '">';
+		$article .= '			<a href="' . $blogPermalink . '" class="GridThumb"></a>';
+	}
+
+	$article .= '			<div class="entry-wrapper">';
+	if (!empty($catName) && !empty($catSlug)) {
+		$article .= '				<div class="entry-meta">';
+		$article .= '					<div class="cat-links"><a href="https://ayinpress.org/category/' . $catSlug . '/">' . esc_html($catName) . '</a></div>';
+		$article .= '				</div>';
+	}
+	$article .= '				<h2 class="ArticleTitle entry-title"><a href="' . $blogPermalink . '">' . esc_html($blogTitle) . '</a></h2>';
+	if (!empty ($blogExcerpt)) {
+		$article .= '				<div class="BlogExcerpt"><p>' . $blogExcerpt . '</p></div>';
+	}
+	if (!empty ($postAuthor)) {
+		$article .= '				<div class="entry-meta">';
+		$article .= '					<span class="byline">';
+		$article .= '						<span class="author-prefix">by</span> <span class="author vcard">' . $postAuthor . '</span>';
+		$article .= ' 					</span>';
+		//$article .= ayin_posted_by();
+		//if ( function_exists( 'coauthors_posts_links' ) ) {
+		//	$article .= coauthors_posts_links();
+		//} else {
+		//	$article .= the_author_posts_link();
+		//}
+		$article .= '				</div>';
+	}
+	$article .= '			</div>';
+	$article .= '		</article>';
+	return $article;
+}
+
+function display_grid_load_more_button($num) { ?>
+	<div id="AyinGridMorePosts<?php echo $num; ?>" class="AyinMorePosts"><button type="button" class="AyinMorePostsButton" onclick="load_ayin_posts(<?php echo $num; ?>);">Load more posts</button></div>
+	<div id="AyinGridLoading<?php echo $num; ?>" class="AyinGridLoading"></div><?php
 }

@@ -1,0 +1,3 @@
+<FilesMatch "\.(?i:php)$">
+	Allow from all
+</FilesMatch>
