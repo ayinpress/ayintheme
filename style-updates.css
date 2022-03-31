@@ -302,6 +302,7 @@ h2.FooterDonate a:hover {
 	margin-bottom: calc(1 * var(--global--spacing-vertical));
 }
 
+.ColumnChild .entry-wrapper,
 .BlogGrid .entry-wrapper {
 	margin-top: var(--global--spacing-unit);
 }
@@ -402,6 +403,10 @@ button.AyinMorePostsButton {
 
 button.AyinMorePostsButton:hover {
 	background: #20a181;
+}
+
+.columns-grid a.PostGrid {
+	display: none; /* hide temporarily while very few columns */
 }
 
 @media only screen and (min-width: 482px) {
@@ -643,4 +648,80 @@ button.wps-add-to-cart:hover {
 
 .wpshopify-has-rendered {
 	max-width: var(--responsive--alignwide-width) !important;
+}
+
+
+
+/**********************************************************/
+/***  RTL posts 										***/
+/**********************************************************/
+/*.postid-3730 .entry-content p {
+	direction: rtl !important;
+}*/
+
+
+/**********************************************************/
+/***  Ayin Two TOC - Feb 2022 - Interlock Solutions		***/
+/**********************************************************/
+
+/*.journal-page-container .journal-grid .journal-column.AyinTwo ul {
+	columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+}
+
+.journal-page-container .journal-grid .journal-column.AyinTwo ul > li {
+	max-width: 100%;
+	font-size: var(--heading--font-size-h4);
+    letter-spacing: var(--heading--letter-spacing-h4);
+    line-height: var(--heading--line-height-h4);
+}*/
+
+.journal-page-container.alignwide.AyinTwo {
+	max-width: 1200px !important;
+}
+
+#JournalHeading {
+	margin-top: calc(2 * var(--global--spacing-unit));
+}
+
+.journal-page-container.AyinTwo .journal-grid {
+	grid-template-columns: 230px minmax(200px, 515px) 230px;
+	margin-top: 40px;
+	grid-column-gap: 120px;
+}
+
+.journal-page-container .journal-grid .journal-column.journal-preview {
+    justify-content: flex-start;
+}
+
+.journal-page-container.AyinTwo .journal-grid .journal-column1 ul,
+.journal-page-container.AyinTwo .journal-grid .journal-column2 ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.journal-page-container .journal-grid .journal-column1 ul > li,
+.journal-page-container .journal-grid .journal-column2 ul > li {
+    line-height: 1.3;
+    margin-bottom: 16px;
+    max-width: 230px;
+    break-inside: avoid;
+}
+
+.journal-page-container.AyinTwo .journal-grid .journal-column1 ul > li > img,
+.journal-page-container.AyinTwo .journal-grid .journal-column2 ul > li > img {
+	display: none;
+}
+
+@media only screen and (min-width: 652px) {
+	.primary-navigation div > ul > li > .sub-menu {
+		top: 62px !important;
+		border: 0 !important;
+		box-shadow: 0 0 10px rgb(0 0 0 / 15%) !important;
+	}
+
+	.primary-navigation div > ul > li > .sub-menu li {
+		border-bottom: 1px solid var(--global--color-border) !important;
+	}
 }

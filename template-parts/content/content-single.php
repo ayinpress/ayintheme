@@ -121,7 +121,9 @@
 			} else {
 				$caption = '';
 			}
-			if (!empty ($thumb)) {
+			$hideFeaturedImg = get_field('hide_featured_image', get_queried_object_id());
+			if (empty($hideFeaturedImg)) $hideFeaturedImg = 'No';
+			if (!empty ($thumb) && ($hideFeaturedImg == 'No')) {
 				echo '<div class="FolioFeaturedImg">';
 				echo $thumb;
 				if (!empty($caption)) echo '<div class="image-caption">' . $caption . '</div>';
