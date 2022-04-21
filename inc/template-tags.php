@@ -159,8 +159,83 @@ if ( ! function_exists( 'ayin_the_post_navigation' ) ) :
 	/**
 	 * Documentation for function.
 	 */
-	function ayin_the_post_navigation() {
-		if ( is_singular( 'attachment' ) ) {
+	function ayin_the_post_navigation($isFolioPost = false) {
+		if ($isFolioPost) {
+			// Custom Previous/next post navigation for Folios only
+			$prevTitle = '';
+			$prevLink = '';
+			$nextTitle = '';
+			$nextLink = '';
+
+			// if multiple categories for post, find first child folio category this post is in
+			$currentPostId = get_the_id();
+			$cats = get_the_category();
+			$childFolioCat = 0;
+			foreach ($cats as $cat) {
+				if ($cat->parent > 0) {
+					$parentCat = get_category($cat->parent);
+					if ($parentCat->slug == 'folio') {
+						$childFolioCat = $cat;
+						break;
+					}
+				}
+			}
+
+			if ($childFolioCat > 0) {
+				// sort all posts from category in same order as posts on main folio page (in "page-folios.php")
+				$sorted_posts = array();
+				$posts = get_posts( array(
+					'cat'            => $childFolioCat->term_id,
+					'posts_per_page' => - 1
+				) );
+				if ( sizeof( $posts ) > 0 ) {
+					foreach ( $posts as $post ) {
+						$sorted_posts[] = array(
+							'display_order' => get_field( 'folio_order', $post->ID ),
+							'title'         => $post->post_title,
+							'post'          => $post,
+						);
+					}
+					// sort by display_order and then title
+					usort( $sorted_posts, 'folio_post_compare' );
+
+					// loop through found posts for child category and set prev and next links/titles
+					$postFound = false;
+					foreach ( $sorted_posts as $item ) {
+						if ( $postFound ) {
+							$nextTitle = get_the_title( $item['post']->ID );
+							$nextLink  = get_permalink( $item['post']->ID );
+							break;
+						} else {
+							if ( $item['post']->ID === $currentPostId ) {
+								$postFound = true;
+							} else {
+								$prevTitle = get_the_title( $item['post']->ID );
+								$prevLink  = get_permalink( $item['post']->ID );
+							}
+						}
+					}
+				}
+				if ( ! $postFound ) {
+					$prevTitle = '';
+					$prevLink  = '';
+				}
+
+				echo( '<nav class="navigation post-navigation" aria-label="Posts"><h2 class="screen-reader-text">Post navigation</h2><div class="nav-links">' );
+				if ( $nextLink !== '' ) {
+					echo( '<div class="nav-previous"><a href="' . esc_url($nextLink) . '" rel="prev"><span class="meta-nav" aria-hidden="true">Next Work</span><span class="screen-reader-text">Next post:</span><br><span class="post-title">' . esc_html($nextTitle) . '</span></a></div>' );
+				} else {
+					echo( '<div class="nav-previous"></div>' );
+				}
+				if ( $prevLink !== '' ) {
+					echo( '<div class="nav-next"><a href="' . esc_url($prevLink) . '" rel="next"><span class="meta-nav" aria-hidden="true">Previous Work</span> <span class="screen-reader-text">Previous post:</span><br><span class="post-title">' . esc_html($prevTitle) . '</span></a></div>' );
+				} else {
+					echo( '<div class="nav-next"></div>' );
+				}
+				echo( '</div></nav>' );
+			}
+
+		} elseif ( is_singular( 'attachment' ) ) {
 			// Parent post navigation.
 			the_post_navigation(
 				array(
@@ -168,6 +243,7 @@ if ( ! function_exists( 'ayin_the_post_navigation' ) ) :
 					'prev_text' => sprintf( __( '<span class="meta-nav">Published in</span><span class="post-title">%s</span>', 'ayin' ), '%title' ),
 				)
 			);
+
 		} elseif ( is_singular( 'post' ) ) {
 			// Previous/next post navigation.
 			the_post_navigation(
@@ -208,3 +284,27 @@ if ( ! function_exists( 'ayin_the_posts_pagination' ) ) :
 		);
 	}
 endif;
+
+if ( ! function_exists( 'folio_post_compare' ) ) :
+// compare by display order first; if those are equal, then display by title alphabetically
+	function folio_post_compare($element1, $element2) {
+		$displayOrder1 = $element1['display_order'];
+		$displayOrder2 = $element2['display_order'];
+		if (empty($displayOrder1)) {
+			$displayOrder1 = 100;
+		} else {
+			$displayOrder1 = intval($displayOrder1);
+		}
+		if (empty($displayOrder2)) {
+			$displayOrder2 = 100;
+		} else {
+			$displayOrder2 = intval($displayOrder2);
+		}
+		if ($displayOrder1 == $displayOrder2) {
+			return strcmp($element1['title'], $element2['title']);
+		} else {
+			return $displayOrder1 - $displayOrder2;
+		}
+	}
+endif;
+

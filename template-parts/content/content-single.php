@@ -83,6 +83,7 @@
 		);
 
 		// loop through both arrays to see if there is a match
+		global $isFolioPost;
 		$isFolioPost = false;
 		if ($folioChildCats && $parent_cats) {
 			foreach ($folioChildCats as $child) {
