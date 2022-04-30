@@ -1,0 +1,5433 @@
+{
+    "The Magician":
+    {
+        "S": [
+            ["PRPSS1", "VBD", "DT", "NN", "."],
+            ["PRP$*", "NN", "VBN", "IN", "NN", "TO", "NN", "CC", "VBD", "VBN", "IN", "DTCS", "JJ", "NN", "."],
+            ["PRPSS3", "VBD", "JJ", "IN", "NN", "CC", "NNS", "CC", "PRP$*", "NN", ",", "IN", "WDT", "VBD", "DT", "NN", "IN", "DTCS", "NN", ",", "VBD", "TO", "VB", "RB", "IN", "NN", "."],
+            ["IN", "PRPSO3", "IN", "DTCS", "JJ", "NN", "VBD", "CD", "NNS", "IN", "NN", ",", "DT", "NN", ",", "DT", "NN", ",", "DT", "NN", "CC", "DT", "NN", "."],
+            ["PRP$*", "JJ", "NN", "VBD", "TO", "NN", ",", "PRP$*", "NN", "TO", "NN", "."],
+            ["IN", "PRP$*", "NN", "PRPSS3", "VBD", "DTCS", "JJ", "NN", "VBD", "IN", "DTCS", "NN", "VBG", "PRP$*", "NN", "."],
+            ["PRP$*", "NN", "VBD", "JJ", "CC", "JJ", ",", "CC", ",", "WRB", "PRP$*", "NNS", "VBD", "NN", ",", "PRPSS1", "VBD", "IN", "PRPSS3", "VBD", "JJS", "JJ", "NNS", "IN", "PRP$JJ", "NN", "."],
+            ["PRPSS1", "VBD", "PRPSR1", "VBD", "IN", "PRPSO3", "IN", "IN", "DTCS", "NN", "CC", "IN", "PRP$*", "NNS", "PRPSS1", "VBD", "TO", "VB", "IN", "PRPSR1", "."],
+            ["CC", "PRPSS1", "VBN", "DTCS", "NN", "VBG", "."],
+            ["IN", "PRP$*", "NNS", "PRPSS3", "VBZ", "NN", "CC", "NN", ",", "CC", "DT", "CD", "NNS", "IN", "NN", "DT", "NN", "are", "VBN", "IN", "PRPSO3", "."],
+            ["DT", "CD", "NNS", "IN", "PRPSO3", "are", "DT", "CD", "NNS", "IN", "DT", "NN", "IN", "NNP", ",", "DT", "NNS", "IN", "DT", "CD", "NNS", ",", "NN", ",", "NN", ",", "NN", ",", "NN", "."],
+            ["PRPSS1", "VBD", "IN", "DT", "NN", "IN", "DT", "NNS", "NNP", "VBN", "."],
+            ["DT", "NNS", "PRPSS1", "VBN", "VBD", "TO", "VB", "VBN", "IN", "DT", "NNP", "NN", "PRPSR3", ",", "CC", "PRPS*3", "VBD", "IN", "IN", "PRPSS3", "VBD", "IN", "PRPSO1", "."],
+            ["PRPSS1", "VBD", "IN", "JJ", "NN", "CC", "IN", "NN", "PRPSS1", "VBD", "EX", "VBD", "NN", ",", "IN", "PRPSO1", "IN", "DT", "JJ", "NN", "."],
+            ["CC", "IN", "PRPSO1", "DTCS", "NN", "VBD", "IN", "WDT", "PRPSS1", "MD", "VB", "JJ", "NNS", "."],
+            ["CC", "VB", "JJ", "NNS", "."]
+        ],
+        "Q": [],
+        "E": [
+            ["VB", ",", "DT*S", "VBZ", "DT", "NNP", "!"]
+        ],
+        "F": [],
+        "PRPSS1": [
+            ["i"]
+        ],
+        "VBD": [
+            ["saw"],
+            ["was"],
+            ["stood"],
+            ["seemed"],
+            ["were"],
+            ["pointed"],
+            ["wore"],
+            ["girded"],
+            ["met"],
+            ["felt"],
+            ["reflected"],
+            ["trembled"],
+            ["spoke"],
+            ["opened"]
+        ],
+        "DT": [
+            ["the"]
+        ],
+        "NN": [
+            ["man"],
+            ["figure"],
+            ["earth"],
+            ["heaven"],
+            ["mantle"],
+            ["foliage"],
+            ["head"],
+            ["head-band"],
+            ["initiate"],
+            ["infinity"],
+            ["altar"],
+            ["magic"],
+            ["sceptre"],
+            ["cup"],
+            ["sword"],
+            ["pentacle"],
+            ["hand"],
+            ["left"],
+            ["tunic"],
+            ["serpent"],
+            ["tail"],
+            ["face"],
+            ["mine"],
+            ["soul"],
+            ["mirror"],
+            ["voice"],
+            ["form"],
+            ["world"],
+            ["name"],
+            ["fire"],
+            ["water"],
+            ["air"],
+            ["depth"],
+            ["magician"],
+            ["trepidation"],
+            ["moment"],
+            ["nothing"],
+            ["sky"],
+            ["window"]
+        ],
+        "PRP$*": [
+            ["his"],
+            ["its"]
+        ],
+        "VBN": [
+            ["reached"],
+            ["clad"],
+            ["heard"],
+            ["controlled"],
+            ["touched"],
+            ["littered"]
+        ],
+        "IN": [
+            ["from"],
+            ["in"],
+            ["on"],
+            ["of"],
+            ["before"],
+            ["under"],
+            ["with"],
+            ["that"],
+            ["as"],
+            ["upon"],
+            ["by"],
+            ["though"],
+            ["at"],
+            ["except"],
+            ["within"],
+            ["through"]
+        ],
+        "TO": [
+            ["to"]
+        ],
+        "CC": [
+            ["and"],
+            ["but"]
+        ],
+        "DTCS": [
+            ["a"],
+            ["an"]
+        ],
+        "JJ": [
+            ["purple"],
+            ["deep"],
+            ["cube-shaped"],
+            ["right"],
+            ["white"],
+            ["luminous"],
+            ["serene"],
+            ["intimate"],
+            ["blue"],
+            ["unearthly"]
+        ],
+        "PRPSS3": [
+            ["he"]
+        ],
+        "NNS": [
+            ["flowers"],
+            ["symbols"],
+            ["eyes"],
+            ["recesses"],
+            ["hands"],
+            ["elements"],
+            ["letters"],
+            ["signs"],
+            ["mysteries"],
+            ["words"],
+            ["things"]
+        ],
+        "WDT": [
+            ["which"]
+        ],
+        "VB": [
+            ["disappear"],
+            ["look"],
+            ["be"],
+            ["see"],
+            ["hear"]
+        ],
+        "RB": [
+            ["mysteriously"]
+        ],
+        "PRPSO3": [
+            ["him"]
+        ],
+        "CD": [
+            ["four"]
+        ],
+        "VBG": [
+            ["swallowing"],
+            ["saying"]
+        ],
+        "WRB": [
+            ["when"]
+        ],
+        "JJS": [
+            ["most"]
+        ],
+        "PRP$JJ": [
+            ["my"]
+        ],
+        "PRPSR1": [
+            ["myself"]
+        ],
+        "DT*S": [
+            ["this"]
+        ],
+        "VBZ": [
+            ["is"],
+            ["unites"]
+        ],
+        "NNP": [
+            ["Great Magician"],
+            ["God"],
+            ["A"],
+            ["Great"]
+        ],
+        "PRPSR3": [
+            ["himself"]
+        ],
+        "PRPS*3": [
+            ["it"]
+        ],
+        "PRPSO1": [
+            ["me"]
+        ],
+        "EX": [
+            ["there"]
+        ],
+        "MD": [
+            ["could"]
+        ]
+    },
+    "The Fool":
+    {
+        "S": [
+            ["CC", "PRPSS1", "VBD", "DTCS", "NN", "."],
+            ["JJ", "CC", "JJ", "PRPSS3", "VBN", "PRPSR3", "IN", "DT", "JJ", "NN", ",", "IN", "DT", "VBN", "JJ", "IN", "DT", "JJ", "NNS", "IN", "DT", "NN", "."],
+            ["PRPSS3", "VBD", "JJ", "IN", "JJ", ",", "VBG", "NNS", ",", "DTCS", "PDT", "NN", ",", "PDT", "NN", "IN", "PRP$*", "NN", "."],
+            ["PRPSS3", "VBD", "RB", "WRB", "PRPSS3", "VBD", ",", "CC", "VBD", "VBN", "IN", "PRP$*", "JJ", "NNS", "WDT", "VBD", "RB", "IN", "DT", "JJ", "NN", "."],
+            ["PRP$*", "NN", "\"", "PRP$S", "NN", "VBD", "VB", "IN", "JJ", "NN", "NN", ",", "PRP$*", "NNS", "VBD", "VBN", "IN", "DT", "RB", "."],
+            ["DTCS", "JJ", "NN", "IN", "VBG", "NNS", "VBD", "IN", "PRPSO3", "IN", "IN", "DTCS", "NN", "CC", "VBN", "PRP$JJ", "NNS", "IN", "PRP$*", "NN", "."],
+            ["PRPSS3", "VBD", ",", "RB", "VBD", ",", "CC", "VBD", "TO", "NN", "PRPSR3", "IN", ",", "DT**", "DT", "NN", "VBG", "IN", "PRP$*", "NN", "DTCS", "NN", "VBG", "JJ", "NNS", ",", "WDT", "PRPSS3", ",", "IN", "PRP$*", "NN", ",", "VBD", "WRB", "PRPSS3", "VBD", "."],
+            ["IN", "PRPSO3", "DTCS", "NN", "VBD", "DT", "NN", "CC", "DTCS", "JJ", "NN", "VBD", "DT", "JJ", "NN", "."],
+            ["RB", "DTCS", "JJ", "NN", "IN", "JJ", "NN", "VBD", "IN", "IN", "DT", "NN", "."],
+            ["DT*S", "VBZ", "DT", "JJ", "NN", "."],
+            ["PRPSS1", "VBD", "PRP$JJ", "NN", "VB", "."],
+            ["PRPSS1", "VBD", ",", "RB", "VBG", "WRB", "PRPSS1", "VBD", "."],
+            ["CC", "IN", "DTCS", "JJ", "NN", "DT", "NN", "VBD", "."],
+            ["DT", "CD", "NN", "NNS", ",", "DT", "NN", ",", "DT", "NN", ",", "DT", "NN", "CC", "DT", "NN", "."],
+            ["DT", "NN", "RB", "VBZ", "PRPPO3", ",", "IN", "PRPSS3", "VBZ", "JJ", "IN", "VBN", "WP", "PRPPS3", "VB", "."],
+            ["RB", "PRPPS3", "VB", "TO", "PRPSO3", ",", "RB", "IN", "PRPSS3", "VBZ", "RB", "VB", "PRP$JJ", "NN", "."],
+            ["DT", "NNS", "have", "RB", "VBD", "PRP$JJ", "NN", ",", "PRPPS3", "VB", "PRPS*3", "IN", "PRP*R3", "."]
+        ],
+        "Q": [
+            ["WP", "VBZ", "PRPSS3", "IN", "DT", "NN", "?"]
+        ],
+        "E": [
+            ["VB", "!"]
+        ],
+        "F": [],
+        "CC": [
+            ["and"],
+            ["but"]
+        ],
+        "PRPSS1": [
+            ["i"]
+        ],
+        "VBD": [
+            ["saw"],
+            ["glanced"],
+            ["knew"],
+            ["went"],
+            ["was"],
+            ["ran"],
+            ["were"],
+            ["sprang"],
+            ["stumbled"],
+            ["fell"],
+            ["continued"],
+            ["carried"],
+            ["crossed"],
+            ["awaited"],
+            ["crawled"],
+            ["felt"],
+            ["inquired"],
+            ["asked"],
+            ["replied"],
+            ["lost"]
+        ],
+        "DTCS": [
+            ["another"],
+            ["a"]
+        ],
+        "NN": [
+            ["man"],
+            ["road"],
+            ["sun"],
+            ["smile"],
+            ["leer"],
+            ["face"],
+            ["circle"],
+            ["fool"],
+            ["cap"],
+            ["side"],
+            ["front"],
+            ["lynx"],
+            ["rock"],
+            ["flesh"],
+            ["drag"],
+            ["time"],
+            ["shoulder"],
+            ["bag"],
+            ["stupidity"],
+            ["crevice"],
+            ["precipice"],
+            ["wanderer"],
+            ["crocodile"],
+            ["mouth"],
+            ["head"],
+            ["silence"],
+            ["voice"],
+            ["magic"],
+            ["sceptre"],
+            ["cup"],
+            ["sword"],
+            ["pentacle"],
+            ["use"],
+            ["power"]
+        ],
+        "JJ": [
+            ["tired"],
+            ["lame"],
+            ["dusty"],
+            ["plain"],
+            ["scorching"],
+            ["sidelong"],
+            ["foolish"],
+            ["chimerical"],
+            ["same"],
+            ["wrong"],
+            ["wild"],
+            ["useless"],
+            ["deep"],
+            ["huge"],
+            ["open"],
+            ["long"]
+        ],
+        "PRPSS3": [
+            ["he"]
+        ],
+        "VBN": [
+            ["dragged"],
+            ["deserted"],
+            ["absorbed"],
+            ["torn"],
+            ["buried"],
+            ["forgotten"]
+        ],
+        "PRPSR3": [
+            ["himself"]
+        ],
+        "IN": [
+            ["along"],
+            ["across"],
+            ["under"],
+            ["of"],
+            ["with"],
+            ["on"],
+            ["in"],
+            ["upon"],
+            ["from"],
+            ["behind"],
+            ["before"],
+            ["out"],
+            ["after"],
+            ["although"],
+            ["since"],
+            ["though"]
+        ],
+        "DT": [
+            ["the"]
+        ],
+        "NNS": [
+            ["rays"],
+            ["eyes"],
+            ["dreams"],
+            ["garments"],
+            ["teeth"],
+            ["things"],
+            ["symbols"]
+        ],
+        "VBG": [
+            ["staring"],
+            ["glowing"],
+            ["holding"],
+            ["containing"],
+            ["knowing"]
+        ],
+        "PDT": [
+            ["half"]
+        ],
+        "PRP$*": [
+            ["his"]
+        ],
+        "RB": [
+            ["not"],
+            ["constantly"],
+            ["back"],
+            ["nearly"],
+            ["then"],
+            ["always"],
+            ["nevertheless"],
+            ["even"]
+        ],
+        "WRB": [
+            ["where"],
+            ["wherever"],
+            ["why"]
+        ],
+        "WDT": [
+            ["which"]
+        ],
+        "\"": [
+            ["'"]
+        ],
+        "PRP$S": [
+            ["s"]
+        ],
+        "VB": [
+            ["put"],
+            ["look"],
+            ["whirl"],
+            ["mean"],
+            ["belong"],
+            ["know"],
+            ["retain"]
+        ],
+        "PRPSO3": [
+            ["him"]
+        ],
+        "PRP$JJ": [
+            ["her"],
+            ["my"],
+            ["their"]
+        ],
+        "TO": [
+            ["to"]
+        ],
+        "DT**": [
+            ["all"]
+        ],
+        "DT*S": [
+            ["this"]
+        ],
+        "VBZ": [
+            ["is"],
+            ["has"],
+            ["carries"],
+            ["does"]
+        ],
+        "WP": [
+            ["what"]
+        ],
+        "CD": [
+            ["four"]
+        ],
+        "PRPPO3": [
+            ["them"]
+        ],
+        "PRPPS3": [
+            ["they"]
+        ],
+        "PRPS*3": [
+            ["it"]
+        ],
+        "PRP*R3": [
+            ["themselves"]
+        ]
+    },
+    "The High Priestess":
+    {
+        "S": [
+            ["WRB", "PRPSS1", "VBD", "DT", "JJ", "NN", "CC", "VBD", "DT", "JJ", "NN", "IN", "DT", "NNP", "IN", "NN", ",", "PRPSS1", "VBD", "IN", "JJ", "NN", "DT", "NN", "IN", "DTCS", "NN", "VBG", "IN", "DTCS", "JJ", "NN", "IN", "CD", "NNS", "IN", "DT", "NN", ",", "CD", "JJ", ",", "CC", "CD", "JJ", "."],
+            ["NN", "VBD", "IN", "PRP$JJ", "CC", "VBD", "IN", "PRP$JJ", "."],
+            ["JJ", "NNS", "VBD", "IN", "PRP$JJ", "JJ", "NN", "."],
+            ["IN", "PRP$JJ", "NN", "VBD", "DTCS", "JJ", "NN", "VBD", "IN", "DTCS", "JJ", "NN", "."],
+            ["IN", "PRP$JJ", "NNS", "PRPSS3", "VBN", "CD", "VBD", "NNS", "CC", "DTCS", "JJ", "NN", "."],
+            ["IN", "DT", "CD", "NNS", "IN", "DT", "NN", "VBD", "DTCS", "NN", "DT**", "VBN", "IN", "JJ", "VBZ", "CC", "NN", "IN", "NN", "."],
+            ["CC", "DTCS", "NN", "VBD", "."],
+            ["TO", "VB", "DT", "NNP", "CD", "MD", "VB", "DT", "JJ", "NN", "CC", "VB", "IN", "DT", "CD", "NNS", "."],
+            ["CC", "TO", "VB", "RB", ",", "CD", "MD", "VB", "NN", "IN", "DT", "NNS", ",", "VB", "DT", "NN", "CC", "VB", "DT", "NNS", "."],
+            ["PRPSS1", "MD", "IN", "TO", "VB", "JJ", ",", "PRPSS1", "VBD", "."],
+            ["RB", "DT", "NN", "VBD", "PRP$JJ", "NN", "TO", "PRPSO1", "CC", "VBD", "IN", "PRP$JJ", "NNS", "IN", "VBG", "."],
+            ["DT*S", "VBZ", "DT", "NNP", "IN", "NNP", "."],
+            ["DT", "PRPS*3", "MD", "VB", "PRPS*3", ",", "DT", "PRPS*3", "MD", "VB", "PRPS*3", "."],
+            ["IN", "DTCS", "NN", "PRPS*3", "MD", "VB", "CC", "NN", "IN", "JJ", "NN", "."],
+            ["IN", "PRPS2", "VBP", "NN", "DT", "VBN", "IN", "DT*S", "NN", "IN", "JJ", "NN", ",", "VB", "TO", "VB", "DT", "JJ", "IN", "DT", "JJ", "."],
+            ["VB", "RB", "TO", "DT", "NNP", "IN", "VBZ", "JJ", "."],
+            ["VB", "RB", "IN", "IN", "WDT", "VBZ", "JJ", ",", "CC", "VB", "IN", "IN", "PRPO2", "PRPSR2", ",", "VBZ", "DT", "NNP", "CC", "DT", "NN", "TO", "PRPS*3", ",", "CC", "DT", "NN", ",", "CC", "DT", "NN", "."]
+        ],
+        "Q": [
+            ["Are", "PRP*2", "JJ", "TO", "do", "DT*S", "?"]
+        ],
+        "E": [],
+        "F": [],
+        "WRB": [
+            ["when"]
+        ],
+        "PRPSS1": [
+            ["i"]
+        ],
+        "VBD": [
+            ["lifted"],
+            ["entered"],
+            ["saw"],
+            ["emanated"],
+            ["was"],
+            ["shone"],
+            ["surmounted"],
+            ["crossed"],
+            ["hung"],
+            ["said"],
+            ["turned"],
+            ["looked"]
+        ],
+        "DT": [
+            ["the"],
+            ["no"]
+        ],
+        "JJ": [
+            ["first"],
+            ["outer"],
+            ["half"],
+            ["high"],
+            ["white"],
+            ["black"],
+            ["sacred"],
+            ["green"],
+            ["golden"],
+            ["two-horned"],
+            ["open"],
+            ["second"],
+            ["able"],
+            ["thy"],
+            ["real"],
+            ["false"],
+            ["soundless"],
+            ["invisible"]
+        ],
+        "NN": [
+            ["veil"],
+            ["court"],
+            ["initiation"],
+            ["darkness"],
+            ["figure"],
+            ["woman"],
+            ["throne"],
+            ["temple"],
+            ["mystery"],
+            ["dress"],
+            ["head"],
+            ["tiara"],
+            ["moon"],
+            ["book"],
+            ["fruit"],
+            ["pomegranate"],
+            ["voice"],
+            ["possession"],
+            ["face"],
+            ["flower"],
+            ["bloom"],
+            ["soul"],
+            ["plant"],
+            ["gate"]
+        ],
+        "CC": [
+            ["and"]
+        ],
+        "IN": [
+            ["of"],
+            ["in"],
+            ["on"],
+            ["between"],
+            ["from"],
+            ["about"],
+            ["by"],
+            ["behind"],
+            ["with"],
+            ["like"],
+            ["into"],
+            ["without"],
+            ["if"],
+            ["that"]
+        ],
+        "NNP": [
+            ["Temple"],
+            ["Hall"],
+            ["Wisdom"],
+            ["Voice"]
+        ],
+        "DTCS": [
+            ["a"],
+            ["an"],
+            ["another"]
+        ],
+        "VBG": [
+            ["sitting"],
+            ["speaking"]
+        ],
+        "CD": [
+            ["two"],
+            ["one"]
+        ],
+        "NNS": [
+            ["pillars"],
+            ["symbols"],
+            ["knees"],
+            ["keys"],
+            ["eyes"]
+        ],
+        "PRP$JJ": [
+            ["her"],
+            ["my"]
+        ],
+        "PRPSS3": [
+            ["she"]
+        ],
+        "VBN": [
+            ["held"],
+            ["embroidered"],
+            ["seed"]
+        ],
+        "DT**": [
+            ["all"]
+        ],
+        "VBZ": [
+            ["leaves"],
+            ["is"]
+        ],
+        "TO": [
+            ["to"]
+        ],
+        "VB": [
+            ["enter"],
+            ["lift"],
+            ["pass"],
+            ["obtain"],
+            ["read"],
+            ["understand"],
+            ["be"],
+            ["reveal"],
+            ["hide"],
+            ["grow"],
+            ["learn"],
+            ["discern"],
+            ["listen"],
+            ["look"],
+            ["remember"]
+        ],
+        "MD": [
+            ["must"],
+            ["would"],
+            ["can"]
+        ],
+        "RB": [
+            ["thus"],
+            ["then"],
+            ["only"]
+        ],
+        "PRP*2": [
+            ["you"]
+        ],
+        "DT*S": [
+            ["this"]
+        ],
+        "PRPSO1": [
+            ["me"]
+        ],
+        "PRPS*3": [
+            ["one"],
+            ["it"]
+        ],
+        "PRPS2": [
+            ["thou"]
+        ],
+        "VBP": [
+            ["wouldst"]
+        ],
+        "WDT": [
+            ["which"]
+        ],
+        "PRPO2": [
+            ["thee"]
+        ],
+        "PRPSR2": [
+            ["thyself"]
+        ]
+    },
+    "The World":
+    {
+        "S": [
+            ["DTCS", "JJ", "NN", "VBD", "TO", "PRPSO1", "."],
+            ["DTCS", "NN", "RB", "IN", "DTCS", "NN", "VBN", "IN", "NN", "CC", "NNS", ",", "VBD", "IN", "NN", "TO", "NN", "IN", "DTCS", "JJ", ",", "NN", ",", "JJ", "PRPSO1", "IN", "PRP$*", "NN", "."],
+            ["CC", "IN", "DT*S", "NN", "CC", "NN", "PRPSS1", "VBN", "NN", "CC", "JJ", "VBG", ",", "NNS", "CC", "DT", "NN", "IN", "DTCS", "NN", ",", "DT", "NN", "IN", "VBG", "NNS", "CC", "NNS", "."],
+            ["DT", "NN", "VBD", "IN", "DTCS", "JJ", "NN", ",", "VBG", "DT", "NN", "CC", "DT", "NN", ",", "CC", ",", "IN", "DT", "NN", "IN", "PRPS*3", "PRPSS1", "VBD", "DT", "JJ", ",", "VBG", "NN", "IN", "DTCS", "JJ", "JJ", "NN", ",", "VBN", "IN", "DTCS", "NN", ",", "JJ", "NN", ",", "IN", "PRP$JJ", "NN", "PRPSS3", "VBN", "DTCS", "NN", "NN", "."],
+            ["RB", "DT", "CD", "JJ", "NNS", "VBD", "TO", "VB", "IN", "DT", "NNS", "IN", "DT", "NN", "."],
+            ["CD1", "IN", "DT", "NN", "IN", "DTCS", "NN", ",", "DTCS", "IN", "DT", "NN", "IN", "DTCS", "NN", ",", "DT", "JJ", ",", "IN", "DTCS", "NN", "CC", "DT", "JJ", ",", "IN", "DTCS", "NN", "."],
+            ["DT", "NN", "VBD", "IN", "RB", "IN", "PRPS*3", "VBD", "."],
+            ["DTCS", "JJ", "NN", "VBD", "IN", "PRPSO1", "."],
+            ["PRPSS1", "VBD", "IN", "NN", "."],
+            ["PRPS*3", "VBZ", "DT", "NN", "IN", "DT", "NN", ",", "DT", "NN", "VBD", ",", "CC", "PRPS*3", "MD", "VB", "VBN", "RB", "IN", "DT", "NNP", "VBZ", "VBN", "VBD", "."],
+            ["DT*S", "VBZ", "DTCS", "NN", "IN", "DT", "NN", "IN", "DT", "NN", "IN", "NNP", ",", "IN", "DT", "CD", "NNS", "."],
+            ["CC", "PRPS2", "VBP", "RB", "IN", "PRPS2", "VBP", "DT", "NN", "IN", "PRPSR2", "."],
+            ["VB", "TO", "VB", "PRPS*3", "IN", "PRPSR2", "CC", "PRPS2", "MD", "VB", "DT", "JJ", "NN", ",", "VBN", "IN", "DT**", "JJ", "NNS", "."],
+            ["VB", "IN", "DT", "NN", "WDT", "PRPS2", "VBP", "VBZ", "RB", "CD1", "IN", "DT", "NNS", "IN", "DT", "JJ", "NN", ",", "CC", "NNS", "CC", "NNS", "are", "RB", "NNS", "IN", "JJR", "NNS", "."]
+        ],
+        "Q": [
+            ["WP", "VBZ", "PRPS*3", "VB", "?"]
+        ],
+        "E": [],
+        "F": [],
+        "DTCS": [
+            ["an"],
+            ["a"],
+            ["another"]
+        ],
+        "JJ": [
+            ["unexpected"],
+            ["stupendous"],
+            ["blinding"],
+            ["soft"],
+            ["terrifying"],
+            ["naked"],
+            ["beautiful"],
+            ["young"],
+            ["transparent"],
+            ["apocalyptical"],
+            ["third"],
+            ["fourth"],
+            ["weird"],
+            ["infinite"],
+            ["illusory"]
+        ],
+        "NN": [
+            ["vision"],
+            ["circle"],
+            ["wreath"],
+            ["rainbow"],
+            ["heaven"],
+            ["earth"],
+            ["velocity"],
+            ["brilliance"],
+            ["light"],
+            ["fire"],
+            ["music"],
+            ["roar"],
+            ["tempest"],
+            ["rumble"],
+            ["noise"],
+            ["sun"],
+            ["centre"],
+            ["figure"],
+            ["woman"],
+            ["scarf"],
+            ["hand"],
+            ["magic"],
+            ["wand"],
+            ["face"],
+            ["lion"],
+            ["man"],
+            ["eagle"],
+            ["bull"],
+            ["silence"],
+            ["wonder"],
+            ["image"],
+            ["world"],
+            ["voice"],
+            ["essence"]
+        ],
+        "VBD": [
+            ["appeared"],
+            ["whirled"],
+            ["saw"],
+            ["began"],
+            ["disappeared"],
+            ["fell"],
+            ["asked"],
+            ["said"],
+            ["entered"]
+        ],
+        "TO": [
+            ["to"]
+        ],
+        "PRPSO1": [
+            ["me"]
+        ],
+        "RB": [
+            ["not"],
+            ["presently"],
+            ["suddenly"],
+            ["only"],
+            ["differently"],
+            ["merely"]
+        ],
+        "IN": [
+            ["unlike"],
+            ["from"],
+            ["with"],
+            ["by"],
+            ["amidst"],
+            ["of"],
+            ["in"],
+            ["on"],
+            ["as"],
+            ["after"],
+            ["because"],
+            ["outside"],
+            ["that"]
+        ],
+        "VBN": [
+            ["woven"],
+            ["heard"],
+            ["enveloped"],
+            ["held"],
+            ["understood"],
+            ["been"],
+            ["hidden"]
+        ],
+        "CC": [
+            ["and"],
+            ["but"]
+        ],
+        "NNS": [
+            ["lightnings"],
+            ["thunderclaps"],
+            ["mountains"],
+            ["earthquakes"],
+            ["beasts"],
+            ["edges"],
+            ["principles"],
+            ["forms"],
+            ["aspects"],
+            ["things"],
+            ["phenomena"],
+            ["hierolgyphics"],
+            ["ideas"]
+        ],
+        "PRP$*": [
+            ["its"]
+        ],
+        "DT*S": [
+            ["this"]
+        ],
+        "PRPSS1": [
+            ["i"]
+        ],
+        "VBG": [
+            ["singing"],
+            ["falling"],
+            ["touching"],
+            ["dancing"]
+        ],
+        "DT": [
+            ["the"]
+        ],
+        "PRPS*3": [
+            ["it"]
+        ],
+        "PRP$JJ": [
+            ["her"]
+        ],
+        "PRPSS3": [
+            ["she"]
+        ],
+        "CD": [
+            ["four"]
+        ],
+        "VB": [
+            ["appear"],
+            ["mean"],
+            ["be"],
+            ["learn"],
+            ["see"],
+            ["understand"]
+        ],
+        "CD1": [
+            ["one"]
+        ],
+        "WP": [
+            ["what"]
+        ],
+        "VBZ": [
+            ["does"],
+            ["is"],
+            ["has"]
+        ],
+        "MD": [
+            ["can"],
+            ["wilt"]
+        ],
+        "NNP": [
+            ["Temple"],
+            ["Time"]
+        ],
+        "PRPS2": [
+            ["thou"]
+        ],
+        "VBP": [
+            ["seest"],
+            ["knowest"]
+        ],
+        "PRPSR2": [
+            ["thyself"]
+        ],
+        "DT**": [
+            ["all"]
+        ],
+        "WDT": [
+            ["which"]
+        ],
+        "JJR": [
+            ["deeper"]
+        ]
+    },
+    "The Empress":
+    {
+        "S": [
+            ["PRPSS1", "VBD", "DT", "NN", "IN", "DT", "NN", ",", "CC", "VBG", "DT", "NN", "IN", "NNS", "CC", "NN", "PRPSS1", "VBN", "DT", "NN", "VBG", "IN", "NNS", "."],
+            ["NNS", "VBD", ",", "DT", "NNS", "VBN", ",", "DT", "NNS", "VBD", ",", "JJ", "NNS", "VBD", "IN", "NNS", "CC", "NNS", "VBD", "."],
+            ["PRP", "PRPSS1", "VBD", "DT", "VBG", "IN", "JJ", ",", "JJ", "NNP", "."],
+            ["DT", "NN", "VBD", "RB", "CC", "RB", "CC", "DTCS", "JJ", "JJ", "NN", "VBD", "IN", "DT", "NN", "."],
+            ["IN", "DT", "NN", "IN", "DTCS", "JJ", "NN", "WRB", "NNS", "VBD", ",", "PRPSS1", "VBD", "DT", "NNP", "VBN", "IN", "DTCS", "NN", "VBN", "IN", "NN", "CC", "NNS", "."],
+            ["DTCS", "JJ", "NN", "VBN", "PRP$JJ", "JJ", "NN", "CC", ",", "IN", "PRP$JJ", "NN", ",", "VBD", "CD", "NNS", "."],
+            ["IN", "PRP$JJ", "VBD", "CD", "JJ", "NNS", "CC", "IN", "PRP$JJ", "NNS", "PRPSS3", "VBN", "DTCS", "NN", "."],
+            ["DT**", "IN", ",", "IN", "DT", "JJ", "NN", "IN", "DT", "NNP", ",", "NNS", "CC", "NNS", "VBD", "PRP$JJ", "JJ", ",", "JJ", "NNS", "."],
+            ["PRP$JJ", "JJ", "NN", "VBD", "VBN", "IN", "PRPPO3", "IN", "IN", "DTCS", "RB", "VBD", "NN", "VBD", "VBD", "IN", "PRPS*3", "CC", "VBD", "VBN", "PRPSR3", "RB", "CC", "RB", "VB", "NN", "IN", "PRP$JJ", "NN", "."],
+            ["DT", "NN", "IN", "NNP", ",", "DT", "NN", "IN", "NN", ",", "VBD", "VBD", "IN", "PRP$JJ", "NN", "NN", "."],
+            ["IN", "NN", "DT", "NNP", "VBD", "IN", "PRPSO1", "RB", "VBG", "CC", ",", "IN", "DT", "NN", "IN", "IN", "NN", ",", "PRPSS1", "RB", "VBD", "DTCS", "NN", "IN", "DT", "JJ", "VBG", "JJ", "IN", "PRP$JJ", "NN", "."]
+        ],
+        "Q": [
+            ["NNP", "IN", "NN", ",", "PRPSS1", "VBD", ",", "WRB", "VBZ", "PRPS*3", "RB", "JJ", "CC", "JJ", "DT**", "IN", "PRP*2", "?"],
+            ["Do", "PRP*2", "RB", "VB", "IN", "DT", "JJ", ",", "JJ", "NN", ",", "IN", "DT", "JJ", ",", "JJ", "NN", "?"],
+            ["Do", "PRP*2", "RB", "VB", "IN", "NN", "CC", "NNS", "IN", "JJ", "NNS", ",", "JJ", "CC", "JJ", "?"],
+            ["WRB", "MD", "PRP*2", "VB", "RB", "RB", "IN", "DT", "VBG", "NNS", ",", "WRB", "PRP", "VBZ", "VBN", "TO", "NN", ",", "RB", "IN", "WDT", "VBZ", "RB", "RB", "VBN", "VBN", "?"]
+        ],
+        "E": [],
+        "F": [],
+        "PRPSS1": [
+            ["i"]
+        ],
+        "VBD": [
+            ["felt"],
+            ["murmured"],
+            ["whispered"],
+            ["sang"],
+            ["hummed"],
+            ["shone"],
+            ["hung"],
+            ["bloomed"],
+            ["saw"],
+            ["rose"],
+            ["opened"],
+            ["was"],
+            ["were"],
+            ["reflected"],
+            ["had"],
+            ["chiselled"],
+            ["said"],
+            ["looked"]
+        ],
+        "DT": [
+            ["the"],
+            ["some"]
+        ],
+        "NN": [
+            ["breath"],
+            ["spring"],
+            ["fragrance"],
+            ["lilies-of-the-valley"],
+            ["tender"],
+            ["sun"],
+            ["cloud"],
+            ["woods"],
+            ["midst"],
+            ["meadow"],
+            ["throne"],
+            ["ivy"],
+            ["wreath"],
+            ["hair"],
+            ["head"],
+            ["sceptre"],
+            ["smile"],
+            ["dress"],
+            ["flower"],
+            ["part"],
+            ["garment"],
+            ["sign"],
+            ["goddess"],
+            ["love"],
+            ["marble"],
+            ["life"],
+            ["autumn"],
+            ["winter"],
+            ["death"],
+            ["answer"],
+            ["influence"],
+            ["heart"]
+        ],
+        "IN": [
+            ["of"],
+            ["in"],
+            ["over"],
+            ["on"],
+            ["with"],
+            ["above"],
+            ["behind"],
+            ["around"],
+            ["beneath"],
+            ["as"],
+            ["though"],
+            ["about"],
+            ["that"],
+            ["for"],
+            ["under"]
+        ],
+        "CC": [
+            ["and"],
+            ["or"]
+        ],
+        "VBG": [
+            ["accompanying"],
+            ["singing"],
+            ["breathing"],
+            ["opening"],
+            ["smiling"],
+            ["understanding"]
+        ],
+        "NNS": [
+            ["violets"],
+            ["elves"],
+            ["rivulets"],
+            ["treetops"],
+            ["grasses"],
+            ["birds"],
+            ["choruses"],
+            ["bees"],
+            ["primroses"],
+            ["lilacs"],
+            ["stars"],
+            ["wings"],
+            ["hands"],
+            ["flowers"],
+            ["buds"],
+            ["leaves"],
+            ["graveyards"],
+            ["graves"]
+        ],
+        "VBN": [
+            ["heard"],
+            ["rustled"],
+            ["seated"],
+            ["covered"],
+            ["adorned"],
+            ["held"],
+            ["engraved"],
+            ["destined"],
+            ["been"],
+            ["born"]
+        ],
+        "JJ": [
+            ["innumerable"],
+            ["joyful"],
+            ["living"],
+            ["little"],
+            ["white"],
+            ["green"],
+            ["golden"],
+            ["snowy"],
+            ["sweet"],
+            ["dewy"],
+            ["whole"],
+            ["bright"],
+            ["grey"],
+            ["weary"],
+            ["cold"],
+            ["black"],
+            ["damp"],
+            ["clear"],
+            ["open"]
+        ],
+        "PRP": [
+            ["everywhere"],
+            ["everything"]
+        ],
+        "NNP": [
+            ["Nature"],
+            ["Empress"],
+            ["Venus"],
+            ["Queen"]
+        ],
+        "RB": [
+            ["tenderly"],
+            ["softly"],
+            ["newly"],
+            ["thereon"],
+            ["thus"],
+            ["so"],
+            ["not"],
+            ["joyfully"],
+            ["even"],
+            ["yet"],
+            ["still"],
+            ["suddenly"]
+        ],
+        "DTCS": [
+            ["a"],
+            ["each"]
+        ],
+        "WRB": [
+            ["where"],
+            ["why"],
+            ["how"],
+            ["when"]
+        ],
+        "PRP$JJ": [
+            ["her"],
+            ["their"],
+            ["my"]
+        ],
+        "CD": [
+            ["twelve"],
+            ["two"]
+        ],
+        "PRPSS3": [
+            ["she"]
+        ],
+        "DT**": [
+            ["all"]
+        ],
+        "PRPPO3": [
+            ["them"]
+        ],
+        "PRPS*3": [
+            ["it"]
+        ],
+        "PRPSR3": [
+            ["itself"]
+        ],
+        "VB": [
+            ["become"],
+            ["know"],
+            ["smile"]
+        ],
+        "VBZ": [
+            ["is"],
+            ["has"]
+        ],
+        "PRP*2": [
+            ["you"]
+        ],
+        "MD": [
+            ["can"]
+        ],
+        "TO": [
+            ["to"]
+        ],
+        "WDT": [
+            ["which"]
+        ],
+        "PRPSO1": [
+            ["me"]
+        ]
+    },
+    "Judgment":
+    {
+        "S": [
+            ["PRPSS1", "VBD", "DTCS", "NN", "JJ", ",", "CC", "IN", "DT", "NN", ",", "DTCS", "NN", "IN", "JJ", "NNS", "."],
+            ["DTCS", "NN", "VBD", "CC", "VBD", "TO", "VB", "IN", "PRPS*3", "VBN", "DTCS", "NN", "IN", "DT", "NN", "."],
+            ["CD", "JJ", "NNS", "RB", "VBN", "IN", "DT", "NN", ",", "CC", "PRPSS1", "VBD", "IN", "PRPSS1", "VBD", "DT", "NN", "IN", "DT", "NNP", "."],
+            ["PRPSS3", "VBN", "DTCS", "NN", "CC", "VBD", "IN", "PRPS*3", "JJ", ",", "JJ", "NNS", "."],
+            ["DT", "NN", "VBD", "IN", "NN", "TO", "PRPSO3", "CC", "DT", "NNS", "RB", "VBD", "PRP$JJ", "NNS", "."],
+            ["CD1", "IN", "DTCS", ",", "NNS", "VBD", "IN", "DT", "JJ", "CC", "IN", "IN", "PRPPO3", "VBD", "NNS", "CC", "NNS", ",", "JJ", "CC", "JJ", ",", "CC", "NNS", "."],
+            ["PRPPS3", "VBD", "IN", "PRP$JJ", "NNS", "IN", "DT", "NNP", "IN", "DT", "NNP", "CC", "TO", "VB", "DT", "NNS", "IN", "PRP$*", "NN", "."],
+            ["CC", "IN", "PRP$*", "NNS", "PRPSS1", "VBD", "DT", "NN", "IN", "DT", "NNP", "CC", "IN", "DT", "VBG", "NNS", "PRPSS1", "VBD", "DT", "VBG", "NNS", "WP$", "NN", "VBD", "TO", "VB", "VBD", "IN", "DT", "VBN", "NNS", "."],
+            ["RB", "PRPSS1", "VBN", "DT", "NN", "IN", "NN", "IN", "NN", "."]
+        ],
+        "Q": [],
+        "E": [],
+        "F": [],
+        "PRPSS1": [
+            ["i"]
+        ],
+        "VBD": [
+            ["saw"],
+            ["appeared"],
+            ["began"],
+            ["knew"],
+            ["beheld"],
+            ["blew"],
+            ["quivered"],
+            ["rolled"],
+            ["opened"],
+            ["came"],
+            ["stretched"],
+            ["felt"],
+            ["seemed"],
+            ["wafted"]
+        ],
+        "DTCS": [
+            ["an"],
+            ["a"],
+            ["another"]
+        ],
+        "NN": [
+            ["ice"],
+            ["horizon"],
+            ["chain"],
+            ["cloud"],
+            ["quarter"],
+            ["sky"],
+            ["messenger"],
+            ["trumpet"],
+            ["plain"],
+            ["response"],
+            ["smile"],
+            ["fragrance"],
+            ["mystery"],
+            ["birth"],
+            ["death"]
+        ],
+        "JJ": [
+            ["plain"],
+            ["snowy"],
+            ["fiery"],
+            ["vibrant"],
+            ["powerful"],
+            ["old"],
+            ["young"]
+        ],
+        "CC": [
+            ["and"]
+        ],
+        "IN": [
+            ["on"],
+            ["of"],
+            ["until"],
+            ["in"],
+            ["that"],
+            ["through"],
+            ["after"],
+            ["out"],
+            ["toward"],
+            ["by"]
+        ],
+        "DT": [
+            ["the"]
+        ],
+        "NNS": [
+            ["mountains"],
+            ["wings"],
+            ["tones"],
+            ["echoes"],
+            ["graves"],
+            ["men"],
+            ["women"],
+            ["children"],
+            ["arms"],
+            ["sounds"],
+            ["flowers"]
+        ],
+        "TO": [
+            ["to"]
+        ],
+        "VB": [
+            ["grow"],
+            ["catch"],
+            ["be"]
+        ],
+        "PRPS*3": [
+            ["it"]
+        ],
+        "VBN": [
+            ["covered"],
+            ["expanded"],
+            ["raised"],
+            ["outstretched"],
+            ["understood"]
+        ],
+        "CD": [
+            ["two"]
+        ],
+        "RB": [
+            ["suddenly"],
+            ["loudly"],
+            ["then"]
+        ],
+        "NNP": [
+            ["Empress"],
+            ["Messenger"]
+        ],
+        "PRPSS3": [
+            ["he"]
+        ],
+        "PRPSO3": [
+            ["him"]
+        ],
+        "PRP$JJ": [
+            ["their"]
+        ],
+        "CD1": [
+            ["one"]
+        ],
+        "PRPPO3": [
+            ["them"]
+        ],
+        "PRPPS3": [
+            ["they"]
+        ],
+        "PRP$*": [
+            ["his"],
+            ["its"]
+        ],
+        "VBG": [
+            ["opening"]
+        ],
+        "WP$": [
+            ["whose"]
+        ]
+    },
+    "The Emperor":
+    {
+        "S": [
+            ["IN", "PRPSS1", "VBD", "DT", "JJ", "CD", "NNS", "PRPSS1", "VBD", "VBN", "TO", "VB", "DT", "NNP", "NNP", "IN", "CD", ",", "DT", "NN", "CC", "NN", "IN", "DT**", "."],
+            ["PRPSS1", "VBD", "DT", "NNP", "IN", "DTCS", "JJ", "NN", "NN", ",", "VBN", "IN", "CD", "NNS", "\"", "NNS", "."],
+            ["IN", "PRP$*", "NN", "VBD", "DTCS", "JJ", "NN", "."],
+            ["PRP$*", "JJ", "NN", "VBD", "IN", "DTCS", "JJ", "NN", "."],
+            ["IN", "CD1", "NN", "PRPSS3", "VBN", "DTCS", "NN", ",", "DT", "NN", "IN", "PRP$*", "NN", ",", "CC", "IN", "DT", "JJ", ",", "DTCS", "NN", "IN", "DT", "NN", "IN", "DTCS", "JJ", "VB", ",", "DT", "NN", "IN", "PRP$*", "NN", "IN", "NN", "."],
+            ["PRPSS1", "am", "DT", "NNP", "NNP", ",", "DT", "NNP", "VBD", "."],
+            ["PRPSS1", "am", "DT", "NN", "IN", "NNP", "."],
+            ["DT", "CD", "NNS", "IN", "PRP$*", "NN", "are", "IN", "PRPSO1", "CC", "PRPSS1", "am", "IN", "DT**", "."],
+            ["PRPSS1", "am", "IN", "DT", "CD", "NNS", "."],
+            ["PRPSS1", "am", "IN", "DT", "CD", "NNS", "."],
+            ["PRPSS1", "am", "IN", "DT", "CD", "NNS", "."],
+            ["PRPSS1", "am", "IN", "DT", "CD", "JJ", "NNS", "."],
+            ["PRPSS1", "am", "IN", "DT", "CD", "NNS", "IN", "DT", "NNP", "."],
+            ["PRPSS1", "am", "DT", "VBG", "."],
+            ["PRPSS1", "am", "NN", "."],
+            ["PRPSS1", "am", "NN", "."],
+            ["PRPSS1", "am", "DT", "NN", "."],
+            ["IN", "PRPSO3", "WP", "VBZ", "WRB", "TO", "VB", "PRPSO1", "EX", "are", "DT", "NNS", "IN", "NN", "."],
+            ["PRPSS1", "am", "DT", "JJ", "NNP", "."],
+            ["IN", "DT", "NN", "VBZ", "IN", "PRPSR3", "NN", ",", "NN", "CC", "NN", "."],
+            ["IN", "DT", "JJ", "NN", "IN", "DT", "NN", "VBZ", "IN", "PRPSR3", "DT", "JJ", "CD", "CC", "VBZ", "PRPSR3", "DT", "JJ", ",", "RB", "PRP$JJ", "NN", "VBZ", "DT", "JJ", "NN", "CC", "VBZ", "IN", "PRPSR3", "DT", "VBN", "IN", "DTCS", "JJ", "NN", "."],
+            ["PRPSS1", "am", "DT", "NNP", "IN", "DT", "JJ", "NN", "CC", "DT", "VBG", "IN", "DTCS", "JJ", "NNP", "."],
+            ["CC", "IN", "DT", "NNP", "VBD", ",", "PRP$*", "NN", "VBD", "JJR", "CC", "JJR", ",", "CC", "PRP$*", "JJ", "NN", "VBD", "IN", "PRP$*", "NN", "."],
+            ["PRPSS1", "MD", "RB", "VB", "PRP$*", "NN", "CC", "PRPSS1", "VBD", "PRP$JJ", "NNS", "."],
+            ["WRB", "PRPSS1", "VBD", "TO", "VB", "PRPPO3", "RB", "DTCS", "JJ", "NN", "IN", "JJ", "NN", "VBD", "IN", "PRPSO1", ",", "CC", "PRPSS1", "VBD", "PRPSR1", "CC", "VBN", "NN", "TO", "DT", "JJ", "NNP", "."]
+        ],
+        "Q": [],
+        "E": [],
+        "F": [],
+        "IN": [
+            ["after"],
+            ["of"],
+            ["on"],
+            ["by"],
+            ["over"],
+            ["in"],
+            ["for"],
+            ["as"],
+            ["while"],
+            ["beneath"],
+            ["before"]
+        ],
+        "PRPSS1": [
+            ["i"]
+        ],
+        "VBD": [
+            ["learned"],
+            ["was"],
+            ["saw"],
+            ["shone"],
+            ["fell"],
+            ["said"],
+            ["spoke"],
+            ["gleamed"],
+            ["lowered"],
+            ["tried"],
+            ["prostrated"]
+        ],
+        "DT": [
+            ["the"],
+            ["no"]
+        ],
+        "JJ": [
+            ["first"],
+            ["lofty"],
+            ["golden"],
+            ["white"],
+            ["purple"],
+            ["other"],
+            ["egyptian"],
+            ["cardinal"],
+            ["great"],
+            ["fourth"],
+            ["complete"],
+            ["new"],
+            ["full"],
+            ["vivid"],
+            ["radiant"],
+            ["fiery"]
+        ],
+        "CD": [
+            ["three"],
+            ["four"]
+        ],
+        "NNS": [
+            ["numbers"],
+            ["rams"],
+            ["heads"],
+            ["letters"],
+            ["principles"],
+            ["elements"],
+            ["seasons"],
+            ["points"],
+            ["signs"],
+            ["mysteries"],
+            ["eyes"]
+        ],
+        "VBN": [
+            ["given"],
+            ["ornamented"],
+            ["held"],
+            ["seed"],
+            ["made"]
+        ],
+        "TO": [
+            ["to"]
+        ],
+        "VB": [
+            ["understand"],
+            ["cross"],
+            ["see"],
+            ["bear"],
+            ["lift"]
+        ],
+        "NNP": [
+            ["Great"],
+            ["Law"],
+            ["Emperor"],
+            ["God"],
+            ["Tarot"],
+            ["Pentacle"],
+            ["Logos"],
+            ["Word"]
+        ],
+        "NN": [
+            ["alpha"],
+            ["omega"],
+            ["stone"],
+            ["throne"],
+            ["forehead"],
+            ["helmet"],
+            ["beard"],
+            ["mantle"],
+            ["hand"],
+            ["sphere"],
+            ["symbol"],
+            ["possession"],
+            ["sceptre"],
+            ["form"],
+            ["sign"],
+            ["power"],
+            ["birth"],
+            ["name"],
+            ["action"],
+            ["completion"],
+            ["result"],
+            ["earth"],
+            ["fire"],
+            ["water"],
+            ["air"],
+            ["letter"],
+            ["triangle"],
+            ["aspect"],
+            ["armour"],
+            ["glory"],
+            ["light"],
+            ["obeisance"]
+        ],
+        "CC": [
+            ["and"]
+        ],
+        "DT**": [
+            ["all"]
+        ],
+        "DTCS": [
+            ["a"],
+            ["an"]
+        ],
+        "\"": [
+            ["'"]
+        ],
+        "PRP$*": [
+            ["his"]
+        ],
+        "CD1": [
+            ["one"]
+        ],
+        "PRPSS3": [
+            ["he"]
+        ],
+        "PRPSO1": [
+            ["me"]
+        ],
+        "VBG": [
+            ["beginning"]
+        ],
+        "PRPSO3": [
+            ["him"]
+        ],
+        "WP": [
+            ["who"]
+        ],
+        "VBZ": [
+            ["knows"],
+            ["encloses"],
+            ["becomes"],
+            ["bears"]
+        ],
+        "WRB": [
+            ["how"],
+            ["when"]
+        ],
+        "EX": [
+            ["there"]
+        ],
+        "PRPSR3": [
+            ["itself"]
+        ],
+        "RB": [
+            ["so"],
+            ["not"],
+            ["again"]
+        ],
+        "PRP$JJ": [
+            ["my"]
+        ],
+        "JJR": [
+            ["brighter"]
+        ],
+        "MD": [
+            ["could"]
+        ],
+        "PRPPO3": [
+            ["them"]
+        ],
+        "PRPSR1": [
+            ["myself"]
+        ]
+    },
+    "The Sun":
+    {
+        "S": [
+            ["IN", "RB", "IN", "PRPSS1", "VBN", "DT", "NNP", ",", "PRPSS1", "VBN", "IN", "PRPS*3", ",", "PRPSR3", ",", "VBZ", "DT", "NN", "IN", "DT", "JJ", "NNP", "CC", "DT", "NN", "IN", "DT", "NNP", "."],
+            ["DT", "JJ", "NN", "VBD", "IN", "DTCS", "JJ", "NN", "IN", "DT", "JJ", "JJ", "NNS", "IN", "NNS", "."],
+            ["CC", "PRPSS1", "VBD", "DTCS", "JJ", "NN", ",", "WP$", "NN", "VBD", "VBN", "IN", "NNS", ",", "VBG", "IN", "DTCS", "JJ", "NN", "CC", "VBG", "DTCS", "JJ", "NN", "."],
+            ["PRPSS1", "VBN", "PRP$JJ", "NNS", "IN", "DTCS", "NN", "CC", "WRB", "PRPSS1", "VBD", "PRPPO3", "RB", "PRPSS1", "VBD", "IN", "DTCS", "NN", "IN", "DT", "NNP", "VBZ", "DT", "NN", "IN", "DT", "NNP", "CC", "VBZ", "NN", "."],
+            ["CC", "PRPSS1", "VBD", "WRB", "IN", "DT", "NN", "IN", "DT*P", "NNS", "DT", "JJ", "NNS", "IN", "DT", "NNS", "JJ", "CC", "VB", "DT", "NNS", "IN", "PRP*R3", "CC", "WRB", "DT**", "NNP", "VBZ", "RB", "VBN", "IN", "DT", "NN", "IN", "CD", "NNS", "."]
+        ],
+        "Q": [],
+        "E": [],
+        "F": [],
+        "IN": [
+            ["as"],
+            ["that"],
+            ["of"],
+            ["with"],
+            ["upon"],
+            ["on"],
+            ["for"],
+            ["under"],
+            ["into"],
+            ["from"]
+        ],
+        "RB": [
+            ["soon"],
+            ["again"],
+            ["constantly"]
+        ],
+        "PRPSS1": [
+            ["i"]
+        ],
+        "VBN": [
+            ["perceived"],
+            ["understood"],
+            ["wreathed"],
+            ["shut"],
+            ["born"]
+        ],
+        "DT": [
+            ["the"]
+        ],
+        "NNP": [
+            ["Sun"],
+            ["Word"],
+            ["Emperor"],
+            ["Nature"]
+        ],
+        "PRPS*3": [
+            ["it"]
+        ],
+        "PRPSR3": [
+            ["itself"]
+        ],
+        "VBZ": [
+            ["is"],
+            ["bears"]
+        ],
+        "NN": [
+            ["expression"],
+            ["sign"],
+            ["luminary"],
+            ["heat"],
+            ["boy"],
+            ["head"],
+            ["horse"],
+            ["banner"],
+            ["moment"],
+            ["ray"],
+            ["sceptre"],
+            ["life"],
+            ["concentration"],
+            ["union"]
+        ],
+        "JJ": [
+            ["fiery"],
+            ["great"],
+            ["intense"],
+            ["large"],
+            ["golden"],
+            ["naked"],
+            ["white"],
+            ["bright-red"],
+            ["mystic"],
+            ["open"]
+        ],
+        "CC": [
+            ["and"]
+        ],
+        "VBD": [
+            ["shone"],
+            ["saw"],
+            ["was"],
+            ["opened"]
+        ],
+        "DTCS": [
+            ["an"],
+            ["a"],
+            ["each"]
+        ],
+        "NNS": [
+            ["heads"],
+            ["sun-flowers"],
+            ["roses"],
+            ["eyes"],
+            ["rays"],
+            ["flowers"],
+            ["waters"],
+            ["principles"]
+        ],
+        "WP$": [
+            ["whose"]
+        ],
+        "VBG": [
+            ["galloping"],
+            ["waving"]
+        ],
+        "PRP$JJ": [
+            ["my"]
+        ],
+        "WRB": [
+            ["when"],
+            ["how"]
+        ],
+        "PRPPO3": [
+            ["them"]
+        ],
+        "DT*P": [
+            ["these"]
+        ],
+        "VB": [
+            ["receive"]
+        ],
+        "PRP*R3": [
+            ["themselves"]
+        ],
+        "DT**": [
+            ["all"]
+        ],
+        "CD": [
+            ["two"]
+        ]
+    },
+    "The Chariot":
+    {
+        "S": [
+            ["PRPSS1", "VBD", "DTCS", "NN", "VBN", "IN", "CD", "NNS", ",", "CD1", "JJ", ",", "DT", "JJ", "JJ", "."],
+            ["CD", "NNS", "VBN", "DTCS", "JJ", "NN", ",", "IN", "WDT", "VBD", "VBN", "JJ", "NNS", "."],
+            ["DT", "NN", ",", "VBN", "IN", "JJ", "NN", ",", "VBD", "IN", "DT*S", "NN", "VBG", "DT", "NNS", "."],
+            ["PRPSS3", "VBN", "DTCS", "NN", ",", "IN", "DT", "NN", "IN", "WDT", "VBD", "DTCS", "NN", ",", "DTCS", "NN", "CC", "DTCS", "NN", "."],
+            ["DTCS", "JJ", "NN", "VBD", "IN", "PRP$*", "NN", "."],
+            ["IN", "DT", "NN", "IN", "DT", "NN", "EX", "VBD", "VBN", "DTCS", "VBN", "NN", "CC", "IN", "IN", "DT", "NN", "IN", "DT", "JJ", "NN", ",", "VBG", "DT", "NN", "IN", "CD", "NNS", "."],
+            ["PRP**3", "IN", "DT*S", "NN", "VBZ", "DTCS", "NN", "."],
+            ["VB", "CC", "VB", "TO", "VB", ",", "VBD", "DT", "NN", "."],
+            ["DT*S", "VBZ", "NNP", "VBN", "IN", "NN", "."],
+            ["PRPPS1", "VB", "RB", ",", "RB", ",", "DT", "NN", "TO", "VB", ",", "RB", "IN", "NN", "PRPSR3", "."],
+            ["DT", "NN", "IN", "DT", "NN", "VBD", "PRPSR3", "DTCS", "NN", "IN", "PRPSS3", "VBD", "RB", "VBN", ",", "CC", "PRPSS3", "VBZ", "IN", "NN", "MD", "VB", "TO", "DT", "NN", "."],
+            ["EX", "are", "JJ", "NNS", "IN", "DT*S", "JJ", "NN", ",", "CC", "RB", "DTCP", "JJ", "NNS", "."],
+            ["JJ", "NNS", "CC", "JJ", "NNS", "are", "VBN", "RB", "."],
+            ["PRPSS3", "VBZ", "DT", "NNS", "IN", "DT", "NN", "IN", "DTCS", "JJ", "NN", ",", "CC", "DT", "NN", "IN", "PRP$*", "NNP", "MD", "VB", "CC", "RB", "DT", "JJ", "NN", "MD", "VB", "PRP$*", "NN", "CC", "PRPSS3", "MD", "VB", "VBN", "IN", "DT", "NNS", "."],
+            ["DT*S", "VBZ", "RB", "DT", "NN", ",", "CC", "RB", "IN", "DT", "NN", "."],
+            ["PRPSS3", "VBZ", "RB", "RB", "VBN", "NNP", ",", "CC", "DT", "VBG", "NN", "VBZ", "JJ", "TO", "PRPSO3", "."],
+            ["DT*S", "VBZ", "DT", "NN", ",", "RB", "IN", "NN", ",", "CC", "IN", "NN", "CC", "DT", "NN", "DTCS", "NN", "IN", "WP", "DT", "VBN", "MD", "VB", "."],
+            ["RB", "DT", "NN", "IN", "VBG", "VBZ", "RB", "EX", "."],
+            ["CC", "PRPSS3", "VBZ", "JJ", "IN", "DT", "NN", "VBG", "IN", "NNS", "IN", "NN", "CC", "DT", "NN", "VBZ", "DT", "NN", "IN", "PRP$*", "JJ", "NN", ",", "IN", "DT", "JJ", "NN", "VBZ", "IN", "PRPSR3", "CC", "IN", "DT", "JJ", "NNS", ",", "RB", "DTCS", "NN", "IN", "NN", "IN", ",", "VB", "PRP$*", "DTCS", "NN", "."],
+            ["PRPSS3", "VBZ", "VBD", "DT**", "DT*P", "NNS", "IN", "PRP$*", "NN", "CC", "VBZ", "PRPPO3", "RB", "IN", "PRPSR3", "."],
+            ["DT*S", "VBZ", "PRP$*", "JJ", "NN", "."],
+            ["PRPSS3", "VBD", "DT", "JJ", "NN", "IN", "DT", "NNP", "IN", "NN", ",", "CC", "VBZ", "PRPSS3", "VBZ", "VBN", "IN", "DT", "NNP", "PRPSR3", "."],
+            ["PRPSS3", "VBN", "DT", "NNS", "IN", "DT", "JJ", "NNS", "IN", "NN", ",", "CC", "PRPSS3", "VBD", "IN", "DT", "NN", ",", "DT", "NN", "WP", "VBN", "DT", "NN", "."],
+            ["CC", "IN", "DT*S", "NN", "JJ", "NNS", "VB", "PRPSO3", "."],
+            ["RB", "PRPS*3", "MD", "VB", "IN", "RB", "IN", "PRP$*", "NNS", "CC", "NNS", "DT", "NNP", "NNP", "VBZ", "VBN", "."],
+            ["PRPSS3", "VBZ", "TO", "VB", "CC", ",", "RB", ",", "IN", "NN", "TO", "VB", ",", "NNS", ",", "NNS", "CC", "RB", "NNS", "are", "JJ", "."],
+            ["VB", "IN", "DT*S", "VBZ", "DT", "JJ", "NN", "WP", "PRP*2", "VBD", "VBG", "NNP", "CC", "NNP", ",", "CC", "RB", "VBG", "IN", "DTCS", "JJ", "NN", "TO", "DTCS", "NN", "."]
+        ],
+        "Q": [
+            ["Do", "PRP*2", "VB", "IN", "PRPSO3", "DT", "NNS", "IN", "DT", "VBN", "NN", "?"]
+        ],
+        "E": [],
+        "F": [],
+        "PRPSS1": [
+            ["i"]
+        ],
+        "VBD": [
+            ["saw"],
+            ["were"],
+            ["stood"],
+            ["sparkled"],
+            ["was"],
+            ["said"],
+            ["thought"],
+            ["had"],
+            ["externalized"],
+            ["entered"],
+            ["mistook"]
+        ],
+        "DTCS": [
+            ["a"],
+            ["every"]
+        ],
+        "NN": [
+            ["chariot"],
+            ["canopy"],
+            ["conqueror"],
+            ["armour"],
+            ["sceptre"],
+            ["end"],
+            ["globe"],
+            ["triangle"],
+            ["square"],
+            ["pentagram"],
+            ["crown"],
+            ["front"],
+            ["sphere"],
+            ["symbol"],
+            ["lingam"],
+            ["union"],
+            ["picture"],
+            ["significance"],
+            ["voice"],
+            ["knowledge"],
+            ["wish"],
+            ["achievement"],
+            ["man"],
+            ["victory"],
+            ["conception"],
+            ["power"],
+            ["word"],
+            ["tension"],
+            ["moment"],
+            ["love"],
+            ["fire"],
+            ["sword"],
+            ["city"],
+            ["flame"],
+            ["consciousness"],
+            ["state"],
+            ["movement"],
+            ["mind"],
+            ["error"],
+            ["court"],
+            ["initiation"],
+            ["goddess"],
+            ["priestess"],
+            ["threshold"],
+            ["misconception"],
+            ["order"],
+            ["desert"],
+            ["precipice"]
+        ],
+        "VBN": [
+            ["drawn"],
+            ["supported"],
+            ["scattered"],
+            ["clad"],
+            ["held"],
+            ["represented"],
+            ["winged"],
+            ["armed"],
+            ["conquered"],
+            ["hidden"],
+            ["devoured"],
+            ["been"],
+            ["regarded"],
+            ["guarded"],
+            ["concealed"]
+        ],
+        "IN": [
+            ["by"],
+            ["on"],
+            ["in"],
+            ["under"],
+            ["of"],
+            ["beneath"],
+            ["that"],
+            ["with"],
+            ["than"],
+            ["before"],
+            ["for"],
+            ["against"],
+            ["behind"],
+            ["within"],
+            ["outside"],
+            ["as"],
+            ["across"]
+        ],
+        "CD": [
+            ["two"],
+            ["four"]
+        ],
+        "NNS": [
+            ["sphinxes"],
+            ["pillars"],
+            ["stars"],
+            ["principles"],
+            ["possibilities"],
+            ["ones"],
+            ["fires"],
+            ["dangers"],
+            ["towers"],
+            ["means"],
+            ["sphynxes"],
+            ["phases"],
+            ["rituals"],
+            ["tests"],
+            ["perils"],
+            ["errors"],
+            ["mistakes"],
+            ["failures"]
+        ],
+        "CD1": [
+            ["one"]
+        ],
+        "JJ": [
+            ["white"],
+            ["other"],
+            ["black"],
+            ["blue"],
+            ["five-pointed"],
+            ["steel"],
+            ["golden"],
+            ["mystical"],
+            ["true"],
+            ["beautiful"],
+            ["false"],
+            ["illusory"],
+            ["numerous"],
+            ["magic"],
+            ["unknown"],
+            ["unaware"],
+            ["own"],
+            ["blood-thirsty"],
+            ["fundamental"],
+            ["outer"],
+            ["first"],
+            ["great"],
+            ["necessary"],
+            ["same"],
+            ["hot"]
+        ],
+        "DT": [
+            ["the"]
+        ],
+        "WDT": [
+            ["which"]
+        ],
+        "DT*S": [
+            ["this"]
+        ],
+        "VBG": [
+            ["guiding"],
+            ["signifying"],
+            ["succeeding"],
+            ["uprising"],
+            ["vanquished"],
+            ["uniting"],
+            ["walking"]
+        ],
+        "PRPSS3": [
+            ["he"]
+        ],
+        "CC": [
+            ["and"],
+            ["but"],
+            ["because"]
+        ],
+        "PRP$*": [
+            ["his"],
+            ["its"]
+        ],
+        "EX": [
+            ["there"]
+        ],
+        "PRP**3": [
+            ["everything"]
+        ],
+        "VBZ": [
+            ["has"],
+            ["is"],
+            ["believes"],
+            ["controls"],
+            ["burns"],
+            ["sees"],
+            ["thinks"],
+            ["lies"],
+            ["seeks"]
+        ],
+        "VB": [
+            ["look"],
+            ["try"],
+            ["understand"],
+            ["see"],
+            ["achieve"],
+            ["come"],
+            ["fail"],
+            ["lose"],
+            ["be"],
+            ["arise"],
+            ["watch"],
+            ["await"],
+            ["know"],
+            ["attain"]
+        ],
+        "TO": [
+            ["to"]
+        ],
+        "NNP": [
+            ["Will"],
+            ["Time"],
+            ["Temple"],
+            ["Great"],
+            ["Conception"],
+            ["Heaven"],
+            ["Earth"]
+        ],
+        "PRPPS1": [
+            ["we"]
+        ],
+        "RB": [
+            ["here"],
+            ["however"],
+            ["rather"],
+            ["really"],
+            ["also"],
+            ["then"],
+            ["indeed"],
+            ["only"],
+            ["not"],
+            ["yet"],
+            ["perhaps"],
+            ["already"],
+            ["nevertheless"],
+            ["even"],
+            ["again"]
+        ],
+        "PRPSR3": [
+            ["itself"],
+            ["himself"]
+        ],
+        "MD": [
+            ["must"],
+            ["may"],
+            ["will"]
+        ],
+        "DTCP": [
+            ["many"]
+        ],
+        "PRPSO3": [
+            ["him"]
+        ],
+        "WP": [
+            ["whom"],
+            ["who"]
+        ],
+        "PRP*2": [
+            ["you"]
+        ],
+        "DT**": [
+            ["all"]
+        ],
+        "DT*P": [
+            ["these"]
+        ],
+        "PRPPO3": [
+            ["them"]
+        ],
+        "PRPS*3": [
+            ["it"]
+        ]
+    },
+    "The Moon":
+    {
+        "S": [
+            ["DTCS", "JJ", "NN", "VBD", "IN", "PRPSO1", "."],
+            ["DTCS", "JJ", "NN", "VBD", "RB", "IN", "IN", "IN", "JJ", "NN", "."],
+            ["IN", "PRP$JJ", "VBG", "NN", "DT", "NNS", "VBD", "PRP$JJ", "JJ", "JJ", "NN", "."],
+            ["IN", "DT", "NN", "PRPSS1", "VBD", "JJ", "NNS", ",", "CC", "IN", "PRPPO3", "NN", "DTCS", "NN", "WDT", "VBD", "IN", "CD", "JJ", "NNS", "RB", "RB", "IN", "DT", "NN", "."],
+            ["IN", "DTCS", "NN", "DT", "NN", "DTCS", "NN", "CC", "NN", "VBD", "CC", "VBD", "IN", "DT", "NN", "."],
+            ["PRPSS1", "VBD", "IN", "NNS", "VBP", "IN", "NNS", "CC", "NNS", "."],
+            ["DTCS", "JJ", "JJ", "NN", "VBD", "IN", "IN", "DT", "NN", "IN", "DT", "NNS", "."],
+            ["DTCS", "JJ", ",", "JJ", "NN", "VBD", "VBG", "."],
+            ["NN", "VBD", "IN", "PRPSO1", "."],
+            ["PRPSS1", "VBD", "DT", "NN", "IN", "DTCS", "JJ", "NN", ",", "DTCS", "NN", "IN", "JJ", "NNS", ",", "IN", "NNS", "VBG", "IN", "NNS", ",", "IN", "VBG", "NNS", "."],
+            ["IN", "DT*S", "JJ", "NN", "PRPSS1", "VBD", "TO", "VB", "DT", "NN", "IN", "NNS", "."],
+            ["PRPS*3", "VBD", "PRPSO1", "IN", "IN", "DT", "NNS", "CC", "PRPSS1", "VBD", "PRPS*3", "VBD", "JJ", "TO", "VB", "RB", "."]
+        ],
+        "Q": [],
+        "E": [],
+        "F": [],
+        "DTCS": [
+            ["a"],
+            ["either"]
+        ],
+        "JJ": [
+            ["desolate"],
+            ["full"],
+            ["contemplative"],
+            ["own"],
+            ["peculiar"],
+            ["blue"],
+            ["grey"],
+            ["large"],
+            ["black"],
+            ["heavy"],
+            ["cold"],
+            ["mysterious"],
+            ["hostile"],
+            ["pale"],
+            ["dangerous"]
+        ],
+        "NN": [
+            ["plain"],
+            ["moon"],
+            ["hesitation"],
+            ["light"],
+            ["life"],
+            ["horizon"],
+            ["wound"],
+            ["path"],
+            ["distance"],
+            ["side"],
+            ["wolf"],
+            ["dog"],
+            ["crab"],
+            ["rivulet"],
+            ["dew"],
+            ["dread"],
+            ["presence"],
+            ["world"],
+            ["moonlight"]
+        ],
+        "VBD": [
+            ["stretched"],
+            ["looked"],
+            ["lived"],
+            ["saw"],
+            ["sat"],
+            ["howled"],
+            ["remembered"],
+            ["crawled"],
+            ["was"],
+            ["fell"],
+            ["sensed"],
+            ["seemed"],
+            ["watched"],
+            ["knew"]
+        ],
+        "IN": [
+            ["before"],
+            ["as"],
+            ["if"],
+            ["in"],
+            ["under"],
+            ["on"],
+            ["over"],
+            ["between"],
+            ["into"],
+            ["at"],
+            ["that"],
+            ["out"],
+            ["of"],
+            ["upon"],
+            ["from"],
+            ["behind"]
+        ],
+        "PRPSO1": [
+            ["me"]
+        ],
+        "RB": [
+            ["down"],
+            ["far"],
+            ["away"],
+            ["back"]
+        ],
+        "PRP$JJ": [
+            ["her"],
+            ["their"]
+        ],
+        "VBG": [
+            ["wavering"],
+            ["falling"],
+            ["rising"],
+            ["wailing"]
+        ],
+        "DT": [
+            ["the"]
+        ],
+        "NNS": [
+            ["shadows"],
+            ["hills"],
+            ["towers"],
+            ["dogs"],
+            ["thieves"],
+            ["ghosts"],
+            ["sands"],
+            ["spirits"],
+            ["corpses"],
+            ["graves"],
+            ["apparitions"]
+        ],
+        "PRPSS1": [
+            ["i"]
+        ],
+        "CC": [
+            ["and"]
+        ],
+        "PRPPO3": [
+            ["them"]
+        ],
+        "WDT": [
+            ["which"]
+        ],
+        "CD": [
+            ["two"]
+        ],
+        "VBP": [
+            ["believe"]
+        ],
+        "DT*S": [
+            ["this"]
+        ],
+        "TO": [
+            ["to"]
+        ],
+        "VB": [
+            ["feel"],
+            ["look"]
+        ],
+        "PRPS*3": [
+            ["someone"],
+            ["it"]
+        ]
+    },
+    "The Lovers":
+    {
+        "S": [
+            ["PRPSS1", "VBD", "DTCS", "VBG", "NN", "IN", "DTCS", "JJ", "NN", ",", "VBN", "IN", "JJ", "JJ", "NNS", "."],
+            ["IN", "DT", "NN", "PRPSS1", "VBD", "DTCS", "NN", "CC", "DTCS", "NNP", "JJ", "CC", "JJ", "."],
+            ["PRPPS3", "VBD", "DTCS", "JJ", "CC", "PRP$JJ", "NNP", "VBD", "PRP$JJ", "NN", "TO", "DT", "NNP", "NNP", ",", "DTCS", "NN", "CC", "DTCS", "NN", "."],
+            ["IN", "PRPS*3", "PRPPS3", "VBD", "IN", "NNP", ",", "IN", "PRPS*3", "PRPPS3", "VBD", "DT", "JJS", "NNS", "."],
+            ["IN", "PRP$*", "NN", "DT", "JJS", "NNS", "VBD", "TO", "PRPPO3", "."],
+            ["DT", "JJ", "NN", "VBD", "PRP$*", "NN", "."],
+            ["NNS", ",", "NNS", ",", "NNS", "CC", "NNS", "VBD", "RB", "TO", "PRPPO3", "."],
+            ["DT", "CD", "NNS", "IN", "NN", ",", "DT", "JJ", ",", "JJ", "CC", "JJ", ",", "CC", "DT", "CD", "NNS", ",", "NN", ",", "NN", ",", "NN", "CC", "NN", ",", "VBN", "PRPPO3", "."],
+            ["IN", "PRP$JJ", "NNP", "PRPPS3", "VBD", "DT", "NN", "IN", "DT", "NN", "\"", "PRP$S", "NN", ",", "CC", "IN", "PRPPS3", "PRP*R3", "VBD", "DTCS", "NN", "CC", "NN", "IN", "DT*S", "NN", "."],
+            ["CD", "NNS", "VBN", "IN", "PRPPO3", "IN", "DTCS", "JJ", "NN", "."],
+            ["CD", "NNS", "VBN", "IN", "DTCS", "NN", "."],
+            ["PRPPS3", "VBD", "CD", "."],
+            ["DT", "JJ", "VBD", "DT", "NNP", "NNP", "."],
+            ["DT", "CD", "VBN", "NNP", "."],
+            ["PRPSS1", "VBD", "DT", "NN", "VBG", "IN", "IN", "DT", "NN", "IN", "IN", "VBD", "IN", "PRP$*", "NN", "."],
+            ["CC", "IN", "DT", "NN", "IN", "WDT", "VBD", "JJ", "NN", "PRPSS1", "VBD", "DTCS", "NN", "VB", "."],
+            ["PRPS*3", "VBD", "IN", "DT", "NN", "\"", "PRP$S", "NN", ",", "CC", "PRPSS1", "VBD", "PRP$JJ", "VBG", ",", "VBG", "IN", "JJ", "RB", ",", "RB", "IN", "NN", "WDT", "VBN", "IN", "NN", "."],
+            ["RB", "PRPSS1", "VBD", "PRP$JJ", "VB", "TO", "DT", "NN", "."],
+            ["PRPSS1", "VBD", "IN", "PRPSS3", "VBD", "TO", "VB", "RB", "PRP$JJ", "CC", "VBD", "IN", "DTCS", "NN", "IN", "NN", "CC", "NN", "IN", "DT**", "PRPSS3", "VBD", "PRPSO3", "."],
+            ["DT*S", "NN", "PRP*2", "VB", ",", "VBZ", "DTCS", "NN", "IN", "NN", "CC", "NN", ",", "VBD", "DT", "NN", "."],
+            ["NNP", "VBZ", "RB", "JJ", ",", "PRPSS1", "VBD", ",", "CC", "DT", "NN", "RB", "JJ", ",", "CC", "DT*S", "NN", "CC", "NN", "VBD", "TO", "VBP", "IN", "DT", "NN", "IN", "DT", "NN", "CC", "IN", "PRP*R3", "."],
+            ["PRPPS3", "VBD", "TO", "VB", "NN", "CC", "VB", "IN", "DT", "NN", "WP", "PRPS*3", "MD", "VB", "."],
+            ["RB", "PRPPS3", "VBN", "DTCS", "NN", "IN", "PRP*R3", "CC", "DT", "NN", "."],
+            ["PRPPS3", "VBD", ",", "PRPPS1", "are", "RB", ",", "DT", "NN", "VBZ", "EX", "."],
+            ["CC", "DT", "NN", "VBN", "IN", "PRPPO3", "CC", "VBD", "JJ", "."],
+            ["UH", ",", "VBD", "DT", "NNP", ",", "DT*S", "VBZ", "JJ", "."],
+            ["DT", "JJ", "NN", "IN", "NNS", "VBZ", "IN", "PRPPS3", "VB", "DT", "NN", "IN", "NN", "."],
+            ["CC", "NNP", "VBZ", "RB", "DTCS", "NN", ",", "PRPS*3", "VBZ", "DTCS", "VBG", "IN", "DTCS", "NN", "."],
+            ["CC", "DT", "JJR", "DT", "NN", ",", "DT", "JJR", "JJ", "CC", "JJ", "VBZ", "DT", "NN", "."],
+            ["CC", "IN", "NN", ",", "WDT", "NNS", "IN", "NN", ",", "VBZ", "NN", "IN", "DT", "NN", "CC", "IN", "DT", "JJ", "."],
+            ["DT*S", "VBZ", "DT", "NN", "."],
+            ["CC", "DT", "NN", "CC", "NN", "VBD", "TO", "PRPS*3", "."],
+            ["PRPPS3", "VBD", "IN", "DT", "JJ", "NNS", "CC", "VBN", "TO", "NN", "CC", "NN", "."],
+            ["DT", "NN", "VBD", "VBN", "."],
+            ["DT", "NN", "VBD", "VBD", "IN", "PRPPO3", "."],
+            ["DT", "NNS", ",", "NNS", ",", "NNS", "CC", "NNS", "VBD", "JJ", "."],
+            ["DT", "NNP", "IN", "NNP", "VBD", "TO", "VB", "PRPSR3", "TO", "PRPPO3", ",", "CC", "DT**", "NNS", "VBD", "RB", "RB", "."],
+            ["DT*S", "NNP", ",", "DT*S", "JJ", "NN", "IN", "NN", ",", "VBZ", "PRPSR3", "RB", ",", "IN", "NN", "VBZ", "TO", "VBP", "IN", "PRP$*", "NN", "CC", "IN", "DT", "NNP", "."],
+            ["CC", "RB", "IN", "VBZ", "IN", "JJ", "VBG", "MD", "PRPSS3", "VB", "PRPSR3", "IN", "DT", "NN", "IN", "NN", "CC", "NN", "TO", "NN", ",", "VB", "NN", "CC", "NN", "TO", "NNP", "."]
+        ],
+        "Q": [
+            ["WP", "VBZ", "DT", "NNP", "?"],
+            ["Do", "PRP*2", "VB", "PRP$*", "NN", "?"]
+        ],
+        "E": [],
+        "F": [],
+        "PRPSS1": [
+            ["i"]
+        ],
+        "VBD": [
+            ["saw"],
+            ["loved"],
+            ["was"],
+            ["communed"],
+            ["received"],
+            ["came"],
+            ["opened"],
+            ["were"],
+            ["enraptured"],
+            ["ripened"],
+            ["whispered"],
+            ["noticed"],
+            ["seemed"],
+            ["smiled"],
+            ["told"],
+            ["said"],
+            ["wanted"],
+            ["became"],
+            ["yielded"],
+            ["dropped"],
+            ["closed"],
+            ["ceased"],
+            ["appeared"]
+        ],
+        "DTCS": [
+            ["a"],
+            ["each"],
+            ["an"]
+        ],
+        "VBG": [
+            ["blooming"],
+            ["looking"],
+            ["listening"],
+            ["smiling"],
+            ["soaring"],
+            ["suffering"]
+        ],
+        "NN": [
+            ["garden"],
+            ["valley"],
+            ["man"],
+            ["service"],
+            ["prayer"],
+            ["sacrifice"],
+            ["light"],
+            ["world"],
+            ["gate"],
+            ["nature"],
+            ["fire"],
+            ["water"],
+            ["air"],
+            ["earth"],
+            ["mystery"],
+            ["equilibrium"],
+            ["symbol"],
+            ["expression"],
+            ["balance"],
+            ["star"],
+            ["ellipsis"],
+            ["woman"],
+            ["beauty"],
+            ["tree"],
+            ["fruit"],
+            ["serpent"],
+            ["ear"],
+            ["curiosity"],
+            ["joy"],
+            ["sympathy"],
+            ["picture"],
+            ["temptation"],
+            ["fall"],
+            ["voice"],
+            ["reality"],
+            ["distinction"],
+            ["mistake"],
+            ["love"],
+            ["abyss"],
+            ["flight"],
+            ["wisdom"],
+            ["belief"],
+            ["time"],
+            ["death"],
+            ["fairyland"],
+            ["sin"],
+            ["separateness"],
+            ["control"],
+            ["return"],
+            ["eternity"],
+            ["darkness"]
+        ],
+        "IN": [
+            ["in"],
+            ["by"],
+            ["through"],
+            ["with"],
+            ["of"],
+            ["that"],
+            ["into"],
+            ["out"],
+            ["upon"],
+            ["as"],
+            ["though"],
+            ["from"],
+            ["on"],
+            ["at"],
+            ["between"],
+            ["above"],
+            ["because"]
+        ],
+        "JJ": [
+            ["green"],
+            ["soft"],
+            ["blue"],
+            ["naked"],
+            ["beautiful"],
+            ["other"],
+            ["magic"],
+            ["mineral"],
+            ["plant"],
+            ["animal"],
+            ["six-pointed"],
+            ["third"],
+            ["golden"],
+            ["first"],
+            ["good"],
+            ["hostile"],
+            ["true"],
+            ["everlasting"],
+            ["alluring"],
+            ["present"],
+            ["eternal"],
+            ["invisible"],
+            ["great"]
+        ],
+        "VBN": [
+            ["surrounded"],
+            ["served"],
+            ["united"],
+            ["melted"],
+            ["made"],
+            ["merged"],
+            ["separated"],
+            ["submitted"],
+            ["disturbed"]
+        ],
+        "NNS": [
+            ["hills"],
+            ["revelations"],
+            ["truths"],
+            ["elves"],
+            ["undines"],
+            ["sylphs"],
+            ["gnomes"],
+            ["kingdoms"],
+            ["elements"],
+            ["triangles"],
+            ["magnets"],
+            ["men"],
+            ["crawls"],
+            ["realms"],
+            ["things"]
+        ],
+        "DT": [
+            ["the"]
+        ],
+        "CC": [
+            ["and"],
+            ["but"]
+        ],
+        "NNP": [
+            ["Woman"],
+            ["Love"],
+            ["Great"],
+            ["Conception"],
+            ["God"],
+            ["Unknown"],
+            ["Future"],
+            ["One"],
+            ["Fall"],
+            ["Life"],
+            ["Voice"],
+            ["Face"],
+            ["Present"],
+            ["Light"]
+        ],
+        "PRPPS3": [
+            ["they"]
+        ],
+        "PRP$JJ": [
+            ["their"],
+            ["her"]
+        ],
+        "TO": [
+            ["to"]
+        ],
+        "PRPS*3": [
+            ["it"]
+        ],
+        "JJS": [
+            ["highest"],
+            ["deepest"]
+        ],
+        "PRP$*": [
+            ["its"],
+            ["his"]
+        ],
+        "PRPPO3": [
+            ["them"]
+        ],
+        "RB": [
+            ["openly"],
+            ["suspiciously"],
+            ["then"],
+            ["only"],
+            ["so"],
+            ["here"],
+            ["not"],
+            ["upside"],
+            ["down"],
+            ["perpetually"]
+        ],
+        "CD": [
+            ["three"],
+            ["four"],
+            ["two"]
+        ],
+        "\"": [
+            ["'"]
+        ],
+        "PRP$S": [
+            ["s"]
+        ],
+        "PRP*R3": [
+            ["themselves"]
+        ],
+        "DT*S": [
+            ["this"]
+        ],
+        "WDT": [
+            ["which"]
+        ],
+        "VB": [
+            ["creep"],
+            ["speak"],
+            ["admire"],
+            ["see"],
+            ["understand"],
+            ["forget"],
+            ["take"],
+            ["give"],
+            ["reveal"],
+            ["liberate"],
+            ["leave"]
+        ],
+        "PRPSS3": [
+            ["he"],
+            ["she"]
+        ],
+        "DT**": [
+            ["all"]
+        ],
+        "PRPSO3": [
+            ["him"]
+        ],
+        "PRP*2": [
+            ["you"]
+        ],
+        "VBZ": [
+            ["is"],
+            ["constitutes"],
+            ["appears"],
+            ["advises"],
+            ["repeats"],
+            ["continues"],
+            ["means"]
+        ],
+        "WP": [
+            ["what"]
+        ],
+        "VBP": [
+            ["believe"]
+        ],
+        "MD": [
+            ["can"]
+        ],
+        "PRPPS1": [
+            ["we"]
+        ],
+        "EX": [
+            ["there"]
+        ],
+        "UH": [
+            ["yes"]
+        ],
+        "JJR": [
+            ["higher"],
+            ["more"]
+        ],
+        "PRPSR3": [
+            ["itself"],
+            ["himself"]
+        ]
+    },
+    "The Star":
+    {
+        "S": [
+            ["DTCS", "JJ", "NN", "VBN", "PRPSO1", "."],
+            ["DTCS", "JJ", "VBG", "VBD", "IN", "NNS", "IN", "DT**", "PRP$JJ", "NN", "."],
+            ["PRP$JJ", "NN", "VBD", "PRP$*", "VBG", ",", "NN", "VBD", "PRP$JJ", "NN", "."],
+            ["PRPSS1", "VBD", "IN", "PRPSS1", "VBD", "VBN", "IN", "JJ", "NNS", "."],
+            ["CC", "RB", "NNS", "IN", "NNP", "VBN", "PRP$JJ", "VBG", "CC", "VBN", "JJ", "NNS", "IN", "IN", "NN", ",", "WP$", "NN", "RB", "PRPSS1", "VBD", "RB", "VBN", "."],
+            ["NNS", "VBD", "IN", "WDT", "PRPSS1", "VBD", "VBN", "IN", "JJ", "."],
+            ["NNS", "VBD", "TO", "PRPSO1", "."],
+            ["CC", "RB", "DT**", "PRP$JJ", "JJ", "NN", "VBD", "DTCS", "JJ", "CC", "JJ", "VBG", "."],
+            ["PRPSS1", "VBN", "JJ", "NNS", "IN", "NNS", "WDT", "RB", "PRPSS1", "VBD", "VBD", "JJ", "TO", "DTCS", "DTCS", "."],
+            ["NNS", "JJ", "CC", "JJ", "IN", "CD1", "DTCS", "VBN", "IN", "CC", "JJ", "."],
+            ["DT", "NNS", "IN", "DT", "NN", "VBN", "PRP*R3", "IN", "PRP$JJ", "NNS", "VBG", "TO", "DTCS", "JJ", "NN", "."],
+            ["IN", "DT", "NN", "EX", "VBD", "DTCS", "JJ", "NN", "VBN", "IN", "CD", "JJR", "NNS", "."],
+            ["PRP$JJ", "NNS", "VBD", ",", "VBG", "NN", "IN", "JJ", "NN", "CC", "NN", "."],
+            ["WRB", ".", ".", "."],
+            ["DT**", "NNS", "are", "JJ", "."],
+            ["CC", "NN", "VBZ", "JJ", "CC", "VBN", ",", "CC", "NN", "VBZ", "JJ", "TO", "DTCS", "CD1", "RB", "CC", "IN", "."],
+            ["IN", "NN", "RB", "VBZ", "IN", "NN", ",", "IN", "NN", "VBZ", "DT**", "NNS", "IN", "PRPSR3", ",", "CC", "RB", "VBZ", "DT**", "NNS", "IN", "DTCS", "."],
+            ["RB", "IN", "DT**", "NNS", "are", "RB", ",", "CC", "DT**", "VBZ", "DT**", "."],
+            ["DTCS", "NN", "RB", "VBZ", "NN", "."],
+            ["CC", "DT", "NN", "EX", "VBZ", "JJ", "."],
+            ["IN", "VBG", "EX", "VBZ", "JJ", ",", "IN", "RB", "IN", "WDT", "VBZ", "JJ", "VBZ", "JJ", "."],
+            ["DT", "NN", "RB", ",", "WDT", "VBZ", "EX", ",", "VBZ", "DT**", "DT", "NNS", "."],
+            ["CC", "RB", "DTCS", "NN", "VBZ", "DT", "NN", "CC", "DT**", "DT", "NNS", "."],
+            ["IN", "DTCS", "RB", ",", "DTCS", "JJ", "NN", "VBZ", ",", "CC", "IN", "DT", "JJ", "NN", "DT**", "NNS", "are", "JJ", "IN", "DTCS", "."],
+            ["NNP", "RB", "EX", "VBZ", "JJ", "."],
+            ["IN", "NN", "VBZ", "RB", "VBD", "IN", "DTCS", "NN", "JJ", "IN", "PRPS*3", "."],
+            ["NN", "RB", "VBZ", "DT", "NN", "IN", "PRP$*", "NN", ",", "IN", "PRPS*3", "VBZ", "RB", "VBD", "IN", "DT", "JJ", "."],
+            ["CC", "DT", "JJ", "EX", "VBZ", "JJ", ",", "IN", "PRPS*3", "VBZ", "RB", "VB", "IN", "NN", "."],
+            ["DTCS", "NN", ",", "RB", ",", "VBZ", "EX", "VBN", ",", "RB", "IN", "IN", "DTCS", "JJ", "NN", ",", "CC", "DT", "NN", "IN", "DTCS", "NN", "VBZ", "IN", "WDT", "DTCS", "NN", "VBZ", ".", ".", ".", ".", "."],
+            ["CC", "VBZ", "DT", "NN", "PRPSR3", "JJ", "IN", "DT", "NN", "IN", "WDT", "PRPS*3", "VBZ", "."],
+            ["IN", "DT", "NN", "IN", "PRPS*3", "VBZ", "NN", ",", "CC", "PRPS*3", "VBZ", "PRPSR3", "NN", ".", ".", ".", "."],
+            ["IN", "DT*S", "JJ", "NN", ",", "RB", ",", "CD1", "NN", "VBZ", "RB", "VBN", "IN", "DTCS", ",", "CC", "DTCS", "NN", "VBZ", "RB", "DTCS", "NN", "."],
+            ["CC", "EX", "DTCS", "NN", "RB", "NNS", "IN", "DT", "NN", ",", "CC", "VBZ", "IN", "DT", "JJ", "DTCS", "NN", "NN", "CC", "DT", "NN", "."],
+            ["IN", "PRPS*3", "VBZ", "RB", "IN", "DTCS", "NN", "."],
+            ["CC", "IN", "PRPSO3", "WP$", "NN", "VBZ", "JJ", ",", "PRPS*3", "MD", "VB", "VBN", "IN", "DTCS", "NN", "."],
+            ["WRB", ".", ".", "."],
+            ["VBZ", "RB", "DT", "NN", "IN", "DT", "NN", "WDT", "VBZ", "EX", ",", "RB", "DT**", "NN", "IN", "NN", "WDT", "MD", "VB", "NN", "TO", "DTCS", "NN", "."],
+            ["IN", "DTCS", "NNS", "EX", "DT**", "NN", "WDT", "WRB", "VBN", "MD", "NN", "DT", "JJ", "NN", "TO", "VB", "."],
+            ["CC", "VBZ", "DT*S", "CD1", "NN", ",", "CC", "IN", "DTCS", ",", "RB", "IN", "TO", "NN", "DTCS", "NN", "IN", "CD1", "NN", "RB", "TO", "VB", "JJ", "IN", "IN", "IN", "DTCS", "."],
+            ["WRB", ".", ".", "."],
+            ["DT", "NN", "VBZ", "NN", "."],
+            ["DTCS", "NN", "RB", "VBN", "IN", "DTCS", "VBG", "NN", ",", "IN", "DT", "JJ", "IN", "PRPS*3", "RB", "VBD", ",", "CC", "VBZ", "RB", "IN", "DT**", "NN", "JJ", ",", "RB", "IN", "TO", "VB", "IN", "VBP", "IN", "NN", "."],
+            ["CC", "PRPS*3", "VBZ", "DT", "JJ", "NN", ",", "CC", "VBZ", "RB", "VBN", "IN", "DTCS", "."],
+            ["PRPSS1", "VBN", "IN", "DT**", "DT", "NN", "RB", "VBZ", "VBD", "."],
+            ["CC", "DT", "VBG", "NNS", "are", "NNS", "."],
+            ["CC", "DTCS", "NN", ",", "IN", "PRPPS1", "VB", "IN", "PRPS*3", ",", "VBZ", "IN", "NNS", ",", "NNS", ",", "NNS", "CC", "NNS", "."],
+            ["CC", "PRPSS1", "VBD", "IN", "EX", "VBZ", "NN", "JJ", ",", "CC", "DT**", "VBZ", "NN", ",", "DT**", "VBZ", "NN", ",", "DT**", "VBZ", "NN", "CC", "NN", "."],
+            ["CC", "IN", "DT", "JJ", "NNS", "IN", "DT", "JJ", "NN", "PRPSS1", "VBD", "DTCS", "JJ", "NN", ",", "JJ", "CC", "JJ", "."],
+            ["PRPSS3", "VBD", "IN", "CD1", "NN", "CC", "VBD", "NN", "IN", "CD", "NNS", ",", "CD1", "IN", "NN", "CC", "CD1", "IN", "NN", "."],
+            ["DTCS", "JJ", "NN", "IN", "DTCS", "IN", "IN", "NN", "VBD", "PRP$*", "NNS", "CC", "VBD", "VBN", "JJ", "TO", "RB", "RB", "."],
+            ["IN", "DTCS", "NN", "PRPSS1", "VBN", "IN", "PRPSS1", "VBD", "DT", "NNP", "IN", "NNP", "."],
+            ["DT*S", "VBZ", "NNP", "\"", "PRP$S", "NN", ",", "VBD", "DT", "NN", "RB", "."],
+            ["NNP", "VBZ", ",", "VBZ", ",", "VBZ", "NNS", "."],
+            ["VB", "TO", "VB", "PRP$JJ", "NN", "IN", "PRP$JJ", "NN", "CC", "NN", "MD", "RB", "VB", "JJ", "IN", "PRP*2", "."],
+            ["VB", "DT", "JJ", "NN", "CC", "VB", "PRPS*3", "IN", "PRPSR2", "."]
+        ],
+        "Q": [],
+        "E": [],
+        "F": [],
+        "DTCS": [
+            ["a"],
+            ["each"],
+            ["other"],
+            ["another"],
+            ["an"],
+            ["every"],
+            ["neither"]
+        ],
+        "JJ": [
+            ["strange"],
+            ["fiery"],
+            ["portentous"],
+            ["many"],
+            ["unaware"],
+            ["former"],
+            ["new"],
+            ["different"],
+            ["unexpected"],
+            ["foreign"],
+            ["distant"],
+            ["similar"],
+            ["enormous"],
+            ["immeasurable"],
+            ["diaphanous"],
+            ["dark"],
+            ["apparent"],
+            ["infinite"],
+            ["great"],
+            ["small"],
+            ["same"],
+            ["visible"],
+            ["pure"],
+            ["unstable"],
+            ["beautiful"],
+            ["sensible"],
+            ["acute"],
+            ["amicable"],
+            ["whole"],
+            ["deficient"],
+            ["first"],
+            ["inanimate"],
+            ["radiant"],
+            ["blue"],
+            ["naked"],
+            ["young"],
+            ["little"],
+            ["ready"],
+            ["impossible"],
+            ["external"]
+        ],
+        "NN": [
+            ["emotion"],
+            ["body"],
+            ["heart"],
+            ["tumult"],
+            ["mind"],
+            ["darkness"],
+            ["existence"],
+            ["knowledge"],
+            ["world"],
+            ["pattern"],
+            ["sky"],
+            ["star"],
+            ["space"],
+            ["radiance"],
+            ["splendour"],
+            ["nothing"],
+            ["everything"],
+            ["light"],
+            ["thing"],
+            ["sun"],
+            ["property"],
+            ["time"],
+            ["motion"],
+            ["mover"],
+            ["permanency"],
+            ["change"],
+            ["nature"],
+            ["beauty"],
+            ["land"],
+            ["seat"],
+            ["place"],
+            ["subject"],
+            ["intellect"],
+            ["region"],
+            ["part"],
+            ["whole"],
+            ["sight"],
+            ["weariness"],
+            ["vision"],
+            ["plenitude"],
+            ["perception"],
+            ["intuition"],
+            ["end"],
+            ["vacuity"],
+            ["cause"],
+            ["energy"],
+            ["occasion"],
+            ["life"],
+            ["wisdom"],
+            ["process"],
+            ["respect"],
+            ["investigation"],
+            ["ray"],
+            ["soul"],
+            ["imagination"],
+            ["river"],
+            ["maiden"],
+            ["knee"],
+            ["water"],
+            ["gold"],
+            ["silver"],
+            ["bird"],
+            ["bush"],
+            ["moment"],
+            ["voice"]
+        ],
+        "VBN": [
+            ["seized"],
+            ["surrounded"],
+            ["penetrated"],
+            ["illuminated"],
+            ["suspected"],
+            ["been"],
+            ["discovered"],
+            ["appeared"],
+            ["arranged"],
+            ["resisting"],
+            ["established"],
+            ["produced"],
+            ["seen"],
+            ["filled"],
+            ["obtained"],
+            ["derived"],
+            ["understood"],
+            ["poised"]
+        ],
+        "PRPSO1": [
+            ["me"]
+        ],
+        "VBG": [
+            ["trembling"],
+            ["beating"],
+            ["being"],
+            ["meaning"],
+            ["according"],
+            ["filling"],
+            ["everything"],
+            ["reasoning"],
+            ["changing"]
+        ],
+        "VBD": [
+            ["ran"],
+            ["quickened"],
+            ["agitated"],
+            ["felt"],
+            ["was"],
+            ["had"],
+            ["vanished"],
+            ["spoke"],
+            ["took"],
+            ["thought"],
+            ["appeared"],
+            ["intermingled"],
+            ["confounded"],
+            ["mingled"],
+            ["saw"],
+            ["stooped"],
+            ["poured"],
+            ["lifted"],
+            ["beheld"],
+            ["said"]
+        ],
+        "IN": [
+            ["in"],
+            ["through"],
+            ["that"],
+            ["by"],
+            ["of"],
+            ["before"],
+            ["from"],
+            ["near"],
+            ["with"],
+            ["throughout"],
+            ["for"],
+            ["since"],
+            ["at"],
+            ["because"],
+            ["as"],
+            ["if"],
+            ["into"],
+            ["beneath"],
+            ["beside"],
+            ["on"]
+        ],
+        "NNS": [
+            ["waves"],
+            ["mysteries"],
+            ["shafts"],
+            ["things"],
+            ["veils"],
+            ["voices"],
+            ["correlations"],
+            ["objects"],
+            ["facts"],
+            ["eyes"],
+            ["stars"],
+            ["rays"],
+            ["proceeds"],
+            ["was"],
+            ["colours"],
+            ["emotions"],
+            ["images"],
+            ["symbols"],
+            ["moods"],
+            ["vessels"],
+            ["wings"],
+            ["worlds"]
+        ],
+        "DT**": [
+            ["all"],
+            ["any"]
+        ],
+        "PRP$JJ": [
+            ["my"],
+            ["their"],
+            ["your"],
+            ["her"]
+        ],
+        "PRP$*": [
+            ["its"]
+        ],
+        "PRPSS1": [
+            ["i"]
+        ],
+        "CC": [
+            ["and"],
+            ["but"],
+            ["nor"]
+        ],
+        "RB": [
+            ["presently"],
+            ["even"],
+            ["never"],
+            ["suddenly"],
+            ["hitherto"],
+            ["internally"],
+            ["everywhere"],
+            ["again"],
+            ["so"],
+            ["likewise"],
+            ["too"],
+            ["however"],
+            ["not"],
+            ["also"],
+            ["therefore"],
+            ["alone"],
+            ["always"],
+            ["indeed"],
+            ["here"],
+            ["fly"],
+            ["away"],
+            ["gently"],
+            ["ever"]
+        ],
+        "NNP": [
+            ["Light"],
+            ["Motion"],
+            ["Soul"],
+            ["Nature"]
+        ],
+        "WP$": [
+            ["whose"]
+        ],
+        "WDT": [
+            ["which"]
+        ],
+        "TO": [
+            ["to"]
+        ],
+        "CD1": [
+            ["one"]
+        ],
+        "DT": [
+            ["the"],
+            ["no"]
+        ],
+        "PRP*R3": [
+            ["themselves"]
+        ],
+        "EX": [
+            ["there"]
+        ],
+        "CD": [
+            ["seven"],
+            ["two"]
+        ],
+        "JJR": [
+            ["smaller"]
+        ],
+        "WRB": [
+            ["where"],
+            ["when"]
+        ],
+        "VBZ": [
+            ["is"],
+            ["meets"],
+            ["contains"],
+            ["sees"],
+            ["predominates"],
+            ["suffers"],
+            ["does"],
+            ["subsists"],
+            ["appears"],
+            ["turns"],
+            ["dreams"],
+            ["improvises"],
+            ["creates"]
+        ],
+        "PRPSR3": [
+            ["itself"]
+        ],
+        "PRPS*3": [
+            ["it"]
+        ],
+        "VB": [
+            ["subsist"],
+            ["be"],
+            ["bring"],
+            ["cease"],
+            ["look"],
+            ["learn"],
+            ["unite"],
+            ["lose"],
+            ["seek"]
+        ],
+        "DT*S": [
+            ["this"]
+        ],
+        "PRPSO3": [
+            ["him"]
+        ],
+        "MD": [
+            ["will"],
+            ["can"],
+            ["might"]
+        ],
+        "VBP": [
+            ["want"]
+        ],
+        "PRPPS1": [
+            ["we"]
+        ],
+        "PRPSS3": [
+            ["she"]
+        ],
+        "\"": [
+            ["'"]
+        ],
+        "PRP$S": [
+            ["s"]
+        ],
+        "PRP*2": [
+            ["you"]
+        ],
+        "PRPSR2": [
+            ["yourself"]
+        ]
+    },
+    "The Hierophant":
+    {
+        "S": [
+            ["PRPSS1", "VBD", "DT", "JJ", "NNP", "IN", "DT", "NNP", "."],
+            ["PRPSS3", "VBD", "VBG", "IN", "DTCS", "JJ", "NN", "VBN", "IN", "DTCS", "JJ", "NN", ",", "CC", "PRPSS3", "VBD", "DT", "NN", "IN", "DTCS", "JJ", "NN", "IN", "DTCS", "JJ", "NN", "."],
+            ["PRPSS3", "VBN", "DTCS", "JJ", "JJ", "VB", ",", "CC", "VBG", "IN", "PRP$*", "NNS", "VBD", "CD", "VBD", "NNS", "."],
+            ["VB", "DT", "NNP", ",", "do", "RB", "VB", "NN", ",", "VB", "IN", "DT", "NNP", "IN", "PRPSR2", "."],
+            ["Do", "RB", "VBP", "TO", "VB", "DT", "NN", "IN", "NNS", ",", "CC", "TO", "VB", "PRPS*3", ",", "CC", "VB", "PRPS*3", "IN", "NNS", "."],
+            ["VB", "IN", "DT", "NN", "IN", "PRPSR2", ",", "RB", "IN", "PRPSR2", "."],
+            ["VB", "RB", "IN", "DT", "JJ", "CC", "JJ", "."],
+            ["VB", "RB", "IN", "WDT", "MD", "RB", "VB", "."],
+            ["Do", "RB", "NN", "IN", "PRPSO1", "do", "RB", "VB", "IN", "PRPSO1", "do", "RB", "VBP", ",", "IN", "PRPSS1", "am", "IN", "PRPSR2", "."],
+            ["IN", "PRP$JJ", "NN", "VB", "DTCS", "JJ", "NN", "IN", "WDT", "PRP*2", "MD", "VB", "TO", "NNP", "."],
+            ["Do", "RB", "VBP", "IN", "JJ", "NNS", ",", "VBP", "NNS", "RB", "IN", "PRP*2", "."],
+            ["VB", "IN", "VBG", "IN", "DTCS", "NN", "IN", "DT", "NN", ",", "IN", "DTCS", "NN", "VBN", "IN", "NNS", "."],
+            ["IN", "NNS", "WDT", "MD", "VB", "VBN", "are", "JJ", "."],
+            ["Do", "RB", "NN", "IN", "DTCS", "NN", "IN", "MD", "VB", "VBN", "IN", "NNS", "."],
+            ["NNP", "DT", "NN", "IN", "PRPSR2", "."],
+            ["IN", "DT**", ",", "VB", "DT*P", "NNS", "VBN", "IN", "NN", "TO", "VB", "DT", "NNS", "CC", "TO", "VB", "DTCS", "NN", "TO", "NNP", "IN", "JJ", "NNS", "."],
+            ["CC", "VB", "IN", "IN", "RB", "IN", "NNS", "VB", "JJ", "DTCS", "NN", "PRPPS3", "VB", "TO", "NN", "IN", "DT", "NN", "."],
+            ["DT", "NNP", "VBZ", "IN", "PRPSR2", ",", "CC", "NN", "VBZ", "IN", "PRPSR2", "CC", "NN", "VBZ", "IN", "PRPSR2", "."]
+        ],
+        "Q": [],
+        "E": [],
+        "F": [],
+        "PRPSS1": [
+            ["i"]
+        ],
+        "VBD": [
+            ["saw"],
+            ["was"],
+            ["wore"],
+            ["were"],
+            ["crossed"]
+        ],
+        "DT": [
+            ["the"]
+        ],
+        "JJ": [
+            ["great"],
+            ["golden"],
+            ["purple"],
+            ["high"],
+            ["eight-pointed"],
+            ["impossible"],
+            ["inaccessible"],
+            ["lefty"],
+            ["external"],
+            ["empty"],
+            ["stone"],
+            ["such"]
+        ],
+        "NNP": [
+            ["Master"],
+            ["Temple"],
+            ["Path"],
+            ["Heaven"],
+            ["Seek"]
+        ],
+        "IN": [
+            ["in"],
+            ["on"],
+            ["upon"],
+            ["of"],
+            ["with"],
+            ["at"],
+            ["for"],
+            ["within"],
+            ["from"],
+            ["without"],
+            ["after"],
+            ["that"],
+            ["outside"],
+            ["by"],
+            ["above"],
+            ["as"],
+            ["about"]
+        ],
+        "PRPSS3": [
+            ["he"]
+        ],
+        "VBG": [
+            ["siting"],
+            ["lying"],
+            ["believing"]
+        ],
+        "DTCS": [
+            ["a"],
+            ["an"]
+        ],
+        "NN": [
+            ["throne"],
+            ["platform"],
+            ["robe"],
+            ["priest"],
+            ["tiara"],
+            ["attainment"],
+            ["truth"],
+            ["hope"],
+            ["soul"],
+            ["tower"],
+            ["mystery"],
+            ["earth"],
+            ["search"],
+            ["order"],
+            ["ascent"],
+            ["dispute"],
+            ["summit"]
+        ],
+        "VBN": [
+            ["set"],
+            ["held"],
+            ["guarded"],
+            ["hidden"],
+            ["built"]
+        ],
+        "CC": [
+            ["and"],
+            ["nor"],
+            ["or"]
+        ],
+        "VB": [
+            ["cross"],
+            ["seek"],
+            ["hear"],
+            ["see"],
+            ["read"],
+            ["look"],
+            ["aspire"],
+            ["expect"],
+            ["be"],
+            ["build"],
+            ["ascend"],
+            ["beware"],
+            ["avoid"],
+            ["preserve"],
+            ["make"],
+            ["remember"],
+            ["begin"]
+        ],
+        "PRP$*": [
+            ["his"]
+        ],
+        "NNS": [
+            ["feet"],
+            ["keys"],
+            ["others"],
+            ["books"],
+            ["miracles"],
+            ["men"],
+            ["treasuries"],
+            ["towers"],
+            ["mysteries"],
+            ["stairways"]
+        ],
+        "CD": [
+            ["two"]
+        ],
+        "RB": [
+            ["not"],
+            ["only"],
+            ["soon"]
+        ],
+        "PRPSR2": [
+            ["yourself"]
+        ],
+        "VBP": [
+            ["expect"],
+            ["believe"]
+        ],
+        "TO": [
+            ["to"]
+        ],
+        "PRPS*3": [
+            ["it"]
+        ],
+        "WDT": [
+            ["which"]
+        ],
+        "MD": [
+            ["shall"],
+            ["may"],
+            ["must"],
+            ["can"]
+        ],
+        "PRPSO1": [
+            ["me"]
+        ],
+        "PRP$JJ": [
+            ["your"]
+        ],
+        "PRP*2": [
+            ["you"]
+        ],
+        "DT**": [
+            ["all"]
+        ],
+        "DT*P": [
+            ["those"]
+        ],
+        "PRPPS3": [
+            ["they"]
+        ],
+        "VBZ": [
+            ["is"]
+        ]
+    },
+    "The Tower":
+    {
+        "S": [
+            ["PRPSS1", "VBD", "DTCS", "JJ", "NN", "VBG", "IN", "NN", "TO", "NN", "."],
+            ["PRP$*", "JJ", "VBN", "NN", "VBN", "IN", "DT", "NNS", "."],
+            ["DT**", "NN", "PRPS*3", "JJ", "NN", "VBD", "CC", "NN", "VBD", "."],
+            ["RB", "DT", "NNS", "VBD", ",", "DTCS", "NN", "VBD", "DT", "JJ", "NN", ",", "CC", "VBG", "VBD", "DT", "NN", "IN", "DT", "NN", "CC", "VBN", "DT", "JJ", "NN", "."],
+            ["DTCS", "NN", "IN", "NN", "NN", "IN", "NN", "CC", "DT", "JJ", "NN", "VBD", "VBN", "IN", "NN", "CC", "NN", "."],
+            ["RB", "PRPSS1", "VBD", "DT", "NNS", "IN", "DT", "NN", "NN", "RB", "TO", "DT", "NN", "."],
+            ["CC", "DT", "NN", "VBD", "."],
+            ["DT", "VBG", "IN", "DT", "NN", "VBD", "VBN", "IN", "DT", "NNS", "IN", "DT", "JJ", "NNP", "IN", "NN", "TO", "have", "DTCS", "JJ", "NN", "IN", "DT", "NNP", "\"", "PRP$S", "VBG", "IN", "DT", "JJ", "NN", "MD", "VB", "VBN", "IN", "PRPS*3", "\"", "PRP$S", "JJ", "NN", ",", "IN", "IN", "DT", "NN", "VBN", "IN", "NNS", "EX", "MD", "VB", "DT", "NNS", ",", "IN", "DT", "CD1", "MD", "VB", "TO", "NNP", "IN", "VBG", "JJ", "NNS", "."],
+            ["DT", "NN", "MD", "VB", "DT", "NNS", "RB", "TO", "VBP", "IN", "PRPS*3", "."],
+            ["PRPS*3", "MD", "VB", "IN", "DTCS", "NN", "IN", "DT", "JJ", "NNP", "CC", "IN", "DTCS", "NN", "IN", "DT", "JJ", "."],
+            ["PRPS*3", "MD", "VB", "IN", "DTCS", "NN", ",", "IN", "DTCS", "JJ", "NN", "WRB", "NNS", "have", "RB", "VBN", "VBD", "CC", "WRB", "NNS", "MD", "RB", "VB", "."],
+            ["CC", "IN", "CC", "IN", "DT", "NNS", "VBD", "DT", "JJ", "NN", "IN", "DT", "NNP", "CC", "WP", "DT", "NN", "VBD", ",", "CC", "VBD", "TO", "VBP", "IN", "DT", "NN", "IN", "NN", ",", "PRPPS3", "VBD", "VBN", ",", "CC", "TO", "VB", "NNS", "TO", "RB", "VBP", "."],
+            ["PRPPS3", "VBD", "TO", "VBP", "IN", "IN", "DT*S", "NN", "EX", "VBZ", "NN", ",", "NN", "CC", "DT", "NN", "IN", "DT", "NNP", ",", "IN", "DT", "NN", "PRPSR3", "VBZ", "RB", "CC", "IN", "PRPS*3", "VBZ", "VBN", "IN", "DT", "VBG", "NNP", "VBG", "TO", "PRP$*", "NN", "CC", "PRP$*", "MD", "."],
+            ["CC", "RB", "PRPPS3", "VBD", "IN", "DT", "NN", "IN", "DT", "NNP", "."],
+            ["NNS", "VBD", "RB", "VBP", "DT*S", ",", "CC", "VBN", "PRPS*3", "RB", "."],
+            ["RB", "VBD", "NNS", "IN", "DT", "NNS", "IN", "DT", "NN", "."],
+            ["NNS", "VBD", ",", "PRP$JJ", "NNP", ",", "PRP$JJ", "NNP", ",", "VBD", "VBD", "."],
+            ["PRP$JJ", "NN", ",", "PRP$JJ", "NN", "."],
+            ["CC", "DT", "NNS", "VBD", "TO", "VB", "PRPSC3", "."],
+            ["PRP$JJ", "NNS", "VBD", "VB", "VBN", "."],
+            ["PRPPS3", "VBD", "VBN", "TO", "VBP", "IN", "DT*S", "VBZ", "DT", "NN", "IN", "DT", "NNP", ",", "IN", "PRPSS3", "VBZ", "PRPS*3", "IN", "PRPPO3", ",", "CC", "IN", "PRPS*3", "MD", "CC", ",", "RB", ",", "MD", "VB", "VBN", "NN", "IN", "TO", "NNP", "."]
+        ],
+        "Q": [
+            ["PRP*2", "VB", "DT", "VBG", "RB", "?"],
+            ["CC", "PRP*2", "VB", "WRB", "NNP", "VBD", "?"]
+        ],
+        "E": [],
+        "F": [],
+        "PRPSS1": [
+            ["i"]
+        ],
+        "VBD": [
+            ["saw"],
+            ["reigned"],
+            ["rumbled"],
+            ["opened"],
+            ["shook"],
+            ["struck"],
+            ["became"],
+            ["beheld"],
+            ["said"],
+            ["was"],
+            ["wrecked"],
+            ["forgot"],
+            ["symbolized"],
+            ["began"],
+            ["had"],
+            ["waited"],
+            ["did"],
+            ["started"],
+            ["ceased"],
+            ["responded"]
+        ],
+        "DTCS": [
+            ["a"]
+        ],
+        "JJ": [
+            ["lofty"],
+            ["golden"],
+            ["black"],
+            ["whole"],
+            ["great"],
+            ["constant"],
+            ["true"],
+            ["own"],
+            ["stone"],
+            ["inner"],
+            ["outer"],
+            ["dangerous"]
+        ],
+        "NN": [
+            ["tower"],
+            ["earth"],
+            ["heaven"],
+            ["summit"],
+            ["round"],
+            ["night"],
+            ["thunder"],
+            ["thunder-clap"],
+            ["crown"],
+            ["tongue"],
+            ["fire"],
+            ["shot"],
+            ["smoke"],
+            ["fall"],
+            ["ground"],
+            ["voice"],
+            ["order"],
+            ["reminder"],
+            ["soul"],
+            ["protection"],
+            ["lighthouse"],
+            ["place"],
+            ["covenant"],
+            ["stone"],
+            ["power"],
+            ["mystery"],
+            ["spirit"],
+            ["right"]
+        ],
+        "VBG": [
+            ["extending"],
+            ["lightning"],
+            ["building"],
+            ["teaching"],
+            ["treading"],
+            ["coming"],
+            ["according"],
+            ["meaning"]
+        ],
+        "IN": [
+            ["from"],
+            ["beyond"],
+            ["of"],
+            ["with"],
+            ["by"],
+            ["in"],
+            ["that"],
+            ["as"],
+            ["against"],
+            ["for"],
+            ["about"],
+            ["through"],
+            ["up"]
+        ],
+        "TO": [
+            ["to"]
+        ],
+        "PRP$*": [
+            ["its"],
+            ["his"]
+        ],
+        "VBN": [
+            ["crowned"],
+            ["reached"],
+            ["felled"],
+            ["filled"],
+            ["begun"],
+            ["built"],
+            ["been"],
+            ["interpreted"],
+            ["confused"]
+        ],
+        "DT": [
+            ["the"],
+            ["no"]
+        ],
+        "NNS": [
+            ["clouds"],
+            ["heavens"],
+            ["builders"],
+            ["disciples"],
+            ["hands"],
+            ["mysteries"],
+            ["steps"],
+            ["people"],
+            ["men"],
+            ["ships"],
+            ["others"],
+            ["disputes"],
+            ["rights"],
+            ["quarrels"],
+            ["tongues"]
+        ],
+        "DT**": [
+            ["all"]
+        ],
+        "PRPS*3": [
+            ["it"],
+            ["one"]
+        ],
+        "CC": [
+            ["and"],
+            ["but"],
+            ["or"]
+        ],
+        "RB": [
+            ["suddenly"],
+            ["then"],
+            ["headlong"],
+            ["not"],
+            ["often"],
+            ["so"],
+            ["holy"],
+            ["differently"],
+            ["here"],
+            ["indeed"]
+        ],
+        "NNP": [
+            ["Master"],
+            ["Heaven"],
+            ["Temple"]
+        ],
+        "\"": [
+            ["'"]
+        ],
+        "PRP$S": [
+            ["s"]
+        ],
+        "MD": [
+            ["must"],
+            ["can"],
+            ["should"],
+            ["will"]
+        ],
+        "VB": [
+            ["be"],
+            ["ascend"],
+            ["warn"],
+            ["serve"],
+            ["go"],
+            ["teach"],
+            ["understand"],
+            ["become"],
+            ["see"]
+        ],
+        "EX": [
+            ["there"]
+        ],
+        "CD1": [
+            ["one"]
+        ],
+        "VBP": [
+            ["believe"],
+            ["say"],
+            ["think"]
+        ],
+        "WRB": [
+            ["where"],
+            ["how"]
+        ],
+        "WP": [
+            ["what"]
+        ],
+        "PRPPS3": [
+            ["they"]
+        ],
+        "DT*S": [
+            ["this"]
+        ],
+        "VBZ": [
+            ["is"],
+            ["builds"]
+        ],
+        "PRPSR3": [
+            ["itself"]
+        ],
+        "PRP$JJ": [
+            ["our"],
+            ["your"],
+            ["their"]
+        ],
+        "PRPSC3": [
+            ["each other"]
+        ],
+        "PRP*2": [
+            ["you"]
+        ],
+        "PRPSS3": [
+            ["he"]
+        ],
+        "PRPPO3": [
+            ["them"]
+        ]
+    },
+    "Power":
+    {
+        "S": [
+            ["IN", "DT", "NN", "IN", "DTCS", "JJ", "JJ", ",", "VBN", "IN", "JJ", "NNS", ",", "PRPSS1", "VBD", "DTCS", "NN", "IN", "DTCS", "NN", "."],
+            ["VBN", "IN", "NNS", "IN", "NNS", ",", "DTCS", "NN", "IN", "NN", "IN", "PRP$JJ", "NN", ",", "DT", "NN", "RB", "CC", "RB", "VBN", "DT", "NN", "\"", "PRP$S", "NN", "CC", "DT", "NN", "RB", "VBD", "PRP$JJ", "NN", "."],
+            ["DT*S", "VBZ", "DTCS", "NN", "IN", "NN", ",", "VBD", "DT", "NN", "."],
+            ["PRPS*3", "VBZ", "JJ", "NNS", "."],
+            ["JJ", "PRPS*3", "VBZ", "DT", "NN", "IN", "NN", "."],
+            ["NNP", "RB", "MD", "VB", "NN", "."],
+            ["NN", "VBZ", "NN", "."],
+            ["VB", "WP", "NNP", "VBD", "."],
+            ["VB", "NN", "VB", "VBN", "IN", "NN", "."],
+            ["DT*S", "VBZ", "DTCS", "NN", "IN", "PRPSO1", "WDT", "VBZ", "TO", "JJR", "NN", "CC", "DTCS", "NN", "IN", "NN", "IN", "JJ", "NNS", "."],
+            ["RB", "PRPS*3", "VBZ", "NN", "IN", "NN", "."],
+            ["DT*P", "NNS", "IN", "NNS", "VBP", "DTCS", "NN", "NN", "."],
+            ["NNP", "IN", "NNS", ",", "NN", "IN", "NNS", "VBZ", "JJ", "NN", "IN", "DTCS", "JJ", ",", "JJ", ",", "JJ", "NN", "VBZ", "VBN", "."],
+            ["RB", "CD", "NNS", ",", "IN", "VBN", ",", "are", "JJ", "TO", "VB", "RB", "DT", "JJ", "NN", "."],
+            ["DT", "NN", "RB", "VBZ", "DT", "NN", "IN", "NN", ",", "IN", "NN", "IN", "NNS", "."],
+            ["IN", "DTCS", "NN", "IN", "VBZ", "DT", "NN", "IN", "NN", "IN", "PRPS*3", ",", "VBZ", "DT", "NNS", "CC", "MD", "VB", "VBD", "."]
+        ],
+        "Q": [],
+        "E": [],
+        "F": [],
+        "IN": [
+            ["in"],
+            ["of"],
+            ["by"],
+            ["with"],
+            ["over"],
+            ["from"],
+            ["for"],
+            ["after"],
+            ["that"],
+            ["if"],
+            ["above"]
+        ],
+        "DT": [
+            ["the"],
+            ["no"]
+        ],
+        "NN": [
+            ["midst"],
+            ["woman"],
+            ["lion"],
+            ["symbol"],
+            ["infinity"],
+            ["head"],
+            ["mouth"],
+            ["hand"],
+            ["picture"],
+            ["power"],
+            ["voice"],
+            ["love"],
+            ["wrath"],
+            ["hatred"],
+            ["man"],
+            ["vengeance"],
+            ["bridge"],
+            ["hope"],
+            ["rainbow"],
+            ["heaven"],
+            ["unity"],
+            ["magic"],
+            ["chain"],
+            ["force"],
+            ["world"],
+            ["sphere"],
+            ["consciousness"]
+        ],
+        "DTCS": [
+            ["a"],
+            ["every"]
+        ],
+        "JJ": [
+            ["green"],
+            ["plain"],
+            ["blue"],
+            ["different"],
+            ["first"],
+            ["long"],
+            ["such"],
+            ["wild"],
+            ["uncontrolled"],
+            ["unconscious"],
+            ["able"],
+            ["whole"]
+        ],
+        "VBN": [
+            ["surrounded"],
+            ["girdled"],
+            ["covered"],
+            ["freed"],
+            ["subdued"],
+            ["united"]
+        ],
+        "NNS": [
+            ["hills"],
+            ["wreaths"],
+            ["roses"],
+            ["meanings"],
+            ["storms"],
+            ["desires"],
+            ["aspirations"],
+            ["mysteries"],
+            ["obstacles"]
+        ],
+        "PRPSS1": [
+            ["i"]
+        ],
+        "VBD": [
+            ["saw"],
+            ["licked"],
+            ["said"],
+            ["withstood"]
+        ],
+        "PRP$JJ": [
+            ["her"]
+        ],
+        "RB": [
+            ["calmly"],
+            ["confidently"],
+            ["obediently"],
+            ["alone"],
+            ["then"],
+            ["even"],
+            ["almost"],
+            ["also"]
+        ],
+        "CC": [
+            ["and"]
+        ],
+        "\"": [
+            ["'"]
+        ],
+        "PRP$S": [
+            ["s"]
+        ],
+        "DT*S": [
+            ["this"]
+        ],
+        "VBZ": [
+            ["is"],
+            ["has"],
+            ["shows"],
+            ["feeds"],
+            ["leads"],
+            ["creates"],
+            ["perceives"],
+            ["knows"]
+        ],
+        "PRPS*3": [
+            ["it"]
+        ],
+        "NNP": [
+            ["Love"],
+            ["Zarathustra"],
+            ["Unity"]
+        ],
+        "MD": [
+            ["can"],
+            ["cannot"]
+        ],
+        "VB": [
+            ["conquer"],
+            ["remember"],
+            ["let"],
+            ["be"]
+        ],
+        "WP": [
+            ["what"]
+        ],
+        "PRPSO1": [
+            ["me"]
+        ],
+        "WDT": [
+            ["which"]
+        ],
+        "TO": [
+            ["to"]
+        ],
+        "JJR": [
+            ["higher"]
+        ],
+        "DT*P": [
+            ["these"]
+        ],
+        "VBP": [
+            ["suggest"]
+        ],
+        "CD": [
+            ["two"]
+        ]
+    },
+    "The Devil":
+    {
+        "S": [
+            ["JJ", ",", "JJ", "NN", "VBN", "DT", "NN", "."],
+            ["DTCS", "JJ", ",", "JJ", "NN", "VBN", "IN", "DT", "NN", "."],
+            ["PRPSS1", "VBD", "VBG", "DTCS", "JJ", "NN", "WDT", "VBN", "PRPSR3", "IN", "PRPSO1", "IN", "PRPSS1", "VBD", "JJR", "TO", "PRPS*3", "."],
+            ["NNP", "IN", "DT", "NN", "VBD", "DT", "JJ", "JJ", "NN", "IN", "DT", "NNP", ",", "IN", "JJ", ",", "JJ", "NNS", ",", "VBD", "NN", "CC", "JJ", "NNS", "\"", "NNS", "."],
+            ["DTCS", "NN", ",", "VBG", "NN", ",", "VBD", "IN", "NN", "NN", "IN", "DT", "NNS", "IN", "PRP$*", "NN", "."],
+            ["CD", "JJ", ",", "JJ", ",", "JJ", "NNS", "VBD", "NN", "IN", "PRPSO3", "."],
+            ["PRPSS3", "VBN", "IN", "CD1", "NN", ",", "VBG", "IN", "PRP$*", "JJ", ",", "JJ", "NN", "."],
+            ["IN", "DT", "NN", "PRPSS1", "VBD", "DT", "NN", "IN", "JJ", "NN", "."],
+            ["DTCS", "VBG", "NN", "VBN", "JJ", "IN", "PRP$*", "JJ", "NN", "VBN", "JJ", ",", "VBG", "NN", "."],
+            ["PRPSS3", "VBD", "IN", "DTCS", "JJ", ",", "JJ", "NN", ",", "VBG", "PRPS*3", "IN", "DT", "NNS", "IN", "PRP$*", "JJ", ",", "JJ", "NNS", "."],
+            ["DTCS", "NN", "CC", "NN", "VBD", "VBD", "TO", "DT", "NN", ",", "DT", "JJ", "NN", "CC", "NNP", "PRPSS1", "VBD", "IN", "DT", "NN", ",", "CC", "RB", "PRPPS3", "VBD", "NNS", "CC", "NNS", "VBD", "IN", "NN", "."],
+            ["CC", "PRPPS3", "VBD", "RB", "JJ", "IN", "NN", ",", "CC", "VBD", "VBN", "IN", "NN", "CC", "NN", "."],
+            ["DT*S", "VBZ", "DTCS", "NN", "IN", "NN", ",", "VBD", "DT", "NN", ",", "DTCS", "NN", "IN", "NN", "CC", "JJ", "."],
+            ["PRPPS3", "are", "DT", "JJ", "NN", "CC", "NN", "PRP*2", "VBD", "IN", "DT", "NN", ",", "CC", "PRP$JJ", "NN", "VBG", "TO", "VB", "DTCS", "NN", ",", "VBD", "DTCS", "NN", "."],
+            ["DT*S", "NN", "CC", "NN", "VBD", "IN", "PRP$JJ", "NN", "VBZ", "DTCS", "NN", "IN", "DT", "NN", "IN", "VBZ", "PRPPO3", "IN", "NN", ",", "IN", "PRP$JJ", "NN", "VBZ", "DTCS", "NN", "IN", "NN", "CC", "DTCS", "NN", "TO", "NN", "."],
+            ["PRPPS3", "VBD", "IN", "PRPS*3", "VBZ", "DTCS", "NN", "TO", "DT", "NN", "IN", "DT", "JJ", "NN", ",", "DT", "NN", "WDT", "VBZ", "DT", "JJR", "NNP", "."],
+            ["PRPPS3", "VBD", "IN", "NNP", "VBZ", "JJ", "CC", "JJ", "CC", "PRPPS3", "VBD", "PRPS*3", "TO", "DT", "JJ", "CC", "JJ", "."],
+            ["CC", "PRPPS3", "DTCS", "VBN", "NN", "DTCS", "NN", "IN", "VBG", "DT", "JJ", "TO", "PRPSR3", "."],
+            ["RB", "NN", "VBD", "NN", "CC", "VBN", "PRPPO3", "IN", "JJ", "NNS", "TO", "DT", "JJ", "NN", "IN", "NN", ",", "IN", "WDT", "VBZ", "NN", "."],
+            ["CC", "PRPSS1", "VBN", "DT", "NN", "IN", "DT", "NNP", "."],
+            ["PRPSS1", "am", "NNP", ",", "PRPSS3", "VBD", ",", "IN", "JJS", "RB", "RB", "IN", "NNP", "MD", "VB", "IN", "DT*S", "JJS", "IN", "NNS", "."],
+            ["IN", "NN", "TO", "VB", "PRPSO1", ",", "CD1", "MD", "VB", "JJ", "TO", "VB", "RB", ",", "RB", "CC", "RB", "."],
+            ["PRPSS1", "VB", "DT", "NN", ",", "DT", "JJ", "CD", "NNS", "IN", "WDT", "are", "NN", "CC", "NNP", "."],
+            ["IN", "NN", "TO", "VB", "DT*S", "NN", "PRPS*3", "VBZ", "JJ", "TO", "VB", "IN", "PRPS*3", "VBZ", "RB", "VB", "."],
+            ["CC", "WRB", "TO", "do", "DT*S", "VBZ", "RB", "IN", "PRPSO1", "TO", "VB", "."],
+            ["IN", "PRPSS1", "am", "DT", "NNP", "WDT", "NNS", "VBP", "VBZ", "DT", "NN", "IN", "DT**", "NN", "CC", "WDT", "PRPPS3", "VBN", "IN", "DTCS", "NN", "IN", "DT**", "DT", "NN", "IN", "PRPPS3", "do", "."],
+            ["PRPPS3", "VB", "PRPSO1", "DT", "NNP", "IN", "NN", ",", "CC", "RB", "PRPSS1", "am", "DT", "NN", "IN", "NNS", ",", "IN", "PRPSS1", "am", "DT", "JJS", "JJ", "NN", "IN", "JJ", "NNS", "."]
+        ],
+        "Q": [],
+        "E": [],
+        "F": [],
+        "JJ": [
+            ["black"],
+            ["awful"],
+            ["ominous"],
+            ["red"],
+            ["fantastic"],
+            ["repulsive"],
+            ["large"],
+            ["hairy"],
+            ["curved"],
+            ["grey"],
+            ["bat-like"],
+            ["bare"],
+            ["fat"],
+            ["down-end"],
+            ["other"],
+            ["beast-like"],
+            ["shaggy"],
+            ["same"],
+            ["dissatisfied"],
+            ["evil"],
+            ["magic"],
+            ["real"],
+            ["immortal"],
+            ["unreal"],
+            ["temporary"],
+            ["iron"],
+            ["able"],
+            ["necessary"],
+            ["monstrous"],
+            ["human"]
+        ],
+        "NN": [
+            ["night"],
+            ["earth"],
+            ["flame"],
+            ["distance"],
+            ["figure"],
+            ["face"],
+            ["beard"],
+            ["pentagram"],
+            ["downwards"],
+            ["phosphoric"],
+            ["light"],
+            ["forehead"],
+            ["spread"],
+            ["arm"],
+            ["hand"],
+            ["palm"],
+            ["sign"],
+            ["magic"],
+            ["torch"],
+            ["smoke"],
+            ["cube"],
+            ["man"],
+            ["woman"],
+            ["garden"],
+            ["spirit"],
+            ["protest"],
+            ["repulsion"],
+            ["picture"],
+            ["weakness"],
+            ["voice"],
+            ["falsehood"],
+            ["love"],
+            ["sacrifice"],
+            ["illusion"],
+            ["link"],
+            ["chain"],
+            ["eternity"],
+            ["symbol"],
+            ["equilibrium"],
+            ["road"],
+            ["infinity"],
+            ["key"],
+            ["gate"],
+            ["world"],
+            ["tool"],
+            ["dissension"],
+            ["matter"],
+            ["deceit"],
+            ["order"],
+            ["triangle"],
+            ["death"],
+            ["cause"],
+            ["evil"],
+            ["excuse"],
+            ["prince"],
+            ["production"]
+        ],
+        "VBN": [
+            ["enveloped"],
+            ["burned"],
+            ["outlined"],
+            ["held"],
+            ["emitted"],
+            ["filled"],
+            ["made"],
+            ["fettered"],
+            ["heard"],
+            ["invented"]
+        ],
+        "DT": [
+            ["the"]
+        ],
+        "DTCS": [
+            ["an"],
+            ["a"],
+            ["each"]
+        ],
+        "IN": [
+            ["in"],
+            ["before"],
+            ["as"],
+            ["above"],
+            ["of"],
+            ["with"],
+            ["between"],
+            ["on"],
+            ["behind"],
+            ["up"],
+            ["out"],
+            ["that"],
+            ["for"],
+            ["at"],
+            ["because"]
+        ],
+        "PRPSS1": [
+            ["i"]
+        ],
+        "VBD": [
+            ["was"],
+            ["came"],
+            ["appeared"],
+            ["pointed"],
+            ["shone"],
+            ["were"],
+            ["saw"],
+            ["sat"],
+            ["chained"],
+            ["had"],
+            ["tipped"],
+            ["said"],
+            ["became"],
+            ["forgot"],
+            ["subjugated"]
+        ],
+        "VBG": [
+            ["approaching"],
+            ["pointing"],
+            ["spreading"],
+            ["burning"],
+            ["stifling"],
+            ["gripping"],
+            ["ceasing"],
+            ["submitting"]
+        ],
+        "WDT": [
+            ["which"]
+        ],
+        "PRPSR3": [
+            ["itself"],
+            ["himself"]
+        ],
+        "PRPSO1": [
+            ["me"]
+        ],
+        "JJR": [
+            ["nearer"],
+            ["higher"]
+        ],
+        "TO": [
+            ["to"]
+        ],
+        "PRPS*3": [
+            ["it"]
+        ],
+        "NNP": [
+            ["High"],
+            ["Devil"],
+            ["Woman"],
+            ["Path"],
+            ["Love"],
+            ["Evil"],
+            ["Time"],
+            ["Prince"]
+        ],
+        "NNS": [
+            ["ears"],
+            ["goats"],
+            ["horns"],
+            ["wings"],
+            ["claws"],
+            ["legs"],
+            ["tails"],
+            ["chains"],
+            ["worlds"],
+            ["sides"],
+            ["men"],
+            ["lies"]
+        ],
+        "CC": [
+            ["and"],
+            ["but"]
+        ],
+        "\"": [
+            ["'"]
+        ],
+        "PRP$*": [
+            ["his"]
+        ],
+        "CD": [
+            ["two"]
+        ],
+        "PRPSO3": [
+            ["him"]
+        ],
+        "PRPSS3": [
+            ["he"]
+        ],
+        "CD1": [
+            ["one"]
+        ],
+        "RB": [
+            ["now"],
+            ["evidently"],
+            ["then"],
+            ["so"],
+            ["far"],
+            ["unfairly"],
+            ["incorrectly"],
+            ["narrowly"],
+            ["not"],
+            ["truly"]
+        ],
+        "PRPPS3": [
+            ["they"]
+        ],
+        "DT*S": [
+            ["this"]
+        ],
+        "VBZ": [
+            ["is"],
+            ["unites"],
+            ["lights"],
+            ["sits"],
+            ["does"]
+        ],
+        "PRP*2": [
+            ["you"]
+        ],
+        "PRP$JJ": [
+            ["their"]
+        ],
+        "VB": [
+            ["be"],
+            ["exist"],
+            ["see"],
+            ["close"],
+            ["quit"],
+            ["tell"],
+            ["call"]
+        ],
+        "PRPPO3": [
+            ["them"]
+        ],
+        "JJS": [
+            ["least"],
+            ["best"],
+            ["most"]
+        ],
+        "MD": [
+            ["can"],
+            ["must"]
+        ],
+        "WRB": [
+            ["how"]
+        ],
+        "VBP": [
+            ["say"]
+        ],
+        "DT**": [
+            ["all"]
+        ]
+    },
+    "The Hermit":
+    {
+        "S": [
+            ["IN", "JJ", "NNS", "IN", "DTCS", "JJ", ",", "JJ", "NN", "WRB", "RB", "NNS", "VBD", ",", "PRPSS1", "VBD", "DT", "NNP", "."],
+            ["PRPSS3", "VBD", "VBN", "IN", "DTCS", "JJ", "NN", ",", "DTCS", "NN", "VBN", "IN", "PRP$*", "NN", "."],
+            ["PRPSS3", "VBN", "DTCS", "JJ", "NN", "IN", "CD1", "NN", "CC", "IN", "DT", "JJ", "DTCS", "VBN", "NN", ",", "IN", "PRPS*3", "VBD", "JJ", "NN", "CC", "DT", "NN", "VBD", "VBG", "."],
+            ["DT", "NN", "IN", "NNP", "NNP", ",", "VBD", "DT", "NN", ",", "DT*S", "VBZ", "JJR", "NN", ",", "IN", "JJ", "NN", "WDT", "VBZ", "IN", "DTCS", "JJ", "NN", "RB", "WP", "VBZ", "TO", "VB", "RB", "RB", "VBN", "."],
+            ["DT*S", "NN", "VBZ", "IN", "DT", "NN", ",", "DT", "NN", "CC", "DT", "NN", "IN", "DT", "NNP", ",", "CC", "VBZ", "DT", "NNS", "IN", "NNS", "CC", "DT", "RBS", "JJ", "NNS", "."],
+            ["IN", "PRP$JJ", "NNS", "."],
+            ["DT", "NN", "IN", "NNP", "VBZ", "DT", "NN", "IN", "DT", "JJ", "NN", "IN", "WDT", "PRPSS3", "VBZ", "PRPSR3", ",", "RB", "IN", "DTCS", "JJ", "NN", "."],
+            ["PRPS*3", "VBZ", "PRP$*", "NN", "IN", "VBG", "PRP$*", "NNS", ",", "RB", "IN", "VBG", "PRPPO3", ",", "PRP$*", "NN", "IN", "NN", "CC", "PRP$*", "NN", "TO", "NN", "IN", "NN", "."],
+            ["DT", "NN", "IN", "DT", "NNS", "VBZ", "PRP$*", "JJ", "NN", ",", "PRP$*", "NN", ",", "PRP$*", "NN", "."],
+            ["DT", "NN", ",", "DT", "NN", "CC", "DT", "NN", "are", "DT", "CD", "NNS", "IN", "NN", "."],
+            ["PRPPS3", "are", "VBN", "TO", "NN", "NNS", "RB", "DT", "NN", "IN", "JJ", "NNS", "IN", "DT", "NN", ",", "RB", "IN", "PRPPS3", "MD", "VB", "RB", "TO", "DT", "JJR", "NN", "."],
+            ["PRPSS3", "WP", "VBZ", "DT*P", "CD", "NNS", "CC", "VBZ", "TO", "VB", "PRPPO3", ",", "VBZ", "TO", "VB", "PRPSR3", "IN", "DT**", "PRPSS3", "MD", "VB", ",", "RB", "IN", "PRPSR3", ",", "CC", ",", "IN", "NNP", ",", "TO", "NN", "IN", "DT", "NN", "IN", "VBG", "."],
+            ["DT", "VBG", "NN", "VBZ", "DT", "NN", "IN", "DTCS", "NN", "\"", "PRP$S", "NN", "."],
+            ["NN", "VBZ", "DT", "JJ", "NN", "IN", "DT", "JJR", "NN", "IN", "DTCS", "NN", "IN", "NNS", "."],
+            ["DT*S", "NN", "VBZ", "DT", "NN", "VBG", "TO", "NN", ",", "VBD", "IN", "IN", "DT", "NN", "."]
+        ],
+        "Q": [],
+        "E": [],
+        "F": [],
+        "IN": [
+            ["after"],
+            ["over"],
+            ["in"],
+            ["though"],
+            ["of"],
+            ["that"],
+            ["up"],
+            ["for"],
+            ["by"],
+            ["amidst"],
+            ["while"],
+            ["with"],
+            ["like"],
+            ["into"]
+        ],
+        "JJ": [
+            ["long"],
+            ["sandy"],
+            ["waterless"],
+            ["other"],
+            ["broad"],
+            ["inner"],
+            ["new"],
+            ["intimate"],
+            ["wise"],
+            ["noisy"],
+            ["illusory"],
+            ["human"]
+        ],
+        "NNS": [
+            ["wanderings"],
+            ["serpents"],
+            ["souls"],
+            ["people"],
+            ["recesses"],
+            ["hearts"],
+            ["mysteries"],
+            ["patriarchs"],
+            ["symbols"],
+            ["fires"],
+            ["treasures"],
+            ["analogies"]
+        ],
+        "DTCS": [
+            ["a"],
+            ["an"]
+        ],
+        "NN": [
+            ["desert"],
+            ["cloak"],
+            ["hood"],
+            ["head"],
+            ["staff"],
+            ["hand"],
+            ["lantern"],
+            ["daylight"],
+            ["sun"],
+            ["voice"],
+            ["knowledge"],
+            ["way"],
+            ["past"],
+            ["present"],
+            ["future"],
+            ["faculty"],
+            ["man"],
+            ["crowd"],
+            ["skill"],
+            ["capacity"],
+            ["silence"],
+            ["power"],
+            ["act"],
+            ["stillness"],
+            ["authority"],
+            ["self-confidence"],
+            ["initiation"],
+            ["guide"],
+            ["temptation"],
+            ["roadside"],
+            ["goal"],
+            ["delight"],
+            ["joy"],
+            ["virtue"],
+            ["basis"],
+            ["initiate"],
+            ["life"],
+            ["soul"],
+            ["spoiler"],
+            ["mind"],
+            ["chain"],
+            ["ladder"],
+            ["heaven"],
+            ["patriarch"]
+        ],
+        "WRB": [
+            ["where"]
+        ],
+        "RB": [
+            ["only"],
+            ["even"],
+            ["already"],
+            ["clearly"],
+            ["past"],
+            ["so"],
+            ["straight"],
+            ["not"]
+        ],
+        "VBD": [
+            ["lived"],
+            ["met"],
+            ["was"],
+            ["said"],
+            ["dreamed"]
+        ],
+        "PRPSS1": [
+            ["i"]
+        ],
+        "DT": [
+            ["the"]
+        ],
+        "NNP": [
+            ["Hermit"],
+            ["Hermes"],
+            ["Trismegistus"],
+            ["Apollonius"],
+            ["God"],
+            ["Zarathustra"]
+        ],
+        "PRPSS3": [
+            ["he"]
+        ],
+        "VBN": [
+            ["wrapped"],
+            ["thrown"],
+            ["held"],
+            ["lighted"],
+            ["known"],
+            ["needed"],
+            ["transformed"]
+        ],
+        "PRP$*": [
+            ["his"]
+        ],
+        "CD1": [
+            ["one"]
+        ],
+        "CC": [
+            ["and"],
+            ["or"],
+            ["but"]
+        ],
+        "PRPS*3": [
+            ["it"]
+        ],
+        "VBG": [
+            ["shining"],
+            ["hiding"],
+            ["expressing"],
+            ["giving"],
+            ["leading"]
+        ],
+        "DT*S": [
+            ["this"]
+        ],
+        "VBZ": [
+            ["is"],
+            ["illuminates"],
+            ["appears"],
+            ["lights"],
+            ["opens"],
+            ["isolates"],
+            ["receives"],
+            ["aspires"],
+            ["strives"],
+            ["unites"]
+        ],
+        "JJR": [
+            ["higher"]
+        ],
+        "WDT": [
+            ["which"]
+        ],
+        "WP": [
+            ["what"],
+            ["who"]
+        ],
+        "TO": [
+            ["to"]
+        ],
+        "VB": [
+            ["be"],
+            ["go"],
+            ["obtain"],
+            ["enrich"],
+            ["acquire"]
+        ],
+        "RBS": [
+            ["most"]
+        ],
+        "PRP$JJ": [
+            ["their"]
+        ],
+        "PRPSR3": [
+            ["himself"]
+        ],
+        "PRPPO3": [
+            ["them"]
+        ],
+        "CD": [
+            ["three"]
+        ],
+        "PRPPS3": [
+            ["they"]
+        ],
+        "MD": [
+            ["may"],
+            ["can"]
+        ],
+        "DT*P": [
+            ["these"]
+        ],
+        "DT**": [
+            ["all"]
+        ],
+        "\"": [
+            ["'"]
+        ],
+        "PRP$S": [
+            ["s"]
+        ]
+    },
+    "Time ( Temperance )":
+    {
+        "S": [
+            ["DTCS", "NN", "IN", "DTCS", "JJ", "NN", ",", "VBG", "NN", "CC", "NN", ",", "VBD", "."],
+            ["PRP$*", "NNS", "VBD", "JJ", "CC", "DTCS", "NN", "IN", "NN", "VBD", "IN", "PRP$*", "NN", "."],
+            ["IN", "PRP$*", "NN", "PRPSS3", "VBD", "DT", "JJ", "NN", "IN", "DT", "NN", "IN", "DT", "NNP", ",", "DTCS", "NN", "IN", "DTCS", "NN", ",", "DTCS", "NN", "IN", "DT", "NN", "."],
+            ["IN", "PRP$*", "NN", "DT", "NN", "IN", "NN", "CC", "NN", ",", "DT", "NN", "."],
+            ["IN", "CD1", "NN", "VBD", "DTCS", "NN", "IN", "NN", ",", "IN", "DT", "JJ", "DTCS", "NN", "IN", "NN", "CC", "EX", "VBD", "IN", "DT*P", "NNS", "DTCS", "JJ", ",", "VBG", "NN", "IN", "DTCS", "NN", "IN", "DT", "NN", "."],
+            ["CC", "PRPSS1", "MD", "RB", "VB", "IN", "WDT", "NN", "CC", "IN", "WDT", "NN", "DT", "NN", "VBD", "."],
+            ["IN", "JJ", "NN", "PRPSS1", "VBN", "IN", "PRPSS1", "VBD", "IN", "DT", "JJ", "NNS", "IN", "WDT", "EX", "VBZ", "DT", "NN", "."],
+            ["PRPSS1", "VBD", "IN", "DT", "NN", ",", "IN", "PRP$*", "NNS", ",", "PRP$*", "NNS", ",", "DT", "NN", "NN", "IN", "DT", "NNS", "CC", "PRP$JJ", "JJ", "NN", "VBD", "IN", "NN", "CC", "PRP$JJ", "JJ", "NN", "VBD", "IN", "NN", "CC", "NN", "IN", "VBG", "."],
+            ["UH", ",", "VBD", "DT", "NN", ",", "DT*S", "VBZ", "DTCS", "NN", "IN", "VBZ", "VBD", "IN", "NN", "."],
+            ["NN", "VBZ", "RB", "DT", "VBG", "IN", "DT*S", "NN", "IN", "DT", "NN", "."],
+            ["DT", "NNP", "VBZ", "DT", "NN", ",", "DT", "NN", "CC", "DT", "NN", "RB", "IN", "PRPSS3", "MD", "VB", "DT", "NN", "IN", "DT*S", "NN", "."],
+            ["CC", "PRP*2", "RB", "VBD", "RB", "JJ", "."],
+            ["VB", "RB", "CC", "VB", "CC", "VB", "TO", "VB", ",", "IN", "RB", "VBG", "VBZ", "PRP$JJ", "RB", "NN", "."],
+            ["PRPSS3", "WP", "NNS", "DT", "NN", "IN", "JJ", "NN", "MD", "VB", "VBD", "."],
+            ["DT", "NN", "IN", "DT", "NN", "VBZ", "NNP", "."],
+            ["DT", "NN", "IN", "PRP$*", "NN", "VBZ", "DT", "NN", "IN", "NN", "CC", "NN", "."],
+            ["DTCS", "NN", "VBZ", "DTCS", "NN", "WDT", "VBZ", "TO", "DT", "JJ", "NN", "WRB", "PRPS*3", "VBD", "."],
+            ["NN", "VBZ", "DT", "NN", "TO", "NN", "."],
+            ["CC", "IN", "CD1", "NN", "TO", "DTCS", "IN", "DT", "NN", "IN", "DTCS", "NN", "DT", "NN", "VBZ", "RB", "DT", "JJ", ",", "CC", "DT", "JJ", "PRPS*3", "VBZ", "IN", "CD1", "NN", ",", "DT", "JJR", "PRPS*3", "MD", "VB", "TO", "DT", "JJ", "."],
+            ["NN", "VBZ", "DTCS", "NN", ",", "VBG", "PRP$*", "NN", ",", "RB", "VBG", "PRPS*3", "."],
+            ["NNP", "IN", "DT", "NNS", "DT", "NN", "VBZ", "VBZ", "DT", "JJ", ",", "DT", "JJ", "VBZ", "DT", "NN", "."],
+            ["DT", "NN", "NN", "IN", "DT", "NNS", "VBZ", "DT", "JJ", "."],
+            ["PRP*2", "VB", "IN", "PRPS*3", "NNS", "DTCP", "NNS", "."],
+            ["DT*S", "VBZ", "NNP", "IN", "PRP$*", "RBS", "JJ", "NN", "."],
+            ["NNS", "VBP", "IN", "DT**", "NNS", "RB", "IN", "CD1", "NN", "."],
+            ["PRPPS3", "do", "RB", "VB", "IN", "VBG", "RB", "VBZ", "CC", "IN", "NNP", "VBZ", "DTCS", "NN", "IN", "VBG", "NNS", "."],
+            ["VB", "DT*S", "NN", "CC", "VB", "TO", "VB", "DT", "JJ", "NNS", "IN", "DT", "JJ", "NN", "IN", "DT", "NN", "."],
+            ["DT", "NN", "IN", "DT", "JJ", "NN", "IN", "DT", "NNP", "IN", "DT", "NN", "\"", "PRP$S", "NN", "VBZ", "DT", "NN", "IN", "DT", "NN", "IN", "NNP", ",", "NN", "CC", "DT", "NNP", "."],
+            ["DT", "NN", "VBZ", "NNP", ",", "DT", "NN", "IN", "NN", ",", "DT", "NN", "IN", "NNS", "."],
+            ["DT", "NN", "IN", "DT", "NN", "VBZ", "DT", "NN", "IN", "NN", "."],
+            ["DT", "NN", "VBZ", "DT", "JJ", "NN", "."],
+            ["DT", "NN", "IN", "NN", "VBZ", "DT", "NN", "IN", "NN", ",", "DTCS", "NN", "IN", "DT", "NN", "IN", "NN", "."],
+            ["RB", "DT", "JJ", "NN", "IN", "DT", "JJ", "NN", "VBZ", "JJ", "TO", "DT", "NN", "IN", "DT", "NN", "."],
+            ["DT", "NN", "IN", "NN", "VBZ", "DT", "NN", "IN", "DT", "CD", "NNS", "IN", "DT", "NNP", "."],
+            ["DT", "NN", "VBZ", "NN", ",", "NN", ",", "NN", "CC", "NN", ",", "CC", "RB", "VBZ", "DT", "NN", "."],
+            ["DT**", "DT*S", ",", "IN", "DT", "NN", "IN", "DT", "CD", "NNS", ",", "VBZ", "IN", "DT", "NN", "IN", "DT", "NN", ",", "WP", "PRPSR3", "VBZ", "DTCS", "NN", "IN", "DTCS", "NN", "."],
+            ["RB", "DTCS", "NN", "IN", "NN", "VBZ", "DTCS", "JJ", "NN", "."]
+        ],
+        "Q": [],
+        "E": [],
+        "F": [],
+        "DTCS": [
+            ["an"],
+            ["a"],
+            ["every"],
+            ["each"],
+            ["another"]
+        ],
+        "NN": [
+            ["angel"],
+            ["robe"],
+            ["earth"],
+            ["heaven"],
+            ["radiance"],
+            ["gold"],
+            ["head"],
+            ["breast"],
+            ["sign"],
+            ["book"],
+            ["triangle"],
+            ["square"],
+            ["point"],
+            ["forehead"],
+            ["symbol"],
+            ["life"],
+            ["eternity"],
+            ["circle"],
+            ["hand"],
+            ["cup"],
+            ["silver"],
+            ["stream"],
+            ["colour"],
+            ["rainbow"],
+            ["awe"],
+            ["return"],
+            ["heart"],
+            ["fear"],
+            ["mind"],
+            ["anguish"],
+            ["lack"],
+            ["voice"],
+            ["mystery"],
+            ["initiation"],
+            ["soul"],
+            ["lantern"],
+            ["cloak"],
+            ["staff"],
+            ["light"],
+            ["salvation"],
+            ["comprehension"],
+            ["name"],
+            ["death"],
+            ["birth"],
+            ["circumference"],
+            ["distance"],
+            ["serpent"],
+            ["tail"],
+            ["future"],
+            ["aspect"],
+            ["direction"],
+            ["multitude"],
+            ["present"],
+            ["correlation"],
+            ["man"],
+            ["world"],
+            ["spirit"],
+            ["consciousness"],
+            ["spark"],
+            ["divinity"],
+            ["universe"],
+            ["fire"],
+            ["air"],
+            ["water"],
+            ["form"],
+            ["bag"],
+            ["fool"],
+            ["dimension"]
+        ],
+        "IN": [
+            ["in"],
+            ["of"],
+            ["about"],
+            ["on"],
+            ["within"],
+            ["between"],
+            ["from"],
+            ["into"],
+            ["that"],
+            ["near"],
+            ["upon"],
+            ["with"],
+            ["at"],
+            ["for"],
+            ["without"]
+        ],
+        "JJ": [
+            ["white"],
+            ["flame"],
+            ["sacred"],
+            ["other"],
+            ["constant"],
+            ["great"],
+            ["ultimate"],
+            ["human"],
+            ["unprepared"],
+            ["complete"],
+            ["same"],
+            ["further"],
+            ["past"],
+            ["present"],
+            ["incomprehensible"],
+            ["contrary"],
+            ["rainbow"],
+            ["visible"],
+            ["whole"],
+            ["equal"],
+            ["infinite"]
+        ],
+        "VBG": [
+            ["touching"],
+            ["glistening"],
+            ["understanding"],
+            ["revealing"],
+            ["pursuing"],
+            ["catching"],
+            ["everything"],
+            ["turning"]
+        ],
+        "CC": [
+            ["and"],
+            ["but"],
+            ["nor"]
+        ],
+        "VBD": [
+            ["appeared"],
+            ["were"],
+            ["was"],
+            ["wore"],
+            ["flowed"],
+            ["looked"],
+            ["trembled"],
+            ["shrank"],
+            ["said"],
+            ["revealed"],
+            ["came"],
+            ["lost"],
+            ["began"]
+        ],
+        "PRP$*": [
+            ["his"],
+            ["its"]
+        ],
+        "NNS": [
+            ["wings"],
+            ["cups"],
+            ["mysteries"],
+            ["symbols"],
+            ["approaches"],
+            ["flows"],
+            ["ways"],
+            ["men"],
+            ["circles"],
+            ["currents"],
+            ["ideas"],
+            ["signs"]
+        ],
+        "PRPSS3": [
+            ["he"]
+        ],
+        "DT": [
+            ["the"],
+            ["no"]
+        ],
+        "NNP": [
+            ["Tarot"],
+            ["Hermit"],
+            ["Time"],
+            ["One"],
+            ["God"],
+            ["Universe"]
+        ],
+        "CD1": [
+            ["one"]
+        ],
+        "EX": [
+            ["there"]
+        ],
+        "DT*P": [
+            ["these"]
+        ],
+        "PRPSS1": [
+            ["i"]
+        ],
+        "MD": [
+            ["could"],
+            ["can"],
+            ["will"]
+        ],
+        "RB": [
+            ["not"],
+            ["simply"],
+            ["so"],
+            ["probably"],
+            ["here"],
+            ["then"],
+            ["now"],
+            ["only"],
+            ["always"],
+            ["never"],
+            ["constantly"],
+            ["perpetually"],
+            ["therefore"],
+            ["thus"]
+        ],
+        "VB": [
+            ["tell"],
+            ["bear"],
+            ["look"],
+            ["listen"],
+            ["try"],
+            ["understand"],
+            ["be"],
+            ["see"],
+            ["learn"],
+            ["discern"]
+        ],
+        "WDT": [
+            ["which"]
+        ],
+        "VBN": [
+            ["understood"]
+        ],
+        "VBZ": [
+            ["is"],
+            ["receives"],
+            ["returns"],
+            ["holds"],
+            ["meets"],
+            ["represents"],
+            ["symbolises"],
+            ["contains"]
+        ],
+        "PRP$JJ": [
+            ["my"],
+            ["your"]
+        ],
+        "UH": [
+            ["yes"]
+        ],
+        "DT*S": [
+            ["this"]
+        ],
+        "PRP*2": [
+            ["you"]
+        ],
+        "TO": [
+            ["to"]
+        ],
+        "WP": [
+            ["who"]
+        ],
+        "WRB": [
+            ["where"]
+        ],
+        "PRPS*3": [
+            ["it"]
+        ],
+        "JJR": [
+            ["nearer"]
+        ],
+        "DTCP": [
+            ["both"]
+        ],
+        "RBS": [
+            ["most"]
+        ],
+        "VBP": [
+            ["think"]
+        ],
+        "DT**": [
+            ["all"]
+        ],
+        "PRPPS3": [
+            ["they"]
+        ],
+        "\"": [
+            ["'"]
+        ],
+        "PRP$S": [
+            ["s"]
+        ],
+        "CD": [
+            ["twenty-one"],
+            ["four"]
+        ],
+        "PRPSR3": [
+            ["himself"]
+        ]
+    },
+    "The Wheel Of Chance":
+    {
+        "S": [
+            ["PRPSS1", "VBD", "IN", ",", "VBN", "IN", "JJ", "VBD", ",", "VBG", "TO", "VB", "DT", "NN", "IN", "DT", "NNP", "."],
+            ["CC", "RB", ",", "IN", "PRPSS1", "VBD", "PRP$JJ", "NN", ",", "PRPSS1", "VBD", "RB", "IN", "DT", "NN", "DTCS", "JJ", ",", "VBG", "NN", "VBN", "IN", "JJ", "NNS", "CC", "NNS", "."],
+            ["DT", "NN", "VBD", "IN", "JJ", "NN", ",", "CC", "IN", "PRPS*3", ",", "VBG", "RB", "CC", "VBG", "IN", ",", "JJ", "NNS", "IN", "DT", "NN", "CC", "DT", "NN", "VBD", "."],
+            ["IN", "PRPS*3", "VBD", "DTCS", "JJ", "NN", "."],
+            ["IN", "NNS", ",", "IN", "DT", "CD", "NNS", "IN", "NN", ",", "PRPSS1", "VBD", "DT", "CD", "JJ", "NNS", ",", "CD1", "IN", "DT", "NN", "IN", "DTCS", "NN", ",", "DTCS", "IN", "DT", "NN", "IN", "DTCS", "NN", ",", "DT", "JJ", "IN", "DTCS", "NN", "IN", "DTCS", "NN", ",", "CC", "DT", "JJ", "IN", "DT", "NN", "IN", "DTCS", "NN", "."],
+            ["CC", "DTCS", "IN", "PRPPO3", "VB", "DTCS", "JJ", "NN", "."],
+            ["CC", "PRPSS1", "VBN", "DT", "NNS", "IN", "NNP", "\"", "PRP$S", "NNS", "."],
+            ["DT**", "VB", ",", "DT**", "VB", ",", "DT", "NN", "IN", "NN", "RB", "VBZ", "."],
+            ["DT**", "VB", ",", "DT**", "VB", "RB", "DT", "NN", "IN", "NN", "VBZ", "RB", "."],
+            ["DT**", "VB", ",", "DT**", "VB", "RB", ",", "DT", "JJ", "NN", "IN", "NN", "VBZ", "RB", "VBG", "."],
+            ["DT**", "VB", ",", "DT**", "VB", "RB", ",", "DT", "NN", "IN", "NN", "VBZ", "RB", "JJ", "TO", "PRPSR3", "."],
+            ["NN", "VBZ", "IN", "DTCS", "NN", "."],
+            ["NNP", "DTCS", "RB", "NNS", "EX", "."],
+            ["DT", "NN", "VBZ", "RB", "."],
+            ["DT", "NN", "IN", "NN", "VBZ", "DTCS", "NN", "."]
+        ],
+        "Q": [],
+        "E": [],
+        "F": [],
+        "PRPSS1": [
+            ["i"]
+        ],
+        "VBD": [
+            ["walked"],
+            ["thought"],
+            ["lifted"],
+            ["saw"],
+            ["turned"],
+            ["revolved"],
+            ["sat"]
+        ],
+        "IN": [
+            ["along"],
+            ["in"],
+            ["of"],
+            ["as"],
+            ["with"],
+            ["around"],
+            ["up"],
+            ["above"],
+            ["on"],
+            ["at"]
+        ],
+        "VBN": [
+            ["absorbed"],
+            ["covered"],
+            ["heard"]
+        ],
+        "JJ": [
+            ["deep"],
+            ["huge"],
+            ["kabalistic"],
+            ["terrible"],
+            ["symbolic"],
+            ["immovable"],
+            ["apocalyptical"],
+            ["third"],
+            ["fourth"],
+            ["open"],
+            ["same"],
+            ["true"]
+        ],
+        "VBG": [
+            ["trying"],
+            ["revolving"],
+            ["falling"],
+            ["flying"],
+            ["building"]
+        ],
+        "TO": [
+            ["to"]
+        ],
+        "VB": [
+            ["understand"],
+            ["read"],
+            ["go"],
+            ["return"],
+            ["die"],
+            ["flourish"],
+            ["perish"],
+            ["live"],
+            ["separate"],
+            ["meet"]
+        ],
+        "DT": [
+            ["the"]
+        ],
+        "NN": [
+            ["vision"],
+            ["head"],
+            ["sky"],
+            ["circle"],
+            ["velocity"],
+            ["serpent"],
+            ["dog"],
+            ["sphinx"],
+            ["heaven"],
+            ["face"],
+            ["lion"],
+            ["bull"],
+            ["eagle"],
+            ["book"],
+            ["wheel"],
+            ["life"],
+            ["year"],
+            ["existence"],
+            ["house"],
+            ["ring"],
+            ["moment"],
+            ["middle"],
+            ["way"],
+            ["eternity"],
+            ["curve"]
+        ],
+        "NNP": [
+            ["Angel"],
+            ["Zarathustra"],
+            ["Round"]
+        ],
+        "CC": [
+            ["and"]
+        ],
+        "RB": [
+            ["suddenly"],
+            ["midway"],
+            ["down"],
+            ["ever"],
+            ["again"],
+            ["eternally"],
+            ["here"],
+            ["everywhere"]
+        ],
+        "PRP$JJ": [
+            ["my"]
+        ],
+        "DTCS": [
+            ["a"],
+            ["an"],
+            ["another"],
+            ["each"],
+            ["every"]
+        ],
+        "NNS": [
+            ["letters"],
+            ["symbols"],
+            ["figures"],
+            ["clouds"],
+            ["quarters"],
+            ["beings"],
+            ["voices"],
+            ["beasts"],
+            ["rolls"]
+        ],
+        "PRPS*3": [
+            ["it"]
+        ],
+        "CD": [
+            ["four"]
+        ],
+        "CD1": [
+            ["one"]
+        ],
+        "PRPPO3": [
+            ["them"]
+        ],
+        "\"": [
+            ["'"]
+        ],
+        "PRP$S": [
+            ["s"]
+        ],
+        "DT**": [
+            ["all"]
+        ],
+        "VBZ": [
+            ["turns"],
+            ["runs"],
+            ["is"],
+            ["begins"]
+        ],
+        "PRPSR3": [
+            ["itself"]
+        ],
+        "EX": [
+            ["there"]
+        ]
+    },
+    "Death":
+    {
+        "S": [
+            ["VBN", "IN", "DT", "VBG", "IN", "DT", "NNP", "IN", "NNP", ",", "PRPSS1", "VBD", "TO", "NN", "CC", "VBN", "PRP$JJ", "NNS", "."],
+            ["CC", "PRPS*3", "VBD", "TO", "PRPSO1", "IN", "DT", "NNP", "VBD", "VBG", "IN", "PRPSO1", "CC", "IN", "DT", "CD", "NNS", "VBD", "VBG", "IN", "DT", "NNS", "CC", "VBG", "PRP$JJ", "NNS", "."],
+            ["RB", ",", "IN", "VBG", "PRP$JJ", "NNS", ",", "PRPSS1", "VBD", "DTCS", "JJ", "NN", "IN", "DTCS", "JJ", "NN", ",", "VBN", "IN", "JJ", "NN", ",", "IN", "DTCS", "JJ", "NN", "CC", "JJ", "NN", "."],
+            ["DTCS", "NN", "\"", "PRP$S", "NN", "VBD", "IN", "IN", "IN", "DT", "NN", "."],
+            ["NNP", "JJ", "NN", "VBN", "DTCS", "JJ", ",", "JJ", ",", "JJ", "NN", ",", "CC", "DT", "JJ", "VBN", "DTCS", "JJ", "NN", "VBN", "IN", "NNS", "CC", "NNS", "."],
+            ["CC", ",", "WRB", "DT", "JJ", "NN", "VBN", ",", "NN", "CC", "NN", "VBD", "."],
+            ["NNS", "VBD", ",", "NNS", "VBD", ",", "DT", "NN", "VBN", "PRPSR3", "IN", "DTCS", "JJ", "NN", "."],
+            ["NNS", "VBD", "."],
+            ["NNS", ",", "NNS", "CC", "NNS", "VBD", "VBN", "."],
+            ["NNP", "IN", "DT", "JJ", "NN", "IN", "PRP$JJ", "NN", "CC", "PRP$JJ", "NN", "."],
+            ["JJ", "NNS", "JJ", "CC", "JJ", "."],
+            ["JJ", "NNS", "VBN", "IN", "NN", "IN", "NNP", "."],
+            ["JJ", "NNS", ",", "WRB", "PRPPS3", "VBD", "DT", "JJ", "NN", "DT**", "NN", "IN", "PRP$JJ", "NNS", "IN", "PRPSO3", ",", "VBD", "IN", "PRP$JJ", "NNS", "IN", "NN", "CC", "NN", ",", "CC", "VBD", "RB", "TO", "NN", "DT", "JJR", "."],
+            ["RB", ",", "IN", "CD", "NNS", ",", "DT", "NN", "VBD", "."],
+            ["DTCS", "JJ", "NN", "VBN", "PRPSO1", "."],
+            ["DT", "JJ", "NNS", "IN", "DT", "NN", "VBD", "TO", "NN", "IN", "PRP$JJ", "NN", ",", "CC", "PRPSS1", "VBD", "DT", "NN", "VB", "IN", "DTCS", "NN", "."],
+            ["CC", "DT**", "IN", "RB", "NN", "JJ", ",", "CC", "RB", "VBN", "CC", "VBN", ",", "VBD", "TO", "VB", "IN", "DT", "JJ", "NN", "IN", "DT", "NN", "."],
+            ["DTCS", "NN", "VBD", "PRPSO1", ",", "CC", ",", "VBG", "IN", "DT", "VBG", "NN", "CC", "DT", "VBG", "NN", ",", "PRPSS1", "VBN", "IN", "DT", "NNP", "IN", "NNP", "VBZ", "IN", "DT", "NNS", "IN", "DT", "NN", "IN", "NN", "."],
+            ["DT", "NN", "VBZ", "IN", "CD1", "NN", "CC", "VBZ", "IN", "DTCS", "."],
+            ["DTCS", "NN", "IN", "PRP$*", "NN", "VBZ", "DTCS", "NN", "IN", "CD1", "NN", "CC", "DTCS", "NN", "IN", "DTCS", "."],
+            ["PRPSS1", "VBN", "IN", "PRPS*3", "VBZ", "IN", "VBG", "CC", "VBZ", "IN", "VBG", ",", "CC", "IN", "NN", ",", "IN", "VBG", "TO", "NN", ",", "VBZ", ",", "CC", "IN", "VBG", ",", "VBZ", "TO", "NN", "."],
+            ["UH", ",", "VBD", "DT", "NN", "."],
+            ["DT", "NN", "VBZ", "RB", "VBP", "IN", "PRP$*", "VBG", "RB", "CC", "VBG", "IN", "."],
+            ["PRPS*3", "VBZ", "PRP$*", "JJ", "NN", ",", "IN", "PRP$*", "JJ", "NN", ",", "RB", "DTCS", "JJ", "NNP", "."]
+        ],
+        "Q": [
+            ["WP", "VBZ", "PRPS*3", "VB", "IN", "NN", ",", "IN", "DT", "VBG", "CC", "VBG", "VBN", "IN", "NNS", "?"],
+            ["NNP", ",", "NN", ",", "VBG", "CC", "VBG", ",", "do", "PRP*2", "RB", "VB", "IN", "DT**", "DT*P", "NNS", "are", "NNS", "CC", "NNS", "CC", "NNS", "IN", "DT", "NN", "?"]
+        ],
+        "E": [
+            ["DTCS", "NN", "JJR", "CC", "PRPSS1", "VBN", "IN", "PRP$*", "NNS", "DT", "NN", "IN", "DT", "NNP", "IN", "NNP", "!"]
+        ],
+        "F": [],
+        "VBN": [
+            ["fatigued"],
+            ["shut"],
+            ["dressed"],
+            ["held"],
+            ["ornamented"],
+            ["passed"],
+            ["covered"],
+            ["destroyed"],
+            ["invested"],
+            ["enveloped"],
+            ["seen"],
+            ["heard"],
+            ["understood"],
+            ["observed"]
+        ],
+        "IN": [
+            ["by"],
+            ["of"],
+            ["that"],
+            ["before"],
+            ["in"],
+            ["on"],
+            ["with"],
+            ["out"],
+            ["from"],
+            ["under"],
+            ["behind"],
+            ["into"],
+            ["at"],
+            ["while"],
+            ["up"],
+            ["over"]
+        ],
+        "DT": [
+            ["the"],
+            ["no"]
+        ],
+        "VBG": [
+            ["flashing"],
+            ["turning"],
+            ["sitting"],
+            ["reading"],
+            ["opening"],
+            ["looking"],
+            ["receding"],
+            ["descending"],
+            ["sinking"],
+            ["rising"],
+            ["coming"],
+            ["dying"],
+            ["going"],
+            ["falling"]
+        ],
+        "NNP": [
+            ["Wheel"],
+            ["Life"],
+            ["One"],
+            ["Kings"],
+            ["God"],
+            ["Path"],
+            ["Centre"]
+        ],
+        "PRPSS1": [
+            ["i"]
+        ],
+        "VBD": [
+            ["sank"],
+            ["seemed"],
+            ["kept"],
+            ["continued"],
+            ["saw"],
+            ["looked"],
+            ["followed"],
+            ["withered"],
+            ["drooped"],
+            ["appeared"],
+            ["were"],
+            ["stretched"],
+            ["fell"],
+            ["felt"],
+            ["entered"],
+            ["said"]
+        ],
+        "TO": [
+            ["to"]
+        ],
+        "NN": [
+            ["earth"],
+            ["rider"],
+            ["horse"],
+            ["armour"],
+            ["helmet"],
+            ["plume"],
+            ["skeleton"],
+            ["face"],
+            ["hand"],
+            ["banner"],
+            ["bridle"],
+            ["night"],
+            ["death"],
+            ["shroud"],
+            ["splendour"],
+            ["fame"],
+            ["power"],
+            ["fell"],
+            ["terror"],
+            ["despair"],
+            ["rise"],
+            ["sun"],
+            ["cold"],
+            ["step"],
+            ["breast"],
+            ["world"],
+            ["abyss"],
+            ["something"],
+            ["moment"],
+            ["movement"],
+            ["illumination"],
+            ["point"],
+            ["motion"],
+            ["descent"],
+            ["ascent"],
+            ["life"],
+            ["birth"],
+            ["voice"],
+            ["way"],
+            ["orbit"],
+            ["fool"]
+        ],
+        "CC": [
+            ["and"],
+            ["but"]
+        ],
+        "PRP$JJ": [
+            ["my"],
+            ["their"]
+        ],
+        "NNS": [
+            ["eyes"],
+            ["creatures"],
+            ["clouds"],
+            ["books"],
+            ["skulls"],
+            ["bones"],
+            ["flowers"],
+            ["leaves"],
+            ["graveyards"],
+            ["towers"],
+            ["castles"],
+            ["cities"],
+            ["women"],
+            ["priests"],
+            ["children"],
+            ["knees"],
+            ["hands"],
+            ["hoofs"],
+            ["steps"],
+            ["men"],
+            ["things"],
+            ["thoughts"],
+            ["dreams"],
+            ["fears"]
+        ],
+        "PRPS*3": [
+            ["it"]
+        ],
+        "PRPSO1": [
+            ["me"]
+        ],
+        "CD": [
+            ["four"],
+            ["two"]
+        ],
+        "RB": [
+            ["suddenly"],
+            ["down"],
+            ["afar"],
+            ["once"],
+            ["faintly"],
+            ["not"],
+            ["round"]
+        ],
+        "DTCS": [
+            ["a"],
+            ["an"],
+            ["another"],
+            ["each"]
+        ],
+        "JJ": [
+            ["gigantic"],
+            ["white"],
+            ["black"],
+            ["bony"],
+            ["large"],
+            ["slowly-waving"],
+            ["other"],
+            ["full"],
+            ["beautiful"],
+            ["loved"],
+            ["loving"],
+            ["high"],
+            ["innocent"],
+            ["deadly"],
+            ["heavy"],
+            ["familiar"],
+            ["measured"],
+            ["own"],
+            ["unknown"]
+        ],
+        "\"": [
+            ["'"]
+        ],
+        "PRP$S": [
+            ["s"]
+        ],
+        "WRB": [
+            ["wherever"],
+            ["when"]
+        ],
+        "PRPSR3": [
+            ["itself"]
+        ],
+        "PRPPS3": [
+            ["they"]
+        ],
+        "DT**": [
+            ["all"]
+        ],
+        "PRPSO3": [
+            ["him"]
+        ],
+        "JJR": [
+            ["more"]
+        ],
+        "VB": [
+            ["sink"],
+            ["come"],
+            ["know"]
+        ],
+        "PRP$*": [
+            ["his"],
+            ["its"]
+        ],
+        "VBZ": [
+            ["consists"],
+            ["sinks"],
+            ["rises"],
+            ["is"],
+            ["dies"],
+            ["comes"],
+            ["does"],
+            ["goes"]
+        ],
+        "CD1": [
+            ["one"]
+        ],
+        "UH": [
+            ["yes"]
+        ],
+        "VBP": [
+            ["think"]
+        ],
+        "WP": [
+            ["what"]
+        ],
+        "PRP*2": [
+            ["you"]
+        ],
+        "DT*P": [
+            ["these"]
+        ]
+    },
+    "Justice":
+    {
+        "S": [
+            ["WRB", "PRPSS1", "VBD", "DT", "NNS", ",", "VB", "DT", "NN", "CC", "VBN", "DT", "NNS", ",", "PRPSS1", "VBD", "VBN", "TO", "VB", "DT", "NN", "IN", "DT", "NNP", "CC", "VB", "."],
+            ["PRP$*", "JJ", "NN", "."],
+            ["CC", "EX", "PRPSS1", "VBD", "DTCS", "NNP", "IN", "DTCS", "NN", "IN", "NN", "CC", "DTCS", "JJ", "NN", "."],
+            ["PRPSS3", "VBN", "DTCS", "NN", "IN", "CD1", "NN", "CC", "NNS", "IN", "DT", "JJ", "."],
+            ["PRPSS1", "VBD", "IN", "NN", "IN", "PRP$JJ", "NN", ",", "WDT", "VBD", "JJ", "CC", "JJ", ",", "CC", "VBD", "PRPSO1", "IN", "DTCS", "NN", "."],
+            ["PRP*2", "VB", "NN", ",", "VBD", "DT", "NN", "."],
+            ["IN", "DT*P", "NNS", "NN", "VBZ", "VBD", "."],
+            ["DT*S", "NN", "VBZ", "RB", "VBN", "TO", "NN", "NN", ",", "CC", "NN", "MD", "VB", "PRPS*3", "."],
+            ["PRPPS3", "MD", "VB", "DT", "JJ", "NNS", "."]
+        ],
+        "Q": [
+            ["CC", "WRB", "do", "PRP*2", "VB", "PRP$JJ", "NNS", "IN", "DT", "NNS", "CC", "DT", "NN", "?"],
+            ["WRB", "MD", "PRP*2", "VB", "IN", "NN", "IN", "DT*P", "NNS", "?"]
+        ],
+        "E": [
+            ["PRP*2", "VBD", "TO", "VB", "NN", "CC", "RB", "PRP*2", "VB", "PRPS*3", "!"],
+            ["CC", "VB", "WP", "VBZ", "TO", "DT", "NN", "WP", "VBZ", "DTCS", "NNP", "!"]
+        ],
+        "F": [],
+        "WRB": [
+            ["when"],
+            ["why"],
+            ["how"]
+        ],
+        "PRPSS1": [
+            ["i"]
+        ],
+        "VBD": [
+            ["possessed"],
+            ["was"],
+            ["beheld"],
+            ["trembled"],
+            ["drew"],
+            ["said"],
+            ["weighed"],
+            ["wished"]
+        ],
+        "DT": [
+            ["the"]
+        ],
+        "NNS": [
+            ["keys"],
+            ["symbols"],
+            ["scales"],
+            ["eyes"],
+            ["illusions"]
+        ],
+        "VB": [
+            ["read"],
+            ["lift"],
+            ["enter"],
+            ["see"],
+            ["escape"],
+            ["avert"],
+            ["remove"],
+            ["live"],
+            ["behold"],
+            ["remember"]
+        ],
+        "NN": [
+            ["book"],
+            ["curtain"],
+            ["sanctum"],
+            ["crown"],
+            ["gold"],
+            ["mantle"],
+            ["sword"],
+            ["hand"],
+            ["awe"],
+            ["appearance"],
+            ["abyss"],
+            ["truth"],
+            ["voice"],
+            ["everything"],
+            ["guard"],
+            ["justice"],
+            ["nothing"],
+            ["earth"],
+            ["mortal"]
+        ],
+        "CC": [
+            ["and"],
+            ["but"]
+        ],
+        "VBN": [
+            ["understood"],
+            ["permitted"],
+            ["held"],
+            ["raised"]
+        ],
+        "TO": [
+            ["to"]
+        ],
+        "IN": [
+            ["of"],
+            ["with"],
+            ["in"],
+            ["at"],
+            ["like"],
+            ["on"],
+            ["from"],
+            ["without"]
+        ],
+        "NNP": [
+            ["Temple"],
+            ["Woman"],
+            ["Goddess"]
+        ],
+        "PRP$*": [
+            ["its"]
+        ],
+        "JJ": [
+            ["inner"],
+            ["purple"],
+            ["other"],
+            ["deep"],
+            ["mysterious"],
+            ["last"]
+        ],
+        "EX": [
+            ["there"]
+        ],
+        "DTCS": [
+            ["a"],
+            ["an"]
+        ],
+        "PRPSS3": [
+            ["she"]
+        ],
+        "CD1": [
+            ["one"]
+        ],
+        "PRP$JJ": [
+            ["her"],
+            ["your"]
+        ],
+        "WDT": [
+            ["which"]
+        ],
+        "PRPSO1": [
+            ["me"]
+        ],
+        "PRP*2": [
+            ["you"]
+        ],
+        "DT*P": [
+            ["these"]
+        ],
+        "VBZ": [
+            ["is"],
+            ["happens"],
+            ["beholds"]
+        ],
+        "DT*S": [
+            ["this"]
+        ],
+        "RB": [
+            ["always"],
+            ["now"]
+        ],
+        "MD": [
+            ["can"],
+            ["will"],
+            ["could"]
+        ],
+        "PRPS*3": [
+            ["it"]
+        ],
+        "PRPPS3": [
+            ["they"]
+        ],
+        "WP": [
+            ["what"],
+            ["who"]
+        ]
+    },
+    "The Hanged Man":
+    {
+        "S": [
+            ["CC", "RB", "PRPSS1", "VBD", "DTCS", "NN", "IN", "JJ", "VBG", ",", "VBD", "IN", "CD1", "NN", ",", "NN", "JJ", ",", "TO", "DTCS", "JJ", "NN", "."],
+            ["DT*S", "VBZ", "DTCS", "NN", "WP", "VBD", "NN", "."],
+            ["VBG", "VBZ", "DT", "NN", "IN", "NN", ",", "WP", "VBZ", "DT", "NN", "TO", "NN", "CC", "TO", "DT", "VBG", "IN", "DT", "NNP", "."],
+            ["PRPSS3", "VBZ", "RB", "DTCS", "NN", ",", "CC", "PRPSS3", "RB", "VBZ", "JJ", "IN", "WP", "VBZ", "JJ", "RB", "TO", "NNPS", "."],
+            ["CC", "DT", "NN", "IN", "DT", "JJ", "CC", "DT", "JJ", "IN", "PRP$*", "NN", "VBZ", "PRP$*", "NN", "CC", "PRP$*", "NN", "."],
+            ["IN", "PRP$*", "JJ", "NN", "VBZ", "DT", "NNS", "IN", "WDT", "PRPSS3", "VBZ", "IN", "VBG", ",", "VBG", "IN", "PRPSS3", "VBZ", "RB", "JJ", "."],
+            ["PRPSS3", "VBD", "DT*S", "NN", "PRPSR3", "."],
+            ["IN", "DT*S", "PRPSS3", "VBD", "IN", "DTCS", "JJ", "NN", "IN", "NN", "TO", "NN", ",", "IN", "NN", "TO", "NN", ",", "IN", "NNS", "CC", "NNS", "."],
+            ["CC", "RB", "PRPSS3", "VBZ", "VBD", "NN", "CC", "VBZ", "PRPSR3", "."],
+            ["PRPSS3", "VBZ", "IN", "PRPS*3", "VBZ", "PRPSS3", "WP", "VBZ", "IN", "DTCS", "NN", "IN", "JJ", "NNS", ",", "CC", "VBZ", "IN", "NN", "TO", "NN", "."],
+            ["IN", "PRPSS3", "RB", "VBZ", "IN", "DTCS", "JJ", "NN", "IN", "DTCS", "JJ", "NN", "TO", "DTCS", "NN", "WRB", "DTCS", "NN", "VBZ", "PRPSO3", "."],
+            ["IN", "PRPSS3", "VBZ", "IN", "PRP$*", "NN", "IN", "NN", "IN", "DT", "NN", "IN", "DTCS", "VBG", "NNS", "."],
+            ["IN", "PRPSS3", "VBZ", "VBD", "TO", "DTCS", "JJ", "NN", "IN", "DT", "NN", "IN", "NN", "."],
+            ["IN", "PRPSS3", "VBZ", "IN", "DTCS", "NN", "IN", "DTCS", "NN", "IN", "DTCS", "JJ", "NN", "VBN", "IN", "NNS", "."],
+            ["CC", "IN", "IN", "DTCS", "NN", "IN", "JJ", "NN", ",", "PRPSS3", "VBZ", "IN", "NN", "IN", "DTCS", "NN", "."],
+            ["RB", "PRPSS3", "VBZ", "VBD", "PRP$JJ", "."]
+        ],
+        "Q": [],
+        "E": [
+            ["VB", "!"]
+        ],
+        "F": [],
+        "CC": [
+            ["and"],
+            ["but"]
+        ],
+        "RB": [
+            ["then"],
+            ["still"],
+            ["already"],
+            ["even"],
+            ["indeed"],
+            ["now"],
+            ["also"]
+        ],
+        "PRPSS1": [
+            ["i"]
+        ],
+        "VBD": [
+            ["saw"],
+            ["hung"],
+            ["chose"],
+            ["went"],
+            ["found"],
+            ["chained"]
+        ],
+        "DTCS": [
+            ["a"],
+            ["an"]
+        ],
+        "NN": [
+            ["man"],
+            ["leg"],
+            ["head"],
+            ["tree"],
+            ["truth"],
+            ["earth"],
+            ["way"],
+            ["eternity"],
+            ["incommensurableness"],
+            ["soul"],
+            ["pain"],
+            ["golgotha"],
+            ["road"],
+            ["trial"],
+            ["initiation"],
+            ["altar"],
+            ["heaven"],
+            ["sun"],
+            ["precipice"],
+            ["crocodile"],
+            ["mate"],
+            ["paradise"],
+            ["shadow"],
+            ["cube"],
+            ["deceit"],
+            ["victor"],
+            ["moment"],
+            ["chariot"],
+            ["lantern"],
+            ["sunshine"],
+            ["desert"]
+        ],
+        "IN": [
+            ["in"],
+            ["by"],
+            ["on"],
+            ["of"],
+            ["that"],
+            ["for"],
+            ["over"],
+            ["from"],
+            ["through"],
+            ["before"],
+            ["with"],
+            ["under"],
+            ["as"]
+        ],
+        "JJ": [
+            ["terrible"],
+            ["downward"],
+            ["high"],
+            ["much"],
+            ["inaccessible"],
+            ["small"],
+            ["great"],
+            ["own"],
+            ["inverted"],
+            ["long"],
+            ["magic"],
+            ["dusty"],
+            ["scorching"],
+            ["black"],
+            ["illusionary"],
+            ["bright"]
+        ],
+        "VBG": [
+            ["suffering"],
+            ["understanding"],
+            ["feeling"],
+            ["blessing"]
+        ],
+        "CD1": [
+            ["one"]
+        ],
+        "TO": [
+            ["to"]
+        ],
+        "VB": [
+            ["look"]
+        ],
+        "DT*S": [
+            ["this"]
+        ],
+        "VBZ": [
+            ["is"],
+            ["awaits"],
+            ["finds"],
+            ["knows"],
+            ["constitutes"],
+            ["appears"],
+            ["hangs"],
+            ["has"],
+            ["stands"],
+            ["reaches"],
+            ["walks"],
+            ["dwells"],
+            ["seeks"]
+        ],
+        "WP": [
+            ["who"],
+            ["what"]
+        ],
+        "DT": [
+            ["the"]
+        ],
+        "NNP": [
+            ["Endless"]
+        ],
+        "PRPSS3": [
+            ["he"]
+        ],
+        "NNPS": [
+            ["Gods"]
+        ],
+        "PRP$*": [
+            ["his"]
+        ],
+        "NNS": [
+            ["gallows"],
+            ["failures"],
+            ["falls"],
+            ["symbols"],
+            ["genius"],
+            ["sphinxes"]
+        ],
+        "WDT": [
+            ["which"]
+        ],
+        "PRPSR3": [
+            ["himself"]
+        ],
+        "PRPS*3": [
+            ["it"]
+        ],
+        "WRB": [
+            ["where"]
+        ],
+        "PRPSO3": [
+            ["him"]
+        ],
+        "VBN": [
+            ["drawn"]
+        ],
+        "PRP$JJ": [
+            ["her"]
+        ]
+    }
+}

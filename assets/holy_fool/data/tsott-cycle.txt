@@ -1,0 +1,51 @@
+I Saw the Man.
+And I saw another man.
+An unexpected vision appeared to me.
+I felt the breath of the spring.
+I saw an ice plain, and on the horizon, a chain of snowy mountains.
+And I heard a voice saying.
+After I learned the first three numbers, I was given to understand the NNP.
+As soon as I perceived the Sun, I understood that It, Itself, is the expression of the NNP.
+I saw a chariot drawn dy two sphinxes, one white, the other black.
+A desolate plain stretched before me.
+A strange emotion seized me.
+I saw the great Master in the Temple.
+Black, awful night enveloped the earth.
+An angel in a white robe, touching earth and heaven, appeared.
+Now he has found Her.
+
+// original
+["I", "saw", "DT", "NN", "."],
+["CC", "I", "saw", "DTCS", "NN", "."],
+["DTCS", "JJ", "vision", "appeared", "TO", "PRPSO1", "."],
+["I", "felt", "DT", "NN", "IN", "DT", "NN", "."],
+["I", "saw", "DTCS", "JJ", "NN", ",", "CC", "IN", "DT", "NN", ",", "DTCS", "NN", "IN", "JJ", "NNS", "."],
+["CC", "PRPSS1", "VBD", "DTCS", "NN", "VBG", "."],
+["IN", "I", "learned", "DT", "JJ", "CD", "NNS", ",", "I", "VBD", "VBN", "TO", "VB", "DT", "NNP", "."],
+["IN", "RB", "IN", "I", "perceived", "DT", "NNP", ",", "I", "VBN", "IN", "PRPS*3", ",", "PRPSR3", ",", "VBZ", "DT", "JJ", "NNP", "."],
+["I", "saw", "DTCS", "NN", "VBN", "IN", "CD", "NNS", "CD1", "JJ", ",", "DT", "JJ", "JJ", "."],
+["DTCS", "JJ", "NN", "VBD", "IN", "PRPSO1", "."],
+["DTCS", "JJ", "emotion", "VBN", "PRPSO1", "."],
+["PRPSS1", "saw", "DT", "JJ", "NNP", "IN", "DT", "NNP", "."],
+["JJ", ",", "JJ", "NN", "VBN", "DT", "NN", "."],
+["DTCS", "NN", "NN", "DTCS", "JJ", "NN", ",", "VBG", "NN", "CC", "NN", ",", "appeared", "."],
+["RB", "PRPSS3", "VBZ", "VBD", "PRPSO3", "."]
+
+// some saws removed
+["I", "saw", "DT", "NN", "."],
+["CC", "I", "VBD", "DTCS", "NN", "."],
+["DTCS", "JJ", "vision", "appeared", "TO", "PRPSO1", "."],
+["I", "felt", "DT", "NN", "IN", "DT", "NN", "."],
+["I", "saw", "DTCS", "JJ", "NN", ",", "CC", "IN", "DT", "NN", ",", "DTCS", "NN", "IN", "JJ", "NNS", "."],
+["CC", "PRPSS1", "VBD", "DTCS", "NN", "VBG", "."],
+["IN", "I", "learned", "DT", "JJ", "CD", "NNS", ",", "I", "VBD", "VBN", "TO", "VB", "DT", "NNP", "."],
+["IN", "RB", "IN", "I", "perceived", "DT", "NNP", ",", "I", "VBN", "IN", "PRPS*3", ",", "PRPSR3", ",", "VBZ", "DT", "JJ", "NNP", "."],
+["I", "VBD", "DTCS", "NN", "VBN", "IN", "CD", "NNS", "CD1", "JJ", ",", "DT", "JJ", "JJ", "."],
+["DTCS", "JJ", "NN", "VBD", "IN", "PRPSO1", "."],
+["DTCS", "JJ", "emotion", "VBN", "PRPSO1", "."],
+["PRPSS1", "saw", "DT", "JJ", "NNP", "IN", "DT", "NNP", "."],
+["JJ", ",", "JJ", "NN", "VBN", "DT", "NN", "."],
+["DTCS", "NN", "NN", "DTCS", "JJ", "NN", ",", "VBG", "NN", "CC", "NN", ",", "appeared", "."],
+["RB", "PRPSS3", "VBZ", "VBD", "PRPSO3", "."]
+
+// 
