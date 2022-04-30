@@ -36,6 +36,9 @@ get_header();
 				$rightCol = '';
 				$workCount = 0;
 				foreach($works as $work) {
+					if ($work->title == 'The Moon') {
+						continue;
+					}
 					$workCount++;
 					if ($workCount <= (sizeof($works)/2)) {
 						$leftCol .= '<li class="journal-artist-preview AyinTwo" data-thumbnail="' . $work->thumbnail . '" data-title="' . esc_attr($work->title) . '"><a href="' . $work->permalink . '">' . $work->name . '</a><img src="' . $work->thumbnail . '"></li>';
@@ -50,16 +53,16 @@ get_header();
 					<h4 class="editors-note"><a href="/editors-note-holy-fool/">Editor's Note</a></h4></div>
 					<div class="journal-grid AyinTwo">
 						<div class="journal-column1 AyinTwo">
-							<ul>
+							<ul class="journal-toc-list">
 								<?php echo $leftCol; ?>
 							</ul>
 						</div>
-						<div class="journal-column journal-preview AyinTwo">
+						<div id="ayin-two-journal-preview" class="journal-column journal-preview AyinTwo">
 							<img id="journal-work-preview"/>
 							<p id="journal-work-title"></p>
 						</div>
 						<div class="journal-column2 AyinTwo">
-							<ul style="text-align: right;">
+							<ul class="journal-toc-list" style="text-align: right;">
 								<?php echo $rightCol; ?>
 							</ul>
 						</div>
