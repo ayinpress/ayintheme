@@ -677,6 +677,18 @@ button.wps-add-to-cart:hover {
     line-height: var(--heading--line-height-h4);
 }*/
 
+@font-face {
+  font-family: Bagerich;
+  src: url(/wp-content/themes/ayintheme/fonts/Bagerich.ttf);
+}
+
+.parent-ayin-two-holy-fool #JournalHeading h1,
+.parent-ayin-two-holy-fool h4.editors-note a, 
+li.journal-artist-preview.AyinTwo a,
+.parent-ayin-two-holy-fool li.journal-artist-preview a {
+	font-family: 'Bagerich', BrownLL, Georgia, Times, serif !important;
+}
+
 .journal-page-container.alignwide.AyinTwo {
 	max-width: 1200px !important;
 }

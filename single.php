@@ -42,6 +42,7 @@ get_header();
 							// This is an ACF function so would error if not installed
 							if ( function_exists( 'get_field' ) ) {
 								$artist->name = get_field( 'artist_name' , $work->ID );
+								$artist->text = get_field( 'text_after_author' , $work->ID );
 								$artist->permalink = get_permalink( $work->ID );
 							}
 
@@ -51,11 +52,20 @@ get_header();
 						// The following line would sort the TOC alphabetically:
 						// usort($artists, function($a, $b){ return strcmp($a->name, $b->name); });
 
-						$journal_subhead = '<a class="editors-note" href="/editors-note">Editors\' Note</a>';
-
 						if ($journal_name == 'Ayin One'){
+							$journal_subhead = '<a class="editors-note" href="/editors-note">Editors\' Note</a>';
 							$journal_name = 'Ayin One | Tardema';
+						} elseif ($journal_name == 'Ayin Two'){
+							$journal_subhead = '<a class="editors-note" href="/editors-note-holy-fool">Editors\' Note</a>';
+							$journal_name = 'Ayin Two | The Holy Fool';
 						}
+						
+
+						//if ($journal_name == 'Ayin One'){
+							//$journal_name = 'Ayin One | Tardema';
+						//} elseif ($journal_name == 'Ayin Two'){
+							//$journal_name = 'Ayin Two | Holy Fool';
+						//}
 						echo( 
 							sprintf('<section id="journal-toc"><button id="toggle-toc"><span>Table of Contents</span></button><div>
 							<p class="journal-title">%1$s</p><p>%2$s<ul>', 
@@ -64,7 +74,9 @@ get_header();
 						);
 
 						foreach ($artists as $artist){
-							echo(sprintf( '<li><a href="%1$s">%2$s</a></li>', $artist->permalink, $artist->name ) );
+							if (!empty ($artist->permalink || $artist->name || $artist->text)) {
+							echo(sprintf( '<li><a href="%1$s">%2$s%3$s</a></li>', $artist->permalink, $artist->name, $artist->text ) );
+							}
 						}
 
 						echo( '</ul></div></section>');

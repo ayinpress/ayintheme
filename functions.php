@@ -296,16 +296,22 @@ function ayin_scripts() {
 add_action( 'wp_enqueue_scripts', 'ayin_scripts' );
 
 function holy_fool_scripts() {
-	/* 3087 is holy fool TOC */
+	/* ayin-two-holy-fool, the-moon */
 	global $post;
-	if ($post->ID == 3087) {
+	if ($post->post_name == "ayin-two-holy-fool" or $post->post_name == "the-moon") {
 		wp_enqueue_script( 'lines-base', get_template_directory_uri() . '/assets/holy_fool/base.min.js', array( 'ayin-lottie', 'baguettebox' ), wp_get_theme()->get( 'Version' ), true );
 		wp_enqueue_script( 'lines-game', get_template_directory_uri() . '/assets/holy_fool/game.min.js', array( 'ayin-lottie', 'baguettebox' ), wp_get_theme()->get( 'Version' ), true );
 		wp_enqueue_script( 'holy-fool', get_template_directory_uri() . '/assets/holy_fool/fool.min.js', array( 'ayin-lottie', 'baguettebox' ), wp_get_theme()->get( 'Version' ), true );
-
 		$translation_array = array( 'foolURL' => get_template_directory_uri() );
-
 		wp_localize_script( 'holy-fool', 'fool_dir', $translation_array );
+	}
+
+	if ($post->post_name == "ayin-two-holy-fool") {
+		wp_enqueue_script( 'toc-script', get_template_directory_uri() . '/assets/holy_fool/toc.js', array( 'ayin-lottie', 'baguettebox' ), wp_get_theme()->get( 'Version' ), true );
+	}
+
+	if ($post->post_name == "the-moon") {
+		wp_enqueue_script( 'moon-script', get_template_directory_uri() . '/assets/holy_fool/moon.js', array( 'ayin-lottie', 'baguettebox' ), wp_get_theme()->get( 'Version' ), true );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'holy_fool_scripts' );
@@ -547,7 +553,7 @@ function ayin_posts_grid_function($atts) {
 			'numberposts'		=> -1,
 			'post_type'			=> 'post',
 			'order'    			=> 'DESC',
-			'category__not_in'	=> array(71),	// don't pull any from "News" category
+			'category__not_in'	=> array(71,90,91),	// don't pull any from "News" category, temp hide Ayin Two
 		) );
 
 	} else {
@@ -565,7 +571,7 @@ function ayin_posts_grid_function($atts) {
 				'numberposts'		=> -1,
 				'post_type'			=> 'post',
 				'order'    			=> 'DESC',
-				'category__not_in'	=> array(71),	// don't pull any from "News" category
+				'category__not_in'	=> array(71,90,91),	// don't pull any from "News" category, temp hide Ayin Two
 			) );
 		}
 	}

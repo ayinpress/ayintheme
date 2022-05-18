@@ -24,6 +24,7 @@ get_header();
 				foreach($tocTwo->posts as $post) {
 					$work = new stdClass();
 					$work->name = get_field( 'artist_name' , $post->ID );
+					$work->text = get_field( 'text_after_author' , $post->ID );
 					$work->permalink = get_permalink( $work->ID );
 					$work->thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0];
 					$work->title = $post->post_title;
@@ -36,30 +37,33 @@ get_header();
 				$rightCol = '';
 				$workCount = 0;
 				foreach($works as $work) {
+					if ($work->title == 'The Moon') {
+						continue;
+					}
 					$workCount++;
 					if ($workCount <= (sizeof($works)/2)) {
-						$leftCol .= '<li class="journal-artist-preview AyinTwo" data-thumbnail="' . $work->thumbnail . '" data-title="' . esc_attr($work->title) . '"><a href="' . $work->permalink . '">' . $work->name . '</a><img src="' . $work->thumbnail . '"></li>';
+						$leftCol .= '<li class="journal-artist-preview AyinTwo" data-thumbnail="' . $work->thumbnail . '" data-title="' . esc_attr($work->title) . '"><a href="' . $work->permalink . '">' . $work->name . $work->text . '</a><img src="' . $work->thumbnail . '"></li>';
 					} else {
-						$rightCol .= '<li class="journal-artist-preview AyinTwo" data-thumbnail="' . $work->thumbnail . '" data-title="' . esc_attr($work->title) . '"><a href="' . $work->permalink . '">' . $work->name . '</a><img src="' . $work->thumbnail . '"></li>';
+						$rightCol .= '<li class="journal-artist-preview AyinTwo" data-thumbnail="' . $work->thumbnail . '" data-title="' . esc_attr($work->title) . '"><a href="' . $work->permalink . '">' . $work->name . $work->text . '</a><img src="' . $work->thumbnail . '"></li>';
 					}
 				} ?>
 
 				<div class="journal-page-container alignwide AyinTwo">
 					<canvas id="lines" style="display: none;"></canvas>
-					<div id="JournalHeading" style="text-align: center;"><h1>Ayin Two<br>Holy Fool</h1>
+					<div id="JournalHeading" style="text-align: center;"><h1>Ayin Two<br>The Holy Fool</h1>
 					<h4 class="editors-note"><a href="/editors-note-holy-fool/">Editor's Note</a></h4></div>
 					<div class="journal-grid AyinTwo">
 						<div class="journal-column1 AyinTwo">
-							<ul>
+							<ul class="journal-toc-list">
 								<?php echo $leftCol; ?>
 							</ul>
 						</div>
-						<div class="journal-column journal-preview AyinTwo">
+						<div id="ayin-two-journal-preview" class="journal-column journal-preview AyinTwo">
 							<img id="journal-work-preview"/>
 							<p id="journal-work-title"></p>
 						</div>
 						<div class="journal-column2 AyinTwo">
-							<ul style="text-align: right;">
+							<ul class="journal-toc-list" style="text-align: right;">
 								<?php echo $rightCol; ?>
 							</ul>
 						</div>
@@ -92,8 +96,8 @@ get_header();
 						var journalPreviewTitle = document.getElementById('journal-work-title');
 
 						if (journalPreview && journalPreviewTitle){
-							journalPreview.src = "/wp-content/uploads/2022/01/test-crop-height-cropped-root-monster-variation_green_wide.jpg";
-							journalPreviewTitle.innerHTML = `Ayin Two | Holy Fool`;
+							journalPreview.src = "/wp-content/uploads/2022/05/grey-png-Ohr-Hoshekh-Translation-English-v0.png";
+							journalPreviewTitle.innerHTML = `Ayin Two | The Holy Fool`;
 
 							var journalArtists = document.getElementsByClassName('journal-artist-preview');
 							for ( var i in journalArtists ){
