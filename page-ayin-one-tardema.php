@@ -82,14 +82,15 @@ get_header();
 						)
 					);
 
-				endwhile; // End of the loop. ?>
+				endwhile; // End of the loop.
+				?>
 				<script> 
 					jQuery(function() {
 						var journalPreview = document.getElementById('journal-work-preview');
 						var journalPreviewTitle = document.getElementById('journal-work-title');
 
 						if (journalPreview && journalPreviewTitle){
-							journalPreview.src = "/wp-content/uploads/2021/02/5Aa.031-1.jpg";
+							journalPreview.src = "/wp-content/uploads/2021/02/5Aa.031-1.jpg"
 							journalPreviewTitle.innerHTML = `Ayin One | Tardema`;
 
 							var journalArtists = document.getElementsByClassName('journal-artist-preview');

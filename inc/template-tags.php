@@ -73,7 +73,7 @@ if ( ! function_exists( 'ayin_entry_meta_header' ) ) :
 	 */
 	function ayin_entry_meta_header() {
 		/* translators: used between list items, there is a space after the comma. */
-		$categories_list = get_the_category_list( __( '|', 'ayin' ) );
+		$categories_list = get_the_category_list( __( '', 'ayin' ) );
 		if ( $categories_list ) {
 			printf(
 				/* translators: 1: SVG icon. 2: posted in label, only visible to screen readers. 3: list of categories. */
@@ -223,12 +223,12 @@ if ( ! function_exists( 'ayin_the_post_navigation' ) ) :
 
 				echo( '<nav class="navigation post-navigation" aria-label="Posts"><h2 class="screen-reader-text">Post navigation</h2><div class="nav-links">' );
 				if ( $nextLink !== '' ) {
-					echo( '<div class="nav-previous"><a href="' . esc_url($nextLink) . '" rel="prev"><span class="meta-nav" aria-hidden="true">Next Work</span><span class="screen-reader-text">Next post:</span><br><span class="post-title">' . esc_html($nextTitle) . '</span></a></div>' );
+					echo( '<div class="nav-previous"><a href="' . esc_url($nextLink) . '" rel="prev"><span class="meta-nav" aria-hidden="true">Next Work</span><span class="screen-reader-text">Next post:</span><br><span class="post-title">' . $nextTitle . '</span></a></div>' );
 				} else {
 					echo( '<div class="nav-previous"></div>' );
 				}
 				if ( $prevLink !== '' ) {
-					echo( '<div class="nav-next"><a href="' . esc_url($prevLink) . '" rel="next"><span class="meta-nav" aria-hidden="true">Previous Work</span> <span class="screen-reader-text">Previous post:</span><br><span class="post-title">' . esc_html($prevTitle) . '</span></a></div>' );
+					echo( '<div class="nav-next"><a href="' . esc_url($prevLink) . '" rel="next"><span class="meta-nav" aria-hidden="true">Previous Work</span> <span class="screen-reader-text">Previous post:</span><br><span class="post-title">' . $prevTitle . '</span></a></div>' );
 				} else {
 					echo( '<div class="nav-next"></div>' );
 				}

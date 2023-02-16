@@ -46,17 +46,17 @@ get_header();
 								$artist->permalink = get_permalink( $work->ID );
 							}
 
-							if ( $work->post_name !== 'editors-note' ) $artists[] = $artist;
+							if ( $work->post_name !== 'editors-note' && $work->post_name !== 'the-holy-fool-editors-note' ) $artists[] = $artist;
 						}
 
 						// The following line would sort the TOC alphabetically:
 						// usort($artists, function($a, $b){ return strcmp($a->name, $b->name); });
 
 						if ($journal_name == 'Ayin One'){
-							$journal_subhead = '<a class="editors-note" href="/editors-note">Editors\' Note</a>';
+							$journal_subhead = '<a class="editors-note" href="/editors-note">Editor\'s Note</a>';
 							$journal_name = 'Ayin One | Tardema';
 						} elseif ($journal_name == 'Ayin Two'){
-							$journal_subhead = '<a class="editors-note" href="/editors-note-holy-fool">Editors\' Note</a>';
+							$journal_subhead = '<a class="editors-note" href="/the-holy-fool-editors-note">Editor\'s Note</a>';
 							$journal_name = 'Ayin Two | The Holy Fool';
 						}
 						
@@ -81,9 +81,6 @@ get_header();
 
 						echo( '</ul></div></section>');
 					}
-			?>
-
-			<?php
 					wp_reset_postdata();
 				}
 

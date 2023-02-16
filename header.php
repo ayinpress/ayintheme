@@ -22,6 +22,15 @@ $header_classes .= $has_primary_nav ? ' has-menu' : '';
 	<link rel="profile" href="https://gmpg.org/xfn/11" />
 	<link rel="preload" as="font" href="https://p.typekit.net/p.css?s=1&k=gsf4ocl&ht=tk&f=8482.8483.8484.8485&a=26349979&app=typekit&e=css" type="font/ttf" crossorigin="anonymous">
 	<?php wp_head(); ?>
+	<!-- Fundraise Up: world-class checkout experience for serious online fundraising -->
+	<script>(function(w,d,s,n,a){if(!w[n]){var l='call,catch,on,once,set,then,track'
+				.split(','),i,o=function(n){return'function'==typeof n?o.l.push([arguments])&&o
+				:function(){return o.l.push([n,arguments])&&o}},t=d.getElementsByTagName(s)[0],
+			j=d.createElement(s);j.async=!0;j.src='https://cdn.fundraiseup.com/widget/'+a;
+			t.parentNode.insertBefore(j,t);o.s=Date.now();o.v=4;o.h=w.location.href;o.l=[];
+			for(i=0;i<7;i++)o[l[i]]=o(l[i]);w[n]=o}
+		})(window,document,'script','FundraiseUp','AHNUUMAP');</script>
+	<!-- End Fundraise Up -->
 </head>
 
 <body <?php body_class(); ?>>

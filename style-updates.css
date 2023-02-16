@@ -2,6 +2,37 @@
  * Style updates NOT using SASS, starting 8/2021 - Interlock Solutions
  */
 
+.blocks-gallery-grid:not(.has-nested-images), .wp-block-gallery:not(.has-nested-images) {
+	margin: 0 auto !important;
+}
+
+.HangingIndent {
+	padding-left: 24px !important;
+	text-indent: -24px !important;
+}
+
+.TabtoMiddle {
+	padding-left: 150px !important;
+}
+
+.entry-content p.HangingIndent,
+.entry-content p.TabtoMiddle {
+	max-width: var(--responsive--aligndefault-width);
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+	padding-right: 24px !important;
+}
+
+.MobileOnly {
+	display: none !important;
+}
+
+@media screen and (max-width: 480px) {
+	.MobileOnly {
+		display: block !important;
+	}
+}
+
 /* added social media icons to the right side of the header area on desktop */
 .social-navigation {
 	width: 150px;
@@ -27,22 +58,43 @@ li.MenuSocial {
 
 /* navigation padding fix between 900 and 651px */
 
-@media screen and (max-width: 900px) and (min-width: 651px) {
+@media screen and (max-width: 1279px) and (min-width: 850px) {
 	.primary-navigation .primary-menu-container > ul > .menu-item > a {
-		padding-left: 8px !important;
-		padding-right: 8px !important;
+		font-size: 16px !important;
+		padding-left: 12px !important;
+		padding-right: 12px !important;
+	}
+}
+
+@media screen and (max-width: 849px) and (min-width: 652px) {
+	.primary-navigation .primary-menu-container > ul > .menu-item > a {
+		font-size: 14px !important;
+		padding-left: 7px !important;
+		padding-right: 7px !important;
 	}
 }
 
 /* print button icon on journal and news posts */
 
-.entry-header .entry-meta .cat-links::after,
+.entry-header .entry-meta .cat-links::after {
+	content: "";
+	width: 0;
+	height: 0;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
 .entry-header .entry-meta .tags-links::after {
 	content: "|";
 	width: 10px;
 	height: 10px;
 	color: var(--global--color-secondary);
 	padding-left: 0;
+	padding-right: 0;
+}
+
+.print-button {
+	white-space: nowrap;
 }
 
 .PrintIcon .svg-icon {
@@ -51,8 +103,23 @@ li.MenuSocial {
 
 /* change category divider to pipe not comma */
 
+ul.post-categories {
+	list-style-type: none !important;
+	padding: 0 !important;
+}
+
+ul.post-categories li {
+	display: inline !important;
+	border-right:  solid 1px var(--global--color-secondary) !important;
+}
+
 .entry-meta > span {
+	display: inline !important;
 	margin-right: 0;
+}
+
+.entry-meta > span > * {
+	display: inline !important;
 }
 
 .cat-links,
@@ -63,13 +130,13 @@ li.MenuSocial {
 	font-weight: var(--global--font-weight);
 }
 
-.cat-links a,
+.cat-links li,
 .tags-links a {
 	padding-left: calc( 0.5 * var(--global--spacing-unit));
 	padding-right: calc( 0.5 * var(--global--spacing-unit));
 }
 
-.cat-links a:first-of-type {
+.cat-links li:first-child {
 	padding-left: 0;
 }
 
@@ -91,7 +158,6 @@ li.MenuSocial {
 	height: 0;
 }*/
 
-
 /**************************************/
 /*** Folios section 				***/
 /**************************************/
@@ -103,13 +169,29 @@ li.MenuSocial {
 }
 
 .folios-page-container {
-	min-height: 600px;
+	min-height: 700px;
 }
 
 .folios-page-container .folios-grid {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-row-gap: var(--global--spacing-vertical);
+	min-height: 750px;
+}
+
+hr.AyinDivider {
+	max-width: 720px;
+	margin-top: calc(2 * var(--global--spacing-unit));
+	border: none !important;
+}
+
+hr.AyinDivider:after {
+	content: "";
+	display: block;
+	height: 8px;
+	background-image: url(/wp-content/themes/ayintheme/assets/img/diamond-border.svg);
+	bottom: 0;
+	left: 0;
 }
 
 @media only screen and (min-width: 652px) {
@@ -134,28 +216,31 @@ li.MenuSocial {
 	display: none;
 }
 
-li.FolioParentTitle>a {
-	display: inline-block;
+li.FolioParentTitle > div > a {
 	font-family: var(--heading--font-family);
 	font-size: 24px;
 	line-height: 33px;
 	height: 36px;
 }
 
-/*li.FolioParentTitle>a:hover,*/
-li.FolioParentTitle>a,
-li.FolioParentTitle>a:focus,
-li.FolioParentTitle>a:active {
+/*li.FolioParentTitle > div > a:hover,*/
+li.FolioParentTitle > div > a,
+li.FolioParentTitle > div > a:focus,
+li.FolioParentTitle > div > a:active {
 	color: var(--global--color-foreground);
 }
 
-li.FolioParentTitle>a:hover {
+li.FolioParentTitle > div > a:hover {
 	color: var(--wp--style--color--link, var(--global--color-primary));
 }
 
 ul.FolioArticleTitles {
-	margin-left: 37px;
+	margin-left: 20px;
 	padding-top: 10px;
+}
+
+li.folio-article-preview {
+	margin-left: 37px;
 }
 
 li.folio-article-preview a {
@@ -235,9 +320,36 @@ span.FolioDate {
 	text-align: center;
 }
 
+.FolioCandD {
+	margin-bottom: 12px;
+}
+
+.FolioCurators {
+	font-family: BrownLL, Georgia, Times, serif;
+	color: #333333;
+	font-size: 15px;
+	line-height: 22px;
+	padding: 0;
+}
+
+.FolioDescription {
+	font-family: BrownLL, Georgia, Times, serif;
+	color: #868686;
+	font-size: 15px;
+	line-height: 22px;
+	font-style: italic;
+	padding: 0;
+}
+
 @media only screen and (min-width: 652px) {
 	.folios-page-container .folios-grid .folios-column.folio-preview {
 		display: block;
+	}
+}
+
+@media only screen and (max-width: 651px) {
+	hr.AyinDivider {
+		margin-bottom: calc(2 * var(--global--spacing-unit));
 	}
 }
 
@@ -274,17 +386,67 @@ h2.FooterDonate a:hover {
 /*** New Blog post grid - 1/17/22 	***/
 /**************************************/
 
+.archive-description p {
+	margin-top: var(--global--spacing-vertical) !important;
+	margin-bottom: var(--global--spacing-vertical) !important;
+}
+
 /*** custom styles based on our new code ***/
 
 .PostsGridWrapper {
 	margin-bottom: 50px !important;
 }
 
+.archive .PostsGridWrapper {
+	padding-left: var(--global--spacing-unit);
+	padding-right: var(--global--spacing-unit);
+}
+
+.archive .PostsGridWrapper.Four {
+	max-width: 1800px;
+	margin: 0 auto;
+}
+
+.archive .PostsGridWrapper.One,
+.archive .PostsGridWrapper.Two,
+.archive .PostsGridWrapper.Three {
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+.archive .PostsGridWrapper.One {
+	max-width: 780px;
+	margin: 0 auto;
+}
+
 .BlogGrid {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: flex-start;
+	justify-content: center;
 	gap: 16px;
+}
+
+.BlogGrid.Four {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: 32px;
+}
+
+.BlogGrid.Three {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 32px;
+}
+
+.BlogGrid.Two {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 32px;
+}
+
+.BlogGrid.One {
+	display: grid;
+	grid-template-columns: 1fr;
 }
 
 .ColumnChild {
@@ -316,6 +478,19 @@ h2.ColumnTitle {
 	margin-bottom: calc( 0.666 * var(--global--spacing-vertical));
 }
 
+h2.FolioTitle {
+	font-size: var(--heading--font-size-h2);
+	letter-spacing: var(--heading--letter-spacing-h2);
+	line-height: var(--heading--line-height-h2);
+	margin-top: calc( 0.666 * var(--global--spacing-vertical));
+	margin-bottom: 0 !important;
+}
+
+span.FolioDate.Parent {
+	display: block;
+	margin-bottom: calc( 0.666 * var(--global--spacing-vertical));
+}
+
 a.GridThumb {
 	display: block;
 	width: 100%;
@@ -327,7 +502,7 @@ a.GridThumb {
 
 .BlogGridPost .entry-meta .cat-links a {
 	font-family: var(--global--font-secondary);
-		font-size: var(--global--font-size-sm);
+	font-size: var(--global--font-size-sm);
 }
 
 h2.ArticleTitle {
@@ -353,6 +528,10 @@ a.PostGrid {
 	text-align: center;
 }
 
+a.PostGrid.Folios {
+	max-width: 250px;
+}
+
 a.PostGrid:hover {
 	color: var(--button--color-text-hover);
 	background-color: var(--button--color-background-hover);
@@ -373,6 +552,8 @@ a.PostGrid:hover {
 	left: 0;
 }
 
+p.FolioParentDescription,
+p.FolioParentDescription img,
 p.ColumnDescription,
 p.ColumnDescription img {
 	margin-bottom: 25px;
@@ -405,8 +586,13 @@ button.AyinMorePostsButton:hover {
 	background: #20a181;
 }
 
-.columns-grid a.PostGrid {
-	display: none; /* hide temporarily while very few columns */
+/* hid temporarily while very few columns - now displaying */
+/*.columns-grid a.PostGrid {
+	display: none; 
+}*/
+
+.columns-grid a.PostGrid.Folios {
+	display: block; /* display on Folios landing page */
 }
 
 @media only screen and (min-width: 482px) {
@@ -506,6 +692,7 @@ button.AyinMorePostsButton:hover {
 	color: var(--global--color-primary);
 }
 
+.archive article .entry-meta,
 .BlogGrid article .entry-meta,
 .ColumnChildren article .entry-meta {
 	font-family: var(--global--font-primary);
@@ -553,6 +740,15 @@ button.AyinMorePostsButton:hover {
 
 .Image2 { 
 	flex: .9485; 
+}
+
+.HomeShopCol h2.has-background {
+	padding: 100px 20px !important;
+}
+
+.HomeShopCol h2.has-background,
+.HomeShopCol h2.has-background a {
+	white-space: nowrap !important;
 }
 
 .ShopSliderHome.wp-block-eedee-block-gutenslider.content-change{
@@ -666,20 +862,20 @@ button.wps-add-to-cart:hover {
 
 /*.journal-page-container .journal-grid .journal-column.AyinTwo ul {
 	columns: 1;
-    -webkit-columns: 1;
-    -moz-columns: 1;
+	-webkit-columns: 1;
+	-moz-columns: 1;
 }
 
 .journal-page-container .journal-grid .journal-column.AyinTwo ul > li {
 	max-width: 100%;
 	font-size: var(--heading--font-size-h4);
-    letter-spacing: var(--heading--letter-spacing-h4);
-    line-height: var(--heading--line-height-h4);
+	letter-spacing: var(--heading--letter-spacing-h4);
+	line-height: var(--heading--line-height-h4);
 }*/
 
 @font-face {
-  font-family: Bagerich;
-  src: url(/wp-content/themes/ayintheme/fonts/Bagerich.ttf);
+	font-family: Bagerich;
+	src: url(/wp-content/themes/ayintheme/fonts/Bagerich.ttf);
 }
 
 .parent-ayin-two-holy-fool #JournalHeading h1,
@@ -690,21 +886,30 @@ li.journal-artist-preview.AyinTwo a,
 }
 
 .journal-page-container.alignwide.AyinTwo {
-	max-width: 1200px !important;
+	max-width: 1400px !important;
 }
 
 #JournalHeading {
 	margin-top: calc(2 * var(--global--spacing-unit));
 }
 
+.journal-page-container.AyinTwo {
+	min-height: 970px;
+}
+
 .journal-page-container.AyinTwo .journal-grid {
-	grid-template-columns: 230px minmax(200px, 515px) 230px;
+	grid-template-columns: 340px minmax(200px, 515px) 340px;
 	margin-top: 40px;
-	grid-column-gap: 120px;
+	grid-column-gap: 100px;
 }
 
 .journal-page-container .journal-grid .journal-column.journal-preview {
-    justify-content: flex-start;
+	justify-content: flex-start;
+}
+
+.journal-page-container.AyinTwo .journal-grid .journal-column img#journal-work-preview {
+	width: auto;
+	max-height: 600px;
 }
 
 .journal-page-container.AyinTwo .journal-grid .journal-column1 ul,
@@ -715,10 +920,10 @@ li.journal-artist-preview.AyinTwo a,
 
 .journal-page-container .journal-grid .journal-column1 ul > li,
 .journal-page-container .journal-grid .journal-column2 ul > li {
-    line-height: 1.3;
-    margin-bottom: 16px;
-    max-width: 230px;
-    break-inside: avoid;
+	line-height: 1.3;
+	margin-bottom: 16px;
+	max-width: 340px;
+	break-inside: avoid;
 }
 
 .journal-page-container.AyinTwo .journal-grid .journal-column1 ul > li > img,
@@ -728,7 +933,7 @@ li.journal-artist-preview.AyinTwo a,
 
 @media only screen and (min-width: 652px) {
 	.primary-navigation div > ul > li > .sub-menu {
-		top: 62px !important;
+		top: 56px !important;
 		border: 0 !important;
 		box-shadow: 0 0 10px rgb(0 0 0 / 15%) !important;
 	}
@@ -736,4 +941,136 @@ li.journal-artist-preview.AyinTwo a,
 	.primary-navigation div > ul > li > .sub-menu li {
 		border-bottom: 1px solid var(--global--color-border) !important;
 	}
+
+	.primary-navigation .sub-menu > .menu-item.menu-item-has-children, .woo-navigation .sub-menu > .menu-item.menu-item-has-children {
+			padding: 0 !important;
+	}
+}
+
+@media only screen and (min-width: 1080px) {
+	.primary-navigation div > ul > li > .sub-menu {
+		top: 62px !important;
+	}
+}
+
+@media only screen and (max-width: 1440px) {
+	.journal-page-container.alignwide.AyinTwo {
+		max-width: 90% !important;
+	}
+
+	.journal-page-container.AyinTwo .journal-grid {
+		grid-column-gap: 5%;
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	.journal-page-container.AyinTwo .journal-grid {
+		grid-template-columns: 170px minmax(200px, 515px) 170px;
+	}
+
+	.journal-page-container .journal-grid .journal-column1 ul > li,
+	.journal-page-container .journal-grid .journal-column2 ul > li {
+		max-width: 170px;
+	}
+}
+
+@media only screen and (max-width: 651px) {
+	.journal-page-container.AyinTwo {
+		min-height: 550px;
+	}
+
+	.journal-page-container.AyinTwo .journal-grid {
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 10%;
+	}
+
+	.journal-page-container .journal-grid .journal-column1 ul > li,
+	.journal-page-container .journal-grid .journal-column2 ul > li {
+		max-width: 100%;
+	}
+
+	#ayin-two-journal-preview,
+	#journal-work-title {
+		display: none;
+	}
+}
+
+/**************************************************************/
+/***  New Folios layout - Sept 2022 - Interlock Solutions 	***/
+/**************************************************************/
+
+@media only screen and (min-width: 482px){
+	.archive h1 {
+		margin-top: var(--global--spacing-vertical);
+		margin-bottom: var(--global--spacing-vertical);
+	}
+}
+
+@media only screen and (min-width: 652px) {
+	.archive .site-main > *:first-child {
+		margin-top: calc(2 * var(--global--spacing-vertical));
+	}
+}
+
+.site-main {
+	padding-top: var(--global--spacing-vertical);
+	padding-bottom: var(--global--spacing-vertical);
+}
+
+.archive h1 {
+	margin-top: calc( 0.666 * var(--global--spacing-vertical));
+	margin-bottom: calc( 0.666 * var(--global--spacing-vertical));
+}
+
+.archive .folios-page-container>p>img {
+	margin-bottom: 25px;
+}
+
+.archive .folios-page-container .folios-grid .folios-column ul {
+	margin-left: 0;
+}
+
+.archive li.folio-article-preview {
+	margin-left: 0;
+}
+
+
+/**********************************************************/
+/***  Ayin Three TOC - Nov 2022 - Interlock Solutions	***/
+/**********************************************************/
+
+.journal-page-container .Lineages.journal-grid {
+	grid-template-columns: minmax(250px, 500px);
+	justify-content: center;
+}
+
+@media only screen and (min-width: 652px) {
+	.journal-page-container .Lineages.journal-grid {
+		grid-template-columns: minmax(250px, 500px);
+		justify-content: center;
+	}
+}
+
+.journal-page-container.AyinThree .journal-grid .journal-column.journal-preview  {
+	min-height: 700px;
+	justify-content: center;
+}
+
+.journal-page-container .Lineages.journal-grid .journal-column ul {
+	columns: 1;
+	-webkit-columns: 1;
+	-moz-columns: 1;
+}
+
+.journal-page-container .journal-grid .journal-column ul > li {
+	max-width: 500px;
+}
+
+
+/**************************************/
+/*** Archives 						***/
+/**************************************/
+
+:root {
+	--primary-nav--font-size-mobile: var(--global--font-size-xl);
 }

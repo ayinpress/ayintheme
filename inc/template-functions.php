@@ -81,7 +81,7 @@ function ayin_get_the_archive_title( $title, $original_title, $prefix ) {
 		$title  = '<span class="page-description">' . single_term_title( '', false ) . '</span>';
 		$catDescription = '<div class="category-description">' . category_description( $catID[0] ) . '</div>'; 
 	} elseif ( is_tag() ) {
-		$prefix = '<span class="archive-prefix">' . __( 'Tag: ', 'ayin' ) . ' </span>';
+		$prefix = '<span class="archive-prefix">' . __( 'Genre: ', 'ayin' ) . ' </span>';
 		$title  = '<span class="page-description">' . single_term_title( '', false ) . '</span>';
 	} elseif ( is_author() ) {
 		$prefix = '<span class="archive-prefix">' . __( 'Author: ', 'ayin' ) . ' </span>';
@@ -100,7 +100,7 @@ function ayin_get_the_archive_title( $title, $original_title, $prefix ) {
 		$cpt    = get_post_type_object( get_queried_object()->name );
 		/* translators: %s: Post type singular name */
 		$title = sprintf(
-			esc_html__( '%s Archives', 'ayin' ),
+			esc_html__( '', 'ayin' ),
 			$cpt->labels->singular_name
 		);
 	} elseif ( is_tax() ) {
@@ -108,12 +108,12 @@ function ayin_get_the_archive_title( $title, $original_title, $prefix ) {
 		$tax    = get_taxonomy( get_queried_object()->taxonomy );
 		/* translators: %s: Taxonomy singular name */
 		$title = sprintf(
-			esc_html__( '%s Archives', 'ayin' ),
+			esc_html__( '', 'ayin' ),
 			$tax->labels->singular_name
 		);
 	} else {
 		$prefix = '';
-		$title  = '<span class="archive-prefix">' . __( 'Archives: ', 'ayin' ) . ' </span>';
+		$title  = '<span class="archive-prefix">' . __( '', 'ayin' ) . ' </span>';
 	}
 
 	return '<h1 class="page-title">' . $prefix . $title . '</h1>';

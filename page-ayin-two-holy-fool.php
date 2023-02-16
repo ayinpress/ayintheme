@@ -29,7 +29,7 @@ get_header();
 					$work->thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0];
 					$work->title = $post->post_title;
 					// TODO: pull out artist name and work title
-					if ( $post->post_name !== 'editors-note-holy-fool' ) $works[] = $work;
+					if ( $post->post_name !== 'the-holy-fool-editors-note' ) $works[] = $work;
 				}
 
 				// usort($works, function($a, $b){ return strcmp($a->name, $b->name); });
@@ -37,21 +37,24 @@ get_header();
 				$rightCol = '';
 				$workCount = 0;
 				foreach($works as $work) {
-					if ($work->title == 'The Moon') {
-						continue;
-					}
 					$workCount++;
 					if ($workCount <= (sizeof($works)/2)) {
 						$leftCol .= '<li class="journal-artist-preview AyinTwo" data-thumbnail="' . $work->thumbnail . '" data-title="' . esc_attr($work->title) . '"><a href="' . $work->permalink . '">' . $work->name . $work->text . '</a><img src="' . $work->thumbnail . '"></li>';
 					} else {
 						$rightCol .= '<li class="journal-artist-preview AyinTwo" data-thumbnail="' . $work->thumbnail . '" data-title="' . esc_attr($work->title) . '"><a href="' . $work->permalink . '">' . $work->name . $work->text . '</a><img src="' . $work->thumbnail . '"></li>';
 					}
-				} ?>
+				}
 
+				// load the info about the Editor's Post for this Journal (post #5212)
+				$editorsNotePostId = 5212;
+				$editorsNoteThumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $editorsNotePostId ), 'single-post-thumbnail' )[0];
+				$editorsNotePermalink = get_permalink( $editorsNotePostId );
+				$editorsNoteTitle = get_the_title( $editorsNotePostId );
+				?>
 				<div class="journal-page-container alignwide AyinTwo">
 					<canvas id="lines" style="display: none;"></canvas>
 					<div id="JournalHeading" style="text-align: center;"><h1>Ayin Two<br>The Holy Fool</h1>
-					<h4 class="editors-note"><a href="/editors-note-holy-fool/">Editor's Note</a></h4></div>
+					<h4 class="editors-note journal-artist-preview" data-thumbnail="<?php echo $editorsNoteThumbnail; ?>" data-title="<?php echo esc_attr($editorsNoteTitle); ?>"><a href="<?php echo esc_attr($editorsNotePermalink); ?>">Editor's Note</a></h4></div>
 					<div class="journal-grid AyinTwo">
 						<div class="journal-column1 AyinTwo">
 							<ul class="journal-toc-list">
@@ -96,13 +99,14 @@ get_header();
 						var journalPreviewTitle = document.getElementById('journal-work-title');
 
 						if (journalPreview && journalPreviewTitle){
-							journalPreview.src = "/wp-content/uploads/2022/05/grey-png-Ohr-Hoshekh-Translation-English-v0.png";
-							journalPreviewTitle.innerHTML = `Ayin Two | The Holy Fool`;
+							journalPreview.src = "<?php echo $editorsNoteThumbnail; ?>";
+							journalPreviewTitle.innerHTML = `<?php echo esc_js($editorsNoteTitle); ?>`;
 
 							var journalArtists = document.getElementsByClassName('journal-artist-preview');
 							for ( var i in journalArtists ){
 								if (typeof(journalArtists[i]) === 'object'){
 									const { thumbnail, title }  = journalArtists[i].dataset;
+									if (title === 'The Moon') continue;
 									journalArtists[i].addEventListener('mouseover', function(){
 										journalPreview.src = `${thumbnail}`;
 										journalPreviewTitle.innerHTML = `${title}`;

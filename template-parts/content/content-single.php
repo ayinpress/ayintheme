@@ -18,28 +18,32 @@
 			<?php ayin_entry_meta_header(); ?>
 		</div><!-- .meta-info -->
 		<?php endif; ?>
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); 
-			$folioArtist 	= get_field('folio_artist_name');
-			$columnAuthor 	= get_field('column_author_name');
+		<?php the_title( '<h1 class="entry-title">', '</h1>' );
 
-			if (!empty($folioArtist)) {
-				echo( '<p class="artist-credit">By ' . $folioArtist . '</p>' );
-			} elseif (!empty($columnAuthor)) {
-				echo( '<p class="artist-credit">By ' . $columnAuthor . '</p>' );
-			}
-		?>
-		<?php 
 			if ( function_exists( 'get_field' ) ) {
 				$artwork_subheader = get_field( 'artwork_subheader' );
 
-				if ( $artwork_subheader ){
+				if (!empty($artwork_subheader)) {
 					printf( '<p class="artwork-subheader">%s</p>', $artwork_subheader );
 				}
+			}
 
-				$artist_name = get_field( 'artist_name' );
-				if ( $artist_name ){
-					printf( '<p class="artist-credit">By %s</p>', $artist_name );
-				}
+			$journalAuthor	= get_field('artist_name');
+			$folioArtist 	= get_field('folio_artist_name');
+			$columnAuthor 	= get_field('column_author_name');
+			$zineAuthor 	= get_field('zine_author_names');
+			$genericAuthor 	= get_field('generic_post_author_name');
+
+			if (!empty($journalAuthor)) {
+				echo( '<p class="artist-credit Journal">By ' . $journalAuthor . '</p>' );
+			} elseif (!empty($folioArtist)) {
+				echo( '<p class="artist-credit Folio">By ' . $folioArtist . '</p>' );
+			} elseif (!empty($columnAuthor)) {
+				echo( '<p class="artist-credit Column">By ' . $columnAuthor . '</p>' );
+			} elseif (!empty($zineAuthor)) {
+				echo( '<p class="artist-credit Zine">By ' . $zineAuthor . '</p>' );
+			} elseif (!empty($genericAuthor)) {
+				echo( '<p class="artist-credit Generic">By ' . $genericAuthor . '</p>' );
 			}
 		?>
 	</header>

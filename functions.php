@@ -538,40 +538,46 @@ function ayin_custom_dashboard_widgets() {
 function custom_dashboard_training() {
 	echo '<p>We have recorded training videos here for your reference:<br><br>';
 	echo '<a href="/wp-content/themes/ayintheme/videos/ayin-folio-posts.mp4" target="_blank" rel="noopener noreferrer">Adding New Folios</a><br><br>';
+	echo '<a href="/wp-content/themes/ayintheme/videos/custom-fields-categories-ayin.mp4" target="_blank" rel="noopener noreferrer">Custom fields for new categories</a><br><br>';
 	echo '</p>';
 }
 
 function ayin_posts_grid_function($atts) {
 	$options = shortcode_atts( array(
-		'category_slug'	=> 'all categories',
-		'title'			=> 'From the Archive'
+		'category_slugs'	=> 'all categories',
+		'title'				=> 'From the Archive'
 	), $atts );
 
-	if ($options['category_slug'] == 'all categories') {
+	if ($options['category_slugs'] == 'all categories') {
 		// grab latest posts of any category
 		$posts = get_posts( array(
 			'numberposts'		=> -1,
 			'post_type'			=> 'post',
 			'order'    			=> 'DESC',
-			'category__not_in'	=> array(71,90,91),	// don't pull any from "News" category, temp hide Ayin Two
+			'category__not_in'	=> array(71),	// don't pull any from "News" category
 		) );
 
 	} else {
 		// grab latest posts of specific category
-		$category = get_category_by_slug($options['category_slug']);
-		if ($category) {
+		$catArray = [];
+		$catList = explode(',', $options['category_slugs']);
+		foreach ($catList as $catSlug) {
+			$category = get_category_by_slug(trim($catSlug));
+			if ($category) $catArray[] = $category->term_id;
+		}
+		if (sizeof($catArray) > 0) {
 			$posts = get_posts( array(
 				'numberposts'	=> -1,
 				'post_type'		=> 'post',
 				'order'    		=> 'DESC',
-				'category'		=> $category->term_id,
+				'category__in'	=> $catArray,
 			) );
 		} else {
 			$posts = get_posts( array(
 				'numberposts'		=> -1,
 				'post_type'			=> 'post',
 				'order'    			=> 'DESC',
-				'category__not_in'	=> array(71,90,91),	// don't pull any from "News" category, temp hide Ayin Two
+				'category__not_in'	=> array(71),	// don't pull any from "News" category
 			) );
 		}
 	}
@@ -595,7 +601,7 @@ function ayin_posts_grid_function($atts) {
 							echo display_grid_article($post);
 						}
 					}
-					echo display_grid_load_more_button(11); ?>
+					if (sizeof($posts) > 10) echo display_grid_load_more_button(11); ?>
 				</div><?php
 				if (sizeof($posts) > 10) { ?>
 					<script>
@@ -643,12 +649,15 @@ function display_grid_article($post) {
 	$journalAuthor = get_field('artist_name', $post->ID);
 	$folioAuthor = get_field('folio_artist_name', $post->ID);
 	$columnAuthor = get_field('column_author_name', $post->ID);
+	$ZineAuthor = get_field('zine_author_names', $post->ID);
 	if (!empty ($journalAuthor)) {
 		$postAuthor = $journalAuthor;
 	} elseif (!empty ($folioAuthor)) {
 		$postAuthor = $folioAuthor;
 	} elseif (!empty ($columnAuthor)) {
 		$postAuthor = $columnAuthor;
+	} elseif (!empty ($zineAuthor)) {
+		$postAuthor = $zineAuthor;
 	} else {
 		$postAuthor = '';
 	}
@@ -708,4 +717,46 @@ function display_grid_article($post) {
 function display_grid_load_more_button($num) { ?>
 	<div id="AyinGridMorePosts<?php echo $num; ?>" class="AyinMorePosts"><button type="button" class="AyinMorePostsButton" onclick="load_ayin_posts(<?php echo $num; ?>);">Load more posts</button></div>
 	<div id="AyinGridLoading<?php echo $num; ?>" class="AyinGridLoading"></div><?php
+}
+
+
+/**
+ * Template Redirect
+ * Use archive-folios.php for specific category archives.
+ */
+add_filter( 'template_include', 'custom_category_template', 99 );
+function custom_category_template( $template ) {
+
+	if ( is_category( array( '86', '87', '92', '91', '124', '126' ) ) ) {
+		$new_template = locate_template( array( 'archive-folios.php' ) );
+		if ( '' != $new_template ) {
+			return $new_template ;
+		}
+	}
+
+	return $template;
+}
+
+
+/**
+ * redirect the hashtag URLS for folios to individual folio landing pages
+ */
+add_action( 'wp_footer', 'ayin_pre_footer_code' );
+function ayin_pre_footer_code() {
+	if ($_SERVER['REQUEST_URI'] == '/folio' || $_SERVER['REQUEST_URI'] == '/folios' || $_SERVER['REQUEST_URI'] == '/folio/' || $_SERVER['REQUEST_URI'] == '/folios/') {
+		echo '
+		<script>
+		jQuery(function() {
+			if (location.hash === "#ya-ghorbati-divas-in-exile") {
+				location.href = "https://ayinpress.org/folio/ya-ghorbati-divas-in-exile/";
+			}
+			if (location.hash === "#field-of-the-letter-vav") {
+				location.href = "https://ayinpress.org/folio/field-of-the-letter-vav/";
+			}
+			if (location.hash === "#towards-a-visionary-poetics") {
+				location.href = "https://ayinpress.org/folio/towards-a-visionary-poetics/";
+			}
+		});
+		</script>';
+	}
 }
