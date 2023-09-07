@@ -1,6 +1,19 @@
 <?php
 require_once($_SERVER['DOCUMENT_ROOT'].'/wp-load.php');     // loads WP functions and session variables
 
+if ($_GET['gridNum']) {
+	$gridNum = $_GET['gridNum'];
+	if (!is_numeric($gridNum)) {
+		$gridNum = 1;
+	} else {
+		$gridNum = intval( $gridNum );
+		if ( $gridNum <= 0 ) {
+			$gridNum = 1;
+		}
+	}
+} else {
+	$gridNum = 1;
+}
 if ($_GET['start']) {
 	$startNum = $_GET['start'];
 	if (!is_numeric($startNum)) {
@@ -30,7 +43,7 @@ if ($postList) {
 		}
 	}
 	if (sizeof($postArray) > $maxNum) {
-		echo display_grid_load_more_button($startNum + 5);
+		echo display_grid_load_more_button($gridNum, $startNum + 5);
 	}
 	echo ob_get_clean();
 }

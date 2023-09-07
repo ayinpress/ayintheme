@@ -544,9 +544,39 @@ function custom_dashboard_training() {
 
 function ayin_posts_grid_function($atts) {
 	$options = shortcode_atts( array(
-		'category_slugs'	=> 'all categories',
-		'title'				=> 'From the Archive'
+		'category_slugs'		=> 'all categories',
+		'title'					=> '',				// if not filled in, then no title will display
+		'num_posts_to_display'	=> 0,				// 0 = display them all with the "Load More Posts" button after first 10
+		'orientation'			=> 'Horizontal',	// or "Vertical" -- changes class in wrapper
 	), $atts );
+
+	// in case there are multiple grids on the same page
+	global $gridCount;
+	if (empty($gridCount)) {
+		$gridCount = 1;
+	} else {
+		$gridCount++;
+	}
+
+	// get $numPostsToDisplay as valid integer
+	if (!is_numeric($options['num_posts_to_display'])) {
+		$numPostsToDisplay = 0;
+	} else {
+		$numPostsToDisplay = intval($options['num_posts_to_display']);
+		if ($numPostsToDisplay < 0) $numPostsToDisplay = 0;
+	}
+	if ($numPostsToDisplay == 0) {
+		$maxPostsToDisplay = 10;
+	} else {
+		$maxPostsToDisplay = $numPostsToDisplay;
+	}
+
+	// ensure $orientation is either Horizontal or Vertical
+	if ($options['orientation'] == 'Vertical') {
+		$orientation = 'Vertical';
+	} else {
+		$orientation = 'Horizontal';
+	}
 
 	if ($options['category_slugs'] == 'all categories') {
 		// grab latest posts of any category
@@ -589,52 +619,55 @@ function ayin_posts_grid_function($atts) {
 			$postList[] = $post->ID;
 		}
 		ob_start(); ?>
-			<div class="PostsGridWrapper">
+		<div class="PostsGridWrapper"><?php
+			if (!empty($options['title'])) { ?>
 				<div class="PostsGridTitle">
 					<h2 style="text-align: center;"><?php echo($options['title']); ?></h2>
-				</div>
-				<div class="BlogGrid" id="BlogGridContent"><?php
-					$count = 0;
-					foreach ($posts as $post) {
-						$count++;
-						if ($count < 11) {
-							echo display_grid_article($post);
-						}
-					}
-					if (sizeof($posts) > 10) echo display_grid_load_more_button(11); ?>
 				</div><?php
-				if (sizeof($posts) > 10) { ?>
-					<script>
-						function load_ayin_posts(start) {
-							var date = new Date();
-							var QS = '&start=' + start + '&list=<?php echo urlencode(json_encode($postList)); ?>';
-							jQuery('#AyinGridMorePosts' + start).fadeOut('fast', function() {
-								jQuery('#AyinGridMorePosts' + start).remove();
-								jQuery('#AyinGridLoading' + start).fadeIn('fast', function() {
-									jQuery.ajax({
-										url: '/wp-content/themes/ayintheme/ajax/load_grid.php?r=' + date.getTime() + QS,
-										type: 'GET',
-										dataType: 'text',
-									}).success(function (results) {
-										jQuery('#AyinGridLoading' + start).fadeOut('fast', function() {
-											jQuery('#AyinGridLoading' + start).remove();
-											jQuery('#BlogGridContent').append(results);
-										});
-									}).error(function (XMLHttpRequest, textStatus, errorThrown) {
-										var errorText = '<div style="padding: 20px; text-align: center; font-weight: 400; font-size: 18px; line-height; 30px;">There was an error while loading more posts. Please try again later.</div>';
-										jQuery('#AyinGridLoading').fadeOut('fast', function() {
-											jQuery('#BlogGridContent').append(errorText);
-										});
+			} ?>
+			<div id="BlogGrid<?php echo $gridCount; ?>Content" class="BlogGrid BlogGrid<?php echo $orientation; ?>"><?php
+				$count = 0;
+				foreach ($posts as $post) {
+					$count++;
+					if ($count <= $maxPostsToDisplay) {
+						echo display_grid_article($post);
+					}
+				}
+				if ($numPostsToDisplay == 0 && sizeof($posts) > 10) echo display_grid_load_more_button($gridCount, 11); ?>
+			</div><?php
+			if ($numPostsToDisplay == 0 && sizeof($posts) > 10) { ?>
+				<script>
+					function load_ayin_posts<?php echo $gridCount; ?>(start) {
+						var date = new Date();
+						var QS = '&gridNum=<?php echo $gridCount; ?>&start=' + start + '&list=<?php echo urlencode(json_encode($postList)); ?>';
+						jQuery('#AyinGrid<?php echo $gridCount; ?>MorePosts' + start).fadeOut('fast', function() {
+							jQuery('#AyinGrid<?php echo $gridCount; ?>MorePosts' + start).remove();
+							jQuery('#AyinGrid<?php echo $gridCount; ?>Loading' + start).fadeIn('fast', function() {
+								jQuery.ajax({
+									url: '/wp-content/themes/ayintheme/ajax/load_grid.php?r=' + date.getTime() + QS,
+									type: 'GET',
+									dataType: 'text',
+								}).success(function (results) {
+									jQuery('#AyinGrid<?php echo $gridCount; ?>Loading' + start).fadeOut('fast', function() {
+										jQuery('#AyinGrid<?php echo $gridCount; ?>Loading' + start).remove();
+										jQuery('#BlogGrid<?php echo $gridCount; ?>Content').append(results);
 									});
+								}).error(function (XMLHttpRequest, textStatus, errorThrown) {
+									var errorText = '<div style="padding: 20px; text-align: center; font-weight: 400; font-size: 18px; line-height; 30px;">There was an error while loading more posts. Please try again later.</div>';
+									jQuery('#AyinGrid<?php echo $gridCount; ?>Loading').fadeOut('fast', function() {
+										jQuery('#AyinGrid<?php echo $gridCount; ?>Loading' + start).remove();
+										jQuery('#BlogGrid<?php echo $gridCount; ?>Content').append(errorText);
+									});``
 								});
 							});
-						}
-					</script><?php
-				} ?>
-			</div>
-		<?php
+						});
+					}
+				</script><?php
+			} ?>
+		</div><?php
 		return ob_get_clean();
 	}
+	return '';
 }
 add_shortcode( 'Ayin_Posts_Grid', 'ayin_posts_grid_function' );
 
@@ -661,19 +694,27 @@ function display_grid_article($post) {
 	} else {
 		$postAuthor = '';
 	}
-	$postCat = get_the_category($post->ID);
-	if ($postCat) {
-		if ($postCat[0]->category_parent == 0) {
-			$catName = $postCat[0]->name;
-			$catSlug = $postCat[0]->slug;
-		} else {
-			$parentCat = get_category($postCat[0]->category_parent);
-			$catName = $parentCat->name;
-			$catSlug = $parentCat->slug;
-		}
+	// get primary category name and slug; use Yoast functions, if it exists; if not, use standard WordPress code that doesn't find primary
+	$catName = '';
+	$catSlug = '';
+	if ( class_exists('WPSEO_Primary_Term') ) {	// per https://stackoverflow.com/questions/43114986/get-primary-category-if-more-than-one-is-selected
+		$wpseo_primary_term = new WPSEO_Primary_Term( 'category', $post->ID );
+		$wpseo_primary_term = $wpseo_primary_term->get_primary_term();
+		$term = get_term( $wpseo_primary_term );
+		$catName = $term->name;
+		$catSlug = $term->slug;
 	} else {
-		$catName = '';
-		$catSlug = '';
+		$postCat = get_the_category($post->ID);
+		if ($postCat) {
+			if ($postCat[0]->category_parent == 0) {
+				$catName = $postCat[0]->name;
+				$catSlug = $postCat[0]->slug;
+			} else {
+				$parentCat = get_category($postCat[0]->category_parent);
+				$catName = $parentCat->name;
+				$catSlug = $parentCat->slug;
+			}
+		}
 	}
 
 	if (has_post_thumbnail($post->ID)) {
@@ -714,9 +755,9 @@ function display_grid_article($post) {
 	return $article;
 }
 
-function display_grid_load_more_button($num) { ?>
-	<div id="AyinGridMorePosts<?php echo $num; ?>" class="AyinMorePosts"><button type="button" class="AyinMorePostsButton" onclick="load_ayin_posts(<?php echo $num; ?>);">Load more posts</button></div>
-	<div id="AyinGridLoading<?php echo $num; ?>" class="AyinGridLoading"></div><?php
+function display_grid_load_more_button($gridNum, $num) { ?>
+	<div id="AyinGrid<?php echo $gridNum; ?>MorePosts<?php echo $num; ?>" class="AyinMorePosts"><button type="button" class="AyinMorePostsButton" onclick="load_ayin_posts<?php echo $gridNum; ?>(<?php echo $num; ?>);">Load more posts</button></div>
+	<div id="AyinGrid<?php echo $gridNum; ?>Loading<?php echo $num; ?>" class="AyinGridLoading"></div><?php
 }
 
 
@@ -727,7 +768,7 @@ function display_grid_load_more_button($num) { ?>
 add_filter( 'template_include', 'custom_category_template', 99 );
 function custom_category_template( $template ) {
 
-	if ( is_category( array( '86', '87', '92', '91', '124', '126' ) ) ) {
+	if ( is_category( array( '86', '87', '92', '91', '124', '126', '150' ) ) ) {
 		$new_template = locate_template( array( 'archive-folios.php' ) );
 		if ( '' != $new_template ) {
 			return $new_template ;

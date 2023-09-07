@@ -49,16 +49,19 @@ if ($toggleArray) {
 		} elseif (substr($toggle, 0, 2) == '2-') {
 			if (substr($toggle, 2, 1) == '1') {
 				if ($categoryList != '') $categoryList .= ',';
-				$categoryList .= '84';	// category for "Column"
+				$categoryList .= '132';	// category for "Books"
 			} elseif (substr($toggle, 2, 1) == '2') {
 				if ($categoryList != '') $categoryList .= ',';
-				$categoryList .= '80';	// category for "Folio"
+				$categoryList .= '84';	// category for "Column"
 			} elseif (substr($toggle, 2, 1) == '3') {
+				if ($categoryList != '') $categoryList .= ',';
+				$categoryList .= '80';	// category for "Folio"
+			} elseif (substr($toggle, 2, 1) == '4') {
 				if ($categoryList != '') $categoryList .= ',';
 				$categoryList .= '35';	// category for "Ayin One"
 				$categoryList .= ',';
 				$categoryList .= '90';	// category for "Ayin Two"
-			} elseif (substr($toggle, 2, 1) == '4') {
+			} elseif (substr($toggle, 2, 1) == '5') {
 				if ($categoryList != '') $categoryList .= ',';
 				$categoryList .= '98';	// category for "Zines"
 			}
@@ -128,12 +131,12 @@ if (sizeof($posts) > 0) {
 		}
 	}
 	if (sizeof($posts) > $endNum) {
-		echo display_grid_load_more_button($endNum + 1);
+		echo display_grid_load_more_button(1, $endNum + 1);
 	} else {
-		echo ('<div id="AyinGridLoading' . ($endNum + 1) . '" class="AyinGridLoading"></div>');
+		echo ('<div id="AyinGrid1Loading' . ($endNum + 1) . '" class="AyinGridLoading"></div>');
 	}
 } else {
 	echo('<p class="BlogGridPost">There are no archives that match your search criteria.  Please update your criteria and try again.</p>');
-	echo ('<div id="AyinGridLoading1" class="AyinGridLoading"></div>');
+	echo ('<div id="AyinGrid1Loading1" class="AyinGridLoading"></div>');
 }
 echo ob_get_clean();

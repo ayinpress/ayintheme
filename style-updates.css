@@ -35,7 +35,7 @@
 
 /* added social media icons to the right side of the header area on desktop */
 .social-navigation {
-	width: 150px;
+	width: auto;
 	position: absolute;
 	right: 0;
 	top: 30px;
@@ -361,7 +361,8 @@ span.FolioDate {
 	max-width: 95% !important;
 }
 
-.HomeShopCol {
+/*.HomeShopCol*/
+.ShopInnerCol {
 	padding: 25px;
 	border: var(--form--border-width) solid var(--form--border-color);
 }
@@ -426,6 +427,10 @@ h2.FooterDonate a:hover {
 	gap: 16px;
 }
 
+.BlogGrid.BlogGridVertical {
+	flex-direction: column;
+}
+
 .BlogGrid.Four {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -449,6 +454,11 @@ h2.FooterDonate a:hover {
 	grid-template-columns: 1fr;
 }
 
+.RecPubGrid .BlogGrid.BlogGridVertical {
+	display: grid !important;
+	grid-template-columns: repeat(2, 1fr);
+}
+
 .ColumnChild {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -460,6 +470,12 @@ h2.FooterDonate a:hover {
 	margin-bottom: calc(.5 * var(--global--spacing-vertical));
 }
 
+.BlogGrid.BlogGridVertical article {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 15px;
+}
+
 .ColumnChildren article {
 	margin-bottom: calc(1 * var(--global--spacing-vertical));
 }
@@ -469,6 +485,10 @@ h2.FooterDonate a:hover {
 	margin-top: var(--global--spacing-unit);
 }
 
+.BlogGrid.BlogGridVertical .entry-wrapper {
+	margin-top: 0;
+}
+
 .PostsGridTitle h2,
 h2.ColumnTitle {
 	font-size: var(--heading--font-size-h2);
@@ -476,6 +496,12 @@ h2.ColumnTitle {
 	line-height: var(--heading--line-height-h2);
 	margin-top: calc( 0.666 * var(--global--spacing-vertical));
 	margin-bottom: calc( 0.666 * var(--global--spacing-vertical));
+}
+
+.Flex1Col2 .PostsGridTitle h2,
+.Flex2Col1 .PostsGridTitle h2,
+.Flex2Col2 .PostsGridTitle h2 {
+	margin-top: 0;
 }
 
 h2.FolioTitle {
@@ -499,6 +525,14 @@ a.GridThumb {
 	background-position: center center;
 	background-repeat: no-repeat;
 }
+
+.FeaturedCol a.GridThumb {
+	height: 500px;
+}
+
+/*.BlogGrid.BlogGridVertical a.GridThumb {
+	display: none;
+}*/
 
 .BlogGridPost .entry-meta .cat-links a {
 	font-family: var(--global--font-secondary);
@@ -626,6 +660,10 @@ button.AyinMorePostsButton:hover {
 		flex-basis: calc(20% - 16px);
 	}
 
+	.Flex1Col2 .BlogGrid article {
+		flex-basis: 100%;
+	}
+
 	h2.ArticleTitle {
 		font-size: 1.6em;
 	}
@@ -733,6 +771,62 @@ button.AyinMorePostsButton:hover {
 .HomeFlex1b .wp-block-column .wp-block-image {
 	margin:  0 !important;
 }*/
+
+.HomeBlogImg {
+	margin-bottom: 0 !important;
+}
+
+.HomeBlogImg img {
+	width: 100% !important;
+	max-width: 512px !important;
+}
+
+.wp-block-columns .wp-block-column p.BlogCategory {
+	margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.BlogCategory a {
+	color: var(--global--color-secondary);
+	font-family: var(--global--font-secondary);
+	font-size: var(--global--font-size-md);
+	font-weight: var(--global--font-weight);
+}
+
+.BlogCategory a:hover {
+	color: var(--entry-meta--color-hover);
+}
+
+h2.BlogH2 {
+	font-weight: var(--heading--font-weight-strong);
+	letter-spacing: var(--heading--letter-spacing-h2);
+	line-height: var(--heading--line-height);
+	font-size: 1.2em;
+	margin: 0 0 0.25em !important;
+}
+
+@media only screen and (min-width: 1200px) {
+	h2.BlogH2 {
+		font-size: 1.6em;
+	}
+}
+
+.wp-block-columns .wp-block-column p.HomeBlogSnippet {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+@media only screen and (min-width: 482px) {
+	.wp-block-columns .wp-block-column p.HomeBlogSnippet {
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
+	}
+
+	.wp-block-columns .wp-block-column p.BlogCategory {
+		margin-top: 0.5em;
+    	margin-bottom: 1em;
+	}
+}
 
 .Image1 { 
 	flex: 1.8947; 
@@ -933,6 +1027,8 @@ li.journal-artist-preview.AyinTwo a,
 
 @media only screen and (min-width: 652px) {
 	.primary-navigation div > ul > li > .sub-menu {
+		width: 100% !important;
+		min-width: 150px !important;
 		top: 56px !important;
 		border: 0 !important;
 		box-shadow: 0 0 10px rgb(0 0 0 / 15%) !important;
@@ -1073,4 +1169,35 @@ li.journal-artist-preview.AyinTwo a,
 
 :root {
 	--primary-nav--font-size-mobile: var(--global--font-size-xl);
+}
+
+/**************************************/
+/*** General Site Width				***/
+/**************************************/
+
+#content,
+.wp-block-image.alignwide.size-full {
+	max-width: 1440px !important;
+    margin: 0 auto !important;
+}
+
+/******************************************/
+/*** Slider Rev Styles					***/
+/******************************************/
+
+.persephone.tparrows:hover:before {
+	color: #fff !important;
+}
+
+rs-carousel-wrap rs-slide rs-sbg {
+	background: #fff !important;
+	opacity: 1 !important;
+}
+
+rs-carousel-wrap rs-slide rs-sbg canvas {
+	opacity: .4 !important;
+}
+
+rs-carousel-wrap rs-slide[data-isactiveslide="true"] rs-sbg canvas {
+	opacity: 1 !important;
 }

@@ -23,7 +23,7 @@ get_header();
 				$journal_number = false;
 
 				foreach ($categories as $cat) {
-					if ( strpos( $cat->slug, 'ayin-') !== false ) {
+					if ( strpos( $cat->slug, 'ayin-') !== false && $cat->slug !== 'ayin-beta-category' ) {
 						$journal_number = $cat->slug;
 						$journal_name = $cat->name;
 					}
