@@ -67,7 +67,24 @@ $header_classes .= $has_primary_nav ? ' has-menu' : '';
 					?>
 				</nav><!-- #site-navigation -->
 			<?php endif; ?>
-			<!-- 10-11-21 -- moved Social Media icons code to /templates/header/site-branding.php --> 
+            <div id="DesktopSearchBar">
+                <form role="search" method="get" class="search-form" action="/">
+                    <label>
+                        <span class="screen-reader-text">Search for:</span>
+                        <input type="search" class="search-field" placeholder="Search for:" value="" name="s" title="Search for:" />
+                    </label>
+                    <input type="submit" class="search-submit" value="Search" />
+                </form>
+            </div>
+			<!-- 10-11-21 -- moved Social Media icons code to /templates/header/site-branding.php -->
 		</header><!-- #masthead -->
-
+        <script>
+            function site_search() {
+                if (jQuery('li.MenuSocial').css('display') === 'block') {
+                    jQuery('#menu-item-search-mobile').toggleClass('hidden');
+                } else {
+                    jQuery('#DesktopSearchBar').slideToggle();
+                }
+            }
+        </script>
 	<div id="content" class="site-content">

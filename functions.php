@@ -801,3 +801,25 @@ function ayin_pre_footer_code() {
 		</script>';
 	}
 }
+
+/**
+ * add search icon in menu
+ */
+function add_search_form($items, $args) {
+	if( $args->menu->slug == 'primary' ){
+		$items .= '<li id="menu-item-search-icon" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-search-icon">'
+			. '<a href="javascript:site_search();"><img src="/wp-content/themes/ayintheme/assets/img/magnifying-glass-thin.svg" width="22" height="22" alt="Search"></a>'
+    		. '</li>'
+            . '<li id="menu-item-search-mobile" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-search-mobile hidden">'
+			. '<form role="search" method="get" class="search-form" action="/">'
+			. '	<label>'
+			. '		<span class="screen-reader-text">Search for:</span>'
+			. '		<input type="search" class="search-field" placeholder="Search for:" value="" name="s" title="Search for:" />'
+			. '	</label>'
+			. '	<input type="submit" class="search-submit" value="Search" />'
+			. '</form>'
+			. '</li>';
+	}
+	return $items;
+}
+add_filter('wp_nav_menu_items', 'add_search_form', 10, 2);
