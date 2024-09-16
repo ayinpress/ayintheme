@@ -37,6 +37,9 @@ get_header();
 				$rightCol = '';
 				$workCount = 0;
 				foreach($works as $work) {
+					if ($work->title == 'The Moon') {
+						continue;
+					}
 					$workCount++;
 					if ($workCount <= (sizeof($works)/2)) {
 						$leftCol .= '<li class="journal-artist-preview AyinTwo" data-thumbnail="' . $work->thumbnail . '" data-title="' . esc_attr($work->title) . '"><a href="' . $work->permalink . '">' . $work->name . $work->text . '</a><img src="' . $work->thumbnail . '"></li>';

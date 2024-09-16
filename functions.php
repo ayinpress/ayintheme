@@ -295,6 +295,9 @@ function ayin_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'ayin_scripts' );
 
+/**
+ * Loads specific scripts for "The Moon" canvas based animations in Ayin Journal Two
+ */
 function holy_fool_scripts() {
 	/* ayin-two-holy-fool, the-moon */
 	global $post;

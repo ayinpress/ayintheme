@@ -1,0 +1,19 @@
+{
+  "C": [
+    ["I", "VBD", "DT", "NN", "."],
+    ["CC", "I", "VBD", "DTCS", "NN", "."],
+    ["DTCS", "JJ", "NN", "VBD", "TO", "PRPSO1", "."],
+    ["I", "VBD", "DT", "NN", "IN", "DT", "NN", "."],
+    ["I", "VBD", "DTCS", "JJ", "NN", ",", "CC", "IN", "DT", "NN", ",", "DTCS", "NN", "IN", "JJ", "NNS", "."],
+    ["CC", "PRPSS1", "VBD", "DTCS", "NN", "VBG", "."],
+    ["IN", "I", "VBD", "DT", "JJ", "CD", "NNS", ",", "I", "VBD", "VBN", "TO", "VB", "DT", "NNP", "."],
+    ["IN", "RB", "IN", "I", "VBD", "DT", "NNP", ",", "I", "VBN", "IN", "PRPS*3", ",", "PRPSR3", ",", "VBZ", "DT", "JJ", "NNP", "."],
+    ["I", "VBD", "DTCS", "NN", "VBN", "IN", "CD", "NNS", "CD1", "JJ", ",", "DT", "JJ", "JJ", "."],
+    ["DTCS", "JJ", "NN", "VBD", "IN", "PRPSO1", "."],
+    ["DTCS", "JJ", "NN", "VBN", "PRPSO1", "."],
+    ["PRPSS1", "saw", "DT", "JJ", "NNP", "IN", "DT", "NNP", "."],
+    ["JJ", ",", "JJ", "NN", "VBN", "DT", "NN", "."],
+    ["DTCS", "NN", "NN", "DTCS", "JJ", "NN", ",", "VBG", "NN", "CC", "NN", ",", "VBD", "."],
+    ["RB", "PRPSS3", "VBZ", "VBD", "PRPSO3", "."]
+  ]
+}
